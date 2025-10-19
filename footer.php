@@ -10,9 +10,9 @@
 
                 <!-- Veelvoorkomende behandelingen -->
                 <div>
-                    <h5 class="font-body text-base font-semibold text-gray-800 mb-4">
+                    <p class="font-body text-base font-semibold text-gray-800 mb-4">
                         Veelvoorkomende behandelingen
-                    </h5>
+                    </p>
                     <ul class="space-y-2">
                         <li>
                             <a href="<?php echo esc_url(home_url('/botox-behandelingen/')); ?>"
@@ -43,9 +43,9 @@
 
                 <!-- Certificaties -->
                 <div>
-                    <h5 class="font-body text-base font-semibold text-gray-800 mb-4">
+                    <p class="font-body text-base font-semibold text-gray-800 mb-4">
                         Certificaties
-                    </h5>
+                    </p>
                     <ul class="space-y-2">
                         <li>
                             <a href="https://nvcg.nl/cosmetisch-arts-knmg/?cn-zipcode=1017GG&cn-radius=5.1&cn-latitude=&cn-longitude=&cn-near-coord=&cn-unit=km&cn-s=chigharoe"
@@ -78,9 +78,9 @@
 
             <!-- Column 2: Contact -->
             <div>
-                <h5 class="font-body text-base font-semibold text-gray-800 mb-4">
+                <p class="font-body text-base font-semibold text-gray-800 mb-4">
                     CONTACT
-                </h5>
+                </p>
                 <ul class="space-y-3">
                     <li>
                         <a href="tel:+310681390127"

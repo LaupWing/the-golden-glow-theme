@@ -124,11 +124,6 @@ get_header(); ?>
                     width="887"
                     height="1080"
                     class="w-full h-auto rounded-lg shadow-lg"
-                    srcset="<?php echo esc_url($upload_url . '/lady-shot.jpg'); ?> 887w,
-                        <?php echo esc_url($upload_url . '/lady-shot-329x400.jpg'); ?> 329w,
-                        <?php echo esc_url($upload_url . '/lady-shot-657x800.jpg'); ?> 657w,
-                        <?php echo esc_url($upload_url . '/lady-shot-768x935.jpg'); ?> 768w"
-                    sizes="(max-width: 887px) 100vw, 887px"
                     loading="lazy">
             </div>
 
@@ -275,7 +270,7 @@ get_header(); ?>
                         loading="lazy">
                 </div>
                 <div class="flex-1">
-                    <h6 class="text-primary text-lg mb-2">★★★★★</h6>
+                    <div class="text-primary text-lg mb-2" role="img" aria-label="5 sterren">★★★★★</div>
                     <p class="text-gray-700 italic leading-relaxed">
                         "Ik ben al meer dan 10 jaar een cliënt en ik wil nooit meer anders. Prachtig gestylde kliniek waarbij hygiëne voorop staat! Arwind is persoonlijk, stelt je gerust, neemt de tijd, zet je in je kracht en zal altijd eerlijk advies geven. Als je in de stoel ligt ervaar je Professionaliteit in combinatie met een vleugje humor. Daarbij zijn de eindresultaten keer op keer uitmuntend." - Lotta
                     </p>
@@ -293,7 +288,7 @@ get_header(); ?>
                         loading="lazy">
                 </div>
                 <div class="flex-1">
-                    <h6 class="text-primary text-lg mb-2">★★★★★</h6>
+                    <div class="text-primary text-lg mb-2" role="img" aria-label="5 sterren">★★★★★</div>
                     <p class="text-gray-700 italic leading-relaxed">
                         "Ik ben fan!! Dr.Arwind is heel erg professioneel, vriendelijk en neemt vooral zijn tijd voor zijn cliënten. Ik ben heel goed geholpen door hem en ben heel erg blij met de resultaat voor mijn behandeling. Zijn praktijk is heel goed bereikbaar. Personeel is ook heel vriendelijk. Ik raad het iedereen aan, ik ben in fan.. en niet te vergeten de tarieven zijn ook heel goed.. kortom, GEWELDIG!" – Banafshe .V
                     </p>
@@ -311,7 +306,7 @@ get_header(); ?>
                         loading="lazy">
                 </div>
                 <div class="flex-1">
-                    <h6 class="text-primary text-lg mb-2">★★★★★</h6>
+                    <div class="text-primary text-lg mb-2" role="img" aria-label="5 sterren">★★★★★</div>
                     <p class="text-gray-700 italic leading-relaxed">
                         "Heel vriendelijk ontvangen, professioneel advies en duidelijke uitleg. Zeer tevreden met het resultaat, boven verwachting!" - Rene
                     </p>
@@ -329,7 +324,7 @@ get_header(); ?>
                         loading="lazy">
                 </div>
                 <div class="flex-1">
-                    <h6 class="text-primary text-lg mb-2">★★★★★</h6>
+                    <div class="text-primary text-lg mb-2" role="img" aria-label="5 sterren">★★★★★</div>
                     <p class="text-gray-700 italic leading-relaxed">
                         "Eerste keer een spierontspannende behandeling en filler gedaan. Dit is erg deskundig gedaan met goede uitleg. (mijn dochter heeft wel 100 vragen gesteld haha)" – Maaike
                     </p>
