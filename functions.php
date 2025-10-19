@@ -2,8 +2,8 @@
 
 function boilerplate_load_assets()
 {
-  // Defer non-critical JavaScript
-  wp_enqueue_script('ourmainjs', get_theme_file_uri('/build/index.js'), array('wp-element', 'react-jsx-runtime'), '1.0', true);
+  // Only load JS if you actually need it (remove if not using)
+  // wp_enqueue_script('ourmainjs', get_theme_file_uri('/build/index.js'), array('wp-element', 'react-jsx-runtime'), '1.0', true);
 
   // Enqueue main CSS (critical)
   wp_enqueue_style('ourmaincss', get_theme_file_uri('/build/index.css'));
@@ -53,3 +53,18 @@ add_filter('script_loader_tag', 'boilerplate_defer_scripts', 10, 3);
 
 // Disable WordPress admin toolbar on frontend
 add_filter('show_admin_bar', '__return_false');
+
+// Remove WordPress block library CSS (saves 15 KiB)
+function remove_block_css()
+{
+  wp_dequeue_style('wp-block-library');
+  wp_dequeue_style('wp-block-library-theme');
+  wp_dequeue_style('wc-block-style');
+}
+add_action('wp_enqueue_scripts', 'remove_block_css', 100);
+
+// Remove emoji scripts (saves 13 KiB)
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+remove_action('admin_print_scripts', 'print_emoji_detection_script');
+remove_action('admin_print_styles', 'print_emoji_styles');
