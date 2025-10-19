@@ -1,27 +1,47 @@
 <style>
+    /*! CSS Used from: https://thegoldenglow.nl/wp-content/plugins/elementor/assets/css/widget-image.min.css ; media=all */
+    @media all {
+        .elementor-widget-image {
+            text-align: center;
+        }
+
+        .elementor-widget-image img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
     /*! CSS Used from: https://thegoldenglow.nl/wp-content/plugins/elementor/assets/css/widget-spacer.min.css ; media=all */
     @media all {
         .e-con {
             --container-widget-width: 100%;
         }
+
+        .e-con>.elementor-widget-spacer {
+            width: var(--container-widget-width, var(--spacer-size));
+            --align-self: var(--container-widget-align-self, initial);
+            --flex-shrink: 0;
+        }
+
+        .e-con>.elementor-widget-spacer>.elementor-widget-container {
+            height: 100%;
+            width: 100%;
+        }
+
+        .e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer {
+            height: 100%;
+        }
+
+        .e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner {
+            height: var(--container-widget-height, var(--spacer-size));
+        }
     }
 
     /*! CSS Used from: Embedded ; media=all */
     @media all {
-        .elementor-kit-2038 .elementor-button {
-            background-color: var(--e-global-color-7fff42d);
-            font-family: "Aboreto", Sans-serif;
-            color: #FFF;
-        }
-
-        .elementor-kit-2038 .elementor-button:hover,
-        .elementor-kit-2038 .elementor-button:focus {
-            background-color: #7A7A7A;
-        }
-
-        .elementor-kit-2038 a {
-            color: var(--e-global-color-7fff42d);
-            font-family: "Poppins", Sans-serif;
+        .elementor-kit-2038 h2 {
+            font-family: var(--e-global-typography-secondary-font-family), Sans-serif;
+            font-weight: var(--e-global-typography-secondary-font-weight);
         }
 
         .e-con {
@@ -51,6 +71,21 @@
         }
     }
 
+    /*! CSS Used from: Embedded ; media=all */
+    @media all {
+        .elementor-widget-heading .elementor-heading-title {
+            font-family: var(--e-global-typography-primary-font-family), Sans-serif;
+            font-weight: var(--e-global-typography-primary-font-weight);
+            color: var(--e-global-color-primary);
+        }
+
+        .elementor-widget-text-editor {
+            font-family: var(--e-global-typography-text-font-family), Sans-serif;
+            font-weight: var(--e-global-typography-text-font-weight);
+            color: var(--e-global-color-text);
+        }
+    }
+
     /*! CSS Used from: https://thegoldenglow.nl/wp-content/cache/wpo-minify/1760784032/assets/wpo-minify-header-d40f56f3.min.css ; media=all */
     @media all {
 
@@ -60,9 +95,12 @@
             box-sizing: border-box;
         }
 
-        .elementor a {
+        .elementor img {
+            border: none;
+            border-radius: 0;
             box-shadow: none;
-            text-decoration: none;
+            height: auto;
+            max-width: 100%;
         }
 
         .elementor-element {
@@ -181,12 +219,14 @@
             flex: var(--flex-grow) var(--flex-shrink) var(--flex-basis);
         }
 
+        .e-con-full,
         .e-con>.e-con-inner {
             padding-block-end: var(--padding-block-end);
             padding-block-start: var(--padding-block-start);
             text-align: var(--text-align);
         }
 
+        .e-con-full.e-flex,
         .e-con.e-flex>.e-con-inner {
             flex-direction: var(--flex-direction);
         }
@@ -194,6 +234,22 @@
         .e-con,
         .e-con>.e-con-inner {
             display: var(--display);
+        }
+
+        .e-con.e-grid {
+            --grid-justify-content: start;
+            --grid-align-content: start;
+            --grid-auto-flow: row;
+        }
+
+        .e-con.e-grid {
+            align-content: var(--grid-align-content);
+            align-items: var(--align-items);
+            grid-auto-flow: var(--grid-auto-flow);
+            grid-template-columns: var(--e-con-grid-template-columns);
+            grid-template-rows: var(--e-con-grid-template-rows);
+            justify-content: var(--grid-justify-content);
+            justify-items: var(--justify-items);
         }
 
         .e-con-boxed.e-flex {
@@ -268,11 +324,11 @@
             min-width: 0;
         }
 
-        .e-con>.e-con-inner>.elementor-widget>.elementor-widget-container {
+        .e-con>.elementor-widget>.elementor-widget-container {
             height: 100%;
         }
 
-        .e-con.e-con>.e-con-inner>.elementor-widget {
+        .elementor.elementor .e-con>.elementor-widget {
             max-width: 100%;
         }
 
@@ -291,178 +347,150 @@
             transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
         }
 
-        .elementor-button {
-            background-color: #69727d;
-            border-radius: 3px;
-            color: #fff;
-            display: inline-block;
-            font-size: 15px;
+        .elementor-heading-title {
             line-height: 1;
-            padding: 12px 24px;
-            fill: #fff;
-            text-align: center;
-            transition: all .3s;
+            margin: 0;
+            padding: 0;
         }
 
-        .elementor-button:focus,
-        .elementor-button:hover,
-        .elementor-button:visited {
-            color: #fff;
+        .elementor-widget-heading .elementor-heading-title {
+            font-family: var(--e-global-typography-primary-font-family), Sans-serif;
+            font-weight: var(--e-global-typography-primary-font-weight);
+            color: var(--e-global-color-primary);
         }
 
-        .elementor-button-content-wrapper {
-            display: flex;
-            flex-direction: row;
-            gap: 5px;
-            justify-content: center;
-        }
-
-        .elementor-button-text {
-            display: inline-block;
-        }
-
-        .elementor-button span {
-            text-decoration: inherit;
-        }
-
-        @media (max-width:767px) {
-            .elementor .elementor-hidden-mobile {
-                display: none;
-            }
-        }
-
-        @media (min-width:768px) and (max-width:1024px) {
-            .elementor .elementor-hidden-tablet {
-                display: none;
-            }
-        }
-
-        .elementor-widget-button .elementor-button {
-            background-color: var(--e-global-color-accent);
-            font-family: var(--e-global-typography-accent-font-family), Sans-serif;
-            font-weight: var(--e-global-typography-accent-font-weight);
-        }
-
-        .elementor-2043 .elementor-element.elementor-element-3d3e896 {
+        .elementor-2043 .elementor-element.elementor-element-f9d2231 {
             --display: flex;
-            --flex-direction: row;
+            --flex-direction: row-reverse;
             --container-widget-width: initial;
             --container-widget-height: 100%;
             --container-widget-flex-grow: 1;
             --container-widget-align-self: stretch;
+            --flex-wrap-mobile: wrap-reverse;
+            --gap: 0px 0px;
+            --row-gap: 0px;
+            --column-gap: 0px;
+            --border-radius: 15px 15px 15px 15px;
+            box-shadow: 0 0 10px 0 rgb(0 0 0 / .04);
+        }
+
+        .elementor-2043 .elementor-element.elementor-element-a099a69 {
+            --display: grid;
+            --e-con-grid-template-columns: repeat(2, 1fr);
+            --e-con-grid-template-rows: repeat(1, 1fr);
+            --grid-auto-flow: row;
+        }
+
+        .elementor-2043 .elementor-element.elementor-element-f4c9c4d {
+            --display: flex;
+            --flex-direction: column;
+            --container-widget-width: 100%;
+            --container-widget-height: initial;
+            --container-widget-flex-grow: 0;
+            --container-widget-align-self: initial;
             --flex-wrap-mobile: wrap;
-            --justify-content: center;
-            --margin-top: 0px;
-            --margin-bottom: 0px;
-            --margin-left: 0px;
-            --margin-right: 0px;
-            --padding-top: 0px;
-            --padding-bottom: 30px;
-            --padding-left: 0px;
-            --padding-right: 0px;
+            --justify-content: flex-start;
         }
 
-        .elementor-2043 .elementor-element.elementor-element-3d3e896:not(.elementor-motion-effects-element-type-background) {
-            background-color: var(--e-global-color-56e3fba);
+        .elementor-2043 .elementor-element.elementor-element-3a73141 {
+            --spacer-size: 50px;
         }
 
-        .elementor-2043 .elementor-element.elementor-element-c3033f0 .elementor-button {
-            background-color: var(--e-global-color-7fff42d);
+        .elementor-2043 .elementor-element.elementor-element-91e256b {
+            width: 100%;
+            max-width: 100%;
+            text-align: left;
+        }
+
+        .elementor-2043 .elementor-element.elementor-element-91e256b .elementor-heading-title {
             font-family: "Poppins", Sans-serif;
-            font-weight: 500;
+            font-weight: 400;
             text-transform: uppercase;
-            border-radius: 26px 26px 26px 26px;
+            color: var(--e-global-color-7fff42d);
         }
 
-        .elementor-2043 .elementor-element.elementor-element-c3033f0 .elementor-button:hover,
-        .elementor-2043 .elementor-element.elementor-element-c3033f0 .elementor-button:focus {
-            background-color: var(--e-global-color-secondary);
-            color: #FFF;
+        .elementor-widget-text-editor {
+            font-family: var(--e-global-typography-text-font-family), Sans-serif;
+            font-weight: var(--e-global-typography-text-font-weight);
+            color: var(--e-global-color-text);
         }
 
-        .elementor-2043 .elementor-element.elementor-element-2ce7155 .elementor-button {
-            background-color: var(--e-global-color-7fff42d);
-            font-family: "Poppins", Sans-serif;
-            font-weight: 500;
-            text-transform: uppercase;
-            border-radius: 26px 26px 26px 26px;
+        .elementor-2043 .elementor-element.elementor-element-630525b {
+            width: var(--container-widget-width, 100%);
+            max-width: 100%;
+            --container-widget-width: 100%;
+            --container-widget-flex-grow: 0;
         }
 
-        .elementor-2043 .elementor-element.elementor-element-2ce7155 .elementor-button:hover,
-        .elementor-2043 .elementor-element.elementor-element-2ce7155 .elementor-button:focus {
-            background-color: var(--e-global-color-secondary);
-            color: #FFF;
+        .elementor-2043 .elementor-element.elementor-element-630525b>.elementor-widget-container {
+            padding: 52px 52px 52px 52px;
         }
 
-        .elementor-2043 .elementor-element.elementor-element-7c27ea2 .elementor-button {
-            background-color: var(--e-global-color-7fff42d);
-            font-family: "Poppins", Sans-serif;
-            font-weight: 500;
-            text-transform: uppercase;
-            border-radius: 26px 26px 26px 26px;
+        .elementor-2043 .elementor-element.elementor-element-630525b.elementor-element {
+            --flex-grow: 0;
+            --flex-shrink: 0;
         }
 
-        .elementor-2043 .elementor-element.elementor-element-7c27ea2 .elementor-button:hover,
-        .elementor-2043 .elementor-element.elementor-element-7c27ea2 .elementor-button:focus {
-            background-color: var(--e-global-color-secondary);
-            color: #FFF;
+        .elementor-2043 .elementor-element.elementor-element-630525b img {
+            border-radius: 25px 25px 25px 25px;
         }
 
-        .elementor-2043 .elementor-element.elementor-element-0320360 .elementor-button {
-            background-color: var(--e-global-color-7fff42d);
-            font-family: "Poppins", Sans-serif;
-            font-weight: 500;
-            text-transform: uppercase;
-            border-radius: 26px 26px 26px 26px;
+        @media (min-width:768px) {
+            .elementor-2043 .elementor-element.elementor-element-f4c9c4d {
+                --width: 100%;
+            }
         }
 
-        .elementor-2043 .elementor-element.elementor-element-0320360 .elementor-button:hover,
-        .elementor-2043 .elementor-element.elementor-element-0320360 .elementor-button:focus {
-            background-color: var(--e-global-color-secondary);
-            color: #FFF;
+        @media (max-width:1024px) {
+            .elementor-2043 .elementor-element.elementor-element-a099a69 {
+                --grid-auto-flow: row;
+            }
+
+            .elementor-2043 .elementor-element.elementor-element-f4c9c4d {
+                --flex-direction: column;
+                --container-widget-width: calc((1 - var(--container-widget-flex-grow)) * 100%);
+                --container-widget-height: initial;
+                --container-widget-flex-grow: 0;
+                --container-widget-align-self: initial;
+                --flex-wrap-mobile: wrap;
+                --align-items: flex-start;
+            }
+
+            .elementor-2043 .elementor-element.elementor-element-3a73141 {
+                --spacer-size: 30px;
+            }
         }
 
-        .elementor-2043 .elementor-element.elementor-element-a439e6a .elementor-button {
-            background-color: var(--e-global-color-7fff42d);
-            font-family: "Poppins", Sans-serif;
-            font-weight: 500;
-            text-transform: uppercase;
-            border-radius: 26px 26px 26px 26px;
+        @media (max-width:767px) {
+            .elementor-2043 .elementor-element.elementor-element-f9d2231 {
+                --flex-direction: row-reverse;
+                --container-widget-width: initial;
+                --container-widget-height: 100%;
+                --container-widget-flex-grow: 1;
+                --container-widget-align-self: stretch;
+                --flex-wrap-mobile: wrap-reverse;
+            }
+
+            .elementor-2043 .elementor-element.elementor-element-a099a69 {
+                --e-con-grid-template-columns: repeat(1, 1fr);
+                --grid-auto-flow: row;
+            }
+
+            .elementor-2043 .elementor-element.elementor-element-91e256b {
+                text-align: center;
+            }
+
+            .elementor-2043 .elementor-element.elementor-element-506055f {
+                text-align: center;
+            }
+
+            .elementor-2043 .elementor-element.elementor-element-630525b>.elementor-widget-container {
+                padding: 1px 1px 1px 1px;
+            }
         }
 
-        .elementor-2043 .elementor-element.elementor-element-a439e6a .elementor-button:hover,
-        .elementor-2043 .elementor-element.elementor-element-a439e6a .elementor-button:focus {
-            background-color: var(--e-global-color-secondary);
-            color: #FFF;
-        }
-
-        .elementor-2043 .elementor-element.elementor-element-aba5dc7 .elementor-button {
-            background-color: var(--e-global-color-7fff42d);
-            font-family: "Poppins", Sans-serif;
-            font-weight: 500;
-            text-transform: uppercase;
-            border-radius: 26px 26px 26px 26px;
-        }
-
-        .elementor-2043 .elementor-element.elementor-element-aba5dc7 .elementor-button:hover,
-        .elementor-2043 .elementor-element.elementor-element-aba5dc7 .elementor-button:focus {
-            background-color: var(--e-global-color-secondary);
-            color: #FFF;
-        }
-
-        .elementor-widget-button .elementor-button {
-            background-color: var(--e-global-color-accent);
-            font-family: var(--e-global-typography-accent-font-family), Sans-serif;
-            font-weight: var(--e-global-typography-accent-font-weight);
-        }
-
-        a {
-            background-color: #fff0;
-        }
-
-        a:active,
-        a:hover {
-            outline-width: 0;
+        img {
+            border-style: none;
         }
 
         *,
@@ -471,72 +499,90 @@
             box-sizing: border-box;
         }
 
-        a {
-            -ms-touch-action: manipulation;
-            touch-action: manipulation;
+        img {
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+            vertical-align: middle;
         }
 
-        a {
-            color: #334862;
-            text-decoration: none;
+        p:empty {
+            display: none;
         }
 
-        a:focus {
-            outline: none;
+        img {
+            transition: opacity 1s;
+            opacity: 1;
         }
 
-        a:hover {
-            color: #000;
+        p {
+            margin-bottom: 1.3em;
+        }
+
+        h2 {
+            color: #555;
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: .5em;
+            text-rendering: optimizeSpeed;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            line-height: 1.3;
+        }
+
+        @media (max-width:549px) {
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+
+        p {
+            margin-top: 0;
         }
     }
 
     /*! CSS Used from: Embedded */
-    a:hover {
-        color: #777;
+    .lazyloaded {
+        opacity: 1;
+        transition: opacity 400ms;
+        transition-delay: 0ms;
     }
 
     /*! CSS Used from: Embedded */
-    .elementor-page .elementor-button-link {
+    h2 {
+        font-family: "Poppins", sans-serif;
+    }
+
+    h2 {
+        font-weight: 700;
+    }
+
+    /*! CSS Used from: Embedded */
+    h2,
+    .elementor-heading-title {
         font-family: "Poppins" !important;
     }
 
+    .elementor p {
+        font-family: "Poppins" !important;
+    }
+
+    .elementor h2 {
+        font-family: "Poppins" !important;
+    }
+
+    .elementor-page .elementor-heading-title {
+        font-family: "Poppins" !important;
+    }
+
+    /*! CSS Used from: Embedded */
+    .elementor-spacer-inner {
+        height: 30px !important;
+    }
+
     /*! CSS Used fontfaces */
-    @font-face {
-        font-family: 'Aboreto';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://prettychic.nl/wp-content/uploads/elementor/google-fonts/fonts/aboreto-5dcxaklhwddq4n8bpk3ualyu.woff2) format('woff2');
-        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-
-    @font-face {
-        font-family: 'Aboreto';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://prettychic.nl/wp-content/uploads/elementor/google-fonts/fonts/aboreto-5dcxaklhwddq4n8bpkpuag.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-
-    @font-face {
-        font-family: 'Aboreto';
-        font-style: normal;
-        font-weight: 400;
-        font-display: fallback;
-        src: url(https://fonts.gstatic.com/s/aboreto/v2/5DCXAKLhwDDQ4N8bpK3UAlyu.woff2) format('woff2');
-        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-
-    @font-face {
-        font-family: 'Aboreto';
-        font-style: normal;
-        font-weight: 400;
-        font-display: fallback;
-        src: url(https://fonts.gstatic.com/s/aboreto/v2/5DCXAKLhwDDQ4N8bpKPUAg.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-
     @font-face {
         font-family: 'Poppins';
         font-style: italic;
@@ -1558,79 +1604,58 @@
     }
 </style>
 
-<div class="elementor-element elementor-element-3d3e896 elementor-hidden-tablet elementor-hidden-mobile e-flex e-con-boxed e-con e-parent e-lazyloaded"
-    data-id="3d3e896" data-element_type="container"
-    data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-element elementor-element-f9d2231 e-flex e-con-boxed e-con e-parent e-lazyloaded"
+    data-id="f9d2231" data-element_type="container">
     <div class="e-con-inner">
-        <div class="elementor-element elementor-element-c3033f0 elementor-widget elementor-widget-button"
-            data-id="c3033f0" data-element_type="widget" data-widget_type="button.default">
-            <div class="elementor-widget-container">
-                <div class="elementor-button-wrapper">
-                    <a class="elementor-button elementor-button-link elementor-size-sm" href="/spierontspanners/">
-                        <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">spierontspanners</span>
-                        </span>
-                    </a>
+        <div class="elementor-element elementor-element-a099a69 e-grid e-con-full e-con e-child" data-id="a099a69"
+            data-element_type="container">
+            <div class="elementor-element elementor-element-f4c9c4d e-con-full e-flex e-con e-child" data-id="f4c9c4d"
+                data-element_type="container">
+                <div class="elementor-element elementor-element-3a73141 elementor-widget elementor-widget-spacer"
+                    data-id="3a73141" data-element_type="widget" data-widget_type="spacer.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-spacer">
+                            <div class="elementor-spacer-inner"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-91e256b elementor-widget__width-inherit elementor-widget elementor-widget-heading"
+                    data-id="91e256b" data-element_type="widget" data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Behandelingen</h2>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-506055f elementor-widget elementor-widget-text-editor"
+                    data-id="506055f" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                        <p>Bij The Golden Glow draait alles om maatwerk. Wij bieden hoogwaardige, verjongende en medisch
+                            onderbouwde behandelingen, waaronder hyaluronzuur-fillers, biostimulatie en – als één van de
+                            weinige klinieken in Amsterdam – de exclusieve Endolift-laserbehandeling.</p>
+                        <p data-start="1967" data-end="2315">Onze fillerbehandelingen doen meer dan fijne lijntjes
+                            verzachten: ze herstellen volume, verfijnen contouren en geven de huid een frisse, jeugdige
+                            uitstraling. Wij werken uitsluitend met kwalitatieve, natuurlijke fillers met een langdurig
+                            effect, waaronder hyaluronzuur en poly-L-melkzuur. Deze laatste zetten wij ook succesvol in
+                            als body filler.</p>
+                        <p data-start="2470" data-end="2677">Ook voor medisch verantwoord afvallen bent u bij ons aan
+                            het juiste adres. Met een persoonlijk behandelplan en professionele begeleiding helpen wij u
+                            gezond gewicht te verliezen en meer energie te krijgen.</p>
+                        <p data-start="2684" data-end="2826">Kies voor een tijdloze uitstraling en voel u op uw best –
+                            met The Golden Glow. Plan vandaag nog een vrijblijvend consult.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="elementor-element elementor-element-2ce7155 elementor-widget elementor-widget-button"
-            data-id="2ce7155" data-element_type="widget" data-widget_type="button.default">
-            <div class="elementor-widget-container">
-                <div class="elementor-button-wrapper">
-                    <a class="elementor-button elementor-button-link elementor-size-sm" href="/filler-behandeling/">
-                        <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">Gezichtsfillers</span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="elementor-element elementor-element-7c27ea2 elementor-widget elementor-widget-button"
-            data-id="7c27ea2" data-element_type="widget" data-widget_type="button.default">
-            <div class="elementor-widget-container">
-                <div class="elementor-button-wrapper">
-                    <a class="elementor-button elementor-button-link elementor-size-sm" href="/biostimulatie/">
-                        <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">Biostimulatie</span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="elementor-element elementor-element-0320360 elementor-widget elementor-widget-button"
-            data-id="0320360" data-element_type="widget" data-widget_type="button.default">
-            <div class="elementor-widget-container">
-                <div class="elementor-button-wrapper">
-                    <a class="elementor-button elementor-button-link elementor-size-sm" href="/medisch-afvallen/">
-                        <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">Medisch afvallen</span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="elementor-element elementor-element-a439e6a elementor-widget elementor-widget-button"
-            data-id="a439e6a" data-element_type="widget" data-widget_type="button.default">
-            <div class="elementor-widget-container">
-                <div class="elementor-button-wrapper">
-                    <a class="elementor-button elementor-button-link elementor-size-sm" href="/lasers/">
-                        <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">Lasers</span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="elementor-element elementor-element-aba5dc7 elementor-widget elementor-widget-button"
-            data-id="aba5dc7" data-element_type="widget" data-widget_type="button.default">
-            <div class="elementor-widget-container">
-                <div class="elementor-button-wrapper">
-                    <a class="elementor-button elementor-button-link elementor-size-sm" href="/bodyfillers/">
-                        <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">Bodyfillers</span>
-                        </span>
-                    </a>
+            <div class="elementor-element elementor-element-630525b elementor-widget__width-initial elementor-widget elementor-widget-image"
+                data-id="630525b" data-element_type="widget" data-widget_type="image.default">
+                <div class="elementor-widget-container">
+                    <img decoding="async" width="887" height="1080"
+                        data-src="https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494.jpg"
+                        class="attachment-full size-full wp-image-4518 ls-is-cached lazyloaded" alt=""
+                        data-srcset="https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494.jpg 887w, https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494-329x400.jpg 329w, https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494-657x800.jpg 657w, https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494-768x935.jpg 768w"
+                        data-sizes="(max-width: 887px) 100vw, 887px" title="Shot Lady-left-banner1 - The Golden Glow"
+                        src="https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494.jpg"
+                        style="--smush-placeholder-width: 887px; --smush-placeholder-aspect-ratio: 887/1080;"
+                        sizes="(max-width: 887px) 100vw, 887px"
+                        srcset="https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494.jpg 887w, https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494-329x400.jpg 329w, https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494-657x800.jpg 657w, https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494-768x935.jpg 768w">
                 </div>
             </div>
         </div>
