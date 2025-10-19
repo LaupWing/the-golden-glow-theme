@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Theme Colors - Golden Glow */
+@theme {
+  /* Brand Colors */
+  --color-brand-primary: #CB6843;
+  --color-brand-primary-hover: #1f2124;
+  --color-brand-bg: #FFECE2;
+  --color-brand-text: #000000;
+  --color-brand-text-muted: #EEE7E7;
+
+  /* Semantic Colors */
+  --color-primary: var(--color-brand-primary);
+  --color-primary-hover: var(--color-brand-primary-hover);
+  --color-background: var(--color-brand-bg);
+  --color-text: var(--color-brand-text);
+  --color-text-muted: var(--color-brand-text-muted);
+
+  /* Typography */
+  --font-heading: 'Aboreto', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+/* Custom Utilities */
+@utility font-heading {
+  font-family: var(--font-heading);
+}
+
+@utility font-body {
+  font-family: var(--font-body);
+}
