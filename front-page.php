@@ -9,7 +9,7 @@ get_header(); ?>
 
 <!-- Hero Section -->
 <section class="relative w-full h-[600px] md:h-[700px] lg:h-[800px] bg-cover bg-center bg-no-repeat"
-    style="background-image: url('https://thegoldenglow.nl/wp-content/uploads/kliniek-foto.jpg'); background-position: center -65px;">
+    style="background-image: url('<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/kliniek-foto.jpg'); ?>'); background-position: center -65px;">
 
     <!-- Overlay (optional - uncomment if needed) -->
     <!-- <div class="absolute inset-0 bg-black/20"></div> -->
@@ -117,13 +117,14 @@ get_header(); ?>
 
             <!-- Image -->
             <div class="order-1 lg:order-2">
-                <img src="https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494.jpg"
+                <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
+                <img src="<?php echo esc_url($upload_url . '/Shot-Lady-left-banner1-e1750504577494.jpg'); ?>"
                      alt="The Golden Glow Behandelingen"
                      class="w-full h-auto rounded-lg shadow-lg"
-                     srcset="https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494.jpg 887w,
-                             https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494-329x400.jpg 329w,
-                             https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494-657x800.jpg 657w,
-                             https://thegoldenglow.nl/wp-content/uploads/Shot-Lady-left-banner1-e1750504577494-768x935.jpg 768w"
+                     srcset="<?php echo esc_url($upload_url . '/Shot-Lady-left-banner1-e1750504577494.jpg'); ?> 887w,
+                             <?php echo esc_url($upload_url . '/Shot-Lady-left-banner1-e1750504577494-329x400.jpg'); ?> 329w,
+                             <?php echo esc_url($upload_url . '/Shot-Lady-left-banner1-e1750504577494-657x800.jpg'); ?> 657w,
+                             <?php echo esc_url($upload_url . '/Shot-Lady-left-banner1-e1750504577494-768x935.jpg'); ?> 768w"
                      sizes="(max-width: 887px) 100vw, 887px"
                      loading="lazy">
             </div>
