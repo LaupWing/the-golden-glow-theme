@@ -9,7 +9,7 @@ get_header(); ?>
 
 <!-- Hero Section -->
 <section class="relative w-full h-[600px] md:h-[700px] lg:h-[800px] bg-cover bg-center bg-no-repeat"
-    style="background-image: url('<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/kliniek-foto.jpg'); ?>'); background-position: center -65px;">
+    style="background-image: url('<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/clinic-photo.jpg'); ?>'); background-position: center -65px;">
 
     <!-- Overlay (optional - uncomment if needed) -->
     <!-- <div class="absolute inset-0 bg-black/20"></div> -->
@@ -51,27 +51,27 @@ get_header(); ?>
     <div class="container mx-auto px-[5%]">
         <div class="flex flex-wrap justify-center gap-4">
             <a href="<?php echo esc_url(home_url('/spierontspanners/')); ?>"
-               class="font-body font-medium text-sm uppercase px-8 py-3 rounded-full bg-primary text-white hover:bg-secondary hover:text-white transition-all duration-300">
+                class="font-body font-medium text-sm uppercase px-8 py-3 rounded-full bg-primary text-white hover:bg-secondary hover:text-white transition-all duration-300">
                 spierontspanners
             </a>
             <a href="<?php echo esc_url(home_url('/filler-behandeling/')); ?>"
-               class="font-body font-medium text-sm uppercase px-8 py-3 rounded-full bg-primary text-white hover:bg-secondary hover:text-white transition-all duration-300">
+                class="font-body font-medium text-sm uppercase px-8 py-3 rounded-full bg-primary text-white hover:bg-secondary hover:text-white transition-all duration-300">
                 Gezichtsfillers
             </a>
             <a href="<?php echo esc_url(home_url('/biostimulatie/')); ?>"
-               class="font-body font-medium text-sm uppercase px-8 py-3 rounded-full bg-primary text-white hover:bg-secondary hover:text-white transition-all duration-300">
+                class="font-body font-medium text-sm uppercase px-8 py-3 rounded-full bg-primary text-white hover:bg-secondary hover:text-white transition-all duration-300">
                 Biostimulatie
             </a>
             <a href="<?php echo esc_url(home_url('/medisch-afvallen/')); ?>"
-               class="font-body font-medium text-sm uppercase px-8 py-3 rounded-full bg-primary text-white hover:bg-secondary hover:text-white transition-all duration-300">
+                class="font-body font-medium text-sm uppercase px-8 py-3 rounded-full bg-primary text-white hover:bg-secondary hover:text-white transition-all duration-300">
                 Medisch afvallen
             </a>
             <a href="<?php echo esc_url(home_url('/lasers/')); ?>"
-               class="font-body font-medium text-sm uppercase px-8 py-3 rounded-full bg-primary text-white hover:bg-secondary hover:text-white transition-all duration-300">
+                class="font-body font-medium text-sm uppercase px-8 py-3 rounded-full bg-primary text-white hover:bg-secondary hover:text-white transition-all duration-300">
                 Lasers
             </a>
             <a href="<?php echo esc_url(home_url('/bodyfillers/')); ?>"
-               class="font-body font-medium text-sm uppercase px-8 py-3 rounded-full bg-primary text-white hover:bg-secondary hover:text-white transition-all duration-300">
+                class="font-body font-medium text-sm uppercase px-8 py-3 rounded-full bg-primary text-white hover:bg-secondary hover:text-white transition-all duration-300">
                 Bodyfillers
             </a>
         </div>
@@ -118,15 +118,16 @@ get_header(); ?>
             <!-- Image -->
             <div class="order-1 lg:order-2">
                 <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
-                <img src="<?php echo esc_url($upload_url . '/Shot-Lady-left-banner1-e1750504577494.jpg'); ?>"
-                     alt="The Golden Glow Behandelingen"
-                     class="w-full h-auto rounded-lg shadow-lg"
-                     srcset="<?php echo esc_url($upload_url . '/Shot-Lady-left-banner1-e1750504577494.jpg'); ?> 887w,
-                             <?php echo esc_url($upload_url . '/Shot-Lady-left-banner1-e1750504577494-329x400.jpg'); ?> 329w,
-                             <?php echo esc_url($upload_url . '/Shot-Lady-left-banner1-e1750504577494-657x800.jpg'); ?> 657w,
-                             <?php echo esc_url($upload_url . '/Shot-Lady-left-banner1-e1750504577494-768x935.jpg'); ?> 768w"
-                     sizes="(max-width: 887px) 100vw, 887px"
-                     loading="lazy">
+                <img
+                    src="<?php echo esc_url($upload_url . '/lady-shot.jpg'); ?>"
+                    alt="The Golden Glow Behandelingen"
+                    class="w-full h-auto rounded-lg shadow-lg"
+                    srcset="<?php echo esc_url($upload_url . '/lady-shot.jpg'); ?> 887w,
+                        <?php echo esc_url($upload_url . '/lady-shot-329x400.jpg'); ?> 329w,
+                        <?php echo esc_url($upload_url . '/lady-shot-657x800.jpg'); ?> 657w,
+                        <?php echo esc_url($upload_url . '/lady-shot-768x935.jpg'); ?> 768w"
+                    sizes="(max-width: 887px) 100vw, 887px"
+                    loading="lazy">
             </div>
 
         </div>
@@ -141,15 +142,11 @@ get_header(); ?>
             <!-- Image -->
             <div class="order-1">
                 <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
-                <img src="<?php echo esc_url($upload_url . '/wachtkamer-vogels-745x800.png'); ?>"
-                     alt="The Golden Glow Kliniek"
-                     class="w-full h-auto rounded-lg shadow-lg"
-                     srcset="<?php echo esc_url($upload_url . '/wachtkamer-vogels-745x800.png'); ?> 745w,
-                             <?php echo esc_url($upload_url . '/wachtkamer-vogels-373x400.png'); ?> 373w,
-                             <?php echo esc_url($upload_url . '/wachtkamer-vogels-768x824.png'); ?> 768w,
-                             <?php echo esc_url($upload_url . '/wachtkamer-vogels.png'); ?> 1431w"
-                     sizes="(max-width: 745px) 100vw, 745px"
-                     loading="lazy">
+                <img
+                    src="<?php echo esc_url($upload_url . '/waiting-room.png'); ?>"
+                    alt="The Golden Glow Kliniek"
+                    class="w-full h-auto rounded-lg shadow-lg"
+                    loading="lazy">
             </div>
 
             <!-- Text Content -->
@@ -185,7 +182,7 @@ get_header(); ?>
                     <!-- CTA Button -->
                     <div class="text-left md:text-center lg:text-left">
                         <a href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
-                           class="inline-block bg-primary text-white font-body font-medium text-sm uppercase px-8 py-3 rounded-full hover:bg-secondary hover:text-white transition-all duration-300">
+                            class="inline-block bg-primary text-white font-body font-medium text-sm uppercase px-8 py-3 rounded-full hover:bg-secondary hover:text-white transition-all duration-300">
                             Maak een afspraak
                         </a>
                     </div>
@@ -227,7 +224,7 @@ get_header(); ?>
                     <!-- CTA Button -->
                     <div class="text-left md:text-center lg:text-center">
                         <a href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
-                           class="inline-block bg-primary text-white font-body font-medium text-sm uppercase px-8 py-3 rounded-full hover:bg-secondary hover:text-white transition-all duration-300">
+                            class="inline-block bg-primary text-white font-body font-medium text-sm uppercase px-8 py-3 rounded-full hover:bg-secondary hover:text-white transition-all duration-300">
                             Maak een afspraak
                         </a>
                     </div>
@@ -238,13 +235,13 @@ get_header(); ?>
             <div class="order-1 lg:order-2">
                 <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
                 <img src="<?php echo esc_url($upload_url . '/IMG_20250620_161545-2-scaled-e1753473185632-768x472.jpg'); ?>"
-                     alt="Arwind Chigharoe - Cosmetische Arts"
-                     class="w-full h-auto rounded-lg shadow-lg"
-                     srcset="<?php echo esc_url($upload_url . '/IMG_20250620_161545-2-scaled-e1753473185632-768x472.jpg'); ?> 768w,
+                    alt="Arwind Chigharoe - Cosmetische Arts"
+                    class="w-full h-auto rounded-lg shadow-lg"
+                    srcset="<?php echo esc_url($upload_url . '/IMG_20250620_161545-2-scaled-e1753473185632-768x472.jpg'); ?> 768w,
                              <?php echo esc_url($upload_url . '/IMG_20250620_161545-2-scaled-e1753473185632-652x400.jpg'); ?> 652w,
                              <?php echo esc_url($upload_url . '/IMG_20250620_161545-2-scaled-e1753473185632.jpg'); ?> 1246w"
-                     sizes="(max-width: 768px) 100vw, 768px"
-                     loading="lazy">
+                    sizes="(max-width: 768px) 100vw, 768px"
+                    loading="lazy">
             </div>
 
         </div>
@@ -268,9 +265,9 @@ get_header(); ?>
                 <div class="flex-shrink-0 w-16 h-16">
                     <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
                     <img src="<?php echo esc_url($upload_url . '/kleur2-280x280.png'); ?>"
-                         alt="Review"
-                         class="w-full h-full rounded-full object-cover"
-                         loading="lazy">
+                        alt="Review"
+                        class="w-full h-full rounded-full object-cover"
+                        loading="lazy">
                 </div>
                 <div class="flex-1">
                     <h6 class="text-primary text-lg mb-2">★★★★★</h6>
@@ -284,9 +281,9 @@ get_header(); ?>
             <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 md:flex-row-reverse md:text-right">
                 <div class="flex-shrink-0 w-16 h-16">
                     <img src="<?php echo esc_url($upload_url . '/kleur1-kopie-280x280.png'); ?>"
-                         alt="Review"
-                         class="w-full h-full rounded-full object-cover"
-                         loading="lazy">
+                        alt="Review"
+                        class="w-full h-full rounded-full object-cover"
+                        loading="lazy">
                 </div>
                 <div class="flex-1">
                     <h6 class="text-primary text-lg mb-2">★★★★★</h6>
@@ -300,9 +297,9 @@ get_header(); ?>
             <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div class="flex-shrink-0 w-16 h-16">
                     <img src="<?php echo esc_url($upload_url . '/kleur2-280x280.png'); ?>"
-                         alt="Review"
-                         class="w-full h-full rounded-full object-cover"
-                         loading="lazy">
+                        alt="Review"
+                        class="w-full h-full rounded-full object-cover"
+                        loading="lazy">
                 </div>
                 <div class="flex-1">
                     <h6 class="text-primary text-lg mb-2">★★★★★</h6>
@@ -316,9 +313,9 @@ get_header(); ?>
             <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 md:flex-row-reverse md:text-right">
                 <div class="flex-shrink-0 w-16 h-16">
                     <img src="<?php echo esc_url($upload_url . '/kleur1-kopie-280x280.png'); ?>"
-                         alt="Review"
-                         class="w-full h-full rounded-full object-cover"
-                         loading="lazy">
+                        alt="Review"
+                        class="w-full h-full rounded-full object-cover"
+                        loading="lazy">
                 </div>
                 <div class="flex-1">
                     <h6 class="text-primary text-lg mb-2">★★★★★</h6>
@@ -352,43 +349,43 @@ get_header(); ?>
                 while ($blog_query->have_posts()) : $blog_query->the_post();
             ?>
 
-                <!-- Blog Post Card -->
-                <article class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
-                    <div class="p-6">
-                        <!-- Post Title -->
-                        <h3 class="text-lg font-heading text-secondary mb-3 leading-tight">
-                            <a href="<?php the_permalink(); ?>" class="hover:text-primary transition-colors duration-300">
-                                <?php the_title(); ?>
-                            </a>
-                        </h3>
+                    <!-- Blog Post Card -->
+                    <article class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
+                        <div class="p-6">
+                            <!-- Post Title -->
+                            <h3 class="text-lg font-heading text-secondary mb-3 leading-tight">
+                                <a href="<?php the_permalink(); ?>" class="hover:text-primary transition-colors duration-300">
+                                    <?php the_title(); ?>
+                                </a>
+                            </h3>
 
-                        <!-- Post Meta -->
-                        <div class="flex items-center gap-2 text-xs text-gray-400 mb-4">
-                            <span><?php echo get_the_author(); ?></span>
-                            <span>-</span>
-                            <span><?php echo get_the_date('d/m/Y'); ?></span>
-                        </div>
-
-                        <!-- Post Excerpt -->
-                        <?php if (has_excerpt()) : ?>
-                            <div class="text-sm text-gray-600 leading-relaxed mb-4">
-                                <?php the_excerpt(); ?>
+                            <!-- Post Meta -->
+                            <div class="flex items-center gap-2 text-xs text-gray-400 mb-4">
+                                <span><?php echo get_the_author(); ?></span>
+                                <span>-</span>
+                                <span><?php echo get_the_date('d/m/Y'); ?></span>
                             </div>
-                        <?php endif; ?>
 
-                        <!-- Read More Link -->
-                        <a href="<?php the_permalink(); ?>"
-                           class="inline-block text-xs font-bold text-primary hover:text-secondary transition-colors duration-300">
-                            Leer meer »
-                        </a>
-                    </div>
-                </article>
+                            <!-- Post Excerpt -->
+                            <?php if (has_excerpt()) : ?>
+                                <div class="text-sm text-gray-600 leading-relaxed mb-4">
+                                    <?php the_excerpt(); ?>
+                                </div>
+                            <?php endif; ?>
 
-            <?php
+                            <!-- Read More Link -->
+                            <a href="<?php the_permalink(); ?>"
+                                class="inline-block text-xs font-bold text-primary hover:text-secondary transition-colors duration-300">
+                                Leer meer »
+                            </a>
+                        </div>
+                    </article>
+
+                <?php
                 endwhile;
                 wp_reset_postdata();
             else :
-            ?>
+                ?>
                 <p class="col-span-full text-center text-gray-500">Geen blogposts gevonden.</p>
             <?php endif; ?>
 
@@ -418,10 +415,10 @@ get_header(); ?>
                         </span>
                         <span class="flex-shrink-0 w-5 h-5 text-primary">
                             <svg class="w-5 h-5 group-open:hidden" fill="currentColor" viewBox="0 0 448 512">
-                                <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/>
+                                <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
                             </svg>
                             <svg class="w-5 h-5 hidden group-open:block" fill="currentColor" viewBox="0 0 448 512">
-                                <path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/>
+                                <path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
                             </svg>
                         </span>
                     </summary>
@@ -443,10 +440,10 @@ get_header(); ?>
                         </span>
                         <span class="flex-shrink-0 w-5 h-5 text-primary">
                             <svg class="w-5 h-5 group-open:hidden" fill="currentColor" viewBox="0 0 448 512">
-                                <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/>
+                                <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
                             </svg>
                             <svg class="w-5 h-5 hidden group-open:block" fill="currentColor" viewBox="0 0 448 512">
-                                <path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/>
+                                <path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
                             </svg>
                         </span>
                     </summary>
@@ -465,10 +462,10 @@ get_header(); ?>
                         </span>
                         <span class="flex-shrink-0 w-5 h-5 text-primary">
                             <svg class="w-5 h-5 group-open:hidden" fill="currentColor" viewBox="0 0 448 512">
-                                <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/>
+                                <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
                             </svg>
                             <svg class="w-5 h-5 hidden group-open:block" fill="currentColor" viewBox="0 0 448 512">
-                                <path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/>
+                                <path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
                             </svg>
                         </span>
                     </summary>
