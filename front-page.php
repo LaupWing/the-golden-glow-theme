@@ -140,13 +140,14 @@ get_header(); ?>
 
             <!-- Image -->
             <div class="order-1">
-                <img src="https://thegoldenglow.nl/wp-content/uploads/wachtkamer-vogels-745x800.png"
+                <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
+                <img src="<?php echo esc_url($upload_url . '/wachtkamer-vogels-745x800.png'); ?>"
                      alt="The Golden Glow Kliniek"
                      class="w-full h-auto rounded-lg shadow-lg"
-                     srcset="https://thegoldenglow.nl/wp-content/uploads/wachtkamer-vogels-745x800.png 745w,
-                             https://thegoldenglow.nl/wp-content/uploads/wachtkamer-vogels-373x400.png 373w,
-                             https://thegoldenglow.nl/wp-content/uploads/wachtkamer-vogels-768x824.png 768w,
-                             https://thegoldenglow.nl/wp-content/uploads/wachtkamer-vogels.png 1431w"
+                     srcset="<?php echo esc_url($upload_url . '/wachtkamer-vogels-745x800.png'); ?> 745w,
+                             <?php echo esc_url($upload_url . '/wachtkamer-vogels-373x400.png'); ?> 373w,
+                             <?php echo esc_url($upload_url . '/wachtkamer-vogels-768x824.png'); ?> 768w,
+                             <?php echo esc_url($upload_url . '/wachtkamer-vogels.png'); ?> 1431w"
                      sizes="(max-width: 745px) 100vw, 745px"
                      loading="lazy">
             </div>
@@ -235,12 +236,13 @@ get_header(); ?>
 
             <!-- Image -->
             <div class="order-1 lg:order-2">
-                <img src="https://thegoldenglow.nl/wp-content/uploads/IMG_20250620_161545-2-scaled-e1753473185632-768x472.jpg"
+                <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
+                <img src="<?php echo esc_url($upload_url . '/IMG_20250620_161545-2-scaled-e1753473185632-768x472.jpg'); ?>"
                      alt="Arwind Chigharoe - Cosmetische Arts"
                      class="w-full h-auto rounded-lg shadow-lg"
-                     srcset="https://thegoldenglow.nl/wp-content/uploads/IMG_20250620_161545-2-scaled-e1753473185632-768x472.jpg 768w,
-                             https://thegoldenglow.nl/wp-content/uploads/IMG_20250620_161545-2-scaled-e1753473185632-652x400.jpg 652w,
-                             https://thegoldenglow.nl/wp-content/uploads/IMG_20250620_161545-2-scaled-e1753473185632.jpg 1246w"
+                     srcset="<?php echo esc_url($upload_url . '/IMG_20250620_161545-2-scaled-e1753473185632-768x472.jpg'); ?> 768w,
+                             <?php echo esc_url($upload_url . '/IMG_20250620_161545-2-scaled-e1753473185632-652x400.jpg'); ?> 652w,
+                             <?php echo esc_url($upload_url . '/IMG_20250620_161545-2-scaled-e1753473185632.jpg'); ?> 1246w"
                      sizes="(max-width: 768px) 100vw, 768px"
                      loading="lazy">
             </div>
@@ -264,7 +266,8 @@ get_header(); ?>
             <!-- Review 1 -->
             <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div class="flex-shrink-0 w-16 h-16">
-                    <img src="https://thegoldenglow.nl/wp-content/uploads/kleur2-280x280.png"
+                    <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
+                    <img src="<?php echo esc_url($upload_url . '/kleur2-280x280.png'); ?>"
                          alt="Review"
                          class="w-full h-full rounded-full object-cover"
                          loading="lazy">
@@ -280,7 +283,7 @@ get_header(); ?>
             <!-- Review 2 -->
             <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 md:flex-row-reverse md:text-right">
                 <div class="flex-shrink-0 w-16 h-16">
-                    <img src="https://thegoldenglow.nl/wp-content/uploads/kleur1-kopie-280x280.png"
+                    <img src="<?php echo esc_url($upload_url . '/kleur1-kopie-280x280.png'); ?>"
                          alt="Review"
                          class="w-full h-full rounded-full object-cover"
                          loading="lazy">
@@ -296,7 +299,7 @@ get_header(); ?>
             <!-- Review 3 -->
             <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div class="flex-shrink-0 w-16 h-16">
-                    <img src="https://thegoldenglow.nl/wp-content/uploads/kleur2-280x280.png"
+                    <img src="<?php echo esc_url($upload_url . '/kleur2-280x280.png'); ?>"
                          alt="Review"
                          class="w-full h-full rounded-full object-cover"
                          loading="lazy">
@@ -312,7 +315,7 @@ get_header(); ?>
             <!-- Review 4 -->
             <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 md:flex-row-reverse md:text-right">
                 <div class="flex-shrink-0 w-16 h-16">
-                    <img src="https://thegoldenglow.nl/wp-content/uploads/kleur1-kopie-280x280.png"
+                    <img src="<?php echo esc_url($upload_url . '/kleur1-kopie-280x280.png'); ?>"
                          alt="Review"
                          class="w-full h-full rounded-full object-cover"
                          loading="lazy">
