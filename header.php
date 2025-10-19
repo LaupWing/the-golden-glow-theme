@@ -7,7 +7,8 @@
   <?php wp_head(); ?>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
 </head>
 
 <body <?php body_class(); ?>>
@@ -23,6 +24,8 @@
           <a href="<?php echo esc_url(home_url('/')); ?>">
             <img src="<?php echo esc_url(wp_upload_dir()['baseurl']); ?>/logo.png"
               alt="<?php bloginfo('name'); ?>"
+              width="150"
+              height="96"
               class="h-24 lg:h-28 w-auto object-contain">
           </a>
         </div>

@@ -121,6 +121,8 @@ get_header(); ?>
                 <img
                     src="<?php echo esc_url($upload_url . '/lady-shot.jpg'); ?>"
                     alt="The Golden Glow Behandelingen"
+                    width="887"
+                    height="1080"
                     class="w-full h-auto rounded-lg shadow-lg"
                     srcset="<?php echo esc_url($upload_url . '/lady-shot.jpg'); ?> 887w,
                         <?php echo esc_url($upload_url . '/lady-shot-329x400.jpg'); ?> 329w,
@@ -145,6 +147,8 @@ get_header(); ?>
                 <img
                     src="<?php echo esc_url($upload_url . '/waiting-room.png'); ?>"
                     alt="The Golden Glow Kliniek"
+                    width="1200"
+                    height="800"
                     class="w-full h-auto rounded-lg shadow-lg"
                     loading="lazy">
             </div>
@@ -237,6 +241,8 @@ get_header(); ?>
                 <img
                     src="<?php echo esc_url($upload_url . '/arwind.jpg'); ?>"
                     alt="Arwind Chigharoe - Cosmetische Arts"
+                    width="800"
+                    height="1000"
                     class="w-full h-auto rounded-lg shadow-lg"
                     loading="lazy">
             </div>
@@ -263,6 +269,8 @@ get_header(); ?>
                     <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
                     <img src="<?php echo esc_url($upload_url . '/color-2.png'); ?>"
                         alt="Review"
+                        width="64"
+                        height="64"
                         class="w-full h-full rounded-full object-cover"
                         loading="lazy">
                 </div>
@@ -279,6 +287,8 @@ get_header(); ?>
                 <div class="flex-shrink-0 w-16 h-16">
                     <img src="<?php echo esc_url($upload_url . '/color-1.png'); ?>"
                         alt="Review"
+                        width="64"
+                        height="64"
                         class="w-full h-full rounded-full object-cover"
                         loading="lazy">
                 </div>
@@ -295,6 +305,8 @@ get_header(); ?>
                 <div class="flex-shrink-0 w-16 h-16">
                     <img src="<?php echo esc_url($upload_url . '/color-2.png'); ?>"
                         alt="Review"
+                        width="64"
+                        height="64"
                         class="w-full h-full rounded-full object-cover"
                         loading="lazy">
                 </div>
@@ -311,6 +323,8 @@ get_header(); ?>
                 <div class="flex-shrink-0 w-16 h-16">
                     <img src="<?php echo esc_url($upload_url . '/color-1.png'); ?>"
                         alt="Review"
+                        width="64"
+                        height="64"
                         class="w-full h-full rounded-full object-cover"
                         loading="lazy">
                 </div>
