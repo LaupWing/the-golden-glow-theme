@@ -234,13 +234,10 @@ get_header(); ?>
             <!-- Image -->
             <div class="order-1 lg:order-2">
                 <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
-                <img src="<?php echo esc_url($upload_url . '/IMG_20250620_161545-2-scaled-e1753473185632-768x472.jpg'); ?>"
+                <img
+                    src="<?php echo esc_url($upload_url . '/arwind.jpg'); ?>"
                     alt="Arwind Chigharoe - Cosmetische Arts"
                     class="w-full h-auto rounded-lg shadow-lg"
-                    srcset="<?php echo esc_url($upload_url . '/IMG_20250620_161545-2-scaled-e1753473185632-768x472.jpg'); ?> 768w,
-                             <?php echo esc_url($upload_url . '/IMG_20250620_161545-2-scaled-e1753473185632-652x400.jpg'); ?> 652w,
-                             <?php echo esc_url($upload_url . '/IMG_20250620_161545-2-scaled-e1753473185632.jpg'); ?> 1246w"
-                    sizes="(max-width: 768px) 100vw, 768px"
                     loading="lazy">
             </div>
 
@@ -264,7 +261,7 @@ get_header(); ?>
             <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div class="flex-shrink-0 w-16 h-16">
                     <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
-                    <img src="<?php echo esc_url($upload_url . '/kleur2-280x280.png'); ?>"
+                    <img src="<?php echo esc_url($upload_url . '/color-2.png'); ?>"
                         alt="Review"
                         class="w-full h-full rounded-full object-cover"
                         loading="lazy">
@@ -280,7 +277,7 @@ get_header(); ?>
             <!-- Review 2 -->
             <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 md:flex-row-reverse md:text-right">
                 <div class="flex-shrink-0 w-16 h-16">
-                    <img src="<?php echo esc_url($upload_url . '/kleur1-kopie-280x280.png'); ?>"
+                    <img src="<?php echo esc_url($upload_url . '/color-1.png'); ?>"
                         alt="Review"
                         class="w-full h-full rounded-full object-cover"
                         loading="lazy">
@@ -296,7 +293,7 @@ get_header(); ?>
             <!-- Review 3 -->
             <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div class="flex-shrink-0 w-16 h-16">
-                    <img src="<?php echo esc_url($upload_url . '/kleur2-280x280.png'); ?>"
+                    <img src="<?php echo esc_url($upload_url . '/color-2.png'); ?>"
                         alt="Review"
                         class="w-full h-full rounded-full object-cover"
                         loading="lazy">
@@ -312,7 +309,7 @@ get_header(); ?>
             <!-- Review 4 -->
             <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 md:flex-row-reverse md:text-right">
                 <div class="flex-shrink-0 w-16 h-16">
-                    <img src="<?php echo esc_url($upload_url . '/kleur1-kopie-280x280.png'); ?>"
+                    <img src="<?php echo esc_url($upload_url . '/color-1.png'); ?>"
                         alt="Review"
                         class="w-full h-full rounded-full object-cover"
                         loading="lazy">
@@ -484,23 +481,5 @@ get_header(); ?>
         </div>
     </div>
 </section>
-
-<!-- Additional Front Page Content -->
-<main class="py-12 md:py-16 lg:py-20">
-    <div class="container mx-auto px-[5%]">
-
-        <?php
-        // If you have page content to display
-        if (have_posts()) :
-            while (have_posts()) : the_post();
-                the_content();
-            endwhile;
-        endif;
-        ?>
-
-        <!-- Add more sections here as needed -->
-
-    </div>
-</main>
 
 <?php get_footer(); ?>
