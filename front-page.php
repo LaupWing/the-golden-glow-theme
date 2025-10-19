@@ -8,8 +8,8 @@
 get_header(); ?>
 
 <!-- Hero Section -->
-<section class="relative w-full h-[600px] md:h-[700px] lg:h-[800px] bg-cover bg-center bg-no-repeat"
-    style="background-image: url('<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/clinic-photo.jpg'); ?>'); background-position: center -65px;">
+<section class="relative w-full h-[600px] md:h-[700px] lg:h-[700px] bg-cover bg-center bg-no-repeat"
+    style="background-image: url('<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/clinic-photo.jpg'); ?>'); background-position: center; background-size: cover;">
 
     <!-- Overlay (optional - uncomment if needed) -->
     <!-- <div class="absolute inset-0 bg-black/20"></div> -->
@@ -35,7 +35,7 @@ get_header(); ?>
 </section>
 
 <!-- Banner Section -->
-<section class="hidden lg:block bg-[#FAF7F2] py-12">
+<section class="hidden lg:block bg-background py-12">
     <div class="container mx-auto px-[5%] text-center">
         <h2 class="font-heading text-5xl lg:text-6xl xl:text-[65px] font-semibold uppercase text-black mb-4">
             The golden glow
@@ -47,7 +47,7 @@ get_header(); ?>
 </section>
 
 <!-- Treatment Categories Navigation -->
-<section class="hidden lg:block bg-[#FAF7F2] pb-8">
+<section class="hidden lg:block bg-background pb-8">
     <div class="container mx-auto px-[5%]">
         <div class="flex flex-wrap justify-center gap-4">
             <a href="<?php echo esc_url(home_url('/spierontspanners/')); ?>"
@@ -132,7 +132,7 @@ get_header(); ?>
 </section>
 
 <!-- About Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-white to-gray-50">
+<section class="py-12 md:py-16 lg:py-20 bg-background from-white to-gray-50">
     <div class="container mx-auto px-[5%]">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
@@ -247,7 +247,7 @@ get_header(); ?>
 </section>
 
 <!-- Reviews Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white">
+<section class="py-12 md:py-16 lg:py-20 ">
     <div class="container mx-auto px-[5%]">
 
         <!-- Section Title -->
@@ -401,7 +401,7 @@ get_header(); ?>
 </section>
 
 <!-- FAQ Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-[#FAF7F2]">
+<section class="py-12 md:py-16 lg:py-20 bg-background">
     <div class="container mx-auto px-[5%]">
         <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8 md:p-12">
 
