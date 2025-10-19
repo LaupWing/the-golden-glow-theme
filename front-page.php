@@ -8,8 +8,15 @@
 get_header(); ?>
 
 <!-- Hero Section -->
-<section class="relative w-full h-[600px] md:h-[700px] lg:h-[700px] bg-cover bg-center bg-no-repeat"
-    style="background-image: url('<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/clinic-photo.jpg'); ?>'); background-position: center; background-size: cover;">
+<section class="relative w-full h-[600px] md:h-[700px] lg:h-[700px] overflow-hidden">
+    <!-- Hero Image -->
+    <img
+        src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/clinic-photo.jpg'); ?>"
+        alt="The Golden Glow Clinic"
+        width="1920"
+        height="700"
+        fetchpriority="high"
+        class="absolute inset-0 w-full h-full object-cover object-center">
 
     <!-- Overlay (optional - uncomment if needed) -->
     <!-- <div class="absolute inset-0 bg-black/20"></div> -->
