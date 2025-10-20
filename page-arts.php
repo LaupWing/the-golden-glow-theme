@@ -114,7 +114,7 @@ get_header(); ?>
             );
 
             foreach ($certifications as $cert) :
-                get_template_part('template-parts/certification-card', null, array('cert' => $cert));
+                get_template_part('templates/certification-card', null, array('cert' => $cert));
             endforeach;
             ?>
 
@@ -130,6 +130,55 @@ get_header(); ?>
             <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                 Als cosmetisch arts vind ik het belangrijk dat je weet wie je behandelt. Hieronder vind je een aantal kernpunten die mijn werkwijze, expertise en professionele standaarden weerspiegelen. Zo weet je zeker dat je in goede, bekwame handen bent.
             </p>
+        </div>
+    </div>
+</section>
+
+<!-- Mission and Vision Section -->
+<section class="py-12 md:py-16 lg:py-20 bg-background">
+    <div class="container mx-auto px-[5%]">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 max-w-6xl mx-auto">
+
+            <!-- Mission -->
+            <article>
+                <h2 class="font-heading text-3xl md:text-4xl text-text mb-6">
+                    Missie
+                </h2>
+                <div class="mb-6">
+                    <img
+                        src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/EERLIJK-3.png'); ?>"
+                        alt="Missie decorative pattern"
+                        width="1000"
+                        height="400"
+                        class="w-full h-auto">
+                </div>
+                <div class="bg-white p-6 rounded-lg">
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-4">
+                        Mijn missie is om jouw natuurlijke schoonheid op een veilige, deskundige en persoonlijke manier te versterken. Samen streven we naar subtiele, verfijnde resultaten die perfect bij jou passen. Ik luister naar jouw wensen en zorg dat je je niet alleen mooier, maar ook zelfverzekerder voelt. Jouw veiligheid en comfort staan centraal, zodat jouw unieke uitstraling jouw zelfvertrouwen vergroot.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Vision -->
+            <article>
+                <h2 class="font-heading text-3xl md:text-4xl text-text mb-6">
+                    Visie
+                </h2>
+                <div class="mb-6">
+                    <img
+                        src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/arts-pattern-visie-2.png'); ?>"
+                        alt="Visie decorative pattern"
+                        width="834"
+                        height="333"
+                        class="w-full h-auto">
+                </div>
+                <div class="bg-white p-6 rounded-lg">
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        In mijn behandelingen staat veiligheid altijd voorop. Ik neem de tijd om te luisteren naar jouw wensen, geef eerlijk en realistisch advies en werk uitsluitend met hoogwaardige producten en bewezen technieken. Mijn doel is dat jij na iedere behandeling vol vertrouwen en met een glimlach naar buiten stapt op een manier die nog steeds helemaal 'jij' voelt, maar dan net een beetje frisser, zachter of stralender.
+                    </p>
+                </div>
+            </article>
+
         </div>
     </div>
 </section>
