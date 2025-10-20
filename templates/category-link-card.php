@@ -16,10 +16,10 @@ $button_text = 'Maak een afspraak';
 $button_url = 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL';
 
 // Background image
-$bg_image_url = esc_url(wp_get_upload_dir()['baseurl'] . '/Banner-768x1052-1.jpg');
+$bg_image_url = esc_url(wp_get_upload_dir()['baseurl'] . '/link-card-background.jpg');
 ?>
 
-<article class="relative flex flex-col items-center justify-center p-8 md:p-12 min-h-[250px] overflow-hidden bg-primary">
+<article class="relative flex flex-col items-center justify-center p-8 md:p-12 min-h-[250px] overflow-hidden bg-background rounded-3xl">
 
     <?php if ($has_background): ?>
         <!-- Background Image -->
@@ -35,7 +35,7 @@ $bg_image_url = esc_url(wp_get_upload_dir()['baseurl'] . '/Banner-768x1052-1.jpg
 
     <!-- Category Title Link -->
     <h2 class="relative z-10 font-heading text-xl md:text-2xl text-white text-center mb-6">
-        <a href="<?php echo esc_url($url); ?>" class="hover:opacity-80 transition-opacity">
+        <a href="<?php echo esc_url($url); ?>" class="underline hover:no-underline transition-all">
             <?php echo esc_html($title); ?>
         </a>
     </h2>
@@ -43,7 +43,7 @@ $bg_image_url = esc_url(wp_get_upload_dir()['baseurl'] . '/Banner-768x1052-1.jpg
     <!-- CTA Button -->
     <a
         href="<?php echo esc_url($button_url); ?>"
-        class="relative z-10 inline-block bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold hover:opacity-90 transition-opacity duration-200"
+        class="relative z-10 inline-block bg-primary text-white px-8 py-3 rounded-full font-heading font-semibold hover:opacity-90 transition-opacity duration-200"
         rel="noopener">
         <?php echo esc_html($button_text); ?>
     </a>
