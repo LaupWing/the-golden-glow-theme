@@ -8,7 +8,7 @@
 
 // Extract args passed from get_template_part()
 $title = $args['title'] ?? get_the_title();
-$bg_image_url = esc_url(get_template_directory_uri() . '/assets/images/banner-bg.jpg');
+$bg_image_url = esc_url(wp_get_upload_dir()['baseurl'] . '/category-banner.jpg');
 ?>
 
 <section
