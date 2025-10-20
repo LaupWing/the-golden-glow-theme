@@ -65,4 +65,6 @@ get_template_part('templates/category-intro', null, [
     </div>
 </section>
 
+<?php get_template_part('sections/clinic-section'); ?>
+
 <?php get_footer(); ?>

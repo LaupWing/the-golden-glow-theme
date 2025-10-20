@@ -34,7 +34,7 @@ $bg_image_url = esc_url(wp_get_upload_dir()['baseurl'] . '/link-card-background.
     <?php endif; ?>
 
     <!-- Category Title Link -->
-    <h2 class="relative z-10 font-heading text-xl md:text-2xl text-white text-center mb-6">
+    <h2 class="relative z-10 font-heading text-xl md:text-2xl <?php echo $has_background ? 'text-white' : 'text-primary'; ?> text-center mb-6">
         <a href="<?php echo esc_url($url); ?>" class="underline hover:no-underline transition-all">
             <?php echo esc_html($title); ?>
         </a>
