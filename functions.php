@@ -36,9 +36,14 @@ function boilerplate_add_resource_hints($urls, $relation_type)
 }
 add_filter('wp_resource_hints', 'boilerplate_add_resource_hints', 10, 2);
 
-// Defer non-critical scripts
+// Defer non-critical scripts (frontend only)
 function boilerplate_defer_scripts($tag, $handle, $src)
 {
+  // Don't apply to admin area
+  if (is_admin()) {
+    return $tag;
+  }
+
   // Don't defer if it's part of the excluded handles
   $excluded_handles = array('wp-element', 'react-jsx-runtime');
 
@@ -54,17 +59,21 @@ add_filter('script_loader_tag', 'boilerplate_defer_scripts', 10, 3);
 // Disable WordPress admin toolbar on frontend
 add_filter('show_admin_bar', '__return_false');
 
-// Remove WordPress block library CSS (saves 15 KiB)
+// Remove WordPress block library CSS (saves 15 KiB) - Frontend only
 function remove_block_css()
 {
-  wp_dequeue_style('wp-block-library');
-  wp_dequeue_style('wp-block-library-theme');
-  wp_dequeue_style('wc-block-style');
+  if (!is_admin()) {
+    wp_dequeue_style('wp-block-library');
+    wp_dequeue_style('wp-block-library-theme');
+    wp_dequeue_style('wc-block-style');
+  }
 }
 add_action('wp_enqueue_scripts', 'remove_block_css', 100);
 
-// Remove emoji scripts (saves 13 KiB)
-remove_action('wp_head', 'print_emoji_detection_script', 7);
-remove_action('wp_print_styles', 'print_emoji_styles');
-remove_action('admin_print_scripts', 'print_emoji_detection_script');
-remove_action('admin_print_styles', 'print_emoji_styles');
+// Remove emoji scripts (saves 13 KiB) - Frontend only
+function remove_emoji_scripts()
+{
+  remove_action('wp_head', 'print_emoji_detection_script', 7);
+  remove_action('wp_print_styles', 'print_emoji_styles');
+}
+add_action('init', 'remove_emoji_scripts');
