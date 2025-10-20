@@ -407,95 +407,32 @@ get_header(); ?>
     </div>
 </section>
 
-<!-- FAQ Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-background">
-    <div class="container mx-auto px-[5%]">
-        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8 md:p-12">
-
-            <!-- Section Title -->
-            <h2 class="font-heading text-2xl md:text-3xl font-semibold text-primary mb-8 text-left md:text-center">
-                Veelgestelde vragen
-            </h2>
-
-            <!-- FAQ Accordion -->
-            <div class="space-y-4">
-
-                <!-- FAQ Item 1 -->
-                <details class="group border border-gray-200 rounded-lg overflow-hidden" open>
-                    <summary class="flex items-center justify-between cursor-pointer p-6 hover:bg-gray-50 transition-colors duration-200">
-                        <span class="font-body font-medium text-gray-800 pr-4">
-                            Is mijn leeftijd niet een belemmering voor deze behandeling?
-                        </span>
-                        <span class="flex-shrink-0 w-5 h-5 text-primary">
-                            <svg class="w-5 h-5 group-open:hidden" fill="currentColor" viewBox="0 0 448 512">
-                                <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
-                            </svg>
-                            <svg class="w-5 h-5 hidden group-open:block" fill="currentColor" viewBox="0 0 448 512">
-                                <path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
-                            </svg>
-                        </span>
-                    </summary>
-                    <div class="px-6 pb-6 text-gray-700 leading-relaxed space-y-4">
-                        <p>
-                            Opkomende lijntjes kunnen uitstekend aangepakt worden met spierontspanners. Wat aantrekkelijk is bij beginnende lijntjes, is dat deze vaak volledig verdwijnen na een behandeling. Als de rimpel echter meer doorleefd is en dieper, dan kan een combinatie van spierontspanners en een filler soms meer effectief zijn.
-                        </p>
-                        <p>
-                            Een significant pluspunt van spierontspanners is dat de behandeling tevens een preventieve werking heeft. Indien je op vroege termijn ingrijpt, zullen rimpels niet verder verdiepen, en is de kans groot dat je nooit nood hebt aan vulstoffen of andere procedures voor deze gebieden. Hoewel we idealiter wachten tot een persoon minstens 21 jaar is voor eender welke behandeling, is het toegestaan om vanaf 18 jaar behandelingen te ondergaan. Indien onze medisch specialist twijfels heeft over de realistischheid van je verwachtingen, zullen we hier openlijk met je over converseren.
-                        </p>
-                    </div>
-                </details>
-
-                <!-- FAQ Item 2 -->
-                <details class="group border border-gray-200 rounded-lg overflow-hidden">
-                    <summary class="flex items-center justify-between cursor-pointer p-6 hover:bg-gray-50 transition-colors duration-200">
-                        <span class="font-body font-medium text-gray-800 pr-4">
-                            Hoelang duurt het voordat ik weer kan werken?
-                        </span>
-                        <span class="flex-shrink-0 w-5 h-5 text-primary">
-                            <svg class="w-5 h-5 group-open:hidden" fill="currentColor" viewBox="0 0 448 512">
-                                <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
-                            </svg>
-                            <svg class="w-5 h-5 hidden group-open:block" fill="currentColor" viewBox="0 0 448 512">
-                                <path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
-                            </svg>
-                        </span>
-                    </summary>
-                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
-                        <p>
-                            Je kunt onmiddellijk na de sessie weer uw normale bezigheden oppakken. Daarom wordt een behandeling met spierontspanners vaak aangeduid als een 'lunchpauze-behandeling'. Afgezien van een tijdelijke milde roodheid die binnen een half uur vervaagt, en zelden een kleine, goed te verhullen blauwe plek, is er vrijwel geen zichtbare indicatie van de behandeling.
-                        </p>
-                    </div>
-                </details>
-
-                <!-- FAQ Item 3 -->
-                <details class="group border border-gray-200 rounded-lg overflow-hidden">
-                    <summary class="flex items-center justify-between cursor-pointer p-6 hover:bg-gray-50 transition-colors duration-200">
-                        <span class="font-body font-medium text-gray-800 pr-4">
-                            Hoelang werkt de behandeling?
-                        </span>
-                        <span class="flex-shrink-0 w-5 h-5 text-primary">
-                            <svg class="w-5 h-5 group-open:hidden" fill="currentColor" viewBox="0 0 448 512">
-                                <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
-                            </svg>
-                            <svg class="w-5 h-5 hidden group-open:block" fill="currentColor" viewBox="0 0 448 512">
-                                <path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
-                            </svg>
-                        </span>
-                    </summary>
-                    <div class="px-6 pb-6 text-gray-700 leading-relaxed space-y-4">
-                        <p>
-                            Hoewel het middel zelf na 3-6 maanden is uitgewerkt, heeft het wel een permanent verbeterend effect op de behandelde regio. Dit is vooral van toepassing wanneer het middel gedurende langere tijd (enkele jaren) is toegepast.
-                        </p>
-                        <p>
-                            Dit komt doordat het gebied gedurende enkele jaren beperkt is in beweging. Hierdoor blijven oppervlakkige lijntjes in de huid en herstellen ze vaak volledig. Het is alsof de tijd feitelijk stil is gezet. Bovendien raakt u gewend om de relevante spier niet meer te gebruiken. Als gevolg hiervan zal bijvoorbeeld uw neiging tot fronsen verminderd zijn in vergelijking met vroeger. Dit draagt bij aan een langdurige verbetering van dit specifieke gebied. Er zijn zelfs enkele studies die suggereren dat u, om de hierboven beschreven redenen, na enkele jaren gebruik van spierontspanners gerust een jaar kunt pauzeren om het effect te behouden.
-                        </p>
-                    </div>
-                </details>
-
-            </div>
-
-        </div>
-    </div>
-</section>
+<?php
+get_template_part('templates/faq-section', null, [
+    'title' => 'Veelgestelde vragen',
+    'faqs' => [
+        [
+            'question' => 'Is mijn leeftijd niet een belemmering voor deze behandeling?',
+            'answer' => '
+                <p>Opkomende lijntjes kunnen uitstekend aangepakt worden met spierontspanners. Wat aantrekkelijk is bij beginnende lijntjes, is dat deze vaak volledig verdwijnen na een behandeling. Als de rimpel echter meer doorleefd is en dieper, dan kan een combinatie van spierontspanners en een filler soms meer effectief zijn.</p>
+                <p>Een significant pluspunt van spierontspanners is dat de behandeling tevens een preventieve werking heeft. Indien je op vroege termijn ingrijpt, zullen rimpels niet verder verdiepen, en is de kans groot dat je nooit nood hebt aan vulstoffen of andere procedures voor deze gebieden. Hoewel we idealiter wachten tot een persoon minstens 21 jaar is voor eender welke behandeling, is het toegestaan om vanaf 18 jaar behandelingen te ondergaan. Indien onze medisch specialist twijfels heeft over de realistischheid van je verwachtingen, zullen we hier openlijk met je over converseren.</p>
+            '
+        ],
+        [
+            'question' => 'Hoelang duurt het voordat ik weer kan werken?',
+            'answer' => '
+                <p>Je kunt onmiddellijk na de sessie weer uw normale bezigheden oppakken. Daarom wordt een behandeling met spierontspanners vaak aangeduid als een \'lunchpauze-behandeling\'. Afgezien van een tijdelijke milde roodheid die binnen een half uur vervaagt, en zelden een kleine, goed te verhullen blauwe plek, is er vrijwel geen zichtbare indicatie van de behandeling.</p>
+            '
+        ],
+        [
+            'question' => 'Hoelang werkt de behandeling?',
+            'answer' => '
+                <p>Hoewel het middel zelf na 3-6 maanden is uitgewerkt, heeft het wel een permanent verbeterend effect op de behandelde regio. Dit is vooral van toepassing wanneer het middel gedurende langere tijd (enkele jaren) is toegepast.</p>
+                <p>Dit komt doordat het gebied gedurende enkele jaren beperkt is in beweging. Hierdoor blijven oppervlakkige lijntjes in de huid en herstellen ze vaak volledig. Het is alsof de tijd feitelijk stil is gezet. Bovendien raakt u gewend om de relevante spier niet meer te gebruiken. Als gevolg hiervan zal bijvoorbeeld uw neiging tot fronsen verminderd zijn in vergelijking met vroeger. Dit draagt bij aan een langdurige verbetering van dit specifieke gebied. Er zijn zelfs enkele studies die suggereren dat u, om de hierboven beschreven redenen, na enkele jaren gebruik van spierontspanners gerust een jaar kunt pauzeren om het effect te behouden.</p>
+            '
+        ]
+    ]
+]);
+?>
 
 <?php get_footer(); ?>
