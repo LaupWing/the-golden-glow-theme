@@ -31,21 +31,66 @@
 
         <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center gap-6 xl:gap-8 flex-grow justify-end">
+          <?php
+          $current_url = $_SERVER['REQUEST_URI'];
+          $is_home = (is_front_page() || $current_url === '/');
+          $is_arts = (strpos($current_url, '/arts/') !== false);
+          $is_prijzen = (strpos($current_url, '/prijzen/') !== false);
+          $is_blog = (strpos($current_url, '/blog-posts/') !== false);
+          $is_contact = (strpos($current_url, '/contact/') !== false);
+
+          // Check if on any treatment page
+          $is_behandeling = (
+            strpos($current_url, '/spierontspanners/') !== false ||
+            strpos($current_url, '/filler-behandeling/') !== false ||
+            strpos($current_url, '/bodyfillers/') !== false ||
+            strpos($current_url, '/medisch-afvallen/') !== false ||
+            strpos($current_url, '/lasers/') !== false ||
+            strpos($current_url, '/biostimulatie/') !== false ||
+            strpos($current_url, '/bunny-lines/') !== false ||
+            strpos($current_url, '/frons-rimpels/') !== false ||
+            strpos($current_url, '/gummy-smile/') !== false ||
+            strpos($current_url, '/kin-boto/') !== false ||
+            strpos($current_url, '/kraaien-pootjes/') !== false ||
+            strpos($current_url, '/lip-flip/') !== false ||
+            strpos($current_url, '/liquid-facelift/') !== false ||
+            strpos($current_url, '/migraine/') !== false ||
+            strpos($current_url, '/tandenknarsen/') !== false ||
+            strpos($current_url, '/full-face/') !== false ||
+            strpos($current_url, '/neus/') !== false ||
+            strpos($current_url, '/slapen/') !== false ||
+            strpos($current_url, '/kaaklijn-filler/') !== false ||
+            strpos($current_url, '/lip-filler-behandeling/') !== false ||
+            strpos($current_url, '/bilfillers/') !== false ||
+            strpos($current_url, '/hip-dips/') !== false ||
+            strpos($current_url, '/penisvergroting/') !== false ||
+            strpos($current_url, '/vagina-verjonging/') !== false ||
+            strpos($current_url, '/tixel/') !== false ||
+            strpos($current_url, '/endolift/') !== false ||
+            strpos($current_url, '/lanluma/') !== false ||
+            strpos($current_url, '/sculptra/') !== false ||
+            strpos($current_url, '/pdo/') !== false ||
+            strpos($current_url, '/profhilo/') !== false ||
+            strpos($current_url, '/skinboosters/') !== false ||
+            strpos($current_url, '/overzicht-afval-medicatie/') !== false
+          );
+          ?>
+
           <a href="<?php echo esc_url(home_url('/')); ?>"
-            class="font-heading text-sm text-text hover:text-primary transition-colors duration-300 relative group py-2">
+            class="font-heading text-sm <?php echo $is_home ? 'text-primary' : 'text-text'; ?> hover:text-primary transition-colors duration-300 relative group py-2">
             Homepage
-            <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+            <span class="absolute bottom-0 left-0 <?php echo $is_home ? 'w-full' : 'w-0'; ?> h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
           </a>
 
           <a href="<?php echo esc_url(home_url('/arts/')); ?>"
-            class="font-heading text-sm text-text hover:text-primary transition-colors duration-300 relative group py-2">
+            class="font-heading text-sm <?php echo $is_arts ? 'text-primary' : 'text-text'; ?> hover:text-primary transition-colors duration-300 relative group py-2">
             Arts
-            <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+            <span class="absolute bottom-0 left-0 <?php echo $is_arts ? 'w-full' : 'w-0'; ?> h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
           </a>
 
           <!-- Behandelingen Dropdown -->
           <div class="relative group">
-            <button class="font-heading text-sm text-text hover:text-primary transition-colors duration-300 flex items-center gap-2 py-2">
+            <button class="font-heading text-sm <?php echo $is_behandeling ? 'text-primary' : 'text-text'; ?> hover:text-primary transition-colors duration-300 flex items-center gap-2 py-2">
               Behandelingen
               <svg class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="currentColor" viewBox="0 0 320 512">
                 <path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
@@ -82,21 +127,21 @@
           </div>
 
           <a href="<?php echo esc_url(home_url('/prijzen/')); ?>"
-            class="font-heading text-sm text-text hover:text-primary transition-colors duration-300 relative group py-2">
+            class="font-heading text-sm <?php echo $is_prijzen ? 'text-primary' : 'text-text'; ?> hover:text-primary transition-colors duration-300 relative group py-2">
             Prijzen
-            <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+            <span class="absolute bottom-0 left-0 <?php echo $is_prijzen ? 'w-full' : 'w-0'; ?> h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
           </a>
 
           <a href="<?php echo esc_url(home_url('/blog-posts/')); ?>"
-            class="font-heading text-sm text-text hover:text-primary transition-colors duration-300 relative group py-2">
+            class="font-heading text-sm <?php echo $is_blog ? 'text-primary' : 'text-text'; ?> hover:text-primary transition-colors duration-300 relative group py-2">
             Blog
-            <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+            <span class="absolute bottom-0 left-0 <?php echo $is_blog ? 'w-full' : 'w-0'; ?> h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
           </a>
 
           <a href="<?php echo esc_url(home_url('/contact/')); ?>"
-            class="font-heading text-sm text-text hover:text-primary transition-colors duration-300 relative group py-2">
+            class="font-heading text-sm <?php echo $is_contact ? 'text-primary' : 'text-text'; ?> hover:text-primary transition-colors duration-300 relative group py-2">
             Contact
-            <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+            <span class="absolute bottom-0 left-0 <?php echo $is_contact ? 'w-full' : 'w-0'; ?> h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
           </a>
         </nav>
 
@@ -142,12 +187,12 @@
         <!-- Mobile Navigation -->
         <nav class="mt-16 space-y-1">
           <a href="<?php echo esc_url(home_url('/')); ?>"
-            class="block text-base py-3 hover:text-primary transition-colors border-b border-gray-100">
+            class="block text-base py-3 <?php echo $is_home ? 'text-primary font-semibold' : ''; ?> hover:text-primary transition-colors border-b border-gray-100">
             Home
           </a>
 
           <a href="<?php echo esc_url(home_url('/arts/')); ?>"
-            class="block text-base py-3 hover:text-primary transition-colors border-b border-gray-100">
+            class="block text-base py-3 <?php echo $is_arts ? 'text-primary font-semibold' : ''; ?> hover:text-primary transition-colors border-b border-gray-100">
             Arts
           </a>
 
@@ -250,17 +295,17 @@
           </details>
 
           <a href="<?php echo esc_url(home_url('/prijzen/')); ?>"
-            class="block text-base py-3 hover:text-primary transition-colors border-b border-gray-100">
+            class="block text-base py-3 <?php echo $is_prijzen ? 'text-primary font-semibold' : ''; ?> hover:text-primary transition-colors border-b border-gray-100">
             Prijzen
           </a>
 
           <a href="<?php echo esc_url(home_url('/blog-posts/')); ?>"
-            class="block text-base py-3 hover:text-primary transition-colors border-b border-gray-100">
+            class="block text-base py-3 <?php echo $is_blog ? 'text-primary font-semibold' : ''; ?> hover:text-primary transition-colors border-b border-gray-100">
             Blog
           </a>
 
           <a href="<?php echo esc_url(home_url('/contact/')); ?>"
-            class="block text-base py-3 hover:text-primary transition-colors border-b border-gray-100">
+            class="block text-base py-3 <?php echo $is_contact ? 'text-primary font-semibold' : ''; ?> hover:text-primary transition-colors border-b border-gray-100">
             Contact
           </a>
 
