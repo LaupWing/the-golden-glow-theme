@@ -68,11 +68,11 @@ get_header(); ?>
 </section>
 
 <!-- Loopbaan & Certificaties Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-background">
+<section class="py-12 md:py-16 lg:py-20">
     <div class="container mx-auto px-[5%]">
 
         <!-- Section Title -->
-        <h2 class="font-heading text-3xl md:text-4xl text-center text-text mb-12">
+        <h2 class="font-heading text-2xl md:text-3xl text-center font-bold text-primary mb-12">
             Loopbaan & Certificaties
         </h2>
 
@@ -124,7 +124,7 @@ get_header(); ?>
 </section>
 
 <!-- Arts Introduction Text Section -->
-<section class="py-12 md:py-16 lg:py-20">
+<section class="py-6 md:py-8 lg:py-12">
     <div class="container mx-auto px-[5%]">
         <div class="max-w-3xl mx-auto text-center">
             <p class="text-base md:text-lg text-gray-700 leading-relaxed">
@@ -178,6 +178,72 @@ get_header(); ?>
                     </p>
                 </div>
             </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- Professional Qualities Section -->
+<section class="py-12 md:py-16 lg:py-20">
+    <div class="container mx-auto px-[5%]">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
+
+            <!-- Doctor Image -->
+            <div class="order-2 lg:order-1">
+                <img
+                    src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/IMG_9622-scaled.jpg'); ?>"
+                    alt="Arwind Chigharoe, MD, Cosmetisch Arts"
+                    width="1920"
+                    height="2560"
+                    class="w-full h-auto rounded-lg"
+                    loading="lazy">
+            </div>
+
+            <!-- Checklist -->
+            <div class="order-1 lg:order-2">
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4">
+                        <svg class="w-8 h-8 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-base md:text-lg text-gray-700">
+                            Medische deskundigheid
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <svg class="w-8 h-8 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-base md:text-lg text-gray-700">
+                            KNMG-erkend cosmetisch arts
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <svg class="w-8 h-8 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-base md:text-lg text-gray-700">
+                            Natuurlijke en verfijnde resultaten
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <svg class="w-8 h-8 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-base md:text-lg text-gray-700">
+                            Persoonlijke en eerlijke benadering
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <svg class="w-8 h-8 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-base md:text-lg text-gray-700">
+                            Continue ontwikkeling en innovatie
+                        </span>
+                    </li>
+                </ul>
+            </div>
 
         </div>
     </div>

@@ -15,7 +15,7 @@ $cert = $args['cert'];
 $bg_image_url = esc_url(wp_get_upload_dir()['baseurl'] . '/vogels.png');
 ?>
 
-<article class="relative bg-primary text-white p-8 rounded-lg overflow-hidden min-h-[200px] flex flex-col justify-center">
+<article class="relative bg-primary text-white p-8 rounded-lg overflow-hidden min-h-[160px] flex flex-col justify-center">
     <!-- Background Image - decorative only, hidden from screen readers -->
     <div class="absolute inset-0 opacity-80 pointer-events-none" aria-hidden="true">
         <img
