@@ -135,48 +135,44 @@ get_header(); ?>
 </section>
 
 <!-- Mission and Vision Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-background">
+<section class="py-12 md:py-16 lg:py-20 ">
     <div class="container mx-auto px-[5%]">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 max-w-6xl mx-auto">
 
             <!-- Mission -->
-            <article>
-                <h2 class="font-heading text-3xl md:text-4xl text-text mb-6">
+            <article class="space-y-6">
+                <h2 class="font-heading text-3xl md:text-4xl text-primary">
                     Missie
                 </h2>
-                <div class="mb-6">
-                    <img
-                        src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/EERLIJK-3.png'); ?>"
-                        alt="Missie decorative pattern"
-                        width="1000"
-                        height="400"
-                        class="w-full h-auto">
-                </div>
-                <div class="bg-white p-6 rounded-lg">
-                    <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-4">
+                <img
+                    src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/mission.jpg'); ?>"
+                    alt="Missie decorative pattern"
+                    width="1000"
+                    height="400"
+                    class="w-full h-auto rounded-lg">
+                <div class="bg-white p-6 ">
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                         Mijn missie is om jouw natuurlijke schoonheid op een veilige, deskundige en persoonlijke manier te versterken. Samen streven we naar subtiele, verfijnde resultaten die perfect bij jou passen. Ik luister naar jouw wensen en zorg dat je je niet alleen mooier, maar ook zelfverzekerder voelt. Jouw veiligheid en comfort staan centraal, zodat jouw unieke uitstraling jouw zelfvertrouwen vergroot.
                     </p>
                 </div>
             </article>
 
             <!-- Vision -->
-            <article>
-                <h2 class="font-heading text-3xl md:text-4xl text-text mb-6">
-                    Visie
-                </h2>
-                <div class="mb-6">
-                    <img
-                        src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/arts-pattern-visie-2.png'); ?>"
-                        alt="Visie decorative pattern"
-                        width="834"
-                        height="333"
-                        class="w-full h-auto">
-                </div>
-                <div class="bg-white p-6 rounded-lg">
+            <article class="space-y-6">
+                <div class=" p-6 ">
                     <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                         In mijn behandelingen staat veiligheid altijd voorop. Ik neem de tijd om te luisteren naar jouw wensen, geef eerlijk en realistisch advies en werk uitsluitend met hoogwaardige producten en bewezen technieken. Mijn doel is dat jij na iedere behandeling vol vertrouwen en met een glimlach naar buiten stapt op een manier die nog steeds helemaal 'jij' voelt, maar dan net een beetje frisser, zachter of stralender.
                     </p>
                 </div>
+                <h2 class="font-heading text-3xl md:text-4xl text-primary">
+                    Visie
+                </h2>
+                <img
+                    src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/vision.png'); ?>"
+                    alt="Visie decorative pattern"
+                    width="834"
+                    height="333"
+                    class="w-full h-auto rounded-lg">
             </article>
 
         </div>
@@ -191,7 +187,7 @@ get_header(); ?>
             <!-- Doctor Image -->
             <div class="order-2 lg:order-1">
                 <img
-                    src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/IMG_9622-scaled.jpg'); ?>"
+                    src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/arwind3.jpg'); ?>"
                     alt="Arwind Chigharoe, MD, Cosmetisch Arts"
                     width="1920"
                     height="2560"
