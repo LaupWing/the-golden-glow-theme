@@ -24,4 +24,35 @@ get_template_part('templates/category-intro', null, [
 ]);
 ?>
 
+<!-- Category Links Grid -->
+<section class="py-12 md:py-16 lg:py-20">
+    <div class="container mx-auto px-[5%]">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <?php
+            $categories = [
+                ['title' => 'Fronsrimpel', 'url' => '/frons-rimpels/'],
+                ['title' => 'Voorhoofdsrimpels', 'url' => '/voor-hoofd-rimpels/'],
+                ['title' => 'Kraaienpootjes', 'url' => '/kraaien-pootjes/'],
+                ['title' => 'Wenkbrauwlift', 'url' => '/wenkbrauwlift/'],
+                ['title' => 'Bunny lines', 'url' => '/bunny-lines/'],
+                ['title' => 'Gummy smile', 'url' => '/gummy-smile/'],
+                ['title' => 'Marionetlijnen', 'url' => '/marionet-lijnen/'],
+                ['title' => 'Lip flip', 'url' => '/lip-flip/'],
+                ['title' => 'Migraine', 'url' => '/migraine/'],
+                ['title' => 'Platysma', 'url' => '/platysma/'],
+                ['title' => 'Traptox', 'url' => '/trap-tox/'],
+                ['title' => 'Liquid Facelift', 'url' => '/liquid-facelift/'],
+                ['title' => 'Kaaklijn', 'url' => '/kaak-lijn/'],
+                ['title' => 'Kin', 'url' => '/kin-boto/'],
+            ];
+
+            foreach ($categories as $index => $category) {
+                $category['has_background'] = ($index % 2 === 0);
+                get_template_part('templates/category-link-card', null, $category);
+            }
+            ?>
+        </div>
+    </div>
+</section>
+
 <?php get_footer(); ?>
