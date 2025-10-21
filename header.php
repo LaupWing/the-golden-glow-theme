@@ -32,48 +32,55 @@
         <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center gap-6 xl:gap-8 flex-grow justify-end">
           <?php
-          $current_url = $_SERVER['REQUEST_URI'];
-          $is_home = (is_front_page() || $current_url === '/');
-          $is_arts = (strpos($current_url, '/arts/') !== false);
-          $is_prijzen = (strpos($current_url, '/prijzen/') !== false);
-          $is_blog = (strpos($current_url, '/blog-posts/') !== false);
-          $is_contact = (strpos($current_url, '/contact/') !== false);
+          // Get current page slug/path
+          global $post;
+          $current_slug = '';
+          if (is_object($post)) {
+            $current_slug = '/' . $post->post_name . '/';
+          }
+
+          // Helper function to check if current page matches any path
+          function is_current_path($paths) {
+            global $post;
+            if (!is_array($paths)) {
+              $paths = [$paths];
+            }
+            if (!is_object($post)) {
+              return false;
+            }
+            $current_slug = '/' . $post->post_name . '/';
+            foreach ($paths as $path) {
+              if ($current_slug === $path) {
+                return true;
+              }
+            }
+            return false;
+          }
+
+          // Define menu categories with their subpages
+          $menu_categories = [
+            'spierontspanners' => ['/spierontspanners/', '/bunny-lines/', '/frons-rimpels/', '/gummy-smile/', '/kin-boto/', '/kraaien-pootjes/', '/lip-flip/', '/liquid-facelift/', '/migraine/', '/tandenknarsen/'],
+            'filler' => ['/filler-behandeling/', '/full-face/', '/neus/', '/slapen/', '/kaaklijn-filler/', '/lip-filler-behandeling/'],
+            'bodyfillers' => ['/bodyfillers/', '/bilfillers/', '/hip-dips/', '/penisvergroting/', '/vagina-verjonging/'],
+            'medisch_afvallen' => ['/medisch-afvallen/', '/overzicht-afval-medicatie/'],
+            'lasers' => ['/lasers/', '/tixel/', '/endolift/'],
+            'biostimulatie' => ['/biostimulatie/', '/lanluma/', '/sculptra/', '/pdo/', '/profhilo/', '/skinboosters/']
+          ];
+
+          $is_home = is_front_page();
+          $is_arts = is_current_path('/arts/');
+          $is_prijzen = is_current_path('/prijzen/');
+          $is_blog = is_current_path('/blog-posts/');
+          $is_contact = is_current_path('/contact/');
 
           // Check if on any treatment page
-          $is_behandeling = (
-            strpos($current_url, '/spierontspanners/') !== false ||
-            strpos($current_url, '/filler-behandeling/') !== false ||
-            strpos($current_url, '/bodyfillers/') !== false ||
-            strpos($current_url, '/medisch-afvallen/') !== false ||
-            strpos($current_url, '/lasers/') !== false ||
-            strpos($current_url, '/biostimulatie/') !== false ||
-            strpos($current_url, '/bunny-lines/') !== false ||
-            strpos($current_url, '/frons-rimpels/') !== false ||
-            strpos($current_url, '/gummy-smile/') !== false ||
-            strpos($current_url, '/kin-boto/') !== false ||
-            strpos($current_url, '/kraaien-pootjes/') !== false ||
-            strpos($current_url, '/lip-flip/') !== false ||
-            strpos($current_url, '/liquid-facelift/') !== false ||
-            strpos($current_url, '/migraine/') !== false ||
-            strpos($current_url, '/tandenknarsen/') !== false ||
-            strpos($current_url, '/full-face/') !== false ||
-            strpos($current_url, '/neus/') !== false ||
-            strpos($current_url, '/slapen/') !== false ||
-            strpos($current_url, '/kaaklijn-filler/') !== false ||
-            strpos($current_url, '/lip-filler-behandeling/') !== false ||
-            strpos($current_url, '/bilfillers/') !== false ||
-            strpos($current_url, '/hip-dips/') !== false ||
-            strpos($current_url, '/penisvergroting/') !== false ||
-            strpos($current_url, '/vagina-verjonging/') !== false ||
-            strpos($current_url, '/tixel/') !== false ||
-            strpos($current_url, '/endolift/') !== false ||
-            strpos($current_url, '/lanluma/') !== false ||
-            strpos($current_url, '/sculptra/') !== false ||
-            strpos($current_url, '/pdo/') !== false ||
-            strpos($current_url, '/profhilo/') !== false ||
-            strpos($current_url, '/skinboosters/') !== false ||
-            strpos($current_url, '/overzicht-afval-medicatie/') !== false
-          );
+          $is_behandeling = false;
+          foreach ($menu_categories as $category_paths) {
+            if (is_current_path($category_paths)) {
+              $is_behandeling = true;
+              break;
+            }
+          }
           ?>
 
           <a href="<?php echo esc_url(home_url('/')); ?>"
@@ -99,30 +106,24 @@
 
             <!-- Dropdown Menu -->
             <div class="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-2">
-              <a href="<?php echo esc_url(home_url('/spierontspanners/')); ?>"
-                class="block px-6 py-2 text-sm hover:bg-primary hover:text-white transition-colors duration-200">
-                Spierontspanners
-              </a>
-              <a href="<?php echo esc_url(home_url('/filler-behandeling/')); ?>"
-                class="block px-6 py-2 text-sm hover:bg-primary hover:text-white transition-colors duration-200">
-                Filler Behandeling
-              </a>
-              <a href="<?php echo esc_url(home_url('/bodyfillers/')); ?>"
-                class="block px-6 py-2 text-sm hover:bg-primary hover:text-white transition-colors duration-200">
-                Body fillers
-              </a>
-              <a href="<?php echo esc_url(home_url('/medisch-afvallen/')); ?>"
-                class="block px-6 py-2 text-sm hover:bg-primary hover:text-white transition-colors duration-200">
-                Medisch afvallen
-              </a>
-              <a href="<?php echo esc_url(home_url('/lasers/')); ?>"
-                class="block px-6 py-2 text-sm hover:bg-primary hover:text-white transition-colors duration-200">
-                Lasers
-              </a>
-              <a href="<?php echo esc_url(home_url('/biostimulatie/')); ?>"
-                class="block px-6 py-2 text-sm hover:bg-primary hover:text-white transition-colors duration-200">
-                Biostimulatie
-              </a>
+              <?php
+              $dropdown_items = [
+                ['url' => '/spierontspanners/', 'label' => 'Spierontspanners', 'category' => 'spierontspanners'],
+                ['url' => '/filler-behandeling/', 'label' => 'Filler Behandeling', 'category' => 'filler'],
+                ['url' => '/bodyfillers/', 'label' => 'Body fillers', 'category' => 'bodyfillers'],
+                ['url' => '/medisch-afvallen/', 'label' => 'Medisch afvallen', 'category' => 'medisch_afvallen'],
+                ['url' => '/lasers/', 'label' => 'Lasers', 'category' => 'lasers'],
+                ['url' => '/biostimulatie/', 'label' => 'Biostimulatie', 'category' => 'biostimulatie']
+              ];
+
+              foreach ($dropdown_items as $item):
+                $is_active = is_current_path($menu_categories[$item['category']]);
+              ?>
+                <a href="<?php echo esc_url(home_url($item['url'])); ?>"
+                  class="block px-6 py-2 text-sm <?php echo $is_active ? 'bg-primary text-white' : ''; ?> hover:bg-primary hover:text-white transition-colors duration-200">
+                  <?php echo $item['label']; ?>
+                </a>
+              <?php endforeach; ?>
             </div>
           </div>
 
