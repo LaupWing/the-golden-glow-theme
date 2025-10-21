@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Part: Text Content Section
  *
@@ -10,10 +11,14 @@
 // Extract args passed from get_template_part()
 $title = $args['title'] ?? '';
 $content = $args['content'] ?? '';
+$show_background = $args['show_background'] ?? true;
+
+// Determine background class
+$bg_class = $show_background ? 'bg-background' : '';
 ?>
 
 <!-- Text Content Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-background">
+<section class="py-12 md:py-16 lg:py-20 <?php echo esc_attr($bg_class); ?>">
     <div class="container mx-auto px-[5%]">
         <div class="max-w-4xl mx-auto">
             <?php if ($title): ?>

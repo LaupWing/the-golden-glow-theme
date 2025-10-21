@@ -31,6 +31,8 @@ get_template_part('sections/text-content-section', null, [
 ]);
 ?>
 
+
+
 <!-- Navigation Buttons Section -->
 <section class="py-8 md:py-12 bg-white">
     <div class="container mx-auto px-[5%]">
@@ -60,6 +62,37 @@ get_template_part('templates/sub-category-price', null, [
     'checkup' => 'na 2 weken',
     'effect_duration' => '3 - 4 maanden',
     'treatment_duration' => '15 minuten'
+]);
+?>
+
+<?php
+// Treatment summary section
+get_template_part('templates/treatment-summary', null, [
+    'price' => '€125',
+    'duration' => '15 minuten',
+    'checkup' => 'na 2 weken',
+    'effect' => '3 - 4 maanden'
+]);
+?>
+
+<!-- Maak een afspraak Button -->
+<section class="py-8 md:py-12 bg-white">
+    <div class="container mx-auto px-[5%] text-center">
+        <a href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
+            class="inline-block bg-primary text-white font-heading text-sm md:text-base uppercase tracking-widest px-8 py-4 rounded-full border border-primary hover:bg-primary-hover hover:text-text-muted transition-all duration-300">
+            Maak een afspraak
+        </a>
+    </div>
+</section>
+
+<?php
+// Text content section - Why fronsrimpels treatment
+get_template_part('sections/text-content-section', null, [
+    'title' => 'Waarom een fronsrimpels behandeling met botox',
+    'content' => '
+        <p>Een fronsrimpels behandeling met botox verzacht de rimpels tussen de wenkbrauwen en geeft uw gezicht een vriendelijkere, ontspannen uitstraling. Door de fronsspieren tijdelijk te ontspannen, wordt de huid gladder terwijl uw natuurlijke mimiek behouden blijft. De behandeling is snel, veilig en vrijwel pijnloos, met zichtbaar resultaat binnen enkele dagen dat gemiddeld 3 tot 6 maanden aanhoudt. Regelmatig herhalen voorkomt dat de rimpels dieper worden, waardoor u langdurig een frisse en toegankelijke gezichtsuitdrukking behoudt.</p>
+    ',
+    'show_background' => false
 ]);
 ?>
 
