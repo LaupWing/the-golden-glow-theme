@@ -45,24 +45,19 @@ get_template_part('sections/category-links-grid', null, [
 ]);
 ?>
 
-<!-- Werkwijze Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-background">
-    <div class="container mx-auto px-[5%]">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl text-primary mb-6 text-center">
-                Onze werkwijze is persoonlijk en medisch onderbouwd
-            </h2>
-            <div class="prose prose-lg max-w-none text-gray-700 space-y-4">
-                <p>
-                    Tijdens een consult bespreken we uw wensen, analyseren we zorgvuldig de gezichtsstructuur en stellen we een behandelplan op dat past bij uw gezicht en mimiek. Met onze holistische aanpak combineren we vaak meerdere technieken om het beste resultaat te bereiken. Indien nodig maken we gebruik van echogeleide plaatsing van hyaluronzuurfillers voor extra precisie en veiligheid.
-                </p>
-                <p>
-                    Bij The Golden Glow staan veiligheid, deskundigheid en verfijning centraal. We streven altijd naar een mooi harmonieus resultaat – subtiel, soms nét een tikje gedurfd, maar nooit overdreven.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+<?php
+get_template_part('sections/text-content-section', null, [
+    'title' => 'Onze werkwijze is persoonlijk en medisch onderbouwd',
+    'content' => '
+        <p>
+            Tijdens een consult bespreken we uw wensen, analyseren we zorgvuldig de gezichtsstructuur en stellen we een behandelplan op dat past bij uw gezicht en mimiek. Met onze holistische aanpak combineren we vaak meerdere technieken om het beste resultaat te bereiken. Indien nodig maken we gebruik van echogeleide plaatsing van hyaluronzuurfillers voor extra precisie en veiligheid.
+        </p>
+        <p>
+            Bij The Golden Glow staan veiligheid, deskundigheid en verfijning centraal. We streven altijd naar een mooi harmonieus resultaat – subtiel, soms nét een tikje gedurfd, maar nooit overdreven.
+        </p>
+    '
+]);
+?>
 <?php get_template_part('sections/clinic-section'); ?>
 
 <?php
