@@ -7,16 +7,13 @@
 
 get_header();
 
-// Get custom fields
-$page_banner_title = get_post_meta(get_the_ID(), 'page_banner_title', true);
-$intro_title = get_post_meta(get_the_ID(), 'intro_title', true);
-$intro_content = get_post_meta(get_the_ID(), 'intro_content', true);
-$intro_image = get_post_meta(get_the_ID(), 'intro_image', true);
-$text_sections = get_post_meta(get_the_ID(), 'text_sections', true); // This will be an array
-$price_data = get_post_meta(get_the_ID(), 'price_data', true);
-$why_title = get_post_meta(get_the_ID(), 'why_title', true);
-$why_content = get_post_meta(get_the_ID(), 'why_content', true);
-$faqs = get_post_meta(get_the_ID(), 'faqs', true);
+// Get ACF fields
+$page_banner_title = get_field('page_banner_title');
+$intro_section = get_field('intro_section');
+$text_sections = get_field('text_sections'); // This will be an array
+$price_data = get_field('price_data');
+$why_section = get_field('why_section');
+$faqs = get_field('faqs');
 ?>
 
 <!-- Page Banner -->
@@ -27,12 +24,12 @@ get_template_part('templates/page-banner', null, [
 ?>
 
 <!-- Category Intro -->
-<?php if ($intro_title || $intro_content): ?>
+<?php if ($intro_section): ?>
     <?php
     get_template_part('templates/category-intro', null, [
-        'title' => $intro_title,
-        'content' => $intro_content,
-        'image_filename' => $intro_image
+        'title' => $intro_section['intro_title'] ?? '',
+        'content' => $intro_section['intro_content'] ?? '',
+        'image_filename' => $intro_section['intro_image'] ?? ''
     ]);
     ?>
 <?php endif; ?>
@@ -107,11 +104,11 @@ get_template_part('templates/page-banner', null, [
 </section>
 
 <!-- Why Section -->
-<?php if ($why_title || $why_content): ?>
+<?php if ($why_section): ?>
     <?php
     get_template_part('sections/text-content-section', null, [
-        'title' => $why_title,
-        'content' => $why_content,
+        'title' => $why_section['why_title'] ?? '',
+        'content' => $why_section['why_content'] ?? '',
         'show_background' => false
     ]);
     ?>
@@ -124,11 +121,11 @@ get_template_part('templates/page-banner', null, [
 <?php get_template_part('sections/clinic-section'); ?>
 
 <!-- FAQ Section -->
-<?php if ($faqs && isset($faqs['items']) && is_array($faqs['items'])): ?>
+<?php if ($faqs && isset($faqs['faq_items']) && is_array($faqs['faq_items'])): ?>
     <?php
     get_template_part('templates/faq-section', null, [
-        'title' => $faqs['title'] ?? 'Veelgestelde vragen',
-        'faqs' => $faqs['items']
+        'title' => $faqs['faq_title'] ?? 'Veelgestelde vragen',
+        'faqs' => $faqs['faq_items']
     ]);
     ?>
 <?php endif; ?>
