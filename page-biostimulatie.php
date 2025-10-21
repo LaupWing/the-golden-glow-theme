@@ -34,4 +34,24 @@ get_template_part('templates/category-intro', null, [
     </div>
 </section>
 
+<?php
+get_template_part('sections/happy-customers-section', null, [
+    'title' => 'Onze tevreden klanten',
+    'images' => [
+        [
+            'filename' => 'biostimulatie-happy-customer-1.png',
+            'alt' => 'Biostimulatie behandeling resultaat'
+        ],
+        [
+            'filename' => 'biostimulatie-happy-customer-2.png',
+            'alt' => 'Biostimulatie behandeling resultaat'
+        ],
+        [
+            'filename' => 'biostimulatie-happy-customer-3.png',
+            'alt' => 'Biostimulatie behandeling resultaat'
+        ]
+    ]
+]);
+?>
+
 <?php get_footer(); ?>
