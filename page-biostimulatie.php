@@ -115,4 +115,46 @@ get_template_part('sections/category-links-grid', null, [
 ]);
 ?>
 
+<?php
+get_template_part('sections/text-content-section', null, [
+    'title' => 'Waarom biostimulatie?',
+    'content' => '<p>Biostimulatie is dé keuze als je je huid op een natuurlijke manier wilt verjongen en versterken. Door biostimulatie stimuleer je het lichaam om zelf weer essentiële bouwstenen als collageen, elastine en hyaluronzuur aan te maken. Dit zorgt voor een stevigere, gladdere en veerkrachtigere huid met een frisse uitstraling. Je profiteert van langdurige verbetering zonder ingrijpende behandelingen. Biostimulatie pakt zo huidveroudering en volumeverlies bij de bron aan en biedt een zichtbaar, natuurlijk resultaat.</p>'
+]);
+?>
+
+<?php get_template_part('sections/clinic-section'); ?>
+
+<?php
+get_template_part('templates/faq-section', null, [
+    'title' => 'Veelgestelde vragen over Sculptra',
+    'faqs' => [
+        [
+            'question' => 'Is biostimulatie geschikt voor iedereen?',
+            'answer' => '<p>De meeste mensen kunnen veilig gebruikmaken van biostimulatie. Er zijn echter enkele uitzonderingen, zoals zwangerschap. Tijdens een consult wordt altijd gekeken of de behandeling geschikt is.</p>'
+        ],
+        [
+            'question' => 'Waar wordt biostimulatie voor gebruikt?',
+            'answer' => '<p>Biostimulatie wordt toegepast bij:</p><p>1) Huidverjonging<br>2) Littekenbehandeling<br>3) Acné en rosacea<br>4) Spier- en gewrichtspijn<br>5) Wondgenezing</p>'
+        ],
+        [
+            'question' => 'Is biostimulatie pijnlijk?',
+            'answer' => '<p>biostimulatie is over het algemeen volledig pijnloos. Veel mensen ervaren de behandeling als aangenaam en ontspannend. Soms voel je lichte warmte of tinteling, afhankelijk van de gebruikte methode.</p>'
+        ],
+        [
+            'question' => 'Hoeveel behandelingen heb ik nodig?',
+            'answer' => '<p>Dat hangt af van het behandeldoel en je individuele reactie. Voor huidverbetering zijn vaak 4 tot 6 sessies nodig, terwijl bij spierherstel soms al na 1 tot 2 behandelingen verbetering merkbaar is. Tijdens het consult wordt een persoonlijk behandelplan opgesteld.</p>'
+        ],
+        [
+            'question' => 'Wat is het verschil tussen biostimulatie en lasertherapie?',
+            'answer' => '<p>Lasertherapie is een specifieke vorm van biostimulatie. Het verschil zit vooral in de gebruikte technologie en het doel van de behandeling. Biostimulatie omvat meerdere technieken (zoals LED-licht, elektrische stimulatie en laser), terwijl lasertherapie zich specifiek richt op geconcentreerde lichtstralen voor bijvoorbeeld huidverjonging of wondgenezing.</p>'
+        ]
+    ]
+]);
+?>
+
+<?php
+// Reviews Section
+get_template_part('sections/reviews-section');
+?>
+
 <?php get_footer(); ?>
