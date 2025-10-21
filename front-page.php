@@ -253,95 +253,17 @@ get_header(); ?>
     </div>
 </section>
 
-<!-- Reviews Section -->
-<section class="py-12 md:py-16 lg:py-20 ">
+<?php
+// Include reusable reviews section
+get_template_part('sections/reviews-section');
+?>
+
+<!-- Blog Section -->
+<section class="py-12 md:py-16 lg:py-20">
     <div class="container mx-auto px-[5%]">
 
-        <!-- Section Title -->
-        <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold uppercase text-center text-[#CB6843] mb-12">
-            Wat onze klanten zeggen
-        </h2>
-
-        <!-- Reviews Grid -->
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
-
-            <!-- Review 1 -->
-            <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div class="flex-shrink-0 w-16 h-16">
-                    <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
-                    <img src="<?php echo esc_url($upload_url . '/color-2.png'); ?>"
-                        alt="Review"
-                        width="64"
-                        height="64"
-                        class="w-full h-full rounded-full object-cover"
-                        loading="lazy">
-                </div>
-                <div class="flex-1">
-                    <div class="text-primary text-lg mb-2" role="img" aria-label="5 sterren">★★★★★</div>
-                    <p class="text-gray-700 italic leading-relaxed">
-                        "Ik ben al meer dan 10 jaar een cliënt en ik wil nooit meer anders. Prachtig gestylde kliniek waarbij hygiëne voorop staat! Arwind is persoonlijk, stelt je gerust, neemt de tijd, zet je in je kracht en zal altijd eerlijk advies geven. Als je in de stoel ligt ervaar je Professionaliteit in combinatie met een vleugje humor. Daarbij zijn de eindresultaten keer op keer uitmuntend." - Lotta
-                    </p>
-                </div>
-            </div>
-
-            <!-- Review 2 -->
-            <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 md:flex-row-reverse md:text-right">
-                <div class="flex-shrink-0 w-16 h-16">
-                    <img src="<?php echo esc_url($upload_url . '/color-1.png'); ?>"
-                        alt="Review"
-                        width="64"
-                        height="64"
-                        class="w-full h-full rounded-full object-cover"
-                        loading="lazy">
-                </div>
-                <div class="flex-1">
-                    <div class="text-primary text-lg mb-2" role="img" aria-label="5 sterren">★★★★★</div>
-                    <p class="text-gray-700 italic leading-relaxed">
-                        "Ik ben fan!! Dr.Arwind is heel erg professioneel, vriendelijk en neemt vooral zijn tijd voor zijn cliënten. Ik ben heel goed geholpen door hem en ben heel erg blij met de resultaat voor mijn behandeling. Zijn praktijk is heel goed bereikbaar. Personeel is ook heel vriendelijk. Ik raad het iedereen aan, ik ben in fan.. en niet te vergeten de tarieven zijn ook heel goed.. kortom, GEWELDIG!" – Banafshe .V
-                    </p>
-                </div>
-            </div>
-
-            <!-- Review 3 -->
-            <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div class="flex-shrink-0 w-16 h-16">
-                    <img src="<?php echo esc_url($upload_url . '/color-2.png'); ?>"
-                        alt="Review"
-                        width="64"
-                        height="64"
-                        class="w-full h-full rounded-full object-cover"
-                        loading="lazy">
-                </div>
-                <div class="flex-1">
-                    <div class="text-primary text-lg mb-2" role="img" aria-label="5 sterren">★★★★★</div>
-                    <p class="text-gray-700 italic leading-relaxed">
-                        "Heel vriendelijk ontvangen, professioneel advies en duidelijke uitleg. Zeer tevreden met het resultaat, boven verwachting!" - Rene
-                    </p>
-                </div>
-            </div>
-
-            <!-- Review 4 -->
-            <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 md:flex-row-reverse md:text-right">
-                <div class="flex-shrink-0 w-16 h-16">
-                    <img src="<?php echo esc_url($upload_url . '/color-1.png'); ?>"
-                        alt="Review"
-                        width="64"
-                        height="64"
-                        class="w-full h-full rounded-full object-cover"
-                        loading="lazy">
-                </div>
-                <div class="flex-1">
-                    <div class="text-primary text-lg mb-2" role="img" aria-label="5 sterren">★★★★★</div>
-                    <p class="text-gray-700 italic leading-relaxed">
-                        "Eerste keer een spierontspannende behandeling en filler gedaan. Dit is erg deskundig gedaan met goede uitleg. (mijn dochter heeft wel 100 vragen gesteld haha)" – Maaike
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
         <!-- Blog Section Title -->
-        <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold uppercase text-center text-[#CB6843] mt-16 mb-12">
+        <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold uppercase text-center text-[#CB6843] mb-12">
             The golden glow blog
         </h2>
 
