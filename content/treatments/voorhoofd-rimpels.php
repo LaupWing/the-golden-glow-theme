@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Content for: Voorhoofd Rimpels
  * Example with MULTIPLE text sections!
@@ -19,11 +20,11 @@ return [
     'text_sections' => [
         [
             'title' => 'De behandeling van de voorhoofdrimpels met spierontspanners',
-            'content' => '
+            'content' => "
                 <p>De behandeling van voorhoofdsrimpels met spierontspanners is een beproefde en effectieve methode om het voorhoofd een frisse en uitgeruste uitstraling te geven. Tijdens deze behandeling wordt de spierontspanner met kleine injecties toegediend in de spieren die de horizontale lijnen op het voorhoofd veroorzaken. Het middel zorgt ervoor dat deze spieren tijdelijk ontspannen, waardoor bestaande rimpels verminderen en de huid zichtbaar gladder wordt.</p>
                 <p>Een interessant bijkomend voordeel van een behandeling met spierontspanners van het voorhoofd is het liften van de wenkbrauwen. Door de juiste dosis op strategische plekken toe te dienen, ontspannen specifiek de spieren die de wenkbrauwen naar beneden trekken. Hierdoor krijgen de 'liftende' spieren van het voorhoofd meer ruimte om de wenkbrauwen licht te verhogen. Dit liftende effect zorgt ervoor dat de ogen een meer open, wakkere en jeugdige uitstraling krijgen, zonder dat het gezicht een onnatuurlijke mimiek verliest. De wenkbrauwen komen subtiel enkele millimeters hoger te staan, waardoor vermoeidheid uit de blik verdwijnt en het gezicht toegankelijker oogt.</p>
                 <p>Bij een behandeling is het belangrijk dat de balans tussen de verschillende spiergroepen behouden blijft voor een natuurlijk resultaat; hiervoor is ervaring en kennis van de anatomie van het gezicht essentieel. Het liften van de wenkbrauwen middels spierontspanners is een veilige behandeling mits uitgevoerd door een ervaren arts. Zo kunnen voorhoofdsrimpels en een vermoeide oogopslag met één behandeling worden aangepakt, wat leidt tot een frissere en meer open uitstraling.</p>
-            ',
+            ",
             'show_background' => true
         ],
         // Add more sections if needed!
