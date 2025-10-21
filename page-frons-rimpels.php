@@ -103,6 +103,11 @@ get_template_part('sections/text-content-section', null, [
 ?>
 
 <?php
+// After Treatment Section
+get_template_part('sections/after-treatment');
+?>
+
+<?php
 // Reviews Section
 get_template_part('sections/reviews-section');
 ?>
