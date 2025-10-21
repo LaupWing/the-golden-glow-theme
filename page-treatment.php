@@ -1,25 +1,42 @@
 <?php
 /**
- * Template Name: Treatment Page
- * Generic template for all treatment pages (bunny-lines, frons-rimpels, etc.)
- * Use this template for all 50+ subpages
+ * Template Name: Treatment Subpage
+ * Universal template for ALL treatment subpages
+ * Content is loaded from /content/treatments/{page-slug}.php
  */
 
 get_header();
 
-// Get ACF fields
-$page_banner_title = get_field('page_banner_title');
-$intro_section = get_field('intro_section');
-$text_sections = get_field('text_sections'); // This will be an array
-$price_data = get_field('price_data');
-$why_section = get_field('why_section');
-$faqs = get_field('faqs');
+// Get the page slug to load the right content
+$page_slug = get_post_field('post_name', get_post());
+
+// Load content data based on slug
+$content_file = get_template_directory() . '/content/treatments/' . $page_slug . '.php';
+
+if (file_exists($content_file)) {
+    $data = include($content_file);
+} else {
+    // Fallback: show error message
+    echo '<div class="container mx-auto px-[5%] py-20 text-center">';
+    echo '<p class="text-lg text-red-600">Content file not found: content/treatments/' . esc_html($page_slug) . '.php</p>';
+    echo '</div>';
+    get_footer();
+    return;
+}
+
+// Extract data
+$page_banner_title = $data['page_title'] ?? get_the_title();
+$intro_section = $data['intro'] ?? null;
+$text_sections = $data['text_sections'] ?? [];
+$price_data = $data['price'] ?? null;
+$why_section = $data['why_section'] ?? null;
+$faqs = $data['faqs'] ?? null;
 ?>
 
 <!-- Page Banner -->
 <?php
 get_template_part('templates/page-banner', null, [
-    'title' => $page_banner_title ?: get_the_title()
+    'title' => $page_banner_title
 ]);
 ?>
 
@@ -27,15 +44,15 @@ get_template_part('templates/page-banner', null, [
 <?php if ($intro_section): ?>
     <?php
     get_template_part('templates/category-intro', null, [
-        'title' => $intro_section['intro_title'] ?? '',
-        'content' => $intro_section['intro_content'] ?? '',
-        'image_filename' => $intro_section['intro_image'] ?? ''
+        'title' => $intro_section['title'] ?? '',
+        'content' => $intro_section['content'] ?? '',
+        'image_filename' => $intro_section['image_filename'] ?? ''
     ]);
     ?>
 <?php endif; ?>
 
-<!-- Text Content Sections (can be multiple!) -->
-<?php if ($text_sections && is_array($text_sections)): ?>
+<!-- Multiple Text Content Sections (can be 1, 2, 3, or more!) -->
+<?php if (!empty($text_sections) && is_array($text_sections)): ?>
     <?php foreach ($text_sections as $section): ?>
         <?php
         get_template_part('sections/text-content-section', null, [
@@ -107,12 +124,15 @@ get_template_part('templates/page-banner', null, [
 <?php if ($why_section): ?>
     <?php
     get_template_part('sections/text-content-section', null, [
-        'title' => $why_section['why_title'] ?? '',
-        'content' => $why_section['why_content'] ?? '',
-        'show_background' => false
+        'title' => $why_section['title'] ?? '',
+        'content' => $why_section['content'] ?? '',
+        'show_background' => $why_section['show_background'] ?? false
     ]);
     ?>
 <?php endif; ?>
+
+<!-- After Treatment Section -->
+<?php get_template_part('sections/after-treatment'); ?>
 
 <!-- Reviews Section -->
 <?php get_template_part('sections/reviews-section'); ?>
@@ -121,11 +141,11 @@ get_template_part('templates/page-banner', null, [
 <?php get_template_part('sections/clinic-section'); ?>
 
 <!-- FAQ Section -->
-<?php if ($faqs && isset($faqs['faq_items']) && is_array($faqs['faq_items'])): ?>
+<?php if ($faqs && !empty($faqs['items'])): ?>
     <?php
     get_template_part('templates/faq-section', null, [
-        'title' => $faqs['faq_title'] ?? 'Veelgestelde vragen',
-        'faqs' => $faqs['faq_items']
+        'title' => $faqs['title'] ?? 'Veelgestelde vragen',
+        'faqs' => $faqs['items']
     ]);
     ?>
 <?php endif; ?>

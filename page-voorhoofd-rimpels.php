@@ -28,12 +28,14 @@ get_template_part('templates/category-intro', null, [
 
 
 <?php
-// Text content section - How we treat the frons
+// Text content section - Treatment of forehead wrinkles
 get_template_part('sections/text-content-section', null, [
-    'title' => 'Hoe behandelen we de frons',
-    'content' => '
-        <p>Fronsrimpels ontstaan doordat de spieren tussen de wenkbrauwen (m. corrugator en m. procerus) zich herhaaldelijk aanspannen, bijvoorbeeld bij boos kijken, turen of fel licht. Op jonge leeftijd verdwijnen deze lijnen weer zodra de spier ontspant, maar naarmate de huid en het onderliggende bindweefsel elasticiteit verliezen, kunnen de rimpels blijvend zichtbaar worden. Door de fronsspieren met een spierontspanner te behandelen, ontspannen de spieren tijdelijk, waardoor fronsen vermindert of zelfs onmogelijk wordt. Het effect is een gladdere huid en een zachtere, meer toegankelijke gezichtsuitdrukking. De behandeling duurt slechts enkele minuten, is doorgaans goed te verdragen en vereist geen verdoving. Het mooie van deze methode is dat de mimiek behouden blijft, zolang de dosering zorgvuldig is afgestemd op de spieractiviteit en de anatomie van de cliënt.</p>
-    '
+    'title' => 'De behandeling van de voorhoofdrimpels met spierontspanners',
+    'content' => "
+        <p>De behandeling van voorhoofdsrimpels met spierontspanners is een beproefde en effectieve methode om het voorhoofd een frisse en uitgeruste uitstraling te geven. Tijdens deze behandeling wordt de spierontspanner met kleine injecties toegediend in de spieren die de horizontale lijnen op het voorhoofd veroorzaken. Het middel zorgt ervoor dat deze spieren tijdelijk ontspannen, waardoor bestaande rimpels verminderen en de huid zichtbaar gladder wordt.</p>
+        <p>Een interessant bijkomend voordeel van een behandeling met spierontspanners van het voorhoofd is het liften van de wenkbrauwen. Door de juiste dosis op strategische plekken toe te dienen, ontspannen specifiek de spieren die de wenkbrauwen naar beneden trekken. Hierdoor krijgen de 'liftende' spieren van het voorhoofd meer ruimte om de wenkbrauwen licht te verhogen. Dit liftende effect zorgt ervoor dat de ogen een meer open, wakkere en jeugdige uitstraling krijgen, zonder dat het gezicht een onnatuurlijke mimiek verliest. De wenkbrauwen komen subtiel enkele millimeters hoger te staan, waardoor vermoeidheid uit de blik verdwijnt en het gezicht toegankelijker oogt.</p>
+        <p>Bij een behandeling is het belangrijk dat de balans tussen de verschillende spiergroepen behouden blijft voor een natuurlijk resultaat; hiervoor is ervaring en kennis van de anatomie van het gezicht essentieel. Het liften van de wenkbrauwen middels spierontspanners is een veilige behandeling mits uitgevoerd door een ervaren arts. Zo kunnen voorhoofdsrimpels en een vermoeide oogopslag met één behandeling worden aangepakt, wat leidt tot een frissere en meer open uitstraling.</p>
+    "
 ]);
 ?>
 
