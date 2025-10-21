@@ -9,6 +9,12 @@ get_header();
 ?>
 
 <?php
+get_template_part('templates/page-banner', null, [
+    'title' => 'Frons Rimpels Behandeling'
+]);
+?>
+
+<?php
 // Use the category-intro template part for the top section
 get_template_part('templates/category-intro', null, [
     'title' => 'Wat is een fronsrimpels behandeling',
@@ -93,6 +99,38 @@ get_template_part('sections/text-content-section', null, [
         <p>Een fronsrimpels behandeling met botox verzacht de rimpels tussen de wenkbrauwen en geeft uw gezicht een vriendelijkere, ontspannen uitstraling. Door de fronsspieren tijdelijk te ontspannen, wordt de huid gladder terwijl uw natuurlijke mimiek behouden blijft. De behandeling is snel, veilig en vrijwel pijnloos, met zichtbaar resultaat binnen enkele dagen dat gemiddeld 3 tot 6 maanden aanhoudt. Regelmatig herhalen voorkomt dat de rimpels dieper worden, waardoor u langdurig een frisse en toegankelijke gezichtsuitdrukking behoudt.</p>
     ',
     'show_background' => false
+]);
+?>
+
+<?php
+// Reviews Section
+get_template_part('sections/reviews-section');
+?>
+
+<?php get_template_part('sections/clinic-section'); ?>
+
+<?php
+// FAQ Section
+get_template_part('templates/faq-section', null, [
+    'title' => 'Veelgestelde vragen over fronsrimpel behandeling',
+    'faqs' => [
+        [
+            'question' => 'Wat is een fronsrimpel en hoe ontstaat deze',
+            'answer' => '<p>Een fronsrimpel is een verticale lijn tussen de wenkbrauwen die ontstaat door herhaald fronsen van de gezichtsspieren en door huidveroudering.</p>'
+        ],
+        [
+            'question' => 'Hoe werkt Botox tegen fronsrimpels?',
+            'answer' => '<p>Botox ontspant de spieren die de frons veroorzaken. Hierdoor verzacht of verdwijnt de rimpel en krijgt het gezicht een meer ontspannen en frisse uitstraling.</p>'
+        ],
+        [
+            'question' => 'Hoelang blijft Botox tegen fronsrimpels zichtbaar?',
+            'answer' => '<p>Het resultaat is gemiddeld 3 tot 4 maanden zichtbaar. Daarna kan de behandeling eenvoudig herhaald worden.</p>'
+        ],
+        [
+            'question' => 'Wanneer zie ik resultaat van Botox bij fronsrimpels?',
+            'answer' => '<p>Na 3 tot 5 dagen is het eerste effect zichtbaar, met een optimaal resultaat na ongeveer 2 weken.</p>'
+        ]
+    ]
 ]);
 ?>
 
