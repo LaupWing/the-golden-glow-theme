@@ -26,7 +26,7 @@ $image_url = esc_url(wp_get_upload_dir()['baseurl'] . '/' . $image_filename);
             <!-- Text Content Column -->
             <div class="space-y-6">
                 <?php if ($title): ?>
-                    <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl text-primary">
+                    <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl text-primary break-words overflow-wrap-anywhere">
                         <?php echo esc_html($title); ?>
                     </h2>
                 <?php endif; ?>
