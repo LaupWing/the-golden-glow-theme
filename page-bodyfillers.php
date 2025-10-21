@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Bodyfillers Page
  * Template for displaying the Bodyfillers page
@@ -80,7 +81,7 @@ get_template_part('sections/happy-customers-section', null, [
         ['filename' => 'body-filler-happy-customer-1.png', 'alt' => 'Happy customer result'],
         ['filename' => 'body-filler-happy-customer-2.png', 'alt' => 'Happy customer result'],
         ['filename' => 'body-filler-happy-customer-3.png', 'alt' => 'Happy customer result'],
-        ['filename' => 'body-filler-happy-customer-4.png', 'alt' => 'Happy customer result'],
+        ['filename' => 'body-filler-happy-customer-4.jpg', 'alt' => 'Happy customer result'],
     ]
 ]);
 ?>
