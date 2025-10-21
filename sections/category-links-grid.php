@@ -9,6 +9,7 @@
 
 // Extract args passed from get_template_part()
 $categories = $args['categories'] ?? [];
+$card_type = $args['card_type'] ?? 'default'; // 'default' or 'card-2'
 ?>
 
 <!-- Category Links Grid -->
@@ -28,7 +29,10 @@ $categories = $args['categories'] ?? [];
                     $category['has_background'] = ($col === 1);
                 }
 
-                get_template_part('templates/category-link-card', null, $category);
+                // Determine which card template to use
+                $template_name = $card_type === 'card-2' ? 'templates/category-link-card-2' : 'templates/category-link-card';
+
+                get_template_part($template_name, null, $category);
             }
             ?>
         </div>
