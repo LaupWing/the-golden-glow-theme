@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The Golden Glow - Dé cosmetische kliniek in Amsterdam. Specialist in fillerbehandelingen, spierontspanners, biostimulatie, medisch afvallen en lasertherapie. BIG-geregistreerde arts met 14+ jaar ervaring.">
   <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </noscript>
   <?php wp_head(); ?>
 </head>
 
@@ -40,7 +42,8 @@
           }
 
           // Helper function to check if current page matches any path
-          function is_current_path($paths) {
+          function is_current_path($paths)
+          {
             global $post;
             if (!is_array($paths)) {
               $paths = [$paths];
@@ -105,7 +108,7 @@
             </button>
 
             <!-- Dropdown Menu -->
-            <div class="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-2">
+            <div class="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden">
               <?php
               $dropdown_items = [
                 ['url' => '/spierontspanners/', 'label' => 'Spierontspanners', 'category' => 'spierontspanners'],
