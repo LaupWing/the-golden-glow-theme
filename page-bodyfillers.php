@@ -86,4 +86,33 @@ get_template_part('sections/happy-customers-section', null, [
 ]);
 ?>
 
+<!-- ALMA Payment Section -->
+<section class="py-12 md:py-16 lg:py-20 bg-background">
+    <div class="container mx-auto px-[5%]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl text-primary mb-6">
+                Betalen in termijnen met ALMA
+            </h2>
+
+            <div class="space-y-4 text-gray-700 mb-8">
+                <p class="font-semibold">Flexibel betalen voor uw bodyfillerbehandeling</p>
+
+                <p>Bij Kliniek The Golden Glow begrijpen we dat een bodyfillerbehandeling een waardevolle investering is. Daarom bieden wij u de mogelijkheid om het bedrag eenvoudig in vier gelijke termijnen te betalen met Alma. Zo spreidt u de kosten, terwijl u direct van uw behandeling kunt genieten.</p>
+
+                <p>Wilt u gebruikmaken van deze betaaloptie? Geef het gerust aan tijdens uw consult met de arts – wij regelen de rest.</p>
+            </div>
+
+            <a
+                href="https://help.almapay.com/hc/nl"
+                target="_blank"
+                rel="noopener"
+                class="inline-block bg-primary text-white px-8 py-3 rounded-full font-heading font-semibold text-sm uppercase hover:opacity-90 transition-opacity duration-200">
+                MEER INFORMATIE OVER ALMA
+            </a>
+        </div>
+    </div>
+</section>
+
+<?php get_template_part('sections/clinic-section'); ?>
+
 <?php get_footer(); ?>
