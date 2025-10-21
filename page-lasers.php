@@ -94,4 +94,9 @@ get_template_part('templates/faq-section', null, [
 ]);
 ?>
 
+<?php
+// Reviews Section
+get_template_part('sections/reviews-section');
+?>
+
 <?php get_footer(); ?>
