@@ -54,4 +54,65 @@ get_template_part('sections/happy-customers-section', null, [
 ]);
 ?>
 
+<?php
+get_template_part('sections/category-links-grid', null, [
+    'categories' => [
+        [
+            'title' => 'SCULPTRA',
+            'url' => '/sculptra/',
+            'button_text' => 'Maak een afspraak',
+            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
+        ],
+        [
+            'title' => 'LANLUMA',
+            'url' => '/lanluma/',
+            'button_text' => 'Maak een afspraak',
+            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
+        ],
+        [
+            'title' => 'PDO',
+            'url' => '/pdo/',
+            'button_text' => 'Maak een afspraak',
+            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
+        ],
+        [
+            'title' => 'PNR',
+            'url' => '/pdrn/',
+            'button_text' => 'Maak een afspraak',
+            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
+        ],
+        [
+            'title' => 'PROFHILO',
+            'url' => '/profhilo/',
+            'button_text' => 'Maak een afspraak',
+            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
+        ],
+        [
+            'title' => 'RADIESSE',
+            'url' => '/radiesse/',
+            'button_text' => 'Maak een afspraak',
+            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
+        ],
+        [
+            'title' => 'PRP/PRF',
+            'url' => '/prp-prf/',
+            'button_text' => 'Maak een afspraak',
+            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
+        ],
+        [
+            'title' => 'SKINBOOSTER',
+            'url' => '/skinbooster/',
+            'button_text' => 'Maak een afspraak',
+            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
+        ],
+        [
+            'title' => 'Ellansé',
+            'url' => '/ellanse/',
+            'button_text' => 'Maak een afspraak',
+            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
+        ]
+    ]
+]);
+?>
+
 <?php get_footer(); ?>
