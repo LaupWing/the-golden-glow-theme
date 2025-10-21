@@ -20,4 +20,47 @@ get_template_part('templates/category-intro', null, [
 ]);
 ?>
 
+
+<?php
+// Text content section - How we treat the frons
+get_template_part('sections/text-content-section', null, [
+    'title' => 'Hoe behandelen we de frons',
+    'content' => '
+        <p>Fronsrimpels ontstaan doordat de spieren tussen de wenkbrauwen (m. corrugator en m. procerus) zich herhaaldelijk aanspannen, bijvoorbeeld bij boos kijken, turen of fel licht. Op jonge leeftijd verdwijnen deze lijnen weer zodra de spier ontspant, maar naarmate de huid en het onderliggende bindweefsel elasticiteit verliezen, kunnen de rimpels blijvend zichtbaar worden. Door de fronsspieren met een spierontspanner te behandelen, ontspannen de spieren tijdelijk, waardoor fronsen vermindert of zelfs onmogelijk wordt. Het effect is een gladdere huid en een zachtere, meer toegankelijke gezichtsuitdrukking. De behandeling duurt slechts enkele minuten, is doorgaans goed te verdragen en vereist geen verdoving. Het mooie van deze methode is dat de mimiek behouden blijft, zolang de dosering zorgvuldig is afgestemd op de spieractiviteit en de anatomie van de cliënt.</p>
+    '
+]);
+?>
+
+<!-- Navigation Buttons Section -->
+<section class="py-8 md:py-12 bg-white">
+    <div class="container mx-auto px-[5%]">
+        <nav class="flex flex-wrap justify-center gap-4" aria-label="Page navigation">
+            <a href="#behandeling" class="inline-block bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold hover:opacity-90 transition-opacity duration-200">
+                Behandeling
+            </a>
+            <a href="#prijzen" class="inline-block bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold hover:opacity-90 transition-opacity duration-200">
+                Prijzen
+            </a>
+            <a href="#resultaat" class="inline-block bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold hover:opacity-90 transition-opacity duration-200">
+                Resultaat
+            </a>
+            <a href="#nazorg" class="inline-block bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold hover:opacity-90 transition-opacity duration-200">
+                Nazorg
+            </a>
+        </nav>
+    </div>
+</section>
+
+<?php
+// Price section
+get_template_part('templates/sub-category-price', null, [
+    'title' => 'Wat is de prijs van een fronsrimpels behandeling',
+    'price' => '125',
+    'anesthesia' => 'met crème',
+    'checkup' => 'na 2 weken',
+    'effect_duration' => '3 - 4 maanden',
+    'treatment_duration' => '15 minuten'
+]);
+?>
+
 <?php get_footer(); ?>
