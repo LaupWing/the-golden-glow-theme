@@ -65,6 +65,19 @@ get_template_part('templates/category-intro', null, [
     </div>
 </section>
 
+<!-- Philosophy Section -->
+<section class="py-12 md:py-16 lg:py-20 bg-background">
+    <div class="container mx-auto px-[5%]">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center">
+                <p class="text-gray-700 leading-relaxed text-base md:text-lg">
+                    Als cosmetisch arts kies ik er bewust voor om in eerste instantie zoveel mogelijk met spierontspanners te werken, in plaats van direct met fillers. Het is een subtiele manier om een frisse, natuurlijke uitstraling te geven. Pas wanneer spierontspanners niet voldoende effect hebben, zet ik fillers in als aanvulling. Mijn doel is niet alleen het behandelen van rimpels, maar vooral het veranderen van de uitstraling: van boos of vermoeid naar blij, zelfverzekerd en stralend. Spierontspanners zijn een prachtig middel om dat te bereiken.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php get_template_part('sections/clinic-section'); ?>
 
 <?php
