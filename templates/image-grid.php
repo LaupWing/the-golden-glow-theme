@@ -13,13 +13,13 @@ $images = $args['images'] ?? [];
 $columns = $args['columns'] ?? 2; // Default to 2 columns
 $gap = $args['gap'] ?? 'gap-4'; // Default gap
 
-// Set grid columns class based on columns parameter
+// Set grid columns class based on columns parameter with responsive design
 $grid_cols_class = match ($columns) {
     1 => 'grid-cols-1',
-    2 => 'grid-cols-2',
-    3 => 'grid-cols-3',
-    4 => 'grid-cols-2 md:grid-cols-4',
-    default => 'grid-cols-2',
+    2 => 'grid-cols-1 md:grid-cols-2',
+    3 => 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3',
+    4 => 'grid-cols-1 md:grid-cols-2 lg:grid-cols-4',
+    default => 'grid-cols-1 md:grid-cols-2',
 };
 
 $upload_url = wp_get_upload_dir()['baseurl'];

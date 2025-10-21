@@ -25,7 +25,6 @@ get_template_part('templates/category-intro', null, [
 <?php
 get_template_part('sections/happy-customers-section', null, [
     'title' => 'Onze tevreden klanten',
-    'columns' => 2,
     'images' => [
         [
             'filename' => 'lasers-happy-customer-2.jpg',

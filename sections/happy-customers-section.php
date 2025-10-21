@@ -9,7 +9,11 @@
 
 // Extract args passed from get_template_part()
 $title = $args['title'] ?? 'Onze tevreden klanten';
-$columns = $args['columns'] ?? 4;
+$images = $args['images'] ?? [];
+
+// Calculate columns dynamically based on image count, max out at 4
+$image_count = count($images);
+$columns = min($image_count, 4);
 ?>
 
 <!-- Happy Customers Section -->
@@ -20,8 +24,6 @@ $columns = $args['columns'] ?? 4;
         </h2>
 
         <?php
-        $images = $args['images'] ?? [];
-
         // Only display image grid if images are provided
         if (!empty($images)) {
             get_template_part('templates/image-grid', null, [
