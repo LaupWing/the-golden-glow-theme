@@ -9,6 +9,7 @@
 
 // Extract args passed from get_template_part()
 $title = $args['title'] ?? 'Onze tevreden klanten';
+$columns = $args['columns'] ?? 4;
 ?>
 
 <!-- Happy Customers Section -->
@@ -25,7 +26,7 @@ $title = $args['title'] ?? 'Onze tevreden klanten';
         if (!empty($images)) {
             get_template_part('templates/image-grid', null, [
                 'images' => $images,
-                'columns' => 4,
+                'columns' => $columns,
                 'gap' => 'gap-4'
             ]);
         }

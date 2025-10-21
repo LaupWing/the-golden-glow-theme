@@ -22,4 +22,21 @@ get_template_part('templates/category-intro', null, [
 ]);
 ?>
 
+<?php
+get_template_part('sections/happy-customers-section', null, [
+    'title' => 'Onze tevreden klanten',
+    'columns' => 2,
+    'images' => [
+        [
+            'filename' => 'lasers-happy-customer-2.jpg',
+            'alt' => 'lasers_endolift_voor_en_na'
+        ],
+        [
+            'filename' => 'lasers-happy-customer-1.png',
+            'alt' => 'Endolift behandeling before and after'
+        ]
+    ]
+]);
+?>
+
 <?php get_footer(); ?>
