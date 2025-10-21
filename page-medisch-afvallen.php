@@ -65,4 +65,171 @@ get_template_part('sections/content-info-section', null, [
 ]);
 ?>
 
+<!-- Programs and Pricing Section -->
+<section class="py-12 md:py-16 lg:py-20 bg-background">
+    <div class="container mx-auto px-[5%]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl text-primary mb-8">
+                Programma's en prijzen
+            </h2>
+
+            <p class="text-gray-700 leading-relaxed">
+                Bij The Golden Glow bieden wij vier afvalprogramma's aan, waarvan drie met medicatie. Medicatie wordt alleen voorgeschreven als u voldoet aan de medische indicaties. Na een grondige beoordeling door onze arts kan, indien passend, een recept worden uitgeschreven. Elk programma is ontworpen om u op een veilige en effectieve manier te begeleiden naar een gezonder gewicht.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Program Options Section -->
+<section class="py-12 md:py-16 lg:py-20 bg-background">
+    <div class="container mx-auto px-[5%]">
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- Golden Start Program -->
+            <div class="bg-white p-6 md:p-8 rounded-lg">
+                <h3 class="font-heading text-2xl md:text-3xl text-primary mb-6">Golden Start</h3>
+
+                <ul class="space-y-3 text-gray-700 mb-6">
+                    <li class="flex items-start">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Start met een artsenconsult waarin medische aspecten en oorzaken van uw overgewicht worden geëvalueerd.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Onder supervisie van een arts volgt u het programma met begeleiding op maat.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Coach momenten voor het medisch afvallen, die uw voortgang monitort en waar nodig bijstuurt.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Elke drie weken heeft u een evaluatieconsult voor voortgang, medicatie en coaching.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Na elke maandelijkse meting en het voortgangsgesprek krijgt u de medicatie mee.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>U ontvangt handige tools om calorieën te tracken. Er wordt op maat gekeken welke voeding bij u past.</span>
+                    </li>
+                </ul>
+
+                <div class="text-center">
+                    <a
+                        href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
+                        class="inline-block bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold hover:opacity-90 transition-opacity duration-200"
+                        rel="noopener">
+                        Maak een afspraak
+                    </a>
+                </div>
+            </div>
+
+            <!-- Golden Balance Program -->
+            <div class="bg-white p-6 md:p-8 rounded-lg">
+                <h3 class="font-heading text-2xl md:text-3xl text-primary mb-6">Golden Balance</h3>
+
+                <ul class="space-y-3 text-gray-700 mb-6">
+                    <li class="flex items-start">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Start met een artsenconsult waarin medische aspecten en oorzaken van uw overgewicht worden geëvalueerd.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Onder supervisie van een arts volgt u het programma met begeleiding op maat.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Coach momenten voor het medisch afvallen, die uw voortgang monitort en waar nodig bijstuurt.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Elke drie weken heeft u een evaluatieconsult voor voortgang, medicatie en coaching.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Na elke maandelijkse meting en het voortgangsgesprek krijgt u de medicatie mee.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>U ontvangt handige tools om calorieën te tracken. Er wordt op maat gekeken welke voeding bij u past.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Begeleiding door een psycholoog om de mentale aspecten van gewichtsverlies aan te pakken en blijvende gedragsveranderingen te ondersteunen.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Extra persoonlijke sessies om u te helpen omgaan met emotioneel eten en andere onderliggende oorzaken van overgewicht.</span>
+                    </li>
+                </ul>
+
+                <div class="text-center">
+                    <a
+                        href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
+                        class="inline-block bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold hover:opacity-90 transition-opacity duration-200"
+                        rel="noopener">
+                        Maak een afspraak
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<?php
+get_template_part('sections/content-info-section', null, [
+    'content' => '
+        <h2 class="font-heading text-2xl md:text-3xl text-primary mb-4">Veiligheid van gewichtsverliesinjecties</h2>
+        <p>De door ons voorgeschreven medicijnen zijn goedgekeurd door de FDA, wat betekent dat ze hun veiligheid en effectiviteit hebben bewezen door intensieve en gereguleerde testen. In Nederland heeft het Zorginstituut medicatie voor gewichtsverlies, onder strikte voorwaarden, opgenomen in het Geneesmiddelenvergoedingssysteem voor patiënten met ernstig overgewicht.</p>
+        <p>Net als bij andere medicijnen kunnen er bijwerkingen optreden, zoals misselijkheid of diarree. Daarom is het belangrijk om de medicatie uitsluitend onder medische begeleiding te gebruiken. De medicijnen zijn in Nederland alleen op recept verkrijgbaar.</p>
+
+        <h2 class="font-heading text-2xl md:text-3xl text-primary mb-4 mt-6">Duur van de behandeling</h2>
+        <p>De behandelingsduur wordt afgestemd op uw persoonlijke situatie, waarbij uw streefgewicht en wensen centraal staan. In overleg met de arts worden realistische doelen gesteld. Om het proces zorgvuldig te begeleiden, worden er regelmatig monitoringconsulten ingepland. Onze cosmetische kliniek in Amsterdam behoort tot de koplopers in Nederland op het gebied van medische begeleiding bij gewichtsverlies met injecties.</p>
+    ',
+    'image_filename' => 'food2.jpg'
+]);
+?>
+
+<?php get_template_part('sections/clinic-section'); ?>
+
+<?php
+get_template_part('templates/faq-section', null, [
+    'title' => 'Veelgestelde vragen over medisch afvallen',
+    'faqs' => [
+        [
+            'question' => 'Welke medicatie wordt er gebruikt?',
+            'answer' => 'Voor meer informatie over de medicatie die wordt gebruikt bij onze programma\'s voor medisch afvallen met injecties kunt u terecht bij de medicatiepagina of door contact op te nemen met ons team. U kunt ook een consult boeken voor een uitgebreide uitleg.'
+        ],
+        [
+            'question' => 'Kan ik de injecties zelf toedienen?',
+            'answer' => 'Ja, u kunt de injecties zelf toedienen. Tijdens het consult in de kliniek leert de arts hoe u dit op een veilige manier kunt doen. De injecties zijn ontworpen om eenvoudig en praktisch in gebruik te zijn.'
+        ],
+        [
+            'question' => 'Welk resultaat mag ik verwachten?',
+            'answer' => 'De meeste mensen ervaren na 12 weken een significant gewichtsverlies. Dit kan variëren tussen de 5% en 10% van het startgewicht, afhankelijk van uw inzet en het gekozen programma. Wij begeleiden u om uw resultaten te optimaliseren en geven advies over het behouden van een gezond gewicht.'
+        ],
+        [
+            'question' => 'Wanneer kan ik stoppen met de medicatie?',
+            'answer' => 'Het stoppen met medicatie gebeurt altijd in overleg met de arts. Een geleidelijke afbouw verkleint de kans op terugval in oude gewoontes. Studies tonen aan dat minimaal 1 jaar gebruik vaak het beste resultaat oplevert. Afhankelijk van uw voortgang en doelen kan de arts een onderhoudsdosering aanbevelen.'
+        ],
+        [
+            'question' => 'Wat zijn de bijwerkingen?',
+            'answer' => 'Zoals bij elk medicijn kunnen er bijwerkingen optreden. De meest voorkomende zijn milde klachten zoals misselijkheid of diarree. Bekijk onze medicatiepagina voor meer details en raadpleeg bij twijfel altijd de arts.'
+        ],
+        [
+            'question' => 'Wat is het verschil tussen Ozempic en Saxenda?',
+            'answer' => 'Beide medicamenten behoren tot de groep GLP-1 agonisten echter zijn het 2 verschillende stoffen. Saxenda ookwel liraglutide genoemd. De werkende stof bij Ozempic is semaglutide. Ondanks dat liraglutide en semaglutide verschillende molecuul formules hebben, oefen ze dezelfde werking uit. Het belangrijkste verschil is dat Saxenda een kortere werkingsduur heeft van een dag in tegendeel tot Ozempic die een werkingsduur heeft van een week.'
+        ]
+    ]
+]);
+?>
+
+<?php
+// Reviews Section
+get_template_part('sections/reviews-section');
+?>
+
 <?php get_footer(); ?>
