@@ -55,7 +55,7 @@ $image_url = esc_url(wp_get_upload_dir()['baseurl'] . '/' . $image_filename);
                     alt=""
                     loading="lazy"
                     decoding="async"
-                    class="w-full h-auto max-w-md mx-auto">
+                    class="w-full h-auto max-w-md mx-auto rounded-xl">
             </div>
 
         </div>
