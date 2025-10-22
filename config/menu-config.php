@@ -49,6 +49,7 @@ return [
                 ['title' => 'Lipfiller', 'url' => '/lipfiller'],
                 ['title' => 'Jukbeenderen', 'url' => '/jukbeenderen/'],
                 ['title' => 'Traangootjes', 'url' => '/traangootjes/'],
+                ['title' => 'Neuslippenplooi', 'url' => '/neuslippenplooi'],
                 ['title' => 'Wangen', 'url' => '/wangen/'],
                 ['title' => 'Fullface', 'url' => '/full-face/'],
                 ['title' => 'Neus', 'url' => '/neus/'],
