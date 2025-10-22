@@ -65,7 +65,7 @@ return [
             'submenu' => [
                 ['title' => 'Bilfillers', 'url' => '/bilfillers/'],
                 ['title' => 'Hip dips', 'url' => '/hip-dips/'],
-                ['title' => 'Penisvergroting', 'url' => '/penisvergroting/'],
+                ['title' => 'Eikelvergroting', 'url' => '/eikelvergroting/'],
                 ['title' => 'Vagina Verjonging', 'url' => '/vagina-vulva-verjonging/'],
             ]
         ],
