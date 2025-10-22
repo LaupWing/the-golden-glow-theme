@@ -50,7 +50,7 @@ return [
                 ['title' => 'Neus', 'url' => '/neus/'],
                 ['title' => 'Slapen', 'url' => '/slapen/'],
                 ['title' => 'Kaaklijn', 'url' => '/kaaklijn-filler/'],
-                ['title' => 'Lipfiller', 'url' => '/lip-filler-behandeling/'],
+                ['title' => 'Lipfiller', 'url' => '/lipfiller'],
             ]
         ],
         [
