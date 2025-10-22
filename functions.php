@@ -77,3 +77,61 @@ function remove_emoji_scripts()
   remove_action('wp_print_styles', 'print_emoji_styles');
 }
 add_action('init', 'remove_emoji_scripts');
+
+/**
+ * Handle Contact Form Submission
+ */
+function handle_contact_form_submission()
+{
+  // Verify nonce for security
+  if (!isset($_POST['contact_nonce']) || !wp_verify_nonce($_POST['contact_nonce'], 'contact_form_nonce')) {
+    wp_die('Security check failed');
+  }
+
+  // Sanitize and validate form data
+  $first_name = sanitize_text_field($_POST['first_name']);
+  $last_name = sanitize_text_field($_POST['last_name']);
+  $email = sanitize_email($_POST['email']);
+  $phone = sanitize_text_field($_POST['phone']);
+  $message = sanitize_textarea_field($_POST['message']);
+
+  // Validate required fields
+  if (empty($first_name) || empty($last_name) || empty($email)) {
+    wp_redirect(add_query_arg('contact_error', 'missing_fields', wp_get_referer()));
+    exit;
+  }
+
+  // Validate email
+  if (!is_email($email)) {
+    wp_redirect(add_query_arg('contact_error', 'invalid_email', wp_get_referer()));
+    exit;
+  }
+
+  // Prepare email
+  $to = get_option('admin_email'); // Send to site admin email
+  $subject = 'New Contact Form Submission - The Golden Glow';
+  $body = "New contact form submission:\n\n";
+  $body .= "Name: {$first_name} {$last_name}\n";
+  $body .= "Email: {$email}\n";
+  $body .= "Phone: {$phone}\n\n";
+  $body .= "Message:\n{$message}\n";
+
+  $headers = array(
+    'Content-Type: text/plain; charset=UTF-8',
+    'From: ' . get_bloginfo('name') . ' <' . get_option('admin_email') . '>',
+    'Reply-To: ' . $email
+  );
+
+  // Send email
+  $mail_sent = wp_mail($to, $subject, $body, $headers);
+
+  // Redirect with success or error message
+  if ($mail_sent) {
+    wp_redirect(add_query_arg('contact_success', '1', wp_get_referer()));
+  } else {
+    wp_redirect(add_query_arg('contact_error', 'mail_failed', wp_get_referer()));
+  }
+  exit;
+}
+add_action('admin_post_nopriv_contact_form_submission', 'handle_contact_form_submission');
+add_action('admin_post_contact_form_submission', 'handle_contact_form_submission');
