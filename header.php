@@ -52,6 +52,18 @@
                         if (!is_array($paths)) {
                             $paths = [$paths];
                         }
+
+                        // Check for homepage
+                        if (is_front_page() && in_array('/', $paths)) {
+                            return true;
+                        }
+
+                        // Check for blog page
+                        if ((is_home() || is_single() || is_archive() || is_category() || is_tag()) && in_array('/blog-posts/', $paths)) {
+                            return true;
+                        }
+
+                        // Regular page check
                         if (!is_object($post)) {
                             return false;
                         }
