@@ -18,16 +18,10 @@ $card_type = $args['card_type'] ?? 'default'; // 'default' or 'card-2'
         <div class="grid md:grid-cols-2 gap-6">
             <?php
             foreach ($categories as $index => $category) {
-                // Calculate row and column position
-                $row = floor($index / 2);
-                $col = $index % 2;
-
-                // Alternate pattern: if even row, left has bg; if odd row, right has bg
-                if ($row % 2 === 0) {
-                    $category['has_background'] = ($col === 0);
-                } else {
-                    $category['has_background'] = ($col === 1);
-                }
+                // Simple alternating pattern that works on both mobile and desktop
+                // Even indices (0, 2, 4...) get background
+                // Odd indices (1, 3, 5...) don't get background
+                $category['has_background'] = ($index % 2 === 0);
 
                 // Determine which card template to use
                 $template_name = $card_type === 'card-2' ? 'templates/category-link-card-2' : 'templates/category-link-card';
