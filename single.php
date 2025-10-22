@@ -15,14 +15,11 @@ get_header();
         while (have_posts()) :
             the_post();
         ?>
-
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="article-inner">
-
                     <!-- Entry Header -->
                     <header class="entry-header">
                         <div class="entry-header-text entry-header-text-top text-center mb-12">
-
                             <!-- Category -->
                             <h6 class="entry-category is-xsmall uppercase text-xs text-primary mb-4">
                                 <?php
