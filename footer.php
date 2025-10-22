@@ -133,6 +133,14 @@
     </div>
 </footer>
 
+<style>
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Header height (80px) + extra offset (20px) */
+}
+</style>
+
 <?php wp_footer(); ?>
 </body>
 
