@@ -10,12 +10,12 @@
 return [
     'main_navigation' => [
         [
-            'title' => 'Home',
+            'title' => 'Homepage',
             'url' => '/',
         ],
         [
-            'title' => 'Over ons',
-            'url' => '/over-ons/',
+            'title' => 'Arts',
+            'url' => '/arts/',
         ],
         [
             'title' => 'Spierontspanners',
@@ -39,14 +39,63 @@ return [
                 ['title' => 'Liquid Facelift', 'url' => '/liquid-facelift/'],
                 ['title' => 'Kaaklijn', 'url' => '/kaaklijn/'],
                 ['title' => 'Kin', 'url' => '/kin-boto/'],
+                ['title' => 'Hyperhidrose', 'url' => '/hyperhidrose/'],
             ]
         ],
         [
-            'title' => 'Fillers',
-            'url' => '/fillers/',
+            'title' => 'Filler Behandeling',
+            'url' => '/filler-behandeling/',
             'submenu' => [
-                // Add filler treatments here when needed
+                ['title' => 'Fullface', 'url' => '/full-face/'],
+                ['title' => 'Neus', 'url' => '/neus/'],
+                ['title' => 'Slapen', 'url' => '/slapen/'],
+                ['title' => 'Kaaklijn', 'url' => '/kaaklijn-filler/'],
+                ['title' => 'Lipfiller', 'url' => '/lip-filler-behandeling/'],
             ]
+        ],
+        [
+            'title' => 'Body fillers',
+            'url' => '/bodyfillers/',
+            'submenu' => [
+                ['title' => 'Bilfillers', 'url' => '/bilfillers/'],
+                ['title' => 'Hip dips', 'url' => '/hip-dips/'],
+                ['title' => 'Penisvergroting', 'url' => '/penisvergroting/'],
+                ['title' => 'Vagina Verjonging', 'url' => '/vagina-verjonging/'],
+            ]
+        ],
+        [
+            'title' => 'Medisch afvallen',
+            'url' => '/medisch-afvallen/',
+            'submenu' => [
+                ['title' => 'Overzicht Afvalmedicatie', 'url' => '/overzicht-afval-medicatie/'],
+            ]
+        ],
+        [
+            'title' => 'Lasers',
+            'url' => '/lasers/',
+            'submenu' => [
+                ['title' => 'Tixel', 'url' => '/tixel/'],
+                ['title' => 'Endolift', 'url' => '/endolift/'],
+            ]
+        ],
+        [
+            'title' => 'Biostimulatie',
+            'url' => '/biostimulatie/',
+            'submenu' => [
+                ['title' => 'Lanluma', 'url' => '/lanluma/'],
+                ['title' => 'Sculptra', 'url' => '/sculptra/'],
+                ['title' => 'PDO', 'url' => '/pdo/'],
+                ['title' => 'Profhilo', 'url' => '/profhilo/'],
+                ['title' => 'Skinboosters', 'url' => '/skinboosters/'],
+            ]
+        ],
+        [
+            'title' => 'Prijzen',
+            'url' => '/prijzen/',
+        ],
+        [
+            'title' => 'Blog',
+            'url' => '/blog-posts/',
         ],
         [
             'title' => 'Contact',
