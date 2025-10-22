@@ -282,41 +282,7 @@ get_template_part('sections/reviews-section');
 
             if ($blog_query->have_posts()) :
                 while ($blog_query->have_posts()) : $blog_query->the_post();
-            ?>
-
-                    <!-- Blog Post Card -->
-                    <article class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
-                        <div class="p-6">
-                            <!-- Post Title -->
-                            <h3 class="text-lg font-heading text-secondary mb-3 leading-tight">
-                                <a href="<?php the_permalink(); ?>" class="hover:text-primary transition-colors duration-300">
-                                    <?php the_title(); ?>
-                                </a>
-                            </h3>
-
-                            <!-- Post Meta -->
-                            <div class="flex items-center gap-2 text-xs text-gray-400 mb-4">
-                                <span><?php echo get_the_author(); ?></span>
-                                <span>-</span>
-                                <span><?php echo get_the_date('d/m/Y'); ?></span>
-                            </div>
-
-                            <!-- Post Excerpt -->
-                            <?php if (has_excerpt()) : ?>
-                                <div class="text-sm text-gray-600 leading-relaxed mb-4">
-                                    <?php the_excerpt(); ?>
-                                </div>
-                            <?php endif; ?>
-
-                            <!-- Read More Link -->
-                            <a href="<?php the_permalink(); ?>"
-                                class="inline-block text-xs font-bold text-primary hover:text-secondary transition-colors duration-300">
-                                Leer meer »
-                            </a>
-                        </div>
-                    </article>
-
-                <?php
+                    get_template_part('templates/blog-card-1', null, ['post_id' => get_the_ID()]);
                 endwhile;
                 wp_reset_postdata();
             else :
