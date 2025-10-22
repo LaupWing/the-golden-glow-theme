@@ -19,7 +19,7 @@ get_header(); ?>
                     alt="Arwind Chigharoe, MD, Cosmetisch Arts KNMG"
                     width="1020"
                     height="583"
-                    class="w-full h-auto"
+                    class="w-auto h-auto overflow-hidden rounded-lg"
                     loading="eager">
             </div>
 
@@ -37,7 +37,7 @@ get_header(); ?>
                 </p>
 
                 <!-- Statistics -->
-                <div class="hidden md:grid grid-cols-2 gap-8 pt-4">
+                <div class="space-y-6 pt-4">
 
                     <!-- Years Experience -->
                     <div class="text-center lg:text-left">
@@ -140,12 +140,12 @@ get_header(); ?>
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 max-w-6xl mx-auto">
 
             <!-- Mission -->
-            <article class="space-y-6">
+            <article class="space-y-6 text-center lg:text-left">
                 <h2 class="font-heading text-3xl md:text-4xl text-primary">
                     Missie
                 </h2>
                 <img
-                    src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/mission.jpg'); ?>"
+                    src="<?php echo get_image_url('mission.jpg'); ?>"
                     alt="Missie decorative pattern"
                     width="1000"
                     height="400"
@@ -158,21 +158,21 @@ get_header(); ?>
             </article>
 
             <!-- Vision -->
-            <article class="space-y-6">
-                <div class=" p-6 ">
+            <article class="flex flex-col space-y-6 text-center lg:text-left">
+                <div class="order-3 lg:order-1 p-6 ">
                     <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                         In mijn behandelingen staat veiligheid altijd voorop. Ik neem de tijd om te luisteren naar jouw wensen, geef eerlijk en realistisch advies en werk uitsluitend met hoogwaardige producten en bewezen technieken. Mijn doel is dat jij na iedere behandeling vol vertrouwen en met een glimlach naar buiten stapt op een manier die nog steeds helemaal 'jij' voelt, maar dan net een beetje frisser, zachter of stralender.
                     </p>
                 </div>
-                <h2 class="font-heading text-3xl md:text-4xl text-primary">
+                <h2 class="order-1 lg:order-2 font-heading text-3xl md:text-4xl text-primary">
                     Visie
                 </h2>
                 <img
-                    src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/vision.png'); ?>"
+                    src="<?php echo get_image_url('vision.png'); ?>"
                     alt="Visie decorative pattern"
                     width="834"
                     height="333"
-                    class="w-full h-auto rounded-lg">
+                    class="order-2 lg:order-3 w-full h-auto rounded-lg">
             </article>
 
         </div>
