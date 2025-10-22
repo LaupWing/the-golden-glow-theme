@@ -147,7 +147,7 @@ get_header(); ?>
             <div class="order-1">
                 <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
                 <img
-                    src="<?php echo esc_url($upload_url . '/waiting-room.jpg'); ?>"
+                    src="<?php echo esc_url($upload_url . '/waiting-room.png'); ?>"
                     alt="The Golden Glow Kliniek"
                     width="1200"
                     height="800"
@@ -286,7 +286,7 @@ get_template_part('sections/reviews-section');
                 endwhile;
                 wp_reset_postdata();
             else :
-                ?>
+            ?>
                 <p class="col-span-full text-center text-gray-500">Geen blogposts gevonden.</p>
             <?php endif; ?>
 
