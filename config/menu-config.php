@@ -54,9 +54,9 @@ return [
                 ['title' => 'Wangen', 'url' => '/wangen/'],
                 ['title' => 'Kinfiller', 'url' => '/kinfiller/'],
                 ['title' => 'Kaaklijn', 'url' => '/kaaklijn-filler/'],
-                ['title' => 'Fullface', 'url' => '/full-face/'],
-                ['title' => 'Neus', 'url' => '/neus/'],
                 ['title' => 'Slapen', 'url' => '/slapen/'],
+                ['title' => 'Neus', 'url' => '/neus/'],
+                ['title' => 'Fullface', 'url' => '/full-face/'],
             ]
         ],
         [
