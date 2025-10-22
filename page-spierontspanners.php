@@ -35,6 +35,8 @@ get_template_part('sections/category-links-grid', null, [
         ['title' => 'Gummy smile', 'url' => '/gummy-smile/'],
         ['title' => 'Marionetlijnen', 'url' => '/marionet-lijnen/'],
         ['title' => 'Lip flip', 'url' => '/lip-flip/'],
+        ['title' => 'Rokerslijntjes', 'url' => '/rokers-lijntjes/'],
+        ['title' => 'Neuspunt lift', 'url' => '/neuspunt-lift/'],
         ['title' => 'Migraine', 'url' => '/migraine/'],
         ['title' => 'Platysma', 'url' => '/platysma/'],
         ['title' => 'Traptox', 'url' => '/trap-tox/'],
