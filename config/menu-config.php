@@ -38,7 +38,7 @@ return [
                 ['title' => 'Traptox', 'url' => '/trap-tox/'],
                 ['title' => 'Liquid Facelift', 'url' => '/liquid-facelift/'],
                 ['title' => 'Kaaklijn', 'url' => '/kaaklijn/'],
-                ['title' => 'Kin', 'url' => '/kin-boto/'],
+                ['title' => 'Kin', 'url' => '/kin'],
                 ['title' => 'Hyperhidrose', 'url' => '/hyperhidrose/'],
             ]
         ],
