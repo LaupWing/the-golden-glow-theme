@@ -138,6 +138,14 @@ get_template_part('templates/page-banner', null, [
                 }
                 break;
 
+            case 'happy-customers':
+                get_template_part('sections/happy-customers-section', null, [
+                    'title' => $block_data['title'] ?? 'Onze tevreden klanten',
+                    'content' => $block_data['content'] ?? '',
+                    'images' => $block_data['images'] ?? []
+                ]);
+                break;
+
             default:
                 // Unknown block type - skip or show error in development
                 break;

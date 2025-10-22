@@ -9,6 +9,7 @@
 
 // Extract args passed from get_template_part()
 $title = $args['title'] ?? 'Onze tevreden klanten';
+$content = $args['content'] ?? '';
 $images = $args['images'] ?? [];
 
 // Calculate columns dynamically based on image count, max out at 4
@@ -22,6 +23,12 @@ $columns = min($image_count, 4);
         <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold text-primary text-center mb-12">
             <?php echo esc_html($title); ?>
         </h2>
+
+        <?php if (!empty($content)): ?>
+            <p class="text-center text-gray-700 max-w-3xl mx-auto mb-12">
+                <?php echo esc_html($content); ?>
+            </p>
+        <?php endif; ?>
 
         <?php
         // Only display image grid if images are provided
