@@ -25,27 +25,15 @@ get_template_part('templates/category-intro', null, [
 ?>
 
 <?php
+$menu_config = require get_template_directory() . '/config/menu-config.php';
+// Find the Spierontspanners menu item and get its submenu
+$spierontspanners_submenu = array_filter($menu_config['main_navigation'], function($item) {
+    return $item['title'] === 'Spierontspanners';
+});
+$spierontspanners_submenu = reset($spierontspanners_submenu);
+
 get_template_part('sections/category-links-grid', null, [
-    'categories' => [
-        ['title' => 'Fronsrimpel', 'url' => '/frons-rimpels/'],
-        ['title' => 'Voorhoofdsrimpels', 'url' => '/voor-hoofd-rimpels/'],
-        ['title' => 'Kraaienpootjes', 'url' => '/kraaien-pootjes/'],
-        ['title' => 'Wenkbrauwlift', 'url' => '/wenkbrauwlift/'],
-        ['title' => 'Bunny lines', 'url' => '/bunny-lines/'],
-        ['title' => 'Gummy smile', 'url' => '/gummy-smile/'],
-        ['title' => 'Marionetlijnen', 'url' => '/marionet-lijnen/'],
-        ['title' => 'Lip flip', 'url' => '/lip-flip/'],
-        ['title' => 'Rokerslijntjes', 'url' => '/rokers-lijntjes/'],
-        ['title' => 'Neuspunt lift', 'url' => '/neuspunt-lift/'],
-        ['title' => 'Tandenknarsen', 'url' => '/tanden-knarsen/'],
-        ['title' => 'Migraine', 'url' => '/migraine/'],
-        ['title' => 'Platysma', 'url' => '/platysma/'],
-        ['title' => 'Nefertiti lift', 'url' => '/nefertiti-lift/'],
-        ['title' => 'Traptox', 'url' => '/trap-tox/'],
-        ['title' => 'Liquid Facelift', 'url' => '/liquid-facelift/'],
-        ['title' => 'Kaaklijn', 'url' => '/kaaklijn/'],
-        ['title' => 'Kin', 'url' => '/kin-boto/'],
-    ]
+    'categories' => $spierontspanners_submenu['submenu']
 ]);
 ?>
 
