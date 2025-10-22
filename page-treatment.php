@@ -118,7 +118,11 @@ get_template_part('templates/page-banner', null, [
                 break;
 
             case 'reviews':
-                get_template_part('sections/reviews-section');
+                get_template_part('sections/reviews-section', null, [
+                    'title' => $block_data['title'] ?? 'Wat onze klanten zeggen',
+                    'reviews' => $block_data['reviews'] ?? null,
+                    'show_background' => $block_data['show_background'] ?? false
+                ]);
                 break;
 
             case 'clinic':

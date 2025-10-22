@@ -44,10 +44,12 @@ $default_reviews = [
 // Get reviews from args or use defaults
 $reviews = $args['reviews'] ?? $default_reviews;
 $section_title = $args['title'] ?? 'Wat onze klanten zeggen';
+$show_background = $args['show_background'] ?? false;
+$bg_class = $show_background ? 'bg-background' : 'bg-white';
 ?>
 
 <!-- Reviews Section -->
-<section class="py-12 md:py-16 lg:py-20">
+<section class="py-12 md:py-16 lg:py-20 <?php echo esc_attr($bg_class); ?>">
     <div class="container mx-auto px-[5%]">
 
         <!-- Section Title -->
