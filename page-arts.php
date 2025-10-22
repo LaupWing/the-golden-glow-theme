@@ -37,24 +37,24 @@ get_header(); ?>
                 </p>
 
                 <!-- Statistics -->
-                <div class="space-y-6 pt-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 pt-6">
 
                     <!-- Years Experience -->
-                    <div class="text-center lg:text-left">
-                        <div class="text-5xl lg:text-6xl font-bold text-primary font-heading leading-none mb-2">
-                            14<span class="text-4xl lg:text-5xl">+</span>
+                    <div class="text-center">
+                        <div class="text-5xl lg:text-6xl xl:text-7xl font-bold text-primary font-heading leading-none mb-3">
+                            14<span class="text-4xl lg:text-5xl xl:text-6xl">+</span>
                         </div>
-                        <p class="text-sm text-gray-700">
+                        <p class="text-sm lg:text-base text-gray-700 font-medium">
                             Jaar Ervaring
                         </p>
                     </div>
 
                     <!-- Happy Clients -->
-                    <div class="text-center lg:text-left">
-                        <div class="text-5xl lg:text-6xl font-bold text-primary font-heading leading-none mb-2">
-                            15<span class="text-4xl lg:text-5xl">K</span>
+                    <div class="text-center">
+                        <div class="text-5xl lg:text-6xl xl:text-7xl font-bold text-primary font-heading leading-none mb-3">
+                            15<span class="text-4xl lg:text-5xl xl:text-6xl">K</span>
                         </div>
-                        <p class="text-sm text-gray-700">
+                        <p class="text-sm lg:text-base text-gray-700 font-medium">
                             Gelukkige Klanten
                         </p>
                     </div>

@@ -8,10 +8,10 @@
 get_header(); ?>
 
 <!-- Hero Section -->
-<section class="relative w-full h-[600px] md:h-[700px] lg:h-[700px] overflow-hidden">
+<section class="relative w-full h-[50vh] md:h-[60vh] lg:h-[65vh] overflow-hidden">
     <!-- Hero Image -->
     <img
-        src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/clinic-photo.jpg'); ?>"
+        src="<?php echo get_image_url('clinic-photo.jpg'); ?>"
         alt="The Golden Glow Clinic"
         width="1920"
         height="700"
@@ -42,21 +42,21 @@ get_header(); ?>
 </section>
 
 <!-- Banner Section -->
-<section class="hidden lg:block bg-background py-12">
+<section class="bg-background py-8 md:py-12">
     <div class="container mx-auto px-[5%] text-center">
-        <h2 class="font-heading text-5xl lg:text-6xl xl:text-[65px] font-semibold uppercase text-black mb-4">
+        <h2 class="font-heading text-3xl md:text-5xl lg:text-6xl xl:text-[65px] font-semibold uppercase text-black mb-2 md:mb-4">
             The golden glow
         </h2>
-        <h2 class="font-body text-base md:text-lg font-medium uppercase text-black">
+        <h2 class="font-body text-sm md:text-base lg:text-lg font-medium uppercase text-black">
             DE beste kliniek in Amsterdam
         </h2>
     </div>
 </section>
 
 <!-- Treatment Categories Navigation -->
-<section class="hidden lg:block bg-background pb-8">
+<section class="bg-background pb-6 md:pb-8">
     <div class="container mx-auto px-[5%]">
-        <div class="flex flex-wrap justify-center gap-4">
+        <div class="flex flex-col items-center lg:flex-row flex-wrap justify-center gap-3 lg:gap-4">
             <a href="<?php echo esc_url(home_url('/spierontspanners/')); ?>"
                 class="font-body font-medium text-sm uppercase px-8 py-3 rounded-full bg-primary text-white hover:bg-secondary hover:text-white transition-all duration-300">
                 spierontspanners
@@ -91,7 +91,7 @@ get_header(); ?>
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
             <!-- Text Content -->
-            <div class="order-2 lg:order-1">
+            <div class="lg:order-1">
                 <div class="mb-8">
                     <h2 class="font-body text-base md:text-lg uppercase text-primary mb-6">
                         Behandelingen
@@ -123,7 +123,7 @@ get_header(); ?>
             </div>
 
             <!-- Image -->
-            <div class="order-1 lg:order-2">
+            <div class="lg:order-2">
                 <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
                 <img
                     src="<?php echo esc_url($upload_url . '/lady-shot.jpg'); ?>"
