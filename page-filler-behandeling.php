@@ -28,20 +28,25 @@ get_template_part('templates/category-intro', null, [
 ?>
 
 <?php
+// Load menu configuration and get Filler Behandeling submenu
+$menu_config = require get_template_directory() . '/config/menu-config.php';
+$filler_categories = [];
+
+// Find Filler Behandeling in main navigation
+foreach ($menu_config['main_navigation'] as $nav_item) {
+    if ($nav_item['url'] === '/filler-behandeling/' && isset($nav_item['submenu'])) {
+        $filler_categories = array_map(function($item) {
+            return [
+                'title' => $item['title'],
+                'url' => $item['url']
+            ];
+        }, $nav_item['submenu']);
+        break;
+    }
+}
+
 get_template_part('sections/category-links-grid', null, [
-    'categories' => [
-        ['title' => 'Lippen', 'url' => '/lip-filler-behandeling/'],
-        ['title' => 'Jukbeenderen', 'url' => '/juk-beenderen/'],
-        ['title' => 'Traangootjes', 'url' => '/traan-gootjes/'],
-        ['title' => 'Neus Lippen Plooi', 'url' => '/neus-lippen-plooi/'],
-        ['title' => 'Marionet Lijnen', 'url' => '/marionet-lijnen/'],
-        ['title' => 'Wangen', 'url' => '/wangen-filler/'],
-        ['title' => 'Kin', 'url' => '/kin/'],
-        ['title' => 'Kaaklijn', 'url' => '/kaaklijn-filler/'],
-        ['title' => 'Slapen', 'url' => '/slapen/'],
-        ['title' => 'Neus', 'url' => '/neus/'],
-        ['title' => 'Full Face', 'url' => '/full-face/'],
-    ]
+    'categories' => $filler_categories
 ]);
 ?>
 

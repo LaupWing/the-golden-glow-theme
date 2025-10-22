@@ -46,11 +46,13 @@ return [
             'title' => 'Filler Behandeling',
             'url' => '/filler-behandeling/',
             'submenu' => [
+                ['title' => 'Lipfiller', 'url' => '/lipfiller'],
+                ['title' => 'Jukbeenderen', 'url' => '/jukbeenderen/'],
+                ['title' => 'Wangen', 'url' => '/wangen/'],
                 ['title' => 'Fullface', 'url' => '/full-face/'],
                 ['title' => 'Neus', 'url' => '/neus/'],
                 ['title' => 'Slapen', 'url' => '/slapen/'],
                 ['title' => 'Kaaklijn', 'url' => '/kaaklijn-filler/'],
-                ['title' => 'Lipfiller', 'url' => '/lipfiller'],
             ]
         ],
         [
