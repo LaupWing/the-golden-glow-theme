@@ -27,13 +27,13 @@ $upload_url = wp_get_upload_dir()['baseurl'];
 
 <div class="grid <?php echo esc_attr($grid_cols_class); ?> <?php echo esc_attr($gap); ?>">
     <?php foreach ($images as $image): ?>
-        <div>
+        <div class="flex justify-center">
             <img
                 src="<?php echo esc_url($upload_url . '/' . $image['filename']); ?>"
                 alt="<?php echo esc_attr($image['alt'] ?? 'bodyfillers'); ?>"
                 loading="lazy"
                 decoding="async"
-                class="w-full h-auto">
+                class="w-full h-auto max-w-md">
         </div>
     <?php endforeach; ?>
 </div>
