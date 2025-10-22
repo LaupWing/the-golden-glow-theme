@@ -43,7 +43,7 @@ get_template_part('sections/category-links-grid', null, [
         ['title' => 'Nefertiti lift', 'url' => '/nefertiti-lift/'],
         ['title' => 'Traptox', 'url' => '/trap-tox/'],
         ['title' => 'Liquid Facelift', 'url' => '/liquid-facelift/'],
-        ['title' => 'Kaaklijn', 'url' => '/kaak-lijn/'],
+        ['title' => 'Kaaklijn', 'url' => '/kaaklijn/'],
         ['title' => 'Kin', 'url' => '/kin-boto/'],
     ]
 ]);
