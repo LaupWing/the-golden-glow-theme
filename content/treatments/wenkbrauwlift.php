@@ -51,7 +51,7 @@ return [
                 'content' => '
                     <p>Na de behandeling kan de huid van het voorhoofd wat rood, gevoelig of licht gezwollen zijn. Ook kunnen er blauwe plekjes ontstaan. Deze trekken binnen enkele dagen weer weg. Wij adviseren om de huid de eerste 24 uur met rust te laten en geen make-up te gebruiken. Ook is het verstandig om gedurende twee dagen intensief sporten, sauna, zonnebank en direct zonlicht te vermijden. Alcohol en bloedverdunners vergroten de kans op blauwe plekken en worden daarom afgeraden direct na de behandeling. Het resultaat wordt meestal binnen enkele dagen zichtbaar en is na ongeveer twee weken optimaal; de effecten houden doorgaans drie tot vier maanden aan, waarna je de behandeling weer kunt herhalen voor een optimaal effect.</p>
                 ',
-                'show_background' => true
+                'show_background' => false
             ]
         ],
         [
