@@ -11,7 +11,7 @@ get_header(); ?>
 <section class="relative w-full h-[50vh] md:h-[60vh] lg:h-[65vh] overflow-hidden">
     <!-- Hero Image -->
     <img
-        src="<?php echo get_image_url('clinic-photo.jpg'); ?>"
+        src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/clinic-photo.jpg'); ?>"
         alt="The Golden Glow Clinic"
         width="1920"
         height="700"

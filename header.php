@@ -23,7 +23,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0">
                     <a href="<?php echo esc_url(home_url('/')); ?>">
-                        <img src="<?php echo get_image_url('logo.png'); ?>"
+                        <img src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/logo.png'); ?>"
                             alt="<?php echo esc_attr(get_site_config('company.name', get_bloginfo('name'))); ?>"
                             width="150"
                             height="96"

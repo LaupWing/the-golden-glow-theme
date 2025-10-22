@@ -176,45 +176,6 @@ function get_site_config($key = null, $default = null)
 }
 
 /**
- * Get image URL from uploads directory
- *
- * @param string $filename Image filename (e.g., 'logo.png')
- * @return string Full URL to image
- */
-function get_image_url($filename)
-{
-  static $upload_url = null;
-
-  if ($upload_url === null) {
-    $upload_url = wp_get_upload_dir()['baseurl'];
-  }
-
-  return esc_url($upload_url . '/' . ltrim($filename, '/'));
-}
-
-/**
- * Output image tag with proper attributes
- *
- * @param string $filename Image filename
- * @param string $alt Alt text
- * @param string $class CSS classes
- * @param array $attrs Additional attributes
- */
-function the_image($filename, $alt = '', $class = '', $attrs = array())
-{
-  $url = get_image_url($filename);
-  $alt = esc_attr($alt);
-  $class = esc_attr($class);
-
-  $attributes = '';
-  foreach ($attrs as $key => $value) {
-    $attributes .= ' ' . esc_attr($key) . '="' . esc_attr($value) . '"';
-  }
-
-  echo '<img src="' . $url . '" alt="' . $alt . '" class="' . $class . '"' . $attributes . '>';
-}
-
-/**
  * Get contact email for forms
  *
  * @return string

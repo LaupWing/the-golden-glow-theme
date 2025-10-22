@@ -145,7 +145,7 @@ get_header(); ?>
                     Missie
                 </h2>
                 <img
-                    src="<?php echo get_image_url('mission.jpg'); ?>"
+                    src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/mission.jpg'); ?>"
                     alt="Missie decorative pattern"
                     width="1000"
                     height="400"
@@ -168,7 +168,7 @@ get_header(); ?>
                     Visie
                 </h2>
                 <img
-                    src="<?php echo get_image_url('vision.png'); ?>"
+                    src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/vision.png'); ?>"
                     alt="Visie decorative pattern"
                     width="834"
                     height="333"
