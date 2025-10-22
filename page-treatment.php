@@ -91,7 +91,8 @@ get_template_part('templates/page-banner', null, [
 
             case 'treatment-summary':
                 get_template_part('templates/treatment-summary', null, [
-                    'price' => '€' . ($block_data['price'] ?? ''),
+                    'title' => $block_data['title'] ?? '',
+                    'price' => $block_data['price'] ?? '',
                     'duration' => $block_data['duration'] ?? '',
                     'checkup' => $block_data['checkup'] ?? '',
                     'effect' => $block_data['effect'] ?? ''

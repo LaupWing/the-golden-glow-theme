@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Part: Treatment Summary
  *
@@ -8,6 +9,7 @@
  */
 
 // Extract args passed from get_template_part()
+$title = $args['title'] ?? '';
 $price = $args['price'] ?? '';
 $duration = $args['duration'] ?? '';
 $checkup = $args['checkup'] ?? '';
@@ -21,6 +23,12 @@ $bg_class = $show_background ? 'bg-white' : '';
 <!-- Treatment Summary Section -->
 <section class="py-12 md:py-16 <?php echo esc_attr($bg_class); ?>">
     <div class="container mx-auto px-[5%]">
+
+        <?php if ($title): ?>
+            <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold text-primary text-center mb-8">
+                <?php echo esc_html($title); ?>
+            </h2>
+        <?php endif; ?>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto">
 
             <!-- Price Column -->
