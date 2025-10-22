@@ -40,6 +40,7 @@ get_template_part('sections/category-links-grid', null, [
         ['title' => 'Tandenknarsen', 'url' => '/tanden-knarsen/'],
         ['title' => 'Migraine', 'url' => '/migraine/'],
         ['title' => 'Platysma', 'url' => '/platysma/'],
+        ['title' => 'Nefertiti lift', 'url' => '/nefertiti-lift/'],
         ['title' => 'Traptox', 'url' => '/trap-tox/'],
         ['title' => 'Liquid Facelift', 'url' => '/liquid-facelift/'],
         ['title' => 'Kaaklijn', 'url' => '/kaak-lijn/'],
