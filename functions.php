@@ -108,8 +108,8 @@ function handle_contact_form_submission()
   }
 
   // Prepare email
-  $to = get_option('admin_email'); // Send to site admin email
-  $subject = 'New Contact Form Submission - The Golden Glow';
+  $to = get_contact_email(); // Send to configured contact email
+  $subject = 'New Contact Form Submission - ' . get_site_config('company.name', 'The Golden Glow');
   $body = "New contact form submission:\n\n";
   $body .= "Name: {$first_name} {$last_name}\n";
   $body .= "Email: {$email}\n";
@@ -135,3 +135,91 @@ function handle_contact_form_submission()
 }
 add_action('admin_post_nopriv_contact_form_submission', 'handle_contact_form_submission');
 add_action('admin_post_contact_form_submission', 'handle_contact_form_submission');
+
+/**
+ * Helper Functions for Centralized Configuration
+ */
+
+/**
+ * Get site configuration value
+ *
+ * @param string $key Dot notation path (e.g., 'contact.email' or 'social.instagram')
+ * @param mixed $default Default value if key not found
+ * @return mixed
+ */
+function get_site_config($key = null, $default = null)
+{
+  static $config = null;
+
+  // Load config once
+  if ($config === null) {
+    $config = require get_template_directory() . '/config/site-config.php';
+  }
+
+  // Return full config if no key specified
+  if ($key === null) {
+    return $config;
+  }
+
+  // Support dot notation (e.g., 'contact.email')
+  $keys = explode('.', $key);
+  $value = $config;
+
+  foreach ($keys as $k) {
+    if (!isset($value[$k])) {
+      return $default;
+    }
+    $value = $value[$k];
+  }
+
+  return $value;
+}
+
+/**
+ * Get image URL from uploads directory
+ *
+ * @param string $filename Image filename (e.g., 'logo.png')
+ * @return string Full URL to image
+ */
+function get_image_url($filename)
+{
+  static $upload_url = null;
+
+  if ($upload_url === null) {
+    $upload_url = wp_get_upload_dir()['baseurl'];
+  }
+
+  return esc_url($upload_url . '/' . ltrim($filename, '/'));
+}
+
+/**
+ * Output image tag with proper attributes
+ *
+ * @param string $filename Image filename
+ * @param string $alt Alt text
+ * @param string $class CSS classes
+ * @param array $attrs Additional attributes
+ */
+function the_image($filename, $alt = '', $class = '', $attrs = array())
+{
+  $url = get_image_url($filename);
+  $alt = esc_attr($alt);
+  $class = esc_attr($class);
+
+  $attributes = '';
+  foreach ($attrs as $key => $value) {
+    $attributes .= ' ' . esc_attr($key) . '="' . esc_attr($value) . '"';
+  }
+
+  echo '<img src="' . $url . '" alt="' . $alt . '" class="' . $class . '"' . $attributes . '>';
+}
+
+/**
+ * Get contact email for forms
+ *
+ * @return string
+ */
+function get_contact_email()
+{
+  return get_site_config('emails.contact_form', get_option('admin_email'));
+}

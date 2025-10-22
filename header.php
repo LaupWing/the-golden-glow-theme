@@ -23,8 +23,8 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0">
                     <a href="<?php echo esc_url(home_url('/')); ?>">
-                        <img src="<?php echo esc_url(wp_upload_dir()['baseurl']); ?>/logo.png"
-                            alt="<?php bloginfo('name'); ?>"
+                        <img src="<?php echo get_image_url('logo.png'); ?>"
+                            alt="<?php echo esc_attr(get_site_config('company.name', get_bloginfo('name'))); ?>"
                             width="150"
                             height="96"
                             class="h-24 lg:h-28 w-auto object-contain">
@@ -152,9 +152,9 @@
 
                 <!-- CTA Button (Desktop) -->
                 <div class="hidden lg:block ml-6">
-                    <a href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
+                    <a href="<?php echo esc_url(get_site_config('booking.url')); ?>"
                         class="inline-block bg-primary text-white font-heading text-xs xl:text-sm uppercase tracking-widest px-5 py-3 rounded-full border border-primary hover:bg-primary-hover hover:text-text-muted transition-all duration-300 whitespace-nowrap">
-                        Maak een afspraak
+                        <?php echo esc_html(get_site_config('booking.button_text', 'Maak een afspraak')); ?>
                     </a>
                 </div>
 
@@ -225,9 +225,9 @@
                     ?>
 
                     <!-- Mobile CTA Button -->
-                    <a href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
+                    <a href="<?php echo esc_url(get_site_config('booking.url')); ?>"
                         class="block w-full text-center bg-primary text-white font-medium uppercase px-5 py-4 rounded-full hover:bg-primary-hover transition-all duration-300 mt-6">
-                        Maak een afspraak
+                        <?php echo esc_html(get_site_config('booking.button_text', 'Maak een afspraak')); ?>
                     </a>
                 </nav>
             </div>
