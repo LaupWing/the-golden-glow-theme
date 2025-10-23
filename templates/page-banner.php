@@ -12,12 +12,12 @@ $bg_image_url = esc_url(wp_get_upload_dir()['baseurl'] . '/category-banner.jpg')
 ?>
 
 <section
-    class="relative w-full flex items-center justify-center bg-primary overflow-hidden"
+    class="relative w-full flex items-center justify-center overflow-hidden"
     role="banner"
     aria-labelledby="banner-title">
 
     <!-- Background Image - decorative, optimized for SEO -->
-    <div class="absolute inset-0 opacity-30 pointer-events-none" aria-hidden="true">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
         <img
             src="<?php echo $bg_image_url; ?>"
             alt=""
@@ -26,6 +26,9 @@ $bg_image_url = esc_url(wp_get_upload_dir()['baseurl'] . '/category-banner.jpg')
             fetchpriority="high"
             class="w-full h-full object-cover">
     </div>
+
+    <!-- Gradient Overlay - Left to Right -->
+    <div class="absolute inset-0 bg-gradient-to-r from-primary to-transparent pointer-events-none" aria-hidden="true"></div>
 
     <!-- Banner Content -->
     <div class="relative z-10 container mx-auto px-4 py-8 md:py-12 text-center">

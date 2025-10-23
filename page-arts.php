@@ -150,7 +150,7 @@ get_header(); ?>
                     width="1000"
                     height="400"
                     class="w-full h-auto rounded-lg">
-                <div class="bg-white p-6 ">
+                <div>
                     <p class="text-base md:text-lg text-body-text leading-relaxed">
                         Mijn missie is om jouw natuurlijke schoonheid op een veilige, deskundige en persoonlijke manier te versterken. Samen streven we naar subtiele, verfijnde resultaten die perfect bij jou passen. Ik luister naar jouw wensen en zorg dat je je niet alleen mooier, maar ook zelfverzekerder voelt. Jouw veiligheid en comfort staan centraal, zodat jouw unieke uitstraling jouw zelfvertrouwen vergroot.
                     </p>
@@ -159,7 +159,7 @@ get_header(); ?>
 
             <!-- Vision -->
             <article class="flex flex-col space-y-6 text-center lg:text-left">
-                <div class="order-3 lg:order-1 p-6 ">
+                <div class="order-3 lg:order-1">
                     <p class="text-base md:text-lg text-body-text leading-relaxed">
                         In mijn behandelingen staat veiligheid altijd voorop. Ik neem de tijd om te luisteren naar jouw wensen, geef eerlijk en realistisch advies en werk uitsluitend met hoogwaardige producten en bewezen technieken. Mijn doel is dat jij na iedere behandeling vol vertrouwen en met een glimlach naar buiten stapt op een manier die nog steeds helemaal 'jij' voelt, maar dan net een beetje frisser, zachter of stralender.
                     </p>
