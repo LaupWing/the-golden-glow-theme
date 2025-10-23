@@ -32,7 +32,7 @@ get_header(); ?>
                 </h1>
 
                 <!-- Description -->
-                <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                <p class="text-base md:text-lg text-body-text leading-relaxed">
                     Met meer dan 14 jaar ervaring werk ik met veel plezier als cosmetisch arts in Amsterdam. Daarnaast heb ik de specialisatietitel KNMG en heb ik The Golden Glow opgericht.
                 </p>
 
@@ -44,7 +44,7 @@ get_header(); ?>
                         <div class="text-5xl lg:text-6xl xl:text-7xl font-bold text-primary font-heading leading-none mb-3">
                             14<span class="text-4xl lg:text-5xl xl:text-6xl">+</span>
                         </div>
-                        <p class="text-sm lg:text-base text-gray-700 font-medium">
+                        <p class="text-sm lg:text-base text-body-text font-medium">
                             Jaar Ervaring
                         </p>
                     </div>
@@ -54,7 +54,7 @@ get_header(); ?>
                         <div class="text-5xl lg:text-6xl xl:text-7xl font-bold text-primary font-heading leading-none mb-3">
                             15<span class="text-4xl lg:text-5xl xl:text-6xl">K</span>
                         </div>
-                        <p class="text-sm lg:text-base text-gray-700 font-medium">
+                        <p class="text-sm lg:text-base text-body-text font-medium">
                             Gelukkige Klanten
                         </p>
                     </div>
@@ -127,7 +127,7 @@ get_header(); ?>
 <section class="py-6 md:py-8 lg:py-12">
     <div class="container mx-auto px-[5%]">
         <div class="max-w-3xl mx-auto text-center">
-            <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+            <p class="text-base md:text-lg text-body-text leading-relaxed">
                 Als cosmetisch arts vind ik het belangrijk dat je weet wie je behandelt. Hieronder vind je een aantal kernpunten die mijn werkwijze, expertise en professionele standaarden weerspiegelen. Zo weet je zeker dat je in goede, bekwame handen bent.
             </p>
         </div>
@@ -151,7 +151,7 @@ get_header(); ?>
                     height="400"
                     class="w-full h-auto rounded-lg">
                 <div class="bg-white p-6 ">
-                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                    <p class="text-base md:text-lg text-body-text leading-relaxed">
                         Mijn missie is om jouw natuurlijke schoonheid op een veilige, deskundige en persoonlijke manier te versterken. Samen streven we naar subtiele, verfijnde resultaten die perfect bij jou passen. Ik luister naar jouw wensen en zorg dat je je niet alleen mooier, maar ook zelfverzekerder voelt. Jouw veiligheid en comfort staan centraal, zodat jouw unieke uitstraling jouw zelfvertrouwen vergroot.
                     </p>
                 </div>
@@ -160,7 +160,7 @@ get_header(); ?>
             <!-- Vision -->
             <article class="flex flex-col space-y-6 text-center lg:text-left">
                 <div class="order-3 lg:order-1 p-6 ">
-                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                    <p class="text-base md:text-lg text-body-text leading-relaxed">
                         In mijn behandelingen staat veiligheid altijd voorop. Ik neem de tijd om te luisteren naar jouw wensen, geef eerlijk en realistisch advies en werk uitsluitend met hoogwaardige producten en bewezen technieken. Mijn doel is dat jij na iedere behandeling vol vertrouwen en met een glimlach naar buiten stapt op een manier die nog steeds helemaal 'jij' voelt, maar dan net een beetje frisser, zachter of stralender.
                     </p>
                 </div>
@@ -202,7 +202,7 @@ get_header(); ?>
                         <svg class="w-8 h-8 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                         </svg>
-                        <span class="text-base md:text-lg text-gray-700">
+                        <span class="text-base md:text-lg text-body-text">
                             Medische deskundigheid
                         </span>
                     </li>
@@ -210,7 +210,7 @@ get_header(); ?>
                         <svg class="w-8 h-8 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                         </svg>
-                        <span class="text-base md:text-lg text-gray-700">
+                        <span class="text-base md:text-lg text-body-text">
                             KNMG-erkend cosmetisch arts
                         </span>
                     </li>
@@ -218,7 +218,7 @@ get_header(); ?>
                         <svg class="w-8 h-8 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                         </svg>
-                        <span class="text-base md:text-lg text-gray-700">
+                        <span class="text-base md:text-lg text-body-text">
                             Natuurlijke en verfijnde resultaten
                         </span>
                     </li>
@@ -226,7 +226,7 @@ get_header(); ?>
                         <svg class="w-8 h-8 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                         </svg>
-                        <span class="text-base md:text-lg text-gray-700">
+                        <span class="text-base md:text-lg text-body-text">
                             Persoonlijke en eerlijke benadering
                         </span>
                     </li>
@@ -234,7 +234,7 @@ get_header(); ?>
                         <svg class="w-8 h-8 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                         </svg>
-                        <span class="text-base md:text-lg text-gray-700">
+                        <span class="text-base md:text-lg text-body-text">
                             Continue ontwikkeling en innovatie
                         </span>
                     </li>

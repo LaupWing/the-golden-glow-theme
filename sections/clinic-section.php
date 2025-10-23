@@ -24,7 +24,7 @@ $button_url = 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11
                     Dé cosmetische kliniek in Amsterdam
                 </h3>
 
-                <div class="space-y-4 text-base md:text-lg text-gray-700 leading-relaxed">
+                <div class="space-y-4 text-base md:text-lg text-body-text leading-relaxed">
                     <p>
                         Bij The Golden Glow benaderen we esthetiek met een brede, holistische blik. Uiterlijke verjonging beschouwen wij niet als het reduceren van losse rimpels of het streven naar oppervlakkige perfectie, maar als het subtiel herstellen van evenwicht en expressie. Onze analyse strekt zich uit over huidkwaliteit, gezichtsverhoudingen, mimiek én de individuele uitstraling die ieder mens uniek maakt.
                     </p>

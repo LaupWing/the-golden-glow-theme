@@ -37,7 +37,7 @@ $upload_url = wp_get_upload_dir()['baseurl'];
                 <?php endif; ?>
 
                 <?php if ($content): ?>
-                    <div class="prose prose-lg max-w-none text-gray-700 space-y-4">
+                    <div class="prose prose-lg max-w-none text-body-text space-y-4">
                         <?php echo wp_kses_post($content); ?>
                     </div>
                 <?php endif; ?>

@@ -43,7 +43,7 @@ $bg_image_url = esc_url(wp_get_upload_dir()['baseurl'] . '/banner-pauw.jpg');
 
     <!-- Description -->
     <?php if ($description): ?>
-        <div class="relative z-10 <?php echo $has_background ? 'text-white' : 'text-gray-700'; ?> leading-relaxed mb-6 flex-grow text-center">
+        <div class="relative z-10 <?php echo $has_background ? 'text-white' : 'text-body-text'; ?> leading-relaxed mb-6 flex-grow text-center">
             <p><?php echo esc_html($description); ?></p>
         </div>
     <?php endif; ?>

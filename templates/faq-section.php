@@ -38,7 +38,7 @@ $faqs = $args['faqs'] ?? [];
                                 </svg>
                             </span>
                         </summary>
-                        <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <div class="px-6 pb-6 text-body-text leading-relaxed">
                             <?php echo wp_kses_post($faq['answer']); ?>
                         </div>
                     </details>

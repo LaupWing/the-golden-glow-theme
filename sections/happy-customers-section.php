@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Part: Happy Customers Section
  *
@@ -25,7 +26,7 @@ $columns = min($image_count, 4);
         </h2>
 
         <?php if (!empty($content)): ?>
-            <p class="text-center text-gray-700 max-w-3xl mx-auto mb-12">
+            <p class="text-center text-body-text max-w-3xl mx-auto mb-12">
                 <?php echo esc_html($content); ?>
             </p>
         <?php endif; ?>

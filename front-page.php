@@ -97,7 +97,7 @@ get_header(); ?>
                         Behandelingen
                     </h2>
 
-                    <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <div class="space-y-4 text-body-text leading-relaxed">
                         <p>
                             Bij The Golden Glow draait alles om maatwerk. Wij bieden hoogwaardige, verjongende en medisch
                             onderbouwde behandelingen, waaronder hyaluronzuur-fillers, biostimulatie en – als één van de
@@ -165,7 +165,7 @@ get_header(); ?>
                         Dé cosmetische kliniek in Amsterdam
                     </h3>
 
-                    <div class="space-y-4 text-gray-700 leading-relaxed mb-8">
+                    <div class="space-y-4 text-body-text leading-relaxed mb-8">
                         <p>
                             Bij The Golden Glow benaderen we esthetiek met een brede, holistische blik. Uiterlijke
                             verjonging beschouwen wij niet als het reduceren van losse rimpels of het streven naar
@@ -214,7 +214,7 @@ get_header(); ?>
                         Cosmetische Arts, KNMG
                     </h3>
 
-                    <div class="text-gray-700 leading-relaxed mb-8">
+                    <div class="text-body-text leading-relaxed mb-8">
                         <p>
                             Afgestudeerd aan de Universiteit van Maastricht. Als BIG-geregistreerde arts heb ik gewerkt in
                             het Maastricht UMC+ en het VieCuri Medisch Centrum binnen de discipline chirurgie. De

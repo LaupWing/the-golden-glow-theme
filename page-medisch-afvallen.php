@@ -36,7 +36,7 @@ get_template_part('sections/content-info-section', null, [
                 Informatie over de medicatie
             </h2>
 
-            <p class="text-gray-700 leading-relaxed mb-8">
+            <p class="text-body-text leading-relaxed mb-8">
                 Voor deze behandeling kunnen verschillende typen medicatie worden ingezet, afhankelijk van uw situatie. Alle medicatie is uitsluitend op recept verkrijgbaar. Als u in aanmerking komt, zal onze arts de medicatie voorschrijven. De medicatie wordt vervolgens verstrekt door de apotheker waarmee wij samenwerken, zodat u verzekerd bent van een veilige en gecontroleerde levering.
             </p>
 
@@ -73,7 +73,7 @@ get_template_part('sections/content-info-section', null, [
                 Programma's en prijzen
             </h2>
 
-            <p class="text-gray-700 leading-relaxed">
+            <p class="text-body-text leading-relaxed">
                 Bij The Golden Glow bieden wij vier afvalprogramma's aan, waarvan drie met medicatie. Medicatie wordt alleen voorgeschreven als u voldoet aan de medische indicaties. Na een grondige beoordeling door onze arts kan, indien passend, een recept worden uitgeschreven. Elk programma is ontworpen om u op een veilige en effectieve manier te begeleiden naar een gezonder gewicht.
             </p>
         </div>
@@ -89,7 +89,7 @@ get_template_part('sections/content-info-section', null, [
             <div class="bg-white p-6 md:p-8 rounded-lg">
                 <h3 class="font-heading text-2xl md:text-3xl text-primary mb-6">Golden Start</h3>
 
-                <ul class="space-y-3 text-gray-700 mb-6">
+                <ul class="space-y-3 text-body-text mb-6">
                     <li class="flex items-start">
                         <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
                         <span>Start met een artsenconsult waarin medische aspecten en oorzaken van uw overgewicht worden geëvalueerd.</span>
@@ -130,7 +130,7 @@ get_template_part('sections/content-info-section', null, [
             <div class="bg-white p-6 md:p-8 rounded-lg">
                 <h3 class="font-heading text-2xl md:text-3xl text-primary mb-6">Golden Balance</h3>
 
-                <ul class="space-y-3 text-gray-700 mb-6">
+                <ul class="space-y-3 text-body-text mb-6">
                     <li class="flex items-start">
                         <span class="inline-block w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
                         <span>Start met een artsenconsult waarin medische aspecten en oorzaken van uw overgewicht worden geëvalueerd.</span>

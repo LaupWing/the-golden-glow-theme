@@ -30,7 +30,7 @@ $image_order_class = $content_position === 'right' ? 'lg:order-1' : '';
             <!-- Text Content Column -->
             <div class="space-y-6 <?php echo esc_attr($content_order_class); ?>">
                 <?php if ($content): ?>
-                    <div class="prose prose-lg max-w-none text-gray-700 space-y-4">
+                    <div class="prose prose-lg max-w-none text-body-text space-y-4">
                         <?php echo wp_kses_post($content); ?>
                     </div>
                 <?php endif; ?>

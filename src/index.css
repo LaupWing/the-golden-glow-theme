@@ -16,10 +16,18 @@
   --color-background: var(--color-brand-bg);
   --color-text: var(--color-brand-text);
   --color-text-muted: var(--color-brand-text-muted);
+  --color-body-text: #374151; /* gray-700 for light mode */
 
   /* Typography */
   --font-heading: 'Aboreto', sans-serif;
   --font-body: 'Poppins', sans-serif;
+}
+
+/* Dark Mode Override */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-body-text: #1f2937; /* gray-800 for dark mode */
+  }
 }
 
 /* Custom Utilities */

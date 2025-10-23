@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Part: Reviews Section
  *
@@ -80,7 +81,7 @@ $bg_class = $show_background ? 'bg-background' : 'bg-white';
                         <div class="text-primary text-lg mb-2" role="img" aria-label="<?php echo esc_attr($review['rating']); ?> sterren">
                             <?php echo esc_html($stars); ?>
                         </div>
-                        <p class="text-gray-700 italic leading-relaxed">
+                        <p class="text-body-text italic leading-relaxed">
                             "<?php echo esc_html($review['text']); ?>"
                             <?php if (!empty($review['author'])) : ?>
                                 - <?php echo esc_html($review['author']); ?>
