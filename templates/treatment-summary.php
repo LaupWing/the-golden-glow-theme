@@ -37,7 +37,7 @@ $bg_class = $show_background ? 'bg-white' : '';
                     <h3 class="font-heading text-2xl md:text-[25px] text-secondary font-semibold">
                         Prijs
                     </h3>
-                    <div class="border-r-2 border-primary">
+                    <div class="border-l-2 md:border-l-0 md:border-r-2 border-primary">
                         <p class="font-accent text-lg md:text-[23px] font-semibold leading-[26px] text-primary">
                             <?php echo esc_html($price); ?>
                         </p>
@@ -65,7 +65,7 @@ $bg_class = $show_background ? 'bg-white' : '';
                     <h3 class="font-heading text-2xl md:text-[25px] text-secondary font-semibold">
                         Controle
                     </h3>
-                    <div class="border-r-2 border-primary">
+                    <div class="border-l-2 md:border-l-0 md:border-r-2 border-primary">
                         <p class="font-accent text-lg md:text-[23px] font-semibold leading-[26px] text-primary">
                             <?php echo esc_html($checkup); ?>
                         </p>
@@ -79,9 +79,11 @@ $bg_class = $show_background ? 'bg-white' : '';
                     <h3 class="font-heading text-2xl md:text-[25px] text-secondary font-semibold">
                         Effect
                     </h3>
-                    <p class="font-accent text-lg md:text-[23px] font-semibold leading-[26px] text-[#CB6843]">
-                        <?php echo esc_html($effect); ?>
-                    </p>
+                    <div class="border-r-2 md:border-r-0 border-primary">
+                        <p class="font-accent text-lg md:text-[23px] font-semibold leading-[26px] text-[#CB6843]">
+                            <?php echo esc_html($effect); ?>
+                        </p>
+                    </div>
                 </div>
             <?php endif; ?>
 
