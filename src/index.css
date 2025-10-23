@@ -19,7 +19,7 @@
   --color-body-text: #374151; /* gray-700 for light mode */
 
   /* Typography */
-  --font-heading: 'Aboreto', sans-serif;
+  --font-heading: 'Playfair Display', serif;
   --font-body: 'Poppins', sans-serif;
 }
 
@@ -37,6 +37,45 @@
 
 @utility font-body {
   font-family: var(--font-body);
+}
+
+@utility section-padding {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  @media (min-width: 768px) {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
+@utility section-padding-top {
+  padding-top: 2.5rem;
+
+  @media (min-width: 768px) {
+    padding-top: 3.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 4.5rem;
+  }
+}
+
+@utility section-padding-bottom {
+  padding-bottom: 2.5rem;
+
+  @media (min-width: 768px) {
+    padding-bottom: 3.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-bottom: 4.5rem;
+  }
 }
 
 /* Blog Content Styling */

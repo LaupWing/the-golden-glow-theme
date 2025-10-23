@@ -25,8 +25,8 @@ $faqs = $args['faqs'] ?? [];
                 <?php foreach ($faqs as $index => $faq): ?>
                     <!-- FAQ Item -->
                     <details class="group border border-gray-200 rounded-lg overflow-hidden" <?php echo $index === 0 ? 'open' : ''; ?>>
-                        <summary class="flex items-center justify-between cursor-pointer p-6 hover:bg-gray-50 transition-colors duration-200">
-                            <span class="font-body font-medium text-gray-800 pr-4">
+                        <summary class="flex items-center justify-center md:justify-between cursor-pointer p-6 hover:bg-gray-50 transition-colors duration-200">
+                            <span class="font-body font-medium text-gray-800 pr-4 text-center md:text-left">
                                 <?php echo esc_html($faq['question']); ?>
                             </span>
                             <span class="flex-shrink-0 w-5 h-5 text-primary">
@@ -38,7 +38,7 @@ $faqs = $args['faqs'] ?? [];
                                 </svg>
                             </span>
                         </summary>
-                        <div class="px-6 pb-6 text-body-text leading-relaxed">
+                        <div class="px-6 pb-6 text-body-text leading-relaxed text-center md:text-left">
                             <?php echo wp_kses_post($faq['answer']); ?>
                         </div>
                     </details>
