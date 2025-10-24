@@ -68,10 +68,10 @@ get_template_part('templates/page-banner', null, [
                 ?>
                 <section class="py-8 md:py-12 bg-white">
                     <div class="container mx-auto px-[5%]">
-                        <nav class="flex flex-wrap justify-center gap-4" aria-label="Page navigation">
+                        <nav class="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4" aria-label="Page navigation">
                             <?php foreach ($links as $link): ?>
                                 <a href="<?php echo esc_attr($link['href'] ?? '#'); ?>"
-                                   class="inline-block bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold hover:opacity-90 transition-opacity duration-200">
+                                   class="block md:inline-block w-4/5 md:w-auto bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold text-center hover:opacity-90 transition-opacity duration-200">
                                     <?php echo esc_html($link['label'] ?? ''); ?>
                                 </a>
                             <?php endforeach; ?>
