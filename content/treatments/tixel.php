@@ -102,15 +102,13 @@ return [
             ]
         ],
         [
-            "type" => "category-intro",
+            "type" => "happy-customers",
             "data" => [
                 "title" => "Voor en na resultaten",
-                "content" => "
-                    <p>Bekijk hieronder enkele voor en na foto's van tevreden klanten die de Tixel behandeling hebben ondergaan bij The Golden Glow. De resultaten spreken voor zich en tonen de effectiviteit van deze innovatieve huidverjongende behandeling.</p>
-                ",
+                "content" => "Bekijk hieronder enkele voor en na foto's van tevreden klanten die de Tixel behandeling hebben ondergaan bij The Golden Glow. De resultaten spreken voor zich en tonen de effectiviteit van deze innovatieve huidverjongende behandeling.",
                 "images" => [
-                    ["filename" => "tixel-happy-customer-1.jpg", "alt" => "Tixel behandeling resultaat 1"],
-                    ["filename" => "tixel-happy-customer-2.jpg", "alt" => "Tixel behandeling resultaat 2"]
+                    ["filename" => "tixel-happy-customer-1.png", "alt" => "Tixel behandeling resultaat 1"],
+                    ["filename" => "tixel-happy-customer-2.png", "alt" => "Tixel behandeling resultaat 2"]
                 ]
             ]
         ],
