@@ -48,7 +48,10 @@ get_template_part('templates/page-banner', null, [
                 get_template_part('templates/category-intro', null, [
                     'title' => $block_data['title'] ?? '',
                     'content' => $block_data['content'] ?? '',
-                    'image_filename' => $block_data['image_filename'] ?? ''
+                    'image_filename' => $block_data['image_filename'] ?? '',
+                    'images' => $block_data['images'] ?? [],
+                    'full_height_image' => $block_data['full_height_image'] ?? true,
+                    'button_below_text' => $block_data['button_below_text'] ?? false
                 ]);
                 break;
 

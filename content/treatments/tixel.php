@@ -18,7 +18,8 @@ return [
                 "content" => "
                     <p>Heeft u last van fijne rimpels, hyperpigmentatie, acne of littekens dan is de Tixel een aangewezen behandeling voor u. De Tixel kan ingezet worden als een ablatieve of non-ablatieve behandeling. Bij de non ablatieve behandeling wordt er hitte afgegeven zodanig dat de huid gestimuleerd wordt voor collageen vorming. Bij een ablatieve behandeling van de Tixel wordt zodanig hitte afgegeven dat de huid op bepaalde plekken worden gereduceerd en tevens ook de collageen vorming wordt gestimuleerd.</p>
                 ",
-                "image_filename" => "tixel-intro.jpg"
+                "image_filename" => "tixel-intro.jpg",
+                "button_below_text" => true
             ]
         ],
         [

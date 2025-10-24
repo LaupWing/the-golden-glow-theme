@@ -12,6 +12,7 @@ $content = $args['content'] ?? '';
 $image_filename = $args['image_filename'] ?? 'arwind4.png';
 $images = $args['images'] ?? []; // Multiple images for grid
 $full_height_image = $args['full_height_image'] ?? true; // Toggle for full-height image
+$button_below_text = $args['button_below_text'] ?? false; // Toggle to place button below text instead of centered at bottom
 
 // Static button settings
 $button_text = 'MAAK EEN AFSPRAAK';
@@ -41,6 +42,18 @@ $upload_url = wp_get_upload_dir()['baseurl'];
                 <?php if ($content): ?>
                     <div class="prose prose-lg max-w-none text-body-text space-y-4">
                         <?php echo wp_kses_post($content); ?>
+                    </div>
+                <?php endif; ?>
+
+                <?php if ($button_below_text): ?>
+                    <!-- CTA Button - Below Text -->
+                    <div class="pt-4">
+                        <a
+                            href="<?php echo esc_url($button_url); ?>"
+                            class="inline-block bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold hover:opacity-90 transition-opacity duration-200"
+                            rel="noopener">
+                            <?php echo esc_html($button_text); ?>
+                        </a>
                     </div>
                 <?php endif; ?>
             </div>
@@ -76,14 +89,16 @@ $upload_url = wp_get_upload_dir()['baseurl'];
 
         </div>
 
-        <!-- CTA Button - Centered Below Columns -->
-        <div class="text-center">
-            <a
-                href="<?php echo esc_url($button_url); ?>"
-                class="inline-block bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold hover:opacity-90 transition-opacity duration-200"
-                rel="noopener">
-                <?php echo esc_html($button_text); ?>
-            </a>
-        </div>
+        <?php if (!$button_below_text): ?>
+            <!-- CTA Button - Centered Below Columns -->
+            <div class="text-center">
+                <a
+                    href="<?php echo esc_url($button_url); ?>"
+                    class="inline-block bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold hover:opacity-90 transition-opacity duration-200"
+                    rel="noopener">
+                    <?php echo esc_html($button_text); ?>
+                </a>
+            </div>
+        <?php endif; ?>
     </div>
 </section>
