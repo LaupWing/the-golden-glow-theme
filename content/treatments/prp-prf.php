@@ -19,8 +19,7 @@ return [
                     <p>Bij The Golden Glow in Amsterdam bieden we de meest geavanceerde regeneratieve behandelingen voor natuurlijke huidverjonging. PRP (Platelet-Rich Plasma) en PRF (Platelet-Rich Fibrin) zijn innovatieve behandelingen waarbij gebruik wordt gemaakt van je eigen bloedplaatjes om de huid van binnenuit te verjongen en te herstellen. Deze autologe behandelingen zijn 100% natuurlijk en bevatten geen vreemde stoffen, waardoor ze uiterst veilig en effectief zijn.</p>
                     <p>Beide behandelingen maken gebruik van groeifactoren uit je eigen bloed om collageenproductie te stimuleren, huidvernieuwing te bevorderen en de algehele huidkwaliteit te verbeteren. Het verschil tussen PRP en PRF zit voornamelijk in de bereidingswijze en concentratie van groeifactoren. PRF is een nieuwere generatie waarbij de groeifactoren langzamer en over een langere periode vrijkomen, wat resulteert in een nog natuurlijker en langduriger effect. Bij The Golden Glow adviseren we welke behandeling het beste bij uw huid en doelstellingen past.</p>
                 ",
-                "image_filename" => "prp-prf-intro.jpg",
-                "button_below_text" => true
+                "image_filename" => "prp-prf-intro.jpg"
             ]
         ],
         [
