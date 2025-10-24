@@ -36,7 +36,7 @@ get_template_part('sections/content-info-section', null, [
                 Informatie over de medicatie
             </h2>
 
-            <p class="text-body-text leading-relaxed mb-8">
+            <p class="text-body-text text-[18px] leading-relaxed mb-8">
                 Voor deze behandeling kunnen verschillende typen medicatie worden ingezet, afhankelijk van uw situatie. Alle medicatie is uitsluitend op recept verkrijgbaar. Als u in aanmerking komt, zal onze arts de medicatie voorschrijven. De medicatie wordt vervolgens verstrekt door de apotheker waarmee wij samenwerken, zodat u verzekerd bent van een veilige en gecontroleerde levering.
             </p>
 
@@ -73,7 +73,7 @@ get_template_part('sections/content-info-section', null, [
                 Programma's en prijzen
             </h2>
 
-            <p class="text-body-text leading-relaxed">
+            <p class="text-body-text leading-relaxed text-[18px]">
                 Bij The Golden Glow bieden wij vier afvalprogramma's aan, waarvan drie met medicatie. Medicatie wordt alleen voorgeschreven als u voldoet aan de medische indicaties. Na een grondige beoordeling door onze arts kan, indien passend, een recept worden uitgeschreven. Elk programma is ontworpen om u op een veilige en effectieve manier te begeleiden naar een gezonder gewicht.
             </p>
         </div>

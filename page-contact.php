@@ -28,8 +28,8 @@ get_header();
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-16">
 
             <!-- Left Column: Contact Form -->
-            <div class="order-2 lg:order-1">
-                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-10">
+            <div class="order-2 lg:order-1 flex flex-col">
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-10 h-full flex flex-col">
                     <h2 class="font-heading text-2xl md:text-3xl font-semibold text-secondary mb-6">
                         Stuur ons een bericht
                     </h2>
@@ -87,73 +87,77 @@ get_header();
                     ?>
 
                     <!-- Manual Form (if not using a plugin) -->
-                    <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" class="space-y-6">
+                    <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" class="flex-1 flex flex-col">
                         <input type="hidden" name="action" value="contact_form_submission">
                         <?php wp_nonce_field('contact_form_nonce', 'contact_nonce'); ?>
 
-                        <!-- Name Fields -->
-                        <div class="grid md:grid-cols-2 gap-4">
+                        <div class="space-y-6">
+                            <!-- Name Fields -->
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="first_name" class="block text-sm font-semibold text-body-text mb-2">
+                                        Voornaam <span class="text-primary">*</span>
+                                    </label>
+                                    <input type="text"
+                                        id="first_name"
+                                        name="first_name"
+                                        required
+                                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary focus:outline-none transition-colors duration-300">
+                                </div>
+                                <div>
+                                    <label for="last_name" class="block text-sm font-semibold text-body-text mb-2">
+                                        Achternaam <span class="text-primary">*</span>
+                                    </label>
+                                    <input type="text"
+                                        id="last_name"
+                                        name="last_name"
+                                        required
+                                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary focus:outline-none transition-colors duration-300">
+                                </div>
+                            </div>
+
+                            <!-- Email Field -->
                             <div>
-                                <label for="first_name" class="block text-sm font-semibold text-body-text mb-2">
-                                    Voornaam <span class="text-primary">*</span>
+                                <label for="email" class="block text-sm font-semibold text-body-text mb-2">
+                                    Email <span class="text-primary">*</span>
                                 </label>
-                                <input type="text"
-                                    id="first_name"
-                                    name="first_name"
+                                <input type="email"
+                                    id="email"
+                                    name="email"
                                     required
                                     class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary focus:outline-none transition-colors duration-300">
                             </div>
+
+                            <!-- Phone Field (optional) -->
                             <div>
-                                <label for="last_name" class="block text-sm font-semibold text-body-text mb-2">
-                                    Achternaam <span class="text-primary">*</span>
+                                <label for="phone" class="block text-sm font-semibold text-body-text mb-2">
+                                    Telefoon
                                 </label>
-                                <input type="text"
-                                    id="last_name"
-                                    name="last_name"
-                                    required
+                                <input type="tel"
+                                    id="phone"
+                                    name="phone"
                                     class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary focus:outline-none transition-colors duration-300">
                             </div>
-                        </div>
-
-                        <!-- Email Field -->
-                        <div>
-                            <label for="email" class="block text-sm font-semibold text-body-text mb-2">
-                                Email <span class="text-primary">*</span>
-                            </label>
-                            <input type="email"
-                                id="email"
-                                name="email"
-                                required
-                                class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary focus:outline-none transition-colors duration-300">
-                        </div>
-
-                        <!-- Phone Field (optional) -->
-                        <div>
-                            <label for="phone" class="block text-sm font-semibold text-body-text mb-2">
-                                Telefoon
-                            </label>
-                            <input type="tel"
-                                id="phone"
-                                name="phone"
-                                class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary focus:outline-none transition-colors duration-300">
                         </div>
 
                         <!-- Message Field -->
-                        <div>
+                        <div class="flex-1 flex flex-col mt-6">
                             <label for="message" class="block text-sm font-semibold text-body-text mb-2">
                                 Bericht
                             </label>
                             <textarea id="message"
                                 name="message"
-                                rows="5"
-                                class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary focus:outline-none transition-colors duration-300 resize-none"></textarea>
+                                rows="8"
+                                class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary focus:outline-none transition-colors duration-300 resize-none flex-1"></textarea>
                         </div>
 
                         <!-- Submit Button -->
-                        <button type="submit"
-                            class="w-full bg-primary text-white font-heading text-sm uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary-hover hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
-                            Verstuur Bericht
-                        </button>
+                        <div class="mt-6">
+                            <button type="submit"
+                                class="w-full bg-primary text-white font-heading text-sm uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary-hover hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                                Verstuur Bericht
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -233,19 +237,43 @@ get_header();
                 <div class="bg-white rounded-2xl shadow-xl p-8">
                     <h3 class="font-heading text-xl font-semibold text-secondary mb-6">Volg Ons</h3>
 
-                    <div class="flex gap-4">
+                    <div class="flex flex-wrap gap-4">
+                        <!-- Instagram -->
                         <a href="#" target="_blank"
                             class="w-12 h-12 bg-primary/10 hover:bg-primary rounded-full flex items-center justify-center text-primary hover:text-white transition-all duration-300 group">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 448 512">
                                 <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                             </svg>
                         </a>
+                        <!-- Facebook -->
                         <a href="#" target="_blank"
                             class="w-12 h-12 bg-primary/10 hover:bg-primary rounded-full flex items-center justify-center text-primary hover:text-white transition-all duration-300 group">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 320 512">
                                 <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
                             </svg>
                         </a>
+                        <!-- YouTube -->
+                        <a href="#" target="_blank"
+                            class="w-12 h-12 bg-primary/10 hover:bg-primary rounded-full flex items-center justify-center text-primary hover:text-white transition-all duration-300 group">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 576 512">
+                                <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                            </svg>
+                        </a>
+                        <!-- TikTok -->
+                        <a href="#" target="_blank"
+                            class="w-12 h-12 bg-primary/10 hover:bg-primary rounded-full flex items-center justify-center text-primary hover:text-white transition-all duration-300 group">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 448 512">
+                                <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                            </svg>
+                        </a>
+                        <!-- X (Twitter) -->
+                        <a href="#" target="_blank"
+                            class="w-12 h-12 bg-primary/10 hover:bg-primary rounded-full flex items-center justify-center text-primary hover:text-white transition-all duration-300 group">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 512 512">
+                                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                            </svg>
+                        </a>
+                        <!-- Pinterest -->
                         <a href="#" target="_blank"
                             class="w-12 h-12 bg-primary/10 hover:bg-primary rounded-full flex items-center justify-center text-primary hover:text-white transition-all duration-300 group">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 496 512">
