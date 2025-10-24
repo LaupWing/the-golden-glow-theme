@@ -31,7 +31,7 @@ $upload_url = wp_get_upload_dir()['baseurl'];
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch mb-8">
 
             <!-- Text Content Column -->
-            <div class="space-y-6 flex flex-col justify-between">
+            <div class="space-y-6 flex flex-col">
                 <?php if ($title): ?>
                     <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl text-primary break-words overflow-wrap-anywhere">
                         <?php echo esc_html($title); ?>
