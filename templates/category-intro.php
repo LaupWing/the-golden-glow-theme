@@ -11,6 +11,7 @@ $title = $args['title'] ?? '';
 $content = $args['content'] ?? '';
 $image_filename = $args['image_filename'] ?? 'arwind4.png';
 $images = $args['images'] ?? []; // Multiple images for grid
+$full_height_image = $args['full_height_image'] ?? true; // Toggle for full-height image
 
 // Static button settings
 $button_text = 'MAAK EEN AFSPRAAK';
@@ -26,10 +27,11 @@ $upload_url = wp_get_upload_dir()['baseurl'];
 
 <section class="py-12 md:py-16 lg:py-20">
     <div class="container mx-auto px-[5%]">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+        <!-- Two Column Layout: Text + Image -->
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch mb-8">
 
             <!-- Text Content Column -->
-            <div class="space-y-6">
+            <div class="space-y-6 flex flex-col">
                 <?php if ($title): ?>
                     <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl text-primary break-words overflow-wrap-anywhere">
                         <?php echo esc_html($title); ?>
@@ -41,23 +43,13 @@ $upload_url = wp_get_upload_dir()['baseurl'];
                         <?php echo wp_kses_post($content); ?>
                     </div>
                 <?php endif; ?>
-
-                <!-- CTA Button -->
-                <div class="text-center pt-4">
-                    <a
-                        href="<?php echo esc_url($button_url); ?>"
-                        class="inline-block bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold hover:opacity-90 transition-opacity duration-200"
-                        rel="noopener">
-                        <?php echo esc_html($button_text); ?>
-                    </a>
-                </div>
             </div>
 
             <!-- Image Column -->
-            <div class="flex items-center justify-center">
+            <div class="<?php echo $full_height_image ? 'h-full' : ''; ?> flex items-center justify-end">
                 <?php if ($use_grid): ?>
                     <!-- Image Grid: 2 columns on mobile, 4 columns on desktop -->
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-full <?php echo $full_height_image ? 'h-full' : ''; ?>">
                         <?php foreach ($images as $image): ?>
                             <div class="aspect-square">
                                 <img
@@ -78,10 +70,20 @@ $upload_url = wp_get_upload_dir()['baseurl'];
                         alt=""
                         loading="lazy"
                         decoding="async"
-                        class="w-full h-auto max-w-md mx-auto rounded-xl">
+                        class="max-w-full <?php echo $full_height_image ? 'h-full w-auto object-cover' : 'h-auto w-auto'; ?> rounded-xl">
                 <?php endif; ?>
             </div>
 
+        </div>
+
+        <!-- CTA Button - Centered Below Columns -->
+        <div class="text-center">
+            <a
+                href="<?php echo esc_url($button_url); ?>"
+                class="inline-block bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold hover:opacity-90 transition-opacity duration-200"
+                rel="noopener">
+                <?php echo esc_html($button_text); ?>
+            </a>
         </div>
     </div>
 </section>
