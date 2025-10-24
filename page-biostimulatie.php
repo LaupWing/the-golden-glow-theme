@@ -77,7 +77,7 @@ get_template_part('sections/category-links-grid', null, [
         ],
         [
             'title' => 'PNR',
-            'url' => '/pdrn/',
+            'url' => '/pnr/',
             'button_text' => 'Maak een afspraak',
             'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
         ],

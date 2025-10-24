@@ -22,12 +22,12 @@ return [
             'url' => '/spierontspanners/',
             'submenu' => [
                 ['title' => 'Fronsrimpel', 'url' => '/frons-rimpels/'],
-                ['title' => 'Voorhoofdsrimpels', 'url' => '/voor-hoofd-rimpels/'],
-                ['title' => 'Kraaienpootjes', 'url' => '/kraaien-pootjes/'],
+                ['title' => 'Voorhoofdsrimpels', 'url' => '/voorhoofdrimpels/'],
+                ['title' => 'Kraaienpootjes', 'url' => '/kraaienpootjes/'],
                 ['title' => 'Wenkbrauwlift', 'url' => '/wenkbrauwlift/'],
                 ['title' => 'Bunny lines', 'url' => '/bunny-lines/'],
                 ['title' => 'Gummy smile', 'url' => '/gummy-smile/'],
-                ['title' => 'Marionetlijnen', 'url' => '/marionet-lijnen/'],
+                ['title' => 'Marionetlijnen', 'url' => '/marionetlijnen/'],
                 ['title' => 'Lip flip', 'url' => '/lip-flip/'],
                 ['title' => 'Rokerslijntjes', 'url' => '/rokers-lijntjes/'],
                 ['title' => 'Neuspunt lift', 'url' => '/neuspunt-lift/'],
@@ -50,7 +50,7 @@ return [
                 ['title' => 'Jukbeenderen', 'url' => '/jukbeenderen/'],
                 ['title' => 'Traangootjes', 'url' => '/traangootjes/'],
                 ['title' => 'Neuslippenplooi', 'url' => '/neuslippenplooi'],
-                ['title' => 'Marionetlijnen', 'url' => '/marionet-lijnen/'],
+                ['title' => 'Marionetlijnen', 'url' => '/marionetlijnen/'],
                 ['title' => 'Wangen', 'url' => '/wangen/'],
                 ['title' => 'Kinfiller', 'url' => '/kinfiller/'],
                 ['title' => 'Kaaklijn', 'url' => '/kaaklijn-filler/'],
@@ -64,7 +64,7 @@ return [
             'url' => '/bodyfillers/',
             'submenu' => [
                 ['title' => 'Bilfillers', 'url' => '/bilfillers/'],
-                ['title' => 'Hip dips', 'url' => '/hip-dips/'],
+                ['title' => 'Hip dips', 'url' => '/hip-dip-fillers/'],
                 ['title' => 'Eikelvergroting', 'url' => '/eikelvergroting/'],
                 ['title' => 'Vagina Verjonging', 'url' => '/vagina-vulva-verjonging/'],
             ]

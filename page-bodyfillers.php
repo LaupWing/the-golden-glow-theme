@@ -40,7 +40,7 @@ get_template_part('sections/category-links-grid', null, [
     'categories' => [
         [
             'title' => 'Hip dips',
-            'url' => '/hip-dips/',
+            'url' => '/hip-dip-fillers/',
             'description' => 'Ontdek de betovering van fillers voor hip dips in onze cosmetische kliniek in Amsterdam! Onze ervaren arts gebruikt strategisch geplaatste hyaluronzuurfillers om hip dips effectief weg te werken. Vergroot het volume, verzacht de overgangen en creëer prachtige lichaamscontouren, waardoor je zelfvertrouwen een boost krijgt. Plan vandaag nog een consult in onze cosmetische kliniek voor schitterende resultaten. Vertrouw op onze expertise en passie voor esthetiek. Ontdek de mogelijkheden voor een vloeiendere heuplijn bij ons in hartje Amsterdam, op de Kerkstraat!'
         ],
         [
