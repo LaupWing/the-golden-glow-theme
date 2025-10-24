@@ -46,12 +46,12 @@ $upload_url = wp_get_upload_dir()['baseurl'];
             </div>
 
             <!-- Image Column -->
-            <div class="<?php echo $full_height_image ? 'h-full' : ''; ?> flex items-center justify-end">
+            <div class="flex items-start justify-end <?php echo $full_height_image ? 'h-full' : ''; ?>">
                 <?php if ($use_grid): ?>
                     <!-- Image Grid: 2 columns on mobile, 4 columns on desktop -->
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-full <?php echo $full_height_image ? 'h-full' : ''; ?>">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-full h-full content-between">
                         <?php foreach ($images as $image): ?>
-                            <div class="aspect-square">
+                            <div class="aspect-square overflow-hidden">
                                 <img
                                     src="<?php echo esc_url($upload_url . '/' . $image['filename']); ?>"
                                     alt="<?php echo esc_attr($image['alt'] ?? ''); ?>"
@@ -70,7 +70,7 @@ $upload_url = wp_get_upload_dir()['baseurl'];
                         alt=""
                         loading="lazy"
                         decoding="async"
-                        class="max-w-full <?php echo $full_height_image ? 'h-full w-auto object-cover' : 'h-auto w-auto'; ?> rounded-xl">
+                        class="max-w-full max-h-full <?php echo $full_height_image ? 'w-auto h-full object-cover' : 'h-auto w-auto'; ?> rounded-xl">
                 <?php endif; ?>
             </div>
 
