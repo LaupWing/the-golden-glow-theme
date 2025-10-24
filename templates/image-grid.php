@@ -33,7 +33,7 @@ $upload_url = wp_get_upload_dir()['baseurl'];
                 alt="<?php echo esc_attr($image['alt'] ?? 'bodyfillers'); ?>"
                 loading="lazy"
                 decoding="async"
-                class="w-full h-auto max-w-md">
+                class="w-full h-auto max-w-4xl">
         </div>
     <?php endforeach; ?>
 </div>
