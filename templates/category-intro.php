@@ -47,7 +47,7 @@ $upload_url = wp_get_upload_dir()['baseurl'];
 
                 <?php if ($button_below_text): ?>
                     <!-- CTA Button - Below Text -->
-                    <div class="pt-4">
+                    <div class="pt-4 mt-auto">
                         <a
                             href="<?php echo esc_url($button_url); ?>"
                             class="inline-block bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold hover:opacity-90 transition-opacity duration-200"

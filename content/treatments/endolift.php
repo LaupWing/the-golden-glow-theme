@@ -18,7 +18,8 @@ return [
                 "content" => "
                     <p>Endolift is een innovatieve, minimaal invasieve laserbehandeling die gericht is op huidverstrakking, huidversteviging, plaatselijke vetvermindering en het hermodelleren van contouren van gezicht en lichaam. De Endolift laser werkt met twee frequenties; één gericht op vetafbraak; de andere voor huidverstrakking. Een ultradunne, flexibele laservezel (microvezel) wordt onder de huid ingebracht. De Endolift laser geeft gerichte energie (warmte) af direct onder de huid. Je kunt kiezen voor collageenstimulatie of het oplossen van vet. Bij Endolift Amsterdam kun je kiezen collogeenstimulatie en indien nodig ook voor vetafbraak. Het effect van de vetafbraak is blijvend en zie je direct. De huidverstrakking is permanent zie je na twee tot drie maanden.</p>
                 ",
-                "image_filename" => "lisa.jpg"
+                "image_filename" => "lisa.jpg",
+                "button_below_text" => true
             ]
         ],
         [
