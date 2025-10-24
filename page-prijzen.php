@@ -24,47 +24,91 @@ get_template_part('templates/page-banner', null, [
             <div class="flex flex-col md:flex-row">
 
                 <!-- Tabs Navigation -->
-                <nav class="flex md:flex-col flex-row overflow-x-auto md:overflow-visible md:flex-shrink-0 md:w-52 bg-primary border-b md:border-b-0 md:border-r border-gray-200" role="tablist" aria-label="Prijzen categorieën">
-                    <button
-                        class="tab-link active px-4 py-4 md:py-4 text-left text-white hover:text-white transition-colors duration-200 whitespace-nowrap md:whitespace-normal flex-1 md:flex-none text-sm md:text-base border-none bg-transparent cursor-pointer"
-                        data-tab="tab-botox"
-                        role="tab"
-                        aria-selected="true"
-                        aria-controls="tab-botox">
-                        Botox
-                    </button>
-                    <button
-                        class="tab-link px-4 py-4 md:py-4 text-left text-white/60 hover:text-white transition-colors duration-200 whitespace-nowrap md:whitespace-normal flex-1 md:flex-none text-sm md:text-base border-none bg-transparent cursor-pointer"
-                        data-tab="tab-fillers"
-                        role="tab"
-                        aria-selected="false"
-                        aria-controls="tab-fillers">
-                        Fillers
-                    </button>
-                    <button
-                        class="tab-link px-4 py-4 md:py-4 text-left text-white/60 hover:text-white transition-colors duration-200 whitespace-nowrap md:whitespace-normal flex-1 md:flex-none text-sm md:text-base border-none bg-transparent cursor-pointer"
-                        data-tab="tab-pdo"
-                        role="tab"
-                        aria-selected="false"
-                        aria-controls="tab-pdo">
-                        PDO
-                    </button>
-                    <button
-                        class="tab-link px-4 py-4 md:py-4 text-left text-white/60 hover:text-white transition-colors duration-200 whitespace-nowrap md:whitespace-normal flex-1 md:flex-none text-sm md:text-base border-none bg-transparent cursor-pointer"
-                        data-tab="tab-tixel"
-                        role="tab"
-                        aria-selected="false"
-                        aria-controls="tab-tixel">
-                        Tixel
-                    </button>
-                    <button
-                        class="tab-link px-4 py-4 md:py-4 text-left text-white/60 hover:text-white transition-colors duration-200 whitespace-nowrap md:whitespace-normal flex-1 md:flex-none text-sm md:text-base border-none bg-transparent cursor-pointer"
-                        data-tab="tab-skinboosters"
-                        role="tab"
-                        aria-selected="false"
-                        aria-controls="tab-skinboosters">
-                        Skinboosters
-                    </button>
+                <nav class="flex md:flex-col md:flex-shrink-0 md:w-52 bg-primary border-b md:border-b-0 md:border-r border-gray-200 relative" role="tablist" aria-label="Prijzen categorieën">
+                    <!-- Mobile: Wrapping categories with expandable overflow -->
+                    <div class="flex flex-wrap md:flex-col md:flex-nowrap overflow-hidden md:overflow-visible w-full transition-all duration-300" id="category-container" style="max-height: 56px;">
+                        <button
+                            class="tab-link active px-4 py-4 whitespace-nowrap text-white hover:text-white transition-colors duration-200 border-none bg-transparent cursor-pointer md:w-full md:text-left text-center flex-shrink-0"
+                            data-tab="tab-botox"
+                            data-label="Botox"
+                            role="tab"
+                            aria-selected="true"
+                            aria-controls="tab-botox">
+                            Botox
+                        </button>
+                        <button
+                            class="tab-link px-4 py-4 whitespace-nowrap text-white/60 hover:text-white transition-colors duration-200 border-none bg-transparent cursor-pointer md:w-full md:text-left text-center flex-shrink-0"
+                            data-tab="tab-fillers"
+                            data-label="Fillers"
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="tab-fillers">
+                            Fillers
+                        </button>
+                        <button
+                            class="tab-link px-4 py-4 whitespace-nowrap text-white/60 hover:text-white transition-colors duration-200 border-none bg-transparent cursor-pointer md:w-full md:text-left text-center flex-shrink-0"
+                            data-tab="tab-pdo"
+                            data-label="PDO"
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="tab-pdo">
+                            PDO
+                        </button>
+                        <button
+                            class="tab-link px-4 py-4 whitespace-nowrap text-white/60 hover:text-white transition-colors duration-200 border-none bg-transparent cursor-pointer md:w-full md:text-left text-center flex-shrink-0"
+                            data-tab="tab-tixel"
+                            data-label="Tixel"
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="tab-tixel">
+                            Tixel
+                        </button>
+                        <button
+                            class="tab-link px-4 py-4 whitespace-nowrap text-white/60 hover:text-white transition-colors duration-200 border-none bg-transparent cursor-pointer md:w-full md:text-left text-center flex-shrink-0"
+                            data-tab="tab-skinboosters"
+                            data-label="Skinboosters"
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="tab-skinboosters">
+                            Skinboosters
+                        </button>
+                        <button
+                            class="tab-link px-4 py-4 whitespace-nowrap text-white/60 hover:text-white transition-colors duration-200 border-none bg-transparent cursor-pointer md:w-full md:text-left text-center flex-shrink-0"
+                            data-tab="tab-lasers"
+                            data-label="Lasers"
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="tab-lasers">
+                            Lasers
+                        </button>
+                        <button
+                            class="tab-link px-4 py-4 whitespace-nowrap text-white/60 hover:text-white transition-colors duration-200 border-none bg-transparent cursor-pointer md:w-full md:text-left text-center flex-shrink-0"
+                            data-tab="tab-biostimulators"
+                            data-label="Biostimulators"
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="tab-biostimulators">
+                            Biostimulators
+                        </button>
+                        <button
+                            class="tab-link px-4 py-4 whitespace-nowrap text-white/60 hover:text-white transition-colors duration-200 border-none bg-transparent cursor-pointer md:w-full md:text-left text-center flex-shrink-0"
+                            data-tab="tab-other"
+                            data-label="Overige"
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="tab-other">
+                            Overige
+                        </button>
+                        <button
+                            id="expand-button"
+                            class="md:hidden px-4 py-4 whitespace-nowrap text-white/80 hover:text-white transition-colors duration-200 border-none bg-transparent cursor-pointer flex items-center gap-2 flex-shrink-0"
+                            aria-label="Toon meer categorieën">
+                            <span>Meer</span>
+                            <svg class="w-4 h-4 transition-transform duration-300" id="expand-icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                    </div>
                 </nav>
 
                 <!-- Tabs Content -->
@@ -311,6 +355,33 @@ get_template_part('templates/page-banner', null, [
                         </div>
                     </div>
 
+                    <!-- Lasers Tab (Placeholder) -->
+                    <div id="tab-lasers" class="tab-content hidden" role="tabpanel" aria-labelledby="tab-lasers">
+                        <div class="prose max-w-none">
+                            <p class="text-text text-sm md:text-base leading-relaxed">
+                                Prijzen voor laserbehandelingen volgen binnenkort. Neem contact op voor meer informatie.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Biostimulators Tab (Placeholder) -->
+                    <div id="tab-biostimulators" class="tab-content hidden" role="tabpanel" aria-labelledby="tab-biostimulators">
+                        <div class="prose max-w-none">
+                            <p class="text-text text-sm md:text-base leading-relaxed">
+                                Prijzen voor biostimulators volgen binnenkort. Neem contact op voor meer informatie.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Other Tab (Placeholder) -->
+                    <div id="tab-other" class="tab-content hidden" role="tabpanel" aria-labelledby="tab-other">
+                        <div class="prose max-w-none">
+                            <p class="text-text text-sm md:text-base leading-relaxed">
+                                Prijzen voor overige behandelingen volgen binnenkort. Neem contact op voor meer informatie.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -318,11 +389,61 @@ get_template_part('templates/page-banner', null, [
 </section>
 
 <!-- JavaScript for Tab Functionality -->
+<style>
+@media (max-width: 767px) {
+    .hidden-mobile {
+        display: none !important;
+    }
+    .hidden-mobile.expanded {
+        display: block !important;
+    }
+    /* Hide scrollbar but keep functionality */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+</style>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const tabLinks = document.querySelectorAll('.tab-link');
     const tabContents = document.querySelectorAll('.tab-content');
+    const expandButton = document.getElementById('expand-button');
+    const expandIcon = document.getElementById('expand-icon');
+    const hiddenCategories = document.querySelectorAll('.hidden-mobile');
+    let isExpanded = false;
 
+    // Expand button functionality (mobile only)
+    if (expandButton) {
+        expandButton.addEventListener('click', function() {
+            isExpanded = !isExpanded;
+
+            hiddenCategories.forEach(category => {
+                if (isExpanded) {
+                    category.classList.add('expanded');
+                } else {
+                    category.classList.remove('expanded');
+                }
+            });
+
+            // Rotate icon
+            if (expandIcon) {
+                expandIcon.style.transform = isExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
+            }
+
+            // Update button text
+            const buttonText = expandButton.querySelector('span');
+            if (buttonText) {
+                buttonText.textContent = isExpanded ? 'Minder' : 'Meer';
+            }
+        });
+    }
+
+    // Tab switching functionality
     tabLinks.forEach(button => {
         button.addEventListener('click', function() {
             const tabId = this.getAttribute('data-tab');

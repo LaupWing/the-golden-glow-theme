@@ -114,7 +114,7 @@
                         $is_active = is_current_path($nav_item['url']);
                     ?>
                         <a href="<?php echo esc_url(home_url($nav_item['url'])); ?>"
-                            class="font-heading text-sm <?php echo $is_active ? 'text-primary' : 'text-text'; ?> hover:text-primary transition-colors duration-300 relative group py-2">
+                            class="font-heading text-sm md:text-base <?php echo $is_active ? 'text-primary' : 'text-text'; ?> hover:text-primary transition-colors duration-300 relative group py-2">
                             <?php echo esc_html($nav_item['title']); ?>
                             <span class="absolute bottom-0 left-0 <?php echo $is_active ? 'w-full' : 'w-0'; ?> h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
                         </a>
@@ -124,7 +124,7 @@
                         ?>
                             <!-- Behandelingen Dropdown -->
                             <div class="relative group">
-                                <button class="font-heading text-sm <?php echo $is_behandeling ? 'text-primary' : 'text-text'; ?> hover:text-primary transition-colors duration-300 flex items-center gap-2 py-2">
+                                <button class="font-heading text-sm md:text-base <?php echo $is_behandeling ? 'text-primary' : 'text-text'; ?> hover:text-primary transition-colors duration-300 flex items-center gap-2 py-2">
                                     Behandelingen
                                     <svg class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="currentColor" viewBox="0 0 320 512">
                                         <path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
