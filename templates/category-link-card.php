@@ -11,41 +11,32 @@ $title = $args['title'] ?? '';
 $url = $args['url'] ?? '#';
 $has_background = $args['has_background'] ?? true;
 
-// Static button settings
-$button_text = 'Maak een afspraak';
-$button_url = 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL';
-
 // Background image
 $bg_image_url = esc_url(wp_get_upload_dir()['baseurl'] . '/link-card-background.jpg');
 ?>
 
-<article class="relative flex flex-col items-center justify-center p-8 md:p-12 min-h-[250px] overflow-hidden bg-background rounded-3xl">
+<a href="<?php echo esc_url($url); ?>" class="block group">
+    <article class="relative flex flex-col items-center justify-center p-8 md:p-12 min-h-[200px] overflow-hidden bg-background rounded-3xl transition-all duration-300 outline-2 outline-transparent outline-offset-2 hover:outline-primary">
 
-    <?php if ($has_background): ?>
-        <!-- Background Image -->
-        <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-            <img
-                src="<?php echo $bg_image_url; ?>"
-                alt=""
-                loading="lazy"
-                decoding="async"
-                class="w-full h-full object-cover object-bottom">
-        </div>
-    <?php endif; ?>
+        <?php if ($has_background): ?>
+            <!-- Background Image -->
+            <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+                <img
+                    src="<?php echo $bg_image_url; ?>"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    class="w-full h-full object-cover object-bottom">
+            </div>
 
-    <!-- Category Title Link -->
-    <h2 class="relative z-10 font-heading text-xl md:text-2xl <?php echo $has_background ? 'text-white' : 'text-primary'; ?> text-center mb-6">
-        <a href="<?php echo esc_url($url); ?>" class="underline hover:no-underline transition-all">
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-primary to-transparent opacity-60 pointer-events-none" aria-hidden="true"></div>
+        <?php endif; ?>
+
+        <!-- Category Title -->
+        <h2 class="relative z-10 font-heading text-2xl md:text-3xl lg:text-4xl <?php echo $has_background ? 'text-white' : 'text-primary'; ?> text-center transition-all group-hover:scale-105">
             <?php echo esc_html($title); ?>
-        </a>
-    </h2>
+        </h2>
 
-    <!-- CTA Button -->
-    <a
-        href="<?php echo esc_url($button_url); ?>"
-        class="relative z-10 inline-block bg-primary text-white px-8 py-3 rounded-full font-heading font-semibold hover:opacity-90 transition-opacity duration-200"
-        rel="noopener">
-        <?php echo esc_html($button_text); ?>
-    </a>
-
-</article>
+    </article>
+</a>
