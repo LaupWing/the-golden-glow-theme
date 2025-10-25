@@ -40,7 +40,8 @@ return [
                 "content" => "
                     <p>Het proces begint met een uitgebreid intakegesprek, waarin je doelen worden besproken en u wordt geïnformeerd over de behandeling en nazorg. Of het nu gaat om het verminderen van cellulitis, het verbeteren van bilcontouren, of het toevoegen van volume en stevigheid, wij stemmen de behandeling nauwkeurig af op je individuele anatomie. Bij The Golden Glow combineren wij expertise, geavanceerde echogeleidingstechniek en een persoonlijke aanpak om een harmonieus en natuurlijk resultaat te realiseren.</p>
                 ",
-                "show_background" => true
+                "show_background" => true,
+                "custom_class" => "!pt-0"
             ]
         ],
         [
@@ -61,7 +62,8 @@ return [
                 "content" => "
                     <p>Vóór aanvang van de behandeling voor het verminderen van hip dips, vindt er eerst een grondig consult plaats. Onze ervaren arts zal alle noodzakelijke informatie met u delen, met inbegrip van de nazorginstructies. Tijdens dit consult bespreken we eveneens uw individuele wensen en doelstellingen met betrekking tot het verminderen van hip dips. De meeste van onze cliënten hebben specifieke doelen voor ogen. Sommigen willen cellulitis verminderen, terwijl anderen streven naar het verbeteren van de bilcontouren. Voor velen is het echter de wens om meer volume en stevigheid aan hun billen toe te voegen. Ons toegewijde team zal u, zoals altijd, voorzien van deskundig advies en openheid over de mogelijke uitkomsten en verwachtingen.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -82,7 +84,8 @@ return [
                 "content" => "
                     <p>Door volumeverbetering in de heupregio ontstaat een vloeiendere en meer harmonieuze lichaamscontour. De billen en bovenbenen ondergaan een subtiele lift, terwijl de huidstructuur zichtbaar verbetert – vaak met een afname van cellulitis en een toegenomen huidspanning tot gevolg. Het resultaat reikt verder dan het uiterlijk – veel cliënten ervaren een sterker lichaamsbewustzijn en een toename in zelfvertrouwen.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -104,7 +107,8 @@ return [
                 "content" => "
                     <p>Na de behandeling kunt u uw lichte dagelijkse activiteiten, zoals wandelen, boodschappen doen of werken, gewoon hervatten. U krijgt duidelijke instructies mee voor de verzorging. De eerste 24 uur mag u niet douchen, geen alcohol of koffie drinken en het behandelde gebied niet aanraken. Gedurende de eerste twee weken wordt afgeraden om te sporten en zware inspanning te leveren. De eerste vijf dagen worden bovendien seksuele activiteiten afgeraden. De eerste twee weken na de behandeling dient u sauna, stoombad, zonnebank en hete douches te vermijden. Door deze adviezen op te volgen, bevordert u een goed herstel.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
