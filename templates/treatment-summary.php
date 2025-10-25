@@ -15,13 +15,14 @@ $duration = $args['duration'] ?? '';
 $checkup = $args['checkup'] ?? '';
 $effect = $args['effect'] ?? '';
 $show_background = $args['show_background'] ?? true;
+$custom_class = $args['custom_class'] ?? '';
 
 // Determine background class
 $bg_class = $show_background ? 'bg-white' : '';
 ?>
 
 <!-- Treatment Summary Section -->
-<section class="py-12 md:py-16 <?php echo esc_attr($bg_class); ?>">
+<section class="section-padding <?php echo esc_attr($bg_class); ?> <?php echo esc_attr($custom_class); ?>">
     <div class="container mx-auto px-[5%]">
 
         <?php if ($title): ?>

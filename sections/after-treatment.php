@@ -4,9 +4,11 @@
  * After Treatment Section
  * Displays important details after treatment with icons
  */
+
+$custom_class = $args['custom_class'] ?? '';
 ?>
 
-<section id="nazorg" class="py-12 md:py-16 lg:py-20 bg-white">
+<section id="nazorg" class="section-padding bg-white <?php echo esc_attr($custom_class); ?>">
     <div class="container mx-auto px-[5%]">
 
         <!-- Section Title -->

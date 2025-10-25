@@ -13,6 +13,7 @@ $image_filename = $args['image_filename'] ?? 'arwind4.png';
 $images = $args['images'] ?? []; // Multiple images for grid
 $full_height_image = $args['full_height_image'] ?? true; // Toggle for full-height image
 $button_below_text = $args['button_below_text'] ?? false; // Toggle to place button below text instead of centered at bottom
+$custom_class = $args['custom_class'] ?? '';
 
 // Static button settings
 $button_text = 'MAAK EEN AFSPRAAK';
@@ -26,7 +27,7 @@ $image_url = esc_url(wp_get_upload_dir()['baseurl'] . '/' . $image_filename);
 $upload_url = wp_get_upload_dir()['baseurl'];
 ?>
 
-<section class="py-12 md:py-16 lg:py-20">
+<section class="section-padding <?php echo esc_attr($custom_class); ?>">
     <div class="container mx-auto px-[5%]">
         <!-- Two Column Layout: Text + Image -->
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch mb-8">

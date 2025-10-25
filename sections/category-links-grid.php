@@ -10,10 +10,11 @@
 // Extract args passed from get_template_part()
 $categories = $args['categories'] ?? [];
 $card_type = $args['card_type'] ?? 'default'; // 'default' or 'card-2'
+$custom_class = $args['custom_class'] ?? '';
 ?>
 
 <!-- Category Links Grid -->
-<section class="py-12 md:py-16 lg:py-20">
+<section class="section-padding <?php echo esc_attr($custom_class); ?>">
     <div class="container mx-auto px-[5%]">
         <!-- Mobile Version: Simple alternating -->
         <div class="grid grid-cols-1 md:hidden gap-6">

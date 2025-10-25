@@ -10,6 +10,7 @@
 $content = $args['content'] ?? '';
 $image_filename = $args['image_filename'] ?? 'arwind4.png';
 $content_position = $args['content_position'] ?? 'left'; // 'left' or 'right'
+$custom_class = $args['custom_class'] ?? '';
 
 // Static button settings
 $button_text = 'MAAK EEN AFSPRAAK';
@@ -23,7 +24,7 @@ $content_order_class = $content_position === 'right' ? 'lg:order-2' : '';
 $image_order_class = $content_position === 'right' ? 'lg:order-1' : '';
 ?>
 
-<section class="py-12 md:py-16 lg:py-20">
+<section class="section-padding <?php echo esc_attr($custom_class); ?>">
     <div class="container mx-auto px-[5%]">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
 

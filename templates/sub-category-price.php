@@ -17,10 +17,11 @@ $effect_duration = $args['effect_duration'] ?? '';
 $treatment_duration = $args['treatment_duration'] ?? '';
 $button_text = $args['button_text'] ?? 'MAAK EEN AFSPRAAK';
 $button_url = $args['button_url'] ?? 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL';
+$custom_class = $args['custom_class'] ?? '';
 ?>
 
 <!-- Price Card Section -->
-<section class="py-12 md:py-16 " id="prijzen">
+<section class="section-padding <?php echo esc_attr($custom_class); ?>" id="prijzen">
     <div class="container mx-auto px-[5%]">
         <article class="max-w-md mx-auto bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
 

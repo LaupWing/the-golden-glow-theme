@@ -9,9 +9,10 @@
 // Extract args passed from get_template_part()
 $title = $args['title'] ?? 'Veelgestelde vragen';
 $faqs = $args['faqs'] ?? [];
+$custom_class = $args['custom_class'] ?? '';
 ?>
 
-<section class="py-12 md:py-16 lg:py-20 bg-background">
+<section class="section-padding bg-background <?php echo esc_attr($custom_class); ?>">
     <div class="container mx-auto px-[5%]">
         <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8 md:p-12">
 

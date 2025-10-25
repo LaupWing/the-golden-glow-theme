@@ -8,9 +8,10 @@
 
 $clinic_image = esc_url(wp_get_upload_dir()['baseurl'] . '/waiting-room.png');
 $button_url = 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL';
+$custom_class = $args['custom_class'] ?? '';
 ?>
 
-<section class="py-12 md:py-16 lg:py-20">
+<section class="section-padding <?php echo esc_attr($custom_class); ?>">
     <div class="container mx-auto px-[5%]">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 

@@ -147,7 +147,7 @@ get_header(); ?>
             <div class="order-1">
                 <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
                 <img
-                    src="<?php echo esc_url($upload_url . '/waiting-room.jpg'); ?>"
+                    src="<?php echo esc_url($upload_url . '/waiting-room.png'); ?>"
                     alt="The Golden Glow Kliniek"
                     width="1200"
                     height="800"
