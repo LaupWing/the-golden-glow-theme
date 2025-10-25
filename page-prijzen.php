@@ -26,7 +26,7 @@ get_template_part('templates/page-banner', null, [
                 <!-- Tabs Navigation -->
                 <nav class="flex md:flex-col md:flex-shrink-0 md:w-52 bg-primary border-b md:border-b-0 md:border-r border-gray-200 relative md:overflow-y-auto min-h-0" role="tablist" aria-label="Prijzen categorieën">
                     <!-- Mobile: Wrapping categories with expandable overflow -->
-                    <div class="flex flex-wrap md:flex-col md:flex-nowrap overflow-hidden md:overflow-visible w-full transition-all duration-300" id="category-container" style="max-height: 56px;">
+                    <div class="flex flex-wrap md:flex-col md:flex-nowrap overflow-hidden md:overflow-visible w-full transition-all duration-300" id="category-container">
                         <button
                             class="tab-link active px-4 py-4 whitespace-nowrap text-white hover:text-white transition-colors duration-200 border-none bg-transparent cursor-pointer md:w-full md:text-left text-center flex-shrink-0"
                             data-tab="tab-botox"
@@ -99,16 +99,16 @@ get_template_part('templates/page-banner', null, [
                             aria-controls="tab-other">
                             Overige
                         </button>
-                        <button
-                            id="expand-button"
-                            class="md:hidden px-4 py-4 whitespace-nowrap text-white/80 hover:text-white transition-colors duration-200 border-none bg-transparent cursor-pointer flex items-center gap-2 flex-shrink-0"
-                            aria-label="Toon meer categorieën">
-                            <span>Meer</span>
-                            <svg class="w-4 h-4 transition-transform duration-300" id="expand-icon" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
-                        </button>
                     </div>
+                    <button
+                        id="expand-button"
+                        class="md:hidden px-2 py-4 whitespace-nowrap text-white/80 hover:text-white transition-colors duration-200 border-none bg-transparent cursor-pointer flex items-center gap-2 flex-shrink-0 absolute bottom-0 right-0"
+                        aria-label="Toon meer categorieën">
+                        <!-- <span>Meer</span> -->
+                        <svg class="w-6 h-6 transition-transform duration-300" id="expand-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
                 </nav>
 
                 <!-- Tabs Content -->
@@ -421,17 +421,17 @@ get_template_part('templates/page-banner', null, [
         let isExpanded = false;
 
         // Expand button functionality (mobile only)
-        if (expandButton) {
+        const categoryContainer = document.getElementById('category-container');
+        if (expandButton && categoryContainer) {
             expandButton.addEventListener('click', function() {
                 isExpanded = !isExpanded;
 
-                hiddenCategories.forEach(category => {
-                    if (isExpanded) {
-                        category.classList.add('expanded');
-                    } else {
-                        category.classList.remove('expanded');
-                    }
-                });
+                // Toggle container height
+                if (isExpanded) {
+                    categoryContainer.style.maxHeight = 'none';
+                } else {
+                    categoryContainer.style.maxHeight = '56px';
+                }
 
                 // Rotate icon
                 if (expandIcon) {
