@@ -46,11 +46,12 @@ $default_reviews = [
 $reviews = $args['reviews'] ?? $default_reviews;
 $section_title = $args['title'] ?? 'Wat onze klanten zeggen';
 $show_background = $args['show_background'] ?? false;
+$custom_class = $args['custom_class'] ?? '';
 $bg_class = $show_background ? 'bg-background' : 'bg-white';
 ?>
 
 <!-- Reviews Section -->
-<section class="py-12 md:py-16 lg:py-20 <?php echo esc_attr($bg_class); ?>">
+<section class="section-padding <?php echo esc_attr($bg_class); ?> <?php echo esc_attr($custom_class); ?>">
     <div class="container mx-auto px-[5%]">
 
         <!-- Section Title -->

@@ -255,7 +255,9 @@ get_header(); ?>
 
 <?php
 // Include reusable reviews section
-get_template_part('sections/reviews-section');
+get_template_part('sections/reviews-section', null, [
+    'custom_class' => '!py-0'
+]);
 ?>
 
 <!-- Blog Section -->
