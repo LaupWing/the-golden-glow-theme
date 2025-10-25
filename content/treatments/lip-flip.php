@@ -19,7 +19,8 @@ return [
                 'content' => '
                     <p>Lotta heeft van nature prachtige, volle lippen. Extra volume was voor haar dus niet nodig. Wat zij wél wenste, was meer definitie in de vorm van haar lippen. Ze stoorde zich er soms aan dat haar bovenlip wat naar binnen viel, waardoor de natuurlijke ronding en elegantie van haar lippen minder zichtbaar was. Met een lipflip-behandeling kon dit subtiel worden gecorrigeerd. Hierbij wordt met behulp van een spierontspanner de bovenlip net iets ontspannener gemaakt, waardoor deze licht naar buiten krult. Het resultaat is geen vergroot volume, maar een verfijnde, natuurlijk geprononceerde lipvorm. Precies datgene waar Lotta naar op zoek was: een subtiele, elegante verbetering zonder dat haar uitstraling veranderde. Sinds de behandeling komen Lotta\'s volle lippen prachtig tot hun recht. Haar lach oogt nog stralender en haar tanden worden mooier zichtbaar, wat zorgt voor een frisse, jeugdige en open uitstraling.</p>
                 ',
-                'image_filename' => 'lotta.jpg'
+                'image_filename' => 'lotta.jpg',
+                'button_below_text' => true
             ]
         ],
         [
@@ -50,7 +51,8 @@ return [
                 'content' => '
                     <p>Na de behandeling kan de huid rondom de injectiepunten wat rood of gevoelig zijn, maar dit trekt meestal binnen enkele uren weg. Wij adviseren om de huid de eerste 24 uur met rust te laten en geen make-up aan te brengen. Ook raden wij aan om de eerste twee dagen intensief sporten, sauna, zonnebank en direct zonlicht te vermijden. Alcohol en bloedverdunners kunnen het risico op blauwe plekjes vergroten en worden daarom afgeraden in de eerste 24 uur. Het effect van de behandeling wordt zichtbaar na 2 tot 5 dagen en is optimaal na 10 tot 14 dagen. Gemiddeld houdt het resultaat 3 tot 6 maanden aan, waarna de spieractiviteit geleidelijk terugkeert. Door de behandeling regelmatig – elke vier tot zes maanden – te herhalen, blijft de flip van de lip behouden.</p>
                 ',
-                'show_background' => false
+                'show_background' => false,
+                'custom_class' => '!py-0'
             ]
         ],
         [
@@ -66,7 +68,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => []
+            'data' => [
+                'custom_class' => '!py-0'
+            ]
         ],
         [
             'type' => 'treatment-summary',
@@ -87,7 +91,7 @@ return [
         [
             'type' => 'reviews',
             'data' => [
-                'show_background' => false
+                'show_background' => true
             ]
         ],
         [
