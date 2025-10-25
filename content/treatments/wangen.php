@@ -18,7 +18,8 @@ return [
                 "content" => "
                     <p>Volle en goedgevormde wangen zijn belangrijk voor een jeugdige en harmonieuze uitstraling van het gezicht. Door het volume in de wangen te herstellen met hyaluronzuurfillers oogt het gezicht frisser, levendiger en in balans. Naast het terugbrengen van volume zorgt deze behandeling ook voor een subtiele lift, wat de contouren van het gezicht versterkt en verjongt. Elvira is een stunning model die graag haar wangen laat behandelen om haar natuurlijke schoonheid te accentueren en haar gezicht een zachte, volle uitstraling te geven. Met behulp van de canule-techniek en hoogwaardige fillers zoals Restylane Lyft of Belotero Volume krijgt Elvira een prachtig, natuurlijk resultaat. Elvira onderhoudt deze behandeling regelmatig om het effect mooi en fris te houden.</p>
                 ",
-                "image_filename" => "elvira5.jpg"
+                "image_filename" => "elvira5.jpg",
+                "button_below_text" => true
             ]
         ],
         [
@@ -49,7 +50,8 @@ return [
                 "content" => "
                     <p>De behandeling duurt ongeveer 20 tot 30 minuten en is over het algemeen comfortabel. Na de behandeling kan tijdelijke roodheid, lichte zwelling of gevoeligheid optreden, die meestal binnen enkele dagen verdwijnt. Wij adviseren om de eerste 24 uur geen make-up te gebruiken en de huid rustig te houden. Daarnaast is het aan te raden om intensief sporten, sauna en blootstelling aan zonlicht of zonnebank twee dagen te vermijden. Alcohol en bloedverdunners kunnen het herstel vertragen en worden daarom afgeraden vlak na de behandeling. Het resultaat is direct zichtbaar: de wangen krijgen meer volume, de gezichtscontouren worden zachter en het gezicht oogt frisser en jeugdiger. Afhankelijk van het gebruikte product en de stofwisseling blijft het effect doorgaans 12 tot 18 maanden zichtbaar. Herhaalbehandelingen kunnen worden uitgevoerd om het resultaat te behouden.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -65,7 +67,9 @@ return [
         ],
         [
             "type" => "after-treatment",
-            "data" => []
+            "data" => [
+                "custom_class" => "!py-0",
+            ]
         ],
         [
             "type" => "treatment-summary",

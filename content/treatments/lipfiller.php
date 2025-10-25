@@ -110,11 +110,11 @@ return [
                     ],
                     [
                         "question" => "Hoelang blijven lipfillers zichtbaar?",
-                        "answer" => "<p>Lipfillers op basis van hyaluronzuur geven tijdelijk volume aan de lippen en verbeteren de contouren. Gemiddeld blijft het resultaat van een lipfiller tussen de 6 en 12 maanden zichtbaar. Dit komt doordat het lichaam het hyaluronzuur na verloop van tijd afbreekt. Om het resultaat te behouden, kan de behandeling worden herhaald.</p>"
+                        "answer" => "<p>Lipfillers op basis van hyaluronzuur geven tijdelijk volume aan de lippen en verbeteren de contouren. Gemiddeld blijft het resultaat van een lipfiller tussen de 6 en 12 maanden zichtbaar. Dit komt doordat het lichaam het hyaluronzuur na verloop van tijd langzaam afbreekt en opneemt. Om het resultaat te behouden, kan de behandeling worden herhaald.</p>"
                     ],
                     [
                         "question" => "Wat zijn lipfillers precies?",
-                        "answer" => "<p>Lipfillers zijn cosmetische injecties met hyaluronzuur, een lichaamseigen stof die zorgt voor hydratatie en volume. Ze maken de lippen voller, verbeteren de contouren en verminderen fijne lijntjes rondom de mond. Het resultaat oogt natuurlijk en blijft gemiddeld 6 tot 12 maanden zichtbaar.</p>"
+                        "answer" => "<p>Lipfillers zijn cosmetische injecties met hyaluronzuur, een lichaamseigen stof die zorgt voor hydratatie en volume. Ze maken de lippen voller, verbeteren de contouren en verminderen fijne lijntjes rondom de mond. Het resultaat oogt natuurlijk en blijft doorgaans 6 tot 12 maanden zichtbaar.</p>"
                     ]
                 ]
             ]

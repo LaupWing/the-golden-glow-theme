@@ -50,7 +50,8 @@ return [
                 "content" => "
                     <p>Het opvullen van de traangootjes is een verfijnde behandeling die helpt om wallen en een vermoeide blik te verminderen en vraagt om ervaren handen om overcorrectie of kleine onregelmatigheden te voorkomen. Bij The Golden Glow in Amsterdam hebben we al jaren ervaring met de behandeling van traangootjes. Wij werken hierbij met Belotero, een filler die zich natuurlijk in de dunne huid integreert en nauwelijks kans geeft op vochtophoping. De behandeling duurt gemiddeld 20 tot 30 minuten, waarna tijdelijke roodheid of zwelling kan optreden die meestal binnen enkele dagen verdwijnt. Voor een optimaal herstel adviseren wij 24 uur niet te sporten en gedurende 2 weken sauna en zonnebank te vermijden. Het resultaat is direct zichtbaar en blijft doorgaans 6 tot 9 maanden, afhankelijk van de individuele stofwisseling en levensstijl.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0",
             ]
         ],
         [
@@ -66,7 +67,9 @@ return [
         ],
         [
             "type" => "after-treatment",
-            "data" => []
+            "data" => [
+                "custom_class" => "!py-0",
+            ]
         ],
         [
             "type" => "treatment-summary",
@@ -87,7 +90,7 @@ return [
         [
             "type" => "reviews",
             "data" => [
-                "show_background" => false
+                "show_background" => true
             ]
         ],
         [

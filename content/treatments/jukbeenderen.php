@@ -50,7 +50,8 @@ return [
                 "content" => "
                     <p>Het resultaat van een jukbeenbehandeling met fillers, toegepast volgens de waaiertechniek, is direct na de behandeling zichtbaar. De jukbeenderen krijgen meer definitie en volume, wat het gezicht een jongere en frisse uitstraling geeft. In de eerste dagen na de behandeling kunnen lichte zwellingen, roodheid of enkele blauwe plekjes ontstaan, maar deze symptomen zijn tijdelijk en verdwijnen doorgaans snel. Na ongeveer één tot twee weken is het uiteindelijke effect optimaal zichtbaar. Het gezicht oogt voller en steviger met een natuurlijk ogende lift die de harmonie in uw gelaatsstructuur benadrukt. Het resultaat kan gemiddeld zes tot twaalf maanden aanhouden, afhankelijk van het gebruikte product en uw individuele stofwisseling. Na de behandeling adviseren wij het gebied de eerste dagen rustig te houden en direct contact met extreme hitte of kou te vermijden. Vermijd ook intensieve lichaamsbeweging en probeer niet op de behandelde plekken te drukken. Eventuele restjes zwelling of kleine onregelmatigheden kunnen meestal eenvoudig worden bijgestuurd tijdens een controle-afspraak.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -66,7 +67,9 @@ return [
         ],
         [
             "type" => "after-treatment",
-            "data" => []
+            "data" => [
+                "custom_class" => "!py-0",
+            ]
         ],
         [
             "type" => "treatment-summary",
@@ -87,7 +90,7 @@ return [
         [
             "type" => "reviews",
             "data" => [
-                "show_background" => false
+                "show_background" => true
             ]
         ],
         [

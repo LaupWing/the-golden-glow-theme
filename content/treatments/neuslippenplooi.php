@@ -19,7 +19,8 @@ return [
                     <p>Een te diepe neuslippenplooi kan het gelaat verstoren en te veel aandacht opeisen. Met een hyaluronzuurfiller kunnen wij de neuslippenplooi en het omliggende gebied behandelen, waardoor de neuslippenplooi kan worden verzacht en geminimaliseerd. Door ook tevens de jukbeenderen te behandelen liften we het gelaat waardoor de neuslippenplooi nog verder kan worden verzacht. Ook hier geldt vaak dat een holistische aanpak van het gelaat een beter resultaat geeft.</p>
                     <p>Bij Elvira hebben wij de neuslippenplooi heel subtiel verzacht met veel aandacht voor haar prachtige symmetrie. Voor een blijvend resultaat herhaalt Elvira de behandeling jaarlijks met slechts 0,5 ml Boletero.</p>
                 ",
-                "image_filename" => "elvira4.jpg"
+                "image_filename" => "elvira4.jpg",
+                "button_below_text" => true
             ]
         ],
         [
@@ -50,7 +51,8 @@ return [
                 "content" => "
                     <p>Na een behandeling van de neuslippenplooi bij The Golden Glow kan de huid wat gevoelig aanvoelen en tijdelijk rood of licht gezwollen zijn. Dit is een heel normaal verschijnsel en verdwijnt meestal vanzelf binnen enkele dagen. Om je huid optimaal te laten herstellen en het resultaat zo mooi mogelijk te behouden, raden wij je aan de eerste vierentwintig uur geen make-up te gebruiken en de behandelde zone met rust te laten. Ook is het verstandig in de eerste dagen intensieve inspanning, sauna, zonnebank en direct zonlicht te vermijden, zodat zwelling of irritatie geen kans krijgt. Laat alcohol en bloedverdunnende middelen in deze periode liever achterwege, omdat ze eventuele blauwe plekjes kunnen verergeren. Door je huid de rust en zorg te geven die ze verdient, ondersteun je een voorspoedig herstel en kun je nog langer genieten van de frisse, natuurlijke en stralende uitstraling die zo kenmerkend is voor The Golden Glow.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0",
             ]
         ],
         [
@@ -66,7 +68,9 @@ return [
         ],
         [
             "type" => "after-treatment",
-            "data" => []
+            "data" => [
+                "custom_class" => "!py-0",
+            ]
         ],
         [
             "type" => "treatment-summary",
