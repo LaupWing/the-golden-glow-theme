@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <!-- Arts Hero Banner Section -->
-<section class="section-padding-top">
+<section class="section-padding">
     <div class="container mx-auto px-[5%]">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
@@ -68,7 +68,7 @@ get_header(); ?>
 </section>
 
 <!-- Loopbaan & Certificaties Section -->
-<section class="section-padding-top">
+<section class="section-padding !pt-0">
     <div class="container mx-auto px-[5%]">
 
         <!-- Section Title -->
@@ -124,7 +124,7 @@ get_header(); ?>
 </section>
 
 <!-- Arts Introduction Text Section -->
-<section class="section-padding-top">
+<section class="">
     <div class="container mx-auto px-[5%]">
         <div class="max-w-3xl mx-auto text-center">
             <p class="text-base md:text-lg text-body-text leading-relaxed">
@@ -135,7 +135,7 @@ get_header(); ?>
 </section>
 
 <!-- Mission and Vision Section -->
-<section class="section-padding-top">
+<section class="section-padding">
     <div class="container mx-auto px-[5%]">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 max-w-6xl mx-auto">
 
@@ -180,7 +180,7 @@ get_header(); ?>
 </section>
 
 <!-- Professional Qualities Section -->
-<section class="section-padding-top section-padding-bottom">
+<section class="section-padding !pt-0">
     <div class="container mx-auto px-[5%]">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
 
