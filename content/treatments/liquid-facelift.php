@@ -51,7 +51,8 @@ return [
                 'content' => '
                     <p>Na de behandeling kunnen lichte roodheid, zwelling of blauwe plekjes ontstaan, maar deze verdwijnen binnen enkele dagen. Het resultaat is direct deels zichtbaar, met een optimaal effect na ongeveer twee weken. De effecten van een liquid facelift houden gemiddeld 6 tot 12 maanden aan. Voor een langdurig resultaat kan de behandeling periodiek worden herhaald. Deze aanpak biedt een veilige, effectieve en flexibele oplossing voor mensen die een frisse en jeugdige uitstraling wensen zonder de ingrijpende hersteltijd en risico\'s van een chirurgische facelift.</p>
                 ',
-                'show_background' => false
+                'show_background' => false,
+                'custom_class' => '!py-0'
             ]
         ],
         [
@@ -67,7 +68,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => []
+            'data' => [
+                'custom_class' => '!py-0',
+            ]
         ],
         [
             'type' => 'treatment-summary',
@@ -88,7 +91,7 @@ return [
         [
             'type' => 'reviews',
             'data' => [
-                'show_background' => false
+                'show_background' => true
             ]
         ],
         [
@@ -101,28 +104,16 @@ return [
                 'title' => 'Veelgestelde vragen over liquid facelift behandeling',
                 'items' => [
                     [
-                        'question' => 'Wat is een liquid facelift?',
-                        'answer' => '<p>Een liquid facelift is een niet-chirurgische gezichtsbehandeling waarbij een combinatie van spierontspanners en fillers wordt gebruikt om het gezicht te verjongen, volume te herstellen en rimpels te verminderen, zonder operatie.</p>'
+                        'question' => 'Is mijn leeftijd niet een belemmering voor deze behandeling?',
+                        'answer' => '<p>Opkomende lijntjes kunnen uitstekend aangepakt worden met spierontspanners. Wat aantrekkelijk is bij beginnende lijntjes, is dat deze vaak volledig verdwijnen na een behandeling. Als de rimpel echter meer doorleefd is en dieper, dan kan een combinatie van spierontspanners en een filler soms meer effectief zijn.</p><p>Een significant pluspunt van spierontspanners is dat de behandeling tevens een preventieve werking heeft. Indien je op vroege termijn ingrijpt, zullen rimpels niet verder verdiepen, en is de kans groot dat je nooit nood hebt aan vulstoffen of andere procedures voor deze gebieden. Hoewel we idealiter wachten tot een persoon minstens 21 jaar is voor eender welke behandeling, is het toegestaan om vanaf 18 jaar behandelingen te ondergaan. Indien onze medisch specialist twijfels heeft over de realistischheid van je verwachtingen, zullen we hier openlijk met je over converseren.</p>'
                     ],
                     [
-                        'question' => 'Hoe verschilt een liquid facelift van een chirurgische facelift?',
-                        'answer' => '<p>Een liquid facelift is minimaal invasief, vereist geen snijden of hechten, heeft geen lange hersteltijd en biedt direct zichtbare resultaten. Een chirurgische facelift is ingrijpender, met een langere herstelperiode en blijvender resultaat, maar ook meer risico\'s.</p>'
+                        'question' => 'Hoelang duurt het voordat ik weer kan werken?',
+                        'answer' => '<p>U kunt onmiddellijk na de sessie weer uw normale bezigheden oppakken. Daarom wordt een behandeling met spierontspanners vaak aangeduid als een \'lunchpauze-behandeling\'. Afgezien van een tijdelijke milde roodheid die binnen een half uur vervaagt, en zelden een kleine, goed te verhullen blauwe plek, is er vrijwel geen zichtbare indicatie van de behandeling.</p>'
                     ],
                     [
-                        'question' => 'Voor wie is een liquid facelift geschikt?',
-                        'answer' => '<p>De behandeling is geschikt voor mensen met beginnende tot matige verouderingstekenen die volume willen herstellen, de gezichtscontouren willen liften en rimpels willen verminderen, zonder chirurgische ingreep.</p>'
-                    ],
-                    [
-                        'question' => 'Is de behandeling pijnlijk?',
-                        'answer' => '<p>De behandeling is vrijwel pijnloos. Er wordt gebruikgemaakt van verdovende crèmes en zeer fijne naaldjes. De meeste mensen ervaren alleen lichte druk of een prikje tijdens de injecties.</p>'
-                    ],
-                    [
-                        'question' => 'Wanneer zie ik resultaat?',
-                        'answer' => '<p>Een deel van het resultaat is direct zichtbaar, vooral het volume-effect van de fillers. Het optimale resultaat wordt bereikt na ongeveer twee weken, wanneer eventuele zwelling is verdwenen en het product volledig is ingewerkt.</p>'
-                    ],
-                    [
-                        'question' => 'Hoe lang houdt het effect aan?',
-                        'answer' => '<p>Het effect van een liquid facelift houdt gemiddeld 6 tot 12 maanden aan. Voor langdurige resultaten kan de behandeling periodiek worden herhaald. Sommige fillers houden langer aan dan andere, afhankelijk van het product en de behandelde zone.</p>'
+                        'question' => 'Hoelang werkt het middel?',
+                        'answer' => '<p>Hoewel het middel zelf na 3-6 maanden is uitgewerkt, heeft het wel een permanent verbeterend effect op de behandelde regio. Dit is vooral van toepassing wanneer spierontspanners gedurende langere tijd (enkele jaren) is toegepast.</p><p>Dit komt doordat het gebied gedurende enkele jaren beperkt is in beweging. Hierdoor blijven oppervlakkige lijntjes in de huid en herstellen ze vaak volledig. Het is alsof de tijd feitelijk stil is gezet. Bovendien raakt u gewend om de relevante spier niet meer te gebruiken. Als gevolg hiervan zal bijvoorbeeld uw neiging tot fronsen verminderd zijn in vergelijking met vroeger. Dit draagt bij aan een langdurige verbetering van dit specifieke gebied. Er zijn zelfs enkele studies die suggereren dat u, om de hierboven beschreven redenen, na enkele jaren gebruik van spierontspanners gerust een jaar kunt pauzeren om het effect te behouden.</p>'
                     ]
                 ]
             ]

@@ -18,7 +18,8 @@ return [
                 'content' => '
                     <p>Marcos kwam bij ons in de kliniek met zeer sterk ontwikkelde platysmaspieren. Omdat dat hij veel spanning in deze spieren een onprettig gevoel vond, hebben we samen gekeken naar een oplossing. Deze bleek vrij simpel te zijn; namelijk de Nefertiti-lift. Met als bijkomend voordeel dat zijn hals en kaaklijn verjongt werden, waardoor hij een mooie slanke hals en kaaklijn kreeg. Inmiddels is Marcos gewend aan zijn ontspannen hals en kaaklijn en blij met de Nefertiti-lift.</p>
                 ',
-                'image_filename' => 'marcos.png'
+                'image_filename' => 'marcos.png',
+                'button_below_text' => true
             ]
         ],
         [
@@ -49,7 +50,8 @@ return [
                 'content' => '
                     <p>Na een behandeling met spierontspanners in de platysmaspieren langs de kaaklijn en in de hals zijn lichte roodheid, zwelling of kleine blauwe plekjes rondom de injectieplaatsen normaal; deze bijwerkingen zijn mild en verdwijnen meestal binnen enkele uren tot een paar dagen. Het resultaat van de behandeling wordt zichtbaar na enkele dagen en is maximaal na ongeveer twee weken, met een strakkere kaaklijn en hals als effect. De arts adviseert doorgaans om intensieve lichamelijke activiteiten, sauna, zonnebank en het masseren van het behandelde gebied te vermijden gedurende de eerste 24 uur, zodat de spierontspanner optimaal kan zijn werk doen. Het uiteindelijke resultaat houdt gemiddeld drie tot vier maanden aan, waarna de behandeling herhaald kan worden indien gewenst. Het resultaat is een strakkere kaaklijn en een elegantere hals.</p>
                 ',
-                'show_background' => false
+                'show_background' => false,
+                'custom_class' => '!py-0'
             ]
         ],
         [
@@ -65,7 +67,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => []
+            'data' => [
+                'custom_class' => '!py-0',
+            ]
         ],
         [
             'type' => 'treatment-summary',
@@ -86,7 +90,7 @@ return [
         [
             'type' => 'reviews',
             'data' => [
-                'show_background' => false
+                'show_background' => true
             ]
         ],
         [
@@ -99,28 +103,28 @@ return [
                 'title' => 'Veelgestelde vragen over Nefertiti lift behandeling',
                 'items' => [
                     [
-                        'question' => 'Wat is een Nefertiti-lift?',
-                        'answer' => '<p>De Nefertiti-lift is een niet-chirurgische behandeling met spierontspanners die de kaaklijn verstrak en de hals verjongt. Het is vernoemd naar de Egyptische koningin Nefertiti, bekend om haar gedefinieerde kaaklijn en slanke hals.</p>'
+                        'question' => 'Wat is een Nefertiti lift?',
+                        'answer' => '<p>Een Nefertiti lift is een behandeling met Botox waarbij de kaaklijn en hals strakker en verfijnder worden gemaakt. De naam komt van de Egyptische koningin Nefertiti, bekend om haar strakke kaaklijn.</p>'
                     ],
                     [
-                        'question' => 'Hoe werkt de Nefertiti-lift?',
-                        'answer' => '<p>Tijdens de behandeling worden kleine hoeveelheden spierontspanners geïnjecteerd in de platysmaspieren langs de kaaklijn en in de hals. Door de neerwaartse trekkracht van deze spieren te verminderen, wordt de huid subtiel gelift en ontstaat een strakkere kaaklijn.</p>'
+                        'question' => 'Hoe werkt een Nefertiti lift met Botox?',
+                        'answer' => '<p>Botox wordt geïnjecteerd in de spieren langs de kaaklijn en in de platysma-spier in de hals. Door deze spieren tijdelijk te ontspannen, krijgt de kaaklijn een liftend effect.</p>'
                     ],
                     [
-                        'question' => 'Voor wie is deze behandeling geschikt?',
-                        'answer' => '<p>De Nefertiti-lift is geschikt voor mensen die een verslapte kaaklijn willen verstrakken, beginnende halslijnen willen gladstrijken, of hun gezichtscontour willen verfijnen zonder chirurgische ingreep. Het is effectief bij zowel lichte als matige verouderingstekenen.</p>'
+                        'question' => 'Voor wie is een Nefertiti lift geschikt?',
+                        'answer' => '<p>Deze behandeling is geschikt voor mensen die last hebben van:</p><ul><li><p>een slappere kaaklijn</p></li><li><p>beginnende huidveroudering in de hals</p></li><li><p>een neerwaartse trek van de kaaklijn door overactieve spieren</p></li></ul>'
                     ],
                     [
-                        'question' => 'Is de behandeling pijnlijk?',
-                        'answer' => '<p>De behandeling is vrijwel pijnloos. Er wordt gebruikgemaakt van zeer fijne naaldjes en eventueel verdovende crème. De meeste mensen ervaren alleen een licht prikje tijdens de injecties.</p>'
+                        'question' => 'Is mijn leeftijd niet een belemmering voor deze behandeling?',
+                        'answer' => '<p>Opkomende lijntjes kunnen uitstekend aangepakt worden met spierontspanners. Wat aantrekkelijk is bij beginnende lijntjes, is dat deze vaak volledig verdwijnen na een behandeling. Als de rimpel echter meer doorleefd is en dieper, dan kan een combinatie van spierontspanners en een filler soms meer effectief zijn.</p><p>Een significant pluspunt van spierontspanners is dat de behandeling tevens een preventieve werking heeft. Indien je op vroege termijn ingrijpt, zullen rimpels niet verder verdiepen, en is de kans groot dat je nooit nood hebt aan vulstoffen of andere procedures voor deze gebieden. Hoewel we idealiter wachten tot een persoon minstens 21 jaar is voor eender welke behandeling, is het toegestaan om vanaf 18 jaar behandelingen te ondergaan. Indien onze medisch specialist twijfels heeft over de realistischheid van je verwachtingen, zullen we hier openlijk met je over converseren.</p>'
                     ],
                     [
-                        'question' => 'Wanneer zie ik het resultaat?',
-                        'answer' => '<p>De eerste effecten worden zichtbaar na enkele dagen. Het optimale resultaat is bereikt na ongeveer twee weken. De kaaklijn ziet er dan strakker uit en de hals heeft een elegantere, jeugdigere uitstraling.</p>'
+                        'question' => 'Hoelang duurt het voordat ik weer kan werken?',
+                        'answer' => '<p>U kunt onmiddellijk na de sessie weer uw normale bezigheden oppakken. Daarom wordt een behandeling met spierontspanners vaak aangeduid als een \'lunchpauze-behandeling\'. Afgezien van een tijdelijke milde roodheid die binnen een half uur vervaagt, en zelden een kleine, goed te verhullen blauwe plek, is er vrijwel geen zichtbare indicatie van de behandeling.</p>'
                     ],
                     [
-                        'question' => 'Hoe lang houdt het effect aan?',
-                        'answer' => '<p>Het effect houdt gemiddeld drie tot vier maanden aan. Voor langdurige resultaten kan de behandeling worden herhaald. Veel mensen kiezen voor onderhoudsbehandelingen om de strakkere kaaklijn en elegante hals te behouden.</p>'
+                        'question' => 'Hoelang werkt het middel?',
+                        'answer' => '<p>Hoewel het middel zelf na 3-6 maanden is uitgewerkt, heeft het wel een permanent verbeterend effect op de behandelde regio. Dit is vooral van toepassing wanneer spierontspanners gedurende langere tijd (enkele jaren) is toegepast.</p><p>Dit komt doordat het gebied gedurende enkele jaren beperkt is in beweging. Hierdoor blijven oppervlakkige lijntjes in de huid en herstellen ze vaak volledig. Het is alsof de tijd feitelijk stil is gezet. Bovendien raakt u gewend om de relevante spier niet meer te gebruiken. Als gevolg hiervan zal bijvoorbeeld uw neiging tot fronsen verminderd zijn in vergelijking met vroeger. Dit draagt bij aan een langdurige verbetering van dit specifieke gebied. Er zijn zelfs enkele studies die suggereren dat u, om de hierboven beschreven redenen, na enkele jaren gebruik van spierontspanners gerust een jaar kunt pauzeren om het effect te behouden.</p>'
                     ]
                 ]
             ]

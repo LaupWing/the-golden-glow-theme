@@ -19,7 +19,8 @@ return [
                     <p>Nik kampte al jaren met pijnklachten in zijn nek en schouders, veroorzaakt door chronische spanning in de trapeziusspier. Door deze klachten trok zijn rug steeds krommer en merkte hij dat zijn houding en uitstraling eronder leden. De pijn beïnvloedde niet alleen zijn dagelijks functioneren, maar ook zijn zelfvertrouwen.</p>
                     <p>In eerste instantie probeerde Nik met oefeningen de klachten te verlichten, maar dit gaf onvoldoende resultaat. Sterker nog: de frustratie en spanning namen toe. Uiteindelijk besloten we in onze kliniek om de trapeziusspier met spierontspanners te behandelen. Sindsdien ervaart Nik geen pijn meer en staat hij weer rechtop – vrijer en zelfverzekerder.</p>
                 ',
-                'image_filename' => 'nik.jpg'
+                'image_filename' => 'nik.jpg',
+                'button_below_text' => true
             ]
         ],
         [
@@ -53,7 +54,8 @@ return [
                     <p>De werking van Traptox wordt vaak binnen enkele dagen merkbaar en bereikt het optimale effect na 2 tot 4 weken. Het resultaat houdt gemiddeld 3 tot 4 maanden aan. Door de behandeling regelmatig te herhalen, kan zowel de verlichting van klachten als het esthetische effect langdurig behouden blijven.</p>
                     <p>Traptox is daarmee een veilige en effectieve oplossing voor mensen die last hebben van chronische nek- en schouderklachten door spierspanning, en tegelijkertijd een slankere, meer verfijnde nek- en schouderlijn wensen.</p>
                 ',
-                'show_background' => false
+                'show_background' => false,
+                'custom_class' => '!py-0'
             ]
         ],
         [
@@ -69,7 +71,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => []
+            'data' => [
+                'custom_class' => '!py-0',
+            ]
         ],
         [
             'type' => 'treatment-summary',
@@ -90,7 +94,7 @@ return [
         [
             'type' => 'reviews',
             'data' => [
-                'show_background' => false
+                'show_background' => true
             ]
         ],
         [
@@ -100,31 +104,31 @@ return [
         [
             'type' => 'faq',
             'data' => [
-                'title' => 'Veelgestelde vragen over Traptox behandeling',
+                'title' => 'Veelgestelde vragen over traptox behandeling',
                 'items' => [
                     [
-                        'question' => 'Wat is Traptox?',
-                        'answer' => '<p>Traptox is een behandeling waarbij spierontspanners worden geïnjecteerd in de trapeziusspier (monnikskapspier) om chronische spanning, nek- en schouderpijn te verminderen. Daarnaast verfijnt het de contouren van de nek en schouders.</p>'
+                        'question' => 'Wat is TrapTox?',
+                        'answer' => '<p>TrapTox is een behandeling waarbij Botox wordt geïnjecteerd in de trapeziusspieren (de grote spieren in de nek en schouders). Het ontspant de spieren en zorgt voor verlichting van spanning, maar ook voor een slanker en eleganter silhouet van de nek en schouders.</p>'
                     ],
                     [
-                        'question' => 'Hoe werkt Traptox?',
-                        'answer' => '<p>Door kleine hoeveelheden spierontspanners te injecteren in de trapeziusspier, ontspant de spier geleidelijk. Dit vermindert spanning, pijn en stijfheid. Als bijkomend voordeel zakken de schouders subtiel, waardoor de nek langer en eleganter oogt.</p>'
+                        'question' => 'Hoe werkt TrapTox met Botox?',
+                        'answer' => '<p>Botox blokkeert tijdelijk de zenuwsignalen naar de spier, waardoor deze ontspant en minder krachtig samentrekt. Dit kan pijn en spanning verminderen en op de lange termijn een verfijnde contour creëren doordat de spier iets slanker wordt.</p>'
                     ],
                     [
-                        'question' => 'Voor wie is Traptox geschikt?',
-                        'answer' => '<p>Traptox is geschikt voor mensen met chronische nek- en schouderklachten door spierspanning, stijfheid of spanningshoofdpijn. Ook voor wie esthetisch een slankere nek- en schouderlijn wenst zonder chirurgische ingreep.</p>'
+                        'question' => 'Voor wie is TrapTox geschikt?',
+                        'answer' => '<p>TrapTox is ideaal voor mensen die:</p><ul><li><p>last hebben van gespannen nek- en schouderspieren</p></li><li><p>regelmatig hoofdpijn of migraine ervaren door spierspanning</p></li><li><p>een elegantere, meer vrouwelijke schouder- en neklijn wensen</p></li></ul>'
                     ],
                     [
-                        'question' => 'Is de behandeling pijnlijk?',
-                        'answer' => '<p>De behandeling wordt doorgaans als vrijwel pijnloos ervaren. Er wordt gebruikgemaakt van zeer fijne naaldjes en eventueel verdovende crème. Tijdens de injecties kan een licht prikje worden gevoeld.</p>'
+                        'question' => 'Is mijn leeftijd niet een belemmering voor deze behandeling?',
+                        'answer' => '<p>Opkomende lijntjes kunnen uitstekend aangepakt worden met spierontspanners. Wat aantrekkelijk is bij beginnende lijntjes, is dat deze vaak volledig verdwijnen na een behandeling. Als de rimpel echter meer doorleefd is en dieper, dan kan een combinatie van spierontspanners en een filler soms meer effectief zijn.</p><p>Een significant pluspunt van spierontspanners. is dat de behandeling tevens een preventieve werking heeft. Indien je op vroege termijn ingrijpt, zullen rimpels niet verder verdiepen, en is de kans groot dat je nooit nood hebt aan vulstoffen of andere procedures voor deze gebieden. Hoewel we idealiter wachten tot een persoon minstens 21 jaar is voor eender welke behandeling, is het toegestaan om vanaf 18 jaar behandelingen te ondergaan. Indien onze medisch specialist twijfels heeft over de realistischheid van je verwachtingen, zullen we hier openlijk met je over converseren.</p>'
                     ],
                     [
-                        'question' => 'Wanneer zie ik resultaat?',
-                        'answer' => '<p>De werking van Traptox wordt vaak binnen enkele dagen merkbaar. Het optimale effect wordt bereikt na 2 tot 4 weken. Dan is de spanning verminderd en ziet de nek- en schouderlijn er verfijnder uit.</p>'
+                        'question' => 'Hoelang duurt het voordat ik weer kan werken?',
+                        'answer' => '<p>U kunt onmiddellijk na de sessie weer uw normale bezigheden oppakken. Daarom wordt een behandeling met spierontspanners vaak aangeduid als een \'lunchpauze-behandeling\'. Afgezien van een tijdelijke milde roodheid die binnen een half uur vervaagt, en zelden een kleine, goed te verhullen blauwe plek, is er vrijwel geen zichtbare indicatie van de behandeling.</p>'
                     ],
                     [
-                        'question' => 'Hoe lang houdt het effect aan?',
-                        'answer' => '<p>Het effect houdt gemiddeld 3 tot 4 maanden aan. Voor duurzame resultaten kan de behandeling worden herhaald. Veel mensen kiezen voor onderhoudsbehandelingen om zowel de pijnverlichting als het esthetische effect te behouden.</p>'
+                        'question' => 'Hoelang werkt het middel?',
+                        'answer' => '<p>Hoewel het middel zelf na 3-6 maanden is uitgewerkt, heeft het wel een permanent verbeterend effect op de behandelde regio. Dit is vooral van toepassing wanneer spierontspanners gedurende langere tijd (enkele jaren) is toegepast.</p><p>Dit komt doordat het gebied gedurende enkele jaren beperkt is in beweging. Hierdoor blijven oppervlakkige lijntjes in de huid en herstellen ze vaak volledig. Het is alsof de tijd feitelijk stil is gezet. Bovendien raakt u gewend om de relevante spier niet meer te gebruiken. Als gevolg hiervan zal bijvoorbeeld uw neiging tot fronsen verminderd zijn in vergelijking met vroeger. Dit draagt bij aan een langdurige verbetering van dit specifieke gebied. Er zijn zelfs enkele studies die suggereren dat u, om de hierboven beschreven redenen, na enkele jaren gebruik van spierontspanners gerust een jaar kunt pauzeren om het effect te behouden.</p>'
                     ]
                 ]
             ]
