@@ -18,7 +18,8 @@ return [
                 'content' => '
                     <p>Teun kwam bij ons met de wens om zijn rokerslijntjes rondom de mond te verzachten. Hij merkte dat deze fijne lijntjes hem een vermoeide en oudere uitstraling gaven, terwijl hij zich juist energiek en jong voelde. In plaats van alleen de lijnen zelf aan te pakken, is gekozen voor een bredere benadering. Eerst werd het volume rondom de mond van Teun licht hersteld om de huid te ondersteunen en te liften. Vervolgens zijn de rokerslijntjes behandeld met een fijne hyaluronzuurfiller, die speciaal geschikt is voor dit delicate gebied. Het resultaat is een natuurlijke verzachting van de lijntjes, waardoor Teuns mond weer ontspannen en fris oogt. Hij ervaart dat zijn uitstraling beter aansluit bij hoe hij zich van binnen voelt. Teun is tevreden met het resultaat en onderhoudt de behandeling elke 9 maanden.</p>
                 ',
-                'image_filename' => 'teun.jpg'
+                'image_filename' => 'teun.jpg',
+                'button_below_text' => true
             ]
         ],
         [
@@ -49,7 +50,8 @@ return [
                 'content' => '
                     <p>Na de behandeling kunnen lichte zwelling, roodheid of blauwe plekjes ontstaan, die meestal binnen enkele dagen verdwijnen. Voor een langduriger effect is het belangrijk om ook zelf aandacht te besteden aan huidbescherming, zoals het vermijden van overmatige zonblootstelling en het stoppen met roken. Laat de huid de eerste 24 uur na de behandeling met rust en gebruik geen make-up op het behandelde gebied. Vermijd in de eerste twee dagen intensief sporten, sauna, zonnebank en direct zonlicht, omdat dit het herstel kan verstoren. Het drinken van alcohol en het gebruik van bloedverdunnende middelen kunnen het risico op blauwe plekjes vergroten; stel dit daarom uit tot minimaal 24 uur na de behandeling. Het resultaat van de behandeling begint meestal na 2 tot 5 dagen zichtbaar te worden en bereikt het optimale effect na ongeveer 10 tot 14 dagen. Het effect houdt doorgaans 3 tot 4 maanden aan, waarna de spieractiviteit weer langzaam terugkeert. Door de behandeling regelmatig te herhalen, blijven rimpels en lijntjes zachter en minder opvallend aanwezig.</p>
                 ',
-                'show_background' => false
+                'show_background' => false,
+                'custom_class' => '!py-0'
             ]
         ],
         [
@@ -65,7 +67,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => []
+            'data' => [
+                'custom_class' => '!py-0'
+            ]
         ],
         [
             'type' => 'treatment-summary',
@@ -86,7 +90,7 @@ return [
         [
             'type' => 'reviews',
             'data' => [
-                'show_background' => false
+                'show_background' => true
             ]
         ],
         [
@@ -113,6 +117,14 @@ return [
                     [
                         'question' => 'Is mijn leeftijd niet een belemmering voor deze behandeling?',
                         'answer' => '<p>Opkomende lijntjes kunnen uitstekend aangepakt worden met spierontspanners. Wat aantrekkelijk is bij beginnende lijntjes, is dat deze vaak volledig verdwijnen na een behandeling. Als de rimpel echter meer doorleefd is en dieper, dan kan een combinatie van spierontspanners en een filler soms meer effectief zijn.</p><p>Een significant pluspunt van spierontspanners is dat de behandeling tevens een preventieve werking heeft. Indien je op vroege termijn ingrijpt, zullen rimpels niet verder verdiepen, en is de kans groot dat je nooit nood hebt aan vulstoffen of andere procedures voor deze gebieden. Hoewel we idealiter wachten tot een persoon minstens 21 jaar is voor eender welke behandeling, is het toegestaan om vanaf 18 jaar behandelingen te ondergaan. Indien onze medisch specialist twijfels heeft over de realistischheid van je verwachtingen, zullen we hier openlijk met je over converseren.</p>'
+                    ],
+                    [
+                        'question' => 'Hoelang duurt het voordat ik weer kan werken?',
+                        'answer' => '<p>Je kunt onmiddellijk na de sessie weer uw normale bezigheden oppakken. Daarom wordt een behandeling met spierontspanners vaak aangeduid als een \'lunchpauze-behandeling\'. Afgezien van een tijdelijke milde roodheid die binnen een half uur vervaagt, en zelden een kleine, goed te verhullen blauwe plek, is er vrijwel geen zichtbare indicatie van de behandeling.</p>'
+                    ],
+                    [
+                        'question' => 'Hoelang werkt de behandeling?',
+                        'answer' => '<p>Hoewel het middel zelf na 3-6 maanden is uitgewerkt, heeft het wel een permanent verbeterend effect op de behandelde regio. Dit is vooral van toepassing wanneer het middel gedurende langere tijd (enkele jaren) is toegepast.</p><p>Dit komt doordat het gebied gedurende enkele jaren beperkt is in beweging. Hierdoor blijven oppervlakkige lijntjes in de huid en herstellen ze vaak volledig. Het is alsof de tijd feitelijk stil is gezet. Bovendien raakt u gewend om de relevante spier niet meer te gebruiken. Als gevolg hiervan zal bijvoorbeeld uw neiging tot fronsen verminderd zijn in vergelijking met vroeger. Dit draagt bij aan een langdurige verbetering van dit specifieke gebied. Er zijn zelfs enkele studies die suggereren dat u, om de hierboven beschreven redenen, na enkele jaren gebruik van spierontspanners gerust een jaar kunt pauzeren om het effect te behouden.</p>'
                     ]
                 ]
             ]
