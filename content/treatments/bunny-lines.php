@@ -18,7 +18,8 @@ return [
                 'content' => '
                     <p>Saori is een cliënte die haar neus aandacht geeft. Naast een neuspuntlift voor het liften van haar neuspunt en een neusfiller voor het versmallen en prononceren van haar neusrug laat Saori haar bunny lines een aantal keer per jaar behandelen met een spierontspanner. Hierdoor verdwijnen de (lach en optrek) lijntjes naast haar neus en komt haar mooie neus nog meer tot zijn recht. Saori is een prachtige vrouw en deze behandelingen maken haar zelfverzekerder en daarmee nog mooier!</p>
                 ',
-                'image_filename' => 'saori.jpg'
+                'image_filename' => 'saori.jpg',
+                'button_below_text' => true
             ]
         ],
         [
@@ -29,7 +30,7 @@ return [
                     <p>De behandeling zelf is snel, veilig en vrijwel pijnloos. Met een zeer fijne naald injecteert de arts kleine, nauwkeurig gedoseerde hoeveelheden Botox in de spieren die verantwoordelijk zijn voor het ontstaan van bunny lines, meestal de musculus nasalis. Meestal zijn twee tot drie prikjes aan beide zijden van de neus voldoende om de spieractiviteit te verminderen, waardoor de spieren ontspannen en de lijntjes verzachten. Verdoving is doorgaans niet nodig, omdat de injecties slechts licht prikkelend aanvoelen.</p>
                     <p>De bunny lines behandeling met Botox wordt uitgevoerd met een persoonlijke en professionele aanpak. Het traject start met een uitgebreid consult waarbij dokter Arwind Chigharoe jouw gezichtsuitdrukking en de spierspanning rondom de neus zorgvuldig analyseert. Tijdens dit consult wordt de anatomie van je gezicht bestudeerd en wordt besproken of een neusrimpels met een spierontspannende behandeling geschikt is voor jouw specifieke situatie. Ook worden de verwachte resultaten en het behandelplan uitgebreid toegelicht, zodat je precies weet wat je kunt verwachten.</p>
                 ',
-                'show_background' => false
+                'show_background' => true
             ]
         ],
         [
@@ -50,7 +51,8 @@ return [
                 'content' => '
                     <p>Na de behandeling kan de huid rondom de injectiepunten wat rood of gevoelig zijn, maar dit trekt meestal binnen enkele uren weg. Wij adviseren om de huid de eerste 24 uur met rust te laten en geen make-up aan te brengen. Ook raden wij aan om de eerste twee dagen intensief sporten, sauna, zonnebank en direct zonlicht te vermijden. Alcohol en bloedverdunners kunnen het risico op blauwe plekjes vergroten en worden daarom afgeraden in de eerste 24 uur. Het effect van de behandeling wordt zichtbaar na 2 tot 5 dagen en is optimaal na 10 tot 14 dagen. Gemiddeld houdt het resultaat 3 tot 6 maanden aan, waarna de spieractiviteit geleidelijk terugkeert. Door de behandeling regelmatig te herhalen, blijven de lijntjes zacht en minimaal aanwezig.</p>
                 ',
-                'show_background' => true
+                'custom_class' => '!py-0',
+                'show_background' => false
             ]
         ],
         [
@@ -66,7 +68,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => []
+            'data' => [
+                'custom_class' => '!py-0',
+            ]
         ],
         [
             'type' => 'treatment-summary',

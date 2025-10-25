@@ -18,7 +18,8 @@ return [
                 'content' => '
                     <p>Lisa staat als influencer bekend om haar uitstraling en weet hoe belangrijk een frisse, open blik is. Ze ervoer haar oogopslag als vermoeid en vond haar oogleden zwaar, waardoor haar gezicht minder energiek oogde. Met een subtiele wenkbrauwlift door middel van een spierontspanner kreeg Lisa haar gewenste open en frisse blik terug. Niet alleen voelt zij zich hierdoor energieker, ook ziet ze er zichtbaar uitgerust en stralend uit. Volgens Lisa is het een kleine en vrijwel ongemerkte ingreep met een groots effect op haar zelfvertrouwen. Om het resultaat te behouden, herhaalt Lisa de behandeling iedere vier maanden.</p>
                 ',
-                'image_filename' => 'lasers-intro.png'
+                'image_filename' => 'lasers-intro.png',
+                'button_below_text' => true
             ]
         ],
         [
@@ -51,7 +52,8 @@ return [
                 'content' => '
                     <p>Na de behandeling kan de huid van het voorhoofd wat rood, gevoelig of licht gezwollen zijn. Ook kunnen er blauwe plekjes ontstaan. Deze trekken binnen enkele dagen weer weg. Wij adviseren om de huid de eerste 24 uur met rust te laten en geen make-up te gebruiken. Ook is het verstandig om gedurende twee dagen intensief sporten, sauna, zonnebank en direct zonlicht te vermijden. Alcohol en bloedverdunners vergroten de kans op blauwe plekken en worden daarom afgeraden direct na de behandeling. Het resultaat wordt meestal binnen enkele dagen zichtbaar en is na ongeveer twee weken optimaal; de effecten houden doorgaans drie tot vier maanden aan, waarna je de behandeling weer kunt herhalen voor een optimaal effect.</p>
                 ',
-                'show_background' => false
+                'show_background' => false,
+                'custom_class' => '!py-0'
             ]
         ],
         [
@@ -67,7 +69,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => []
+            'data' => [
+                'custom_class' => '!py-0'
+            ]
         ],
         [
             'type' => 'treatment-summary',
@@ -87,7 +91,9 @@ return [
         ],
         [
             'type' => 'reviews',
-            'data' => []
+            'data' => [
+                'show_background' => true
+            ]
         ],
         [
             'type' => 'clinic',

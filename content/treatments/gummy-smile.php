@@ -19,7 +19,8 @@ return [
                 'content' => '
                     <p>Rikki heeft van nature een mooie, evenwichtige glimlach, maar ze merkte dat haar tandvlees soms te veel zichtbaar was bij het lachen. Dit zorgde ervoor dat ze zich onzeker voelde over haar lach. Wat Rikki wenste, was een subtiele verbetering zonder dat haar uiterlijk drastisch veranderde. Met een spierontspanner voor de gummy smile kon dit probleem effectief worden aangepakt. Hierbij wordt met behulp van een spierontspanner de spier die de bovenlip bij het lachen omhoog trekt, voorzichtig ontspannen. Hierdoor beweegt de bovenlip minder ver omhoog en komt er minder tandvlees bloot te liggen. Het resultaat is een natuurlijk ogende lach waarin het tandvlees minder zichtbaar is, zonder dat er volume aan de lippen verloren gaat of je uitstraling verandert. Sinds de behandeling lacht Rikki met meer zelfvertrouwen.</p>
                 ',
-                'image_filename' => 'rikki.png'
+                'image_filename' => 'rikki.png',
+                'button_below_text' => true
             ]
         ],
         [
@@ -50,7 +51,8 @@ return [
                 'content' => '
                     <p>Na de behandeling kan de huid rondom de injectiepunten tijdelijk wat rood of gevoelig zijn, maar dit verdwijnt meestal binnen enkele uren. Wij adviseren om de huid de eerste 24 uur rust te gunnen en geen make-up aan te brengen. Ook bevelen we aan om de eerste twee dagen intensief sporten, sauna, zonnebank en direct zonlicht te vermijden. Alcohol en bloedverdunners kunnen het risico op blauwe plekjes vergroten en worden daarom afgeraden binnen de eerste 24 uur. Het effect van de behandeling wordt zichtbaar na 2 tot 5 dagen en is optimaal na 10 tot 14 dagen. Gemiddeld blijft het resultaat 3 tot 6 maanden zichtbaar, waarna de spieractiviteit geleidelijk terugkeert. Door de behandeling regelmatig – elke vier tot zes maanden – te herhalen, blijft de mooie natuurlijke glimlach behouden.</p>
                 ',
-                'show_background' => false
+                'show_background' => false,
+                'custom_class' => '!py-0'
             ]
         ],
         [
@@ -66,7 +68,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => []
+            'data' => [
+                'custom_class' => '!py-0'
+            ]
         ],
         [
             'type' => 'treatment-summary',
@@ -87,7 +91,7 @@ return [
         [
             'type' => 'reviews',
             'data' => [
-                'show_background' => false
+                'show_background' => true
             ]
         ],
         [
@@ -118,6 +122,10 @@ return [
                     [
                         'question' => 'Hoelang duurt het voordat ik weer kan werken?',
                         'answer' => '<p>Je kunt onmiddellijk na de sessie weer uw normale bezigheden oppakken. Daarom wordt een behandeling met spierontspanners vaak aangeduid als een \'lunchpauze-behandeling\'. Afgezien van een tijdelijke milde roodheid die binnen een half uur vervaagt, en zelden een kleine, goed te verhullen blauwe plek, is er vrijwel geen zichtbare indicatie van de behandeling.</p>'
+                    ],
+                    [
+                        'question' => 'Hoelang werkt het middel?',
+                        'answer' => '<p>Hoewel het middel zelf na 3-6 maanden is uitgewerkt, heeft het wel een permanent verbeterend effect op de behandelde regio. Dit is vooral van toepassing wanneer het middel gedurende langere tijd (enkele jaren) is toegepast.</p><p>Dit komt doordat het gebied gedurende enkele jaren beperkt is in beweging. Hierdoor blijven oppervlakkige lijntjes in de huid en herstellen ze vaak volledig. Het is alsof de tijd feitelijk stil is gezet. Bovendien raakt u gewend om de relevante spier niet meer te gebruiken. Als gevolg hiervan zal bijvoorbeeld uw neiging tot fronsen verminderd zijn in vergelijking met vroeger. Dit draagt bij aan een langdurige verbetering van dit specifieke gebied. Er zijn zelfs enkele studies die suggereren dat u, om de hierboven beschreven redenen, na enkele jaren gebruik van spierontspanners gerust een jaar kunt pauzeren om het effect te behouden.</p>'
                     ]
                 ]
             ]

@@ -19,7 +19,8 @@ return [
                 'content' => '
                     <p>Toen Morena bij ons kwam stoorde zij zich vooral aan de schaduwen vanuit haar mondhoeken naar de kin. Deze marionetlijnen gaven haar een strenge uitstraling die niet overeenkwam met hoe ze zich voelde. In plaats van alleen de lijnen direct op te vullen, kozen onze specialisten voor een bredere benadering: eerst werd het volumeverlies in de wangen subtiel hersteld, waardoor de huid iets gelift werd. Daarna zijn de marionetlijnen zelf verzacht met een soepele hyaluronzuurfiller. Het resultaat is niet alleen dat de lijnen minder zichtbaar zijn, maar vooral dat Morena\'s mond weer een natuurlijke, ontspannen uitstraling heeft. Zij ervaart dat ze er vriendelijker uitziet en dat haar uitstraling past bij hoe zij zicht voelt. Morena is een blije cliënte en komt jaarlijks terug om de behandeling van haar marionetlijnen bij te houden.</p>
                 ',
-                'image_filename' => 'morena.jpg'
+                'image_filename' => 'morena.jpg',
+                'button_below_text' => true
             ]
         ],
         [
@@ -50,7 +51,8 @@ return [
                 'content' => '
                     <p>Het opvullen van marionetlijnen is een korte en veilige behandeling van ongeveer 20 tot 30 minuten. Direct na afloop kan het behandelde gebied wat rood, gevoelig of licht gezwollen zijn, wat meestal vanzelf binnen enkele dagen verdwijnt. Voor een voorspoedig herstel adviseren wij om de eerste 24 uur geen make-up te gebruiken en de huid rustig te laten. Ook is het verstandig om gedurende 2 dagen intensief sporten, sauna, zonnebank en direct zonlicht te vermijden. Alcohol en bloedverdunnende medicatie kunnen het risico op blauwe plekken vergroten en worden daarom afgeraden vlak na de behandeling. Het resultaat is vrijwel direct zichtbaar: de lijnen verzachten, de mondhoek oogt vriendelijker en het gezicht krijgt een frissere uitstraling. Afhankelijk van de stofwisseling blijft het effect gemiddeld 9 tot 12 maanden behouden, waarna een herhaalbehandeling gewenst kan zijn om het resultaat te prolongeren.</p>
                 ',
-                'show_background' => false
+                'show_background' => false,
+                'custom_class' => '!py-0'
             ]
         ],
         [
@@ -66,7 +68,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => []
+            'data' => [
+                'custom_class' => '!py-0'
+            ]
         ],
         [
             'type' => 'treatment-summary',
@@ -87,7 +91,7 @@ return [
         [
             'type' => 'reviews',
             'data' => [
-                'show_background' => false
+                'show_background' => true
             ]
         ],
         [
