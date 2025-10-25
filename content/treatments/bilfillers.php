@@ -20,7 +20,8 @@ return [
                     <p>Centraal in onze aanpak staat het gebruik van echogeleide injectietechniek. Deze methode stelt ons in staat om de filler met uiterste nauwkeurigheid te plaatsen, waarbij we op beeldscherm exact volgen waar de filler zich bevindt. Deze techniek passen wij standaard toe — niet als extra, maar als uitgangspunt voor kwaliteit en veiligheid.</p>
                     <p>Tijdens het intakegesprek nemen we ruim de tijd om uw wensen en verwachtingen in kaart te brengen. Op basis daarvan ontvangt u een eerlijk en deskundig behandeladvies, afgestemd op uw anatomie en doelstelling.</p>
                 ",
-                "image_filename" => "lady-shot-3.jpg"
+                "image_filename" => "lady-shot-3.jpg",
+                "button_below_text" => true
             ]
         ],
         [
@@ -40,7 +41,8 @@ return [
                 "content" => "
                     <p>Het effect is direct zichtbaar: een subtiele, maar duidelijke verbetering in volume, contour en symmetrie. De meeste cliënten kiezen voor deze behandeling ter correctie van hip dips, milde cellulitis of om stevigheid en vorm toe te voegen op een natuurlijke manier. De resultaten blijven doorgaans twee jaar behouden.</p>
                 ",
-                "show_background" => false
+                "show_background" => true,
+                "custom_class" => "!pt-0"
             ]
         ],
         [
@@ -61,7 +63,8 @@ return [
                 "content" => "
                     <p>Wat The Golden Glow onderscheidt, is onze combinatie van medische expertise, innovatieve techniek en een scherp oog voor esthetiek. Dokter Arwind Chigharoe is gespecialiseerd in echogeleide fillerbehandelingen en staat bekend om zijn secure werkwijze en oog voor detail. U wordt behandeld in een discrete, professioneel ingerichte kliniek in het centrum van Amsterdam, waar kwaliteit, aandacht en integriteit de standaard vormen. Wij nodigen u graag uit voor een vrijblijvend consult. Daarin bespreken we uw wensen en informeren we u transparant over de mogelijkheden van onze echogeleide bilfillerbehandeling. Bij The Golden Glow staat niet alleen het resultaat centraal, maar ook de weg ernaartoe — veilig, persoonlijk en medisch onderbouwd.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -82,7 +85,8 @@ return [
                 "content" => "
                     <p>De resultaten van de butt lift hieronder laten zien hoe hyaluronzuur fillers het volume en de contour van de billen op natuurlijke wijze verbeteren. Met een direct zichtbaar resultaat en minimale hersteltijd biedt deze behandeling een effectieve oplossing voor een vollere  strakkere billen. Geniet van een duidelijke verbetering, zonder de noodzaak van een  invasieve ingreep. Bekijk de resultaten en zie het verschil! </p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -104,7 +108,8 @@ return [
                 "content" => "
                     <p>Gedurende de eerste twee weken adviseren wij om intensieve hittebronnen, zoals de zonnebank en sauna, te vermijden. Ook inspannende fysieke activiteiten en roken kunnen het herstelproces nadelig beïnvloeden en worden in deze periode afgeraden. Vermijd daarnaast druk op de behandelde zones – bijvoorbeeld door er niet op te liggen tijdens het slapen. Een goede hydratatie ondersteunt het effect van de behandeling; drink daarom voldoende water. Volg de instructies van de arts nauwgezet op, met name ten aanzien van wondzorg: laat de pleister gedurende zeven dagen bij een hyaluronzuur behandeling intact en drie dagen bij een biostimulator en kom na twee weken terug voor een controleafspraak. Zo zorgen we samen voor een veilige genezing en langdurige verbetering van de huidkwaliteit. Indien er sprake is van een biostimulerende toepassing, is het bovendien van belang om de specifieke massage-instructies van de arts zorgvuldig op te volgen, omdat deze essentieel zijn voor een gelijkmatige verdeling en activering van het product.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
