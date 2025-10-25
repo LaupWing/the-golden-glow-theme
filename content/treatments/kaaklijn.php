@@ -18,7 +18,8 @@ return [
                 'content' => '
                     <p>Morena kwam bij ons in de kliniek met de klacht dat zij gedurende de nacht haar kaakspieren erg aanspande. Dit leidde tot pijn in haar kaken. Tijden een consult constateerde onze arts sterk ontwikkelde kaakspieren, wat zich ook uitte in een brede kaaklijn. Hoewel Morena met een medische klacht kwam en wij deze klacht met spierontspanners behandelde, zag Morena dat haar gezicht een zachter en vrouwlijkere uitstraling kreeg na de behandeling. De ontspanning van haar kaakspieren veranderde haar gezicht in positieve zin, haar kaakspieren werden geleidelijk kleiner en minder prominent, daarnaast verdween de pijn in haar kaken. Een behandeling met een \'win win\' situatie. Morena houdt deze behandeling elk half jaar bij en is gelukkig pijnvrij en heeft een prachtige vrouwelijke kaaklijn.</p>
                 ',
-                'image_filename' => 'morena2.jpg'
+                'image_filename' => 'morena2.jpg',
+                'button_below_text' => true
             ]
         ],
         [
@@ -50,7 +51,8 @@ return [
                 'content' => '
                     <p>Het effect van de spierontspanners op de kauwspieren ontwikkelt zich geleidelijk en is meestal na een paar weken goed zichtbaar. Na de behandeling kan de huid bij de kaken gevoelig of licht gezwollen zijn. Dit trekt meestal dezelfde dag nog weg. Wij adviseren om de huid de eerste 24 uur met rust te laten en geen make-up te gebruiken. Ook is het verstandig om gedurende twee dagen intensief sporten, sauna, zonnebank en direct zonlicht te vermijden. Alcohol en bloedverdunners vergroten de kans op blauwe plekken en worden daarom afgeraden direct na de behandeling. Het resultaat houdt gemiddeld drie tot zes maanden aan, waarna herhaling van de behandeling mogelijk is om de kaaklijn smal en strak te houden.</p>
                 ',
-                'show_background' => false
+                'show_background' => false,
+                'custom_class' => '!py-0'
             ]
         ],
         [
@@ -66,7 +68,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => []
+            'data' => [
+                'custom_class' => '!py-0',
+            ]
         ],
         [
             'type' => 'treatment-summary',
@@ -87,7 +91,7 @@ return [
         [
             'type' => 'reviews',
             'data' => [
-                'show_background' => false
+                'show_background' => true
             ]
         ],
         [
@@ -97,31 +101,31 @@ return [
         [
             'type' => 'faq',
             'data' => [
-                'title' => 'Veelgestelde vragen over kaaklijn behandeling',
+                'title' => 'Veelgestelde vragen over fronsrimpel behandeling',
                 'items' => [
                     [
-                        'question' => 'Wat is een kaaklijn behandeling met spierontspanners?',
-                        'answer' => '<p>Dit is een behandeling waarbij spierontspanners in de kauwspieren (masseters) worden geïnjecteerd om deze te ontspannen. Hierdoor worden de spieren geleidelijk kleiner, wat zorgt voor een slankere en verfijnde kaaklijn.</p>'
+                        'question' => 'Wat is een kaaklijnbehandeling met Botox?',
+                        'answer' => '<p>Een kaaklijnbehandeling met Botox richt zich op de kauwspieren (masseters). Door Botox in deze spieren te injecteren, ontspannen ze, waardoor de kaaklijn slanker en verfijnder wordt.</p>'
                     ],
                     [
-                        'question' => 'Voor wie is deze behandeling geschikt?',
-                        'answer' => '<p>De behandeling is geschikt voor mensen met sterk ontwikkelde kauwspieren die een brede of hoekige kaak hebben en een slankere, meer ovale gezichtsvorm wensen. Ook helpt het bij kaakspanning, tandenknarsen en kaakpijn.</p>'
+                        'question' => 'Hoe werkt Botox in de kaaklijn?',
+                        'answer' => '<p>De masseters zijn grote kauwspieren die bij sommige mensen zorgen voor een bredere kaaklijn. Met Botox worden deze spieren tijdelijk ontspannen, waardoor ze geleidelijk iets in volume afnemen en de kaaklijn strakker oogt.</p>'
                     ],
                     [
-                        'question' => 'Hoe werkt de behandeling?',
-                        'answer' => '<p>Door spierontspanners te injecteren in de kauwspieren worden de spiercontracties verminderd. De spieren worden geleidelijk kleiner en minder prominent, wat resulteert in een verfijnde kaaklijn met een zachtere, V-vormige uitstraling.</p>'
+                        'question' => 'Voor wie is een kaaklijnbehandeling met Botox geschikt?',
+                        'answer' => '<p>Deze behandeling is geschikt voor mensen die:</p><ul><li><p>een brede of vierkante kaaklijn hebben door sterke kauwspieren</p></li><li><p>hun gezicht meer in balans willen brengen</p></li><li><p>last hebben van tandenknarsen of kaakspanning</p></li></ul>'
                     ],
                     [
-                        'question' => 'Is de behandeling pijnlijk?',
-                        'answer' => '<p>De behandeling is vrijwel pijnloos en duurt slechts enkele minuten. Verdoving is meestal niet nodig. Er kunnen lichte prikjes worden gevoeld tijdens de injecties.</p>'
+                        'question' => 'Is mijn leeftijd niet een belemmering voor deze behandeling?',
+                        'answer' => '<p>Opkomende lijntjes kunnen uitstekend aangepakt worden met spierontspanners. Wat aantrekkelijk is bij beginnende lijntjes, is dat deze vaak volledig verdwijnen na een behandeling. Als de rimpel echter meer doorleefd is en dieper, dan kan een combinatie van spierontspanners en een filler soms meer effectief zijn.</p><p>Een significant pluspunt van spierontspanners is dat de behandeling tevens een preventieve werking heeft. Indien je op vroege termijn ingrijpt, zullen rimpels niet verder verdiepen, en is de kans groot dat je nooit nood hebt aan vulstoffen of andere procedures voor deze gebieden. Hoewel we idealiter wachten tot een persoon minstens 21 jaar is voor eender welke behandeling, is het toegestaan om vanaf 18 jaar behandelingen te ondergaan. Indien onze medisch specialist twijfels heeft over de realistischheid van je verwachtingen, zullen we hier openlijk met je over converseren.</p>'
                     ],
                     [
-                        'question' => 'Wanneer zie ik resultaat?',
-                        'answer' => '<p>Het effect ontwikkelt zich geleidelijk en is meestal na een paar weken goed zichtbaar. De kauwspieren worden kleiner en de kaaklijn wordt verfijnder en slankere.</p>'
+                        'question' => 'Hoelang duurt het voordat ik weer kan werken?',
+                        'answer' => '<p>U kunt onmiddellijk na de sessie weer uw normale bezigheden oppakken. Daarom wordt een behandeling met spierontspanners vaak aangeduid als een \'lunchpauze-behandeling\'. Afgezien van een tijdelijke milde roodheid die binnen een half uur vervaagt, en zelden een kleine, goed te verhullen blauwe plek, is er vrijwel geen zichtbare indicatie van de behandeling.</p>'
                     ],
                     [
-                        'question' => 'Hoe lang houdt het effect aan?',
-                        'answer' => '<p>Het resultaat houdt gemiddeld drie tot zes maanden aan. Door de behandeling regelmatig te herhalen, blijft de kaaklijn smal en strak. Sommige mensen kiezen voor onderhoudsbehandelingen elke 4-6 maanden.</p>'
+                        'question' => 'Hoelang werkt het middel?',
+                        'answer' => '<p>Hoewel het middel zelf na 3-6 maanden is uitgewerkt, heeft het wel een permanent verbeterend effect op de behandelde regio. Dit is vooral van toepassing wanneer spierontspanners gedurende langere tijd (enkele jaren) is toegepast.</p><p>Dit komt doordat het gebied gedurende enkele jaren beperkt is in beweging. Hierdoor blijven oppervlakkige lijntjes in de huid en herstellen ze vaak volledig. Het is alsof de tijd feitelijk stil is gezet. Bovendien raakt u gewend om de relevante spier niet meer te gebruiken. Als gevolg hiervan zal bijvoorbeeld uw neiging tot fronsen verminderd zijn in vergelijking met vroeger. Dit draagt bij aan een langdurige verbetering van dit specifieke gebied. Er zijn zelfs enkele studies die suggereren dat u, om de hierboven beschreven redenen, na enkele jaren gebruik van spierontspanners gerust een jaar kunt pauzeren om het effect te behouden.</p>'
                     ]
                 ]
             ]
