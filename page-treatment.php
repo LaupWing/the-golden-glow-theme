@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Treatment Subpage
  * Universal template for ALL treatment subpages
@@ -65,20 +66,20 @@ get_template_part('templates/page-banner', null, [
 
             case 'navigation':
                 $links = $block_data['links'] ?? [];
-                ?>
+        ?>
                 <section class="py-8 md:py-12 bg-white">
                     <div class="container mx-auto px-[5%]">
                         <nav class="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4" aria-label="Page navigation">
                             <?php foreach ($links as $link): ?>
                                 <a href="<?php echo esc_attr($link['href'] ?? '#'); ?>"
-                                   class="block md:inline-block w-4/5 md:w-auto bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold text-center hover:opacity-90 transition-opacity duration-200">
+                                    class="block md:inline-block w-4/5 md:w-auto bg-primary text-white px-8 py-3 rounded-md font-heading font-semibold text-center hover:opacity-90 transition-opacity duration-200">
                                     <?php echo esc_html($link['label'] ?? ''); ?>
                                 </a>
                             <?php endforeach; ?>
                         </nav>
                     </div>
                 </section>
-                <?php
+            <?php
                 break;
 
             case 'price':
@@ -98,27 +99,30 @@ get_template_part('templates/page-banner', null, [
                     'price' => $block_data['price'] ?? '',
                     'duration' => $block_data['duration'] ?? '',
                     'checkup' => $block_data['checkup'] ?? '',
-                    'effect' => $block_data['effect'] ?? ''
+                    'effect' => $block_data['effect'] ?? '',
+                    'custom_class' => $block_data['custom_class'] ?? ''
                 ]);
                 break;
 
             case 'appointment-button':
                 $url = $block_data['url'] ?? 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL';
                 $label = $block_data['label'] ?? 'Maak een afspraak';
-                ?>
+            ?>
                 <section class="py-8 md:py-12 bg-white">
                     <div class="container mx-auto px-[5%] text-center">
                         <a href="<?php echo esc_url($url); ?>"
-                           class="inline-block bg-primary text-white font-heading text-sm md:text-base uppercase tracking-widest px-8 py-4 rounded-full border border-primary hover:bg-primary-hover hover:text-text-muted transition-all duration-300">
+                            class="inline-block bg-primary text-white font-heading text-sm md:text-base uppercase tracking-widest px-8 py-4 rounded-full border border-primary hover:bg-primary-hover hover:text-text-muted transition-all duration-300">
                             <?php echo esc_html($label); ?>
                         </a>
                     </div>
                 </section>
-                <?php
+        <?php
                 break;
 
             case 'after-treatment':
-                get_template_part('sections/after-treatment');
+                get_template_part('sections/after-treatment', null, [
+                    'custom_class' => $block_data['custom_class'] ?? ''
+                ]);
                 break;
 
             case 'reviews':

@@ -33,12 +33,13 @@ $spierontspanners_submenu = array_filter($menu_config['main_navigation'], functi
 $spierontspanners_submenu = reset($spierontspanners_submenu);
 
 get_template_part('sections/category-links-grid', null, [
-    'categories' => $spierontspanners_submenu['submenu']
+    'categories' => $spierontspanners_submenu['submenu'],
+    'custom_class' => '!pt-0'
 ]);
 ?>
 
 <!-- Philosophy Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-background">
+<section class="section-padding bg-background">
     <div class="container mx-auto px-[5%]">
         <div class="max-w-4xl mx-auto">
             <div class="text-center">

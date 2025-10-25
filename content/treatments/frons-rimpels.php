@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Content for: Frons Rimpels
  * To edit this page, just change the values in the content_blocks array below!
@@ -43,6 +44,15 @@ return [
             ]
         ],
         [
+            'type' => 'text-content',
+            'data' => [
+                'title' => 'Wat u kunt verwachten na een fronsrimpels behandeling',
+                'content' => '<p>Direct na de behandeling kan de huid in het behandelde gebied wat rood, gevoelig of licht gezwollen zijn, verschijnselen die meestal binnen enkele uren tot een dag verdwijnen. Wij adviseren om de huid de eerste 24 uur met rust te laten en geen make-up aan te brengen. Ook raden wij aan om de eerste twee dagen intensief sporten, sauna, zonnebank en direct zonlicht te vermijden. Alcohol en bloedverdunners kunnen het risico op blauwe plekjes vergroten en worden daarom afgeraden in de eerste 24 uur. Het effect van de behandeling wordt zichtbaar na 2 tot 5 dagen en is optimaal na 10 tot 14 dagen. Gemiddeld houdt het resultaat 3 tot 6 maanden aan, waarna de spieractiviteit geleidelijk terugkeert. Door de behandeling regelmatig te herhalen, blijft de frons verzacht en kan verdere verdieping van de rimpel worden voorkomen.</p>',
+                'show_background' => true,
+                'custom_class' => '!py-0'
+            ]
+        ],
+        [
             'type' => 'price',
             'data' => [
                 'title' => 'Wat is de prijs van een fronsrimpels behandeling',
@@ -54,19 +64,25 @@ return [
             ]
         ],
         [
-            'type' => 'treatment-summary',
-            'data' => [
-                'price' => '125',
-                'duration' => '15 minuten',
-                'checkup' => 'na 2 weken',
-                'effect' => '3 - 4 maanden'
-            ]
+            'type' => 'after-treatment',
+            'data' => [],
+            'custom_class' => '!py-0'
         ],
         [
             'type' => 'appointment-button',
             'data' => [
                 'url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL',
                 'label' => 'Maak een afspraak'
+            ]
+        ],
+        [
+            'type' => 'treatment-summary',
+            'data' => [
+                'price' => '125',
+                'duration' => '15 minuten',
+                'checkup' => 'na 2 weken',
+                'effect' => '3 - 4 maanden',
+                'custom_class' => '!py-0'
             ]
         ],
         [
@@ -79,10 +95,7 @@ return [
                 'show_background' => false
             ]
         ],
-        [
-            'type' => 'after-treatment',
-            'data' => []
-        ],
+
         [
             'type' => 'reviews',
             'data' => []
