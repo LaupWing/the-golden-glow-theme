@@ -19,7 +19,8 @@ return [
                     <p>Bij The Golden Glow in Amsterdam staat een lipfiller behandeling in de top drie van de meest populaire behandelingen. Onze arts Arwind Chigharoe heeft een grote expertise in lippen en de mooiste lippen zijn mede gecreëerd met zijn handen.</p>
                     <p>Of het nu gaat om volumeverlies, a-symmetrie of de lipcontour bij The Golden Glow gebruiken we de nieuwste technieken met hyaluronzuur – om uw lippen te behandelen – gecombineerd met 15 jaar ervaring. Expertise en comfort dragen bij aan de mooiste lipfillerbehandelingen met een hoge waardering door onze cliënten.</p>
                 ",
-                "image_filename" => "elvira2.jpg"
+                "image_filename" => "elvira2.jpg",
+                "button_below_text" => true
             ]
         ],
         [
@@ -50,7 +51,8 @@ return [
                 "content" => "
                     <p>Het resultaat van een lipfillerbehandeling met hyaluronzuur is direct zichtbaar. Houd er rekening mee dat de lippen vlak na de behandeling tijdelijk wat voller kunnen lijken door een lichte zwelling; deze trekt meestal binnen enkele dagen weg. Wanneer dit is afgenomen, komt het uiteindelijke resultaat mooi naar voren en ogen de lippen natuurlijker. Het definitieve effect wordt bepaald door de gekozen techniek en de natuurlijke vorm van uw lippen. Tijdens de behandeling wordt er altijd rekening gehouden met de juiste verhoudingen van het gezicht, zodat er een harmonieus en evenwichtig resultaat ontstaat. Afhankelijk van factoren zoals uw huidtype, leefstijl en stofwisseling blijft het resultaat gemiddeld 6 tot 12 maanden mooi zichtbaar, waarna de filler geleidelijk door het lichaam wordt afgebroken. Dankzij de jarenlange ervaring van onze arts, Arwind Chigharoe, kunt u vertrouwen op een veilige en zorgvuldige behandeling met oog voor detail. Zijn expertise en esthetisch inzicht zorgen ervoor dat uw lippen niet alleen voller en/of gedifferentieerder zijn, maar zichtbare verfraaiing die uw glimlach nog meer laat stralen.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -62,6 +64,12 @@ return [
                 "checkup" => "na 2 weken",
                 "effect_duration" => "6 - 12 maanden",
                 "treatment_duration" => "30 minuten"
+            ]
+        ],
+        [
+            "type" => "after-treatment",
+            "data" => [
+                "custom_class" => "!py-0",
             ]
         ],
         [
@@ -80,14 +88,11 @@ return [
                 "label" => "Maak een afspraak"
             ]
         ],
-        [
-            "type" => "after-treatment",
-            "data" => []
-        ],
+
         [
             "type" => "reviews",
             "data" => [
-                "show_background" => false
+                "show_background" => true
             ]
         ],
         [

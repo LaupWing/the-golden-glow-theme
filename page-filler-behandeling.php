@@ -35,7 +35,7 @@ $filler_categories = [];
 // Find Filler Behandeling in main navigation
 foreach ($menu_config['main_navigation'] as $nav_item) {
     if ($nav_item['url'] === '/filler-behandeling/' && isset($nav_item['submenu'])) {
-        $filler_categories = array_map(function($item) {
+        $filler_categories = array_map(function ($item) {
             return [
                 'title' => $item['title'],
                 'url' => $item['url']
@@ -46,7 +46,8 @@ foreach ($menu_config['main_navigation'] as $nav_item) {
 }
 
 get_template_part('sections/category-links-grid', null, [
-    'categories' => $filler_categories
+    'categories' => $filler_categories,
+    'custom_class' => '!pt-0'
 ]);
 ?>
 
