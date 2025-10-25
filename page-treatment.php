@@ -60,7 +60,8 @@ get_template_part('templates/page-banner', null, [
                 get_template_part('sections/text-content-section', null, [
                     'title' => $block_data['title'] ?? '',
                     'content' => $block_data['content'] ?? '',
-                    'show_background' => $block_data['show_background'] ?? true
+                    'show_background' => $block_data['show_background'] ?? true,
+                    'custom_class' => $block_data['custom_class'] ?? ''
                 ]);
                 break;
 

@@ -51,7 +51,8 @@ return [
                 'content' => '
                     <p>Door de behandeling met spierontspanners, ontspannen de spieren rond de ogen zich waardoor rimpels vervagen en de huid er gladder uitziet. Dit zorgt voor een jongere, frissere en meer ontspannen uitstraling, wat vaak de voornaamste reden is voor mensen om deze behandeling te ondergaan. Al na enkele dagen wordt het resultaat zichtbaar en na ca. twee weken is het resultaat optimaal. Na de behandeling kan de huid bij de frons wat rood, gevoelig of licht gezwollen zijn. Dit trekt meestal dezelfde dag nog weg. Wij adviseren om de huid de eerste 24 uur met rust te laten en geen make-up te gebruiken. Ook is het verstandig om gedurende twee dagen intensief sporten, sauna, zonnebank en direct zonlicht te vermijden. Alcohol en bloedverdunners vergroten de kans op blauwe plekken en worden daarom afgeraden direct na de behandeling. De werking houdt gemiddeld 3 tot 6 maanden aan, waarna de behandeling veilig herhaald kan worden om het resultaat te behouden.</p>
                 ',
-                'show_background' => true
+                'show_background' => false,
+                'custom_class' => '!py-0'
             ]
         ],
         [
@@ -67,7 +68,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => []
+            'data' => [
+                'custom_class' => '!py-0'
+            ]
         ],
         [
             'type' => 'treatment-summary',
@@ -88,7 +91,7 @@ return [
         [
             'type' => 'reviews',
             'data' => [
-                'show_background' => false
+                'show_background' => true
             ]
         ],
         [
