@@ -50,7 +50,8 @@ return [
                 "content" => "
                     <p>Bij The Golden Glow hanteren wij een medisch verantwoorde en veilige aanpak, waarbij elke behandeling wordt afgestemd op de individuele anatomie en wensen van de client. Onze gespecialiseerde arts Arwind Chigharoe werkt vanuit een uitgebreide kennis van de anatomie en functie van het vrouwelijke genitale gebied, waarbij hij gebruik maakt van hoogwaardige en biocompatibele fillers. Voorafgaand aan de behandeling vindt altijd een uitgebreid consult plaats, waarin indicaties, verwachtingen en nazorg zorgvuldig worden besproken. De behandeling vind altijd onder plaatselijke verdoving plaats.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -60,7 +61,8 @@ return [
                 "content" => "
                     <p>Een fillerbehandeling van de schaamlippen blijft gemiddeld 12 maanden zichtbaar, afhankelijk van het type filler dat wordt gebruikt en de individuele reactie van het lichaam. Na deze periode neemt het volume geleidelijk af doordat de fillers door het lichaam worden afgebroken. Bij The Golden Glow werken we met speciaal ontwikkelde vagina-fillers. Herhaalbehandelingen zijn mogelijk om het resultaat te onderhouden.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!pb-0"
             ]
         ],
         [
@@ -75,20 +77,10 @@ return [
             ]
         ],
         [
-            "type" => "text-content",
-            "data" => [
-                "title" => "Resultaten van een vagina verjonging",
-                "content" => "
-                    <p>Na een vaginaverjongingsbehandeling met fillers is er direct na de behandeling zichtbaar meer volume in de behandelde gebieden, zoals de buitenste schaamlippen. Dit zorgt voor een vollere en stevigere look. Door het gebruik van hyaluronzuurfillers is de huid meer gehydrateerd en oogt het weefsel soepeler en steviger. Er kan direct een lichte zwelling of roodheid aanwezig zijn, wat binnen een paar dagen weer afneemt. Het resultaat is vrijwel direct zichtbaar. Het optimale effect ontwikkelt zich verder in de weken na de behandeling.</p>
-                ",
-                "show_background" => false
-            ]
-        ],
-        [
             "type" => "happy-customers",
             "data" => [
-                "title" => "Onze tevreden klanten",
-                "content" => "",
+                "title" => "Resultaten van een vagina verjonging",
+                "content" => "Na een vaginaverjongingsbehandeling met fillers is er direct na de behandeling zichtbaar meer volume in de behandelde gebieden, zoals de buitenste schaamlippen. Dit zorgt voor een vollere en stevigere look. Door het gebruik van hyaluronzuurfillers is de huid meer gehydrateerd en oogt het weefsel soepeler en steviger. Er kan direct een lichte zwelling of roodheid aanwezig zijn, wat binnen een paar dagen weer afneemt. Het resultaat is vrijwel direct zichtbaar. Het optimale effect ontwikkelt zich verder in de weken na de behandeling.",
                 "images" => [
                     ["filename" => "body-filler-happy-customer-4.jpg", "alt" => "Vagina verjonging resultaat"]
                 ]
@@ -101,7 +93,8 @@ return [
                 "content" => "
                     <p>Gedurende de eerste twee weken adviseren wij om intensieve hittebronnen, zoals de zonnebank en sauna, te vermijden. Ook inspannende fysieke activiteiten en roken worden de eerste 24 uur afgeraden. Bovendien is het aanbevolen om de eerste 24 uur na de behandeling niet te douchen. Vermijd daarnaast druk op de behandelde schaamlippen. Een goede hydratatie ondersteunt het effect van de behandeling; drink daarom voldoende water. Volg de instructies van de arts nauwgezet op kom na twee weken terug voor een controleafspraak. Zo zorgen we samen voor een veilige genezing.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -130,6 +123,30 @@ return [
         [
             "type" => "clinic",
             "data" => []
+        ],
+        [
+            "type" => "faq",
+            "data" => [
+                "title" => "Veelgestelde vragen over vagina verjonging",
+                "items" => [
+                    [
+                        "question" => "Zijn er hechtingen nodig?",
+                        "answer" => "<p>Er zijn geen hechtingen nodig. Er worden kleine gaatjes gemaakt door de naald om de vuloplossing in te spuiten.</p>"
+                    ],
+                    [
+                        "question" => "Hoe krijg je vollere schaamlippen?",
+                        "answer" => "<p>Het terugbrengen van volume in de grote schaamlippen kan op verschillende manieren worden gerealiseerd. Een effectieve methode is het gebruik van fillers op basis van hyaluronzuur, speciaal ontwikkeld voor dit gebied. Deze fillers helpen niet alleen bij het herstellen van de natuurlijke vorm en volume, maar zorgen ook voor een jeugdiger en strakker uiterlijk.</p>"
+                    ],
+                    [
+                        "question" => "Kan je je schaamlippen opspuiten?",
+                        "answer" => "<p>Als u niet tevreden bent over de vorm of het volume van uw buitenste schaamlippen, kan het vullen hiervan een oplossing bieden. Deze cosmetische behandeling kan worden uitgevoerd met behulp van fillers, speciaal ontwikkeld om dit gebied te behandelen. Het gebruik van fillers helpt bij het herstellen van volume en het verbeteren van de esthetiek, waardoor u zich zelfverzekerder kunt voelen.</p>"
+                    ],
+                    [
+                        "question" => "Wanneer mag ik een herhaalbehandeling ondergaan?",
+                        "answer" => "<p>Meestal blijft het effect van de behandeling ongeveer 6-8 maanden zichtbaar. Mocht u een aanvullende of een herhaalbehandeling wensen, volg dan het advies op van de arts.</p>"
+                    ]
+                ]
+            ]
         ]
     ]
 ];

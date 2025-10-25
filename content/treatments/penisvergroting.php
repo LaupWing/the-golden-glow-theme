@@ -19,7 +19,8 @@ return [
                     <p>Bij The Golden Glow bieden wij een penisvergroting met filler aan als een veilige, niet-chirurgische behandeling die gericht is op een toename van volume, met behoud van natuurlijke proporties en functionaliteit. Dankzij het gebruik van echogeleid injecteren kunnen wij de filler met grote precisie en controle aanbrengen — een techniek die zorgt voor maximale veiligheid en een optimaal resultaat.</p>
                     <p>Door het injecteren van filler-gel onder lokale verdoving kan de schacht van de penis, buiten de zwellichamen, subcutaan worden verbreed. Dit resulteert in een zachte, natuurlijke aanvoelende vergroting die  zichtbaar is in erectie als in niet erectie toestand.</p>
                 ",
-                "image_filename" => "penisvergroting.jpg"
+                "image_filename" => "penisvergroting.jpg",
+                "button_below_text" => true
             ]
         ],
         [
@@ -83,7 +84,8 @@ return [
                 "content" => "
                     <p>Penisvergroting met hyaluronzuur is een niet-invasieve optie voor mannen die streven naar een vollere penisomtrek en een toename van de penislengte. Hyaluronzuurfiller wordt subcutaan geïnjecteerd om geleidelijk volume toe te voegen en een natuurlijke uitstraling te behouden. Tevens wordt het hyaluronzuur strategisch bij bepaalde ligamenten inspoten voor optimaal moduleren van de penis. Deze behandeling resulteert in verbeterd comfort en zelfvertrouwen tijdens intieme momenten. Uitgevoerd onder lokale verdoving, biedt de procedure minimale hersteltijd en een langdurig resultaat. Ontdek hoe penisvergroting met hyaluronzuur uw seksuele ervaring kan versterken en uw zelfvertrouwen kan vergroten.</p>
                 ",
-                "show_background" => true
+                "show_background" => true,
+                "custom_class" => "!pt-0"
             ]
         ],
         [
@@ -93,7 +95,8 @@ return [
                 "content" => "
                     <p>Zowel hyaluronzuur als de collageen booster bieden effectieve oplossingen voor penisvergroting, elk met unieke voordelen die bijdragen aan een optimaal resultaat. Een hyaluronzuurfiller staat bekend om zijn vermogen om direct volume toe te voegen, waardoor direct zichtbare resultaten ontstaan. Aan de andere kant stimuleert de collageen booster de natuurlijke collageenproductie van het lichaam, wat resulteert in een geleidelijke, maar langdurige toename van de omvang. Door deze complementaire benaderingen te combineren, kunnen patiënten profiteren van zowel directe als langdurige verbeteringen, wat resulteert in een algeheel verbeterd esthetisch resultaat. Met de deskundige begeleiding van een ervaren cosmetisch arts kunnen hyaluronzuur en collageen booster samen worden gebruikt om een optimaal en duurzaam resultaat te bereiken. Hierdoor kunnen patiënten genieten van een bevredigende esthetische en seksuele ervaring.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!pb-0"
             ]
         ],
         [
@@ -108,20 +111,10 @@ return [
             ]
         ],
         [
-            "type" => "text-content",
-            "data" => [
-                "title" => "Resultaat van een penis vergroting behandeling",
-                "content" => "
-                    <p>Het resultaat is afhankelijk van de hoeveelheid toepaste filler. Bij de meeste cliënten is een behandeling met 10 ml hyaluronzuur voldoende. Door toevoeging van de collageenbooster blijft het effect van de hyaluronzuurfiller ca. zes maanden langer behouden. Bent u geïnteresseerd naar wat een penisvergroting voor u kan betekenen, dan zien wij u graag voor een consult.</p>
-                ",
-                "show_background" => false
-            ]
-        ],
-        [
             "type" => "happy-customers",
             "data" => [
-                "title" => "Onze tevreden klanten",
-                "content" => "",
+                "title" => "Resultaat van een penis vergroting behandeling",
+                "content" => "Het resultaat is afhankelijk van de hoeveelheid toepaste filler. Bij de meeste cliënten is een behandeling met 10 ml hyaluronzuur voldoende. Door toevoeging van de collageenbooster blijft het effect van de hyaluronzuurfiller ca. zes maanden langer behouden. Bent u geïnteresseerd naar wat een penisvergroting voor u kan betekenen, dan zien wij u graag voor een consult.",
                 "images" => [
                     ["filename" => "body-filler-happy-customer-1.png", "alt" => "Penisvergroting resultaat"],
                     ["filename" => "penisvergroting-happy-customer-1.jpg", "alt" => "Penisvergroting resultaat"],
@@ -136,7 +129,8 @@ return [
                 "content" => "
                     <p>Na de behandeling kunt u uw lichte dagelijkse activiteiten gewoon hervatten. U krijgt duidelijke instructies mee voor de verzorging van de wond. In de eerste 24 uur mag u niet douchen, geen alcohol of koffie drinken en het behandelde gebied niet aanraken. Gedurende de eerste twee weken wordt afgeraden om te sporten, zware inspanning te leveren of seksuele activiteiten te hebben. De eerste twee weken na de behandeling dient u sauna, stoombad, zonnebank, hete douches te vermijden. Door deze adviezen op te volgen, bevordert u een goed herstel. Neem bij vragen gerust contact op met uw arts.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -146,7 +140,8 @@ return [
                 "price" => "€2500",
                 "duration" => "60 minuten",
                 "checkup" => "2 weken",
-                "effect" => "12 maanden"
+                "effect" => "12 maanden",
+                "custom_class" => "!pb-0"
             ]
         ],
         [
