@@ -19,7 +19,8 @@ return [
                     <p>Wanneer overmatig transpireren het dagelijks leven belemmert, kan dit een grote impact hebben op iemands zelfvertrouwen. Dat gold ook voor Anja, een lerares die veel hinder ondervond van hevig transpireren onder haar oksels. Voor de klas staan voelde voor haar ongemakkelijk, omdat ze bang was dat het zichtbaar zou zijn. Dat beïnvloedde haar zelfverzekerdheid, iets wat juist in haar beroep onmisbaar is.</p>
                     <p>Sinds drie jaar laat Anja zich behandelen met spierontspanners. Door deze behandeling worden de zenuwsignalen naar de zweetklieren geblokkeerd, waardoor de zweetproductie sterk afneemt. Voor Anja betekende dit dat ze weer ontspannen en met zelfvertrouwen voor de klas kan staan.</p>
                 ",
-                "image_filename" => "anja.jpg"
+                "image_filename" => "anja.jpg",
+                'button_below_text' => true
             ]
         ],
         [
@@ -52,7 +53,8 @@ return [
                     <p>De eerste effecten zijn vaak binnen enkele dagen merkbaar, met een optimaal resultaat na ongeveer twee weken. Het resultaat houdt gemiddeld 6 tot 9 maanden aan. Door de behandeling regelmatig te herhalen, blijft het zweten onder controle en wordt de hinder aanzienlijk verminderd.</p>
                     <p>Voor veel cliënten, zoals Anja, betekent dit een grote verbetering van hun kwaliteit van leven. De behandeling met spierontspanners is een betrouwbare en veilige oplossing voor mensen die hun zelfvertrouwen willen terugwinnen en vrijer willen leven zonder de beperkingen van overmatig zweten.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -64,6 +66,12 @@ return [
                 "checkup" => "na 2 weken",
                 "effect_duration" => "3 - 4 maanden",
                 "treatment_duration" => "15 minuten"
+            ]
+        ],
+        [
+            "type" => "after-treatment",
+            "data" => [
+                "custom_class" => "!py-0",
             ]
         ],
         [
@@ -82,14 +90,11 @@ return [
                 "label" => "Maak een afspraak"
             ]
         ],
-        [
-            "type" => "after-treatment",
-            "data" => []
-        ],
+
         [
             "type" => "reviews",
             "data" => [
-                "show_background" => false
+                "show_background" => true
             ]
         ],
         [

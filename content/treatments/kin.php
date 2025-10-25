@@ -18,7 +18,8 @@ return [
                 "content" => "
                     <p>Elvira heeft van nature prachtige contouren. Maar wilde de verhouding tussen haar lippen en kin verbeteren. Door een spierontspanner in haar kinspier aan te brengen hebben we meer ruimte gecreëerd tussen haar lippen en de kin en is deze verhouding niet alleen mooier geworden, maar ook haar kaaklijn meer vloeiend met haar kin. Voor een schoonheid als Elvira geeft dit subtiele effect een belangrijke boost aan haar uitstraling. Het is een kleine spierontspannende behandeling die zorgt voor een ontspannen en verfijnde uitstraling voor Elvira.</p>
                 ",
-                "image_filename" => "elvira.jpg"
+                "image_filename" => "elvira.jpg",
+                "button_below_text" => true
             ]
         ],
         [
@@ -27,20 +28,10 @@ return [
                 "title" => "De behandeling van de kin met een spierontspanner",
                 "content" => "
                     <p>Een onrustige huidstructuur in de kin, met putjes, rimpeltjes of een zogenoemd sinaasappeleffect, ontstaat vaak door overactieve kinspieren. Deze spanning kan de uitstraling van de kin negatief beïnvloeden en zelfs tijdens spreken of bewegen extra zichtbaar worden. Met behulp van spierontspanners kan de kin echter subtiel en effectief worden verzacht. Door de spieren lokaal te ontspannen, verdwijnen de kuiltjes en putjes, waardoor de huid gladder oogt en de natuurlijke balans in het gezicht wordt hersteld.</p>
-                    <p>De behandeling zelf is snel en vrijwel pijnloos. Met een dun naaldje wordt een kleine hoeveelheid spierontspanner nauwkeurig in de kinspier geïnjecteerd. Hierdoor neemt de overmatige activiteit van de spier af en ontspant de huid zich geleidelijk. Binnen enkele dagen wordt het resultaat zichtbaar: de kin oogt rustiger, gladder en meer verfijnd.</p>
-                    <p>Naast het verminderen van rimpeltjes en putjes kan deze behandeling ook bijdragen aan een mooier profiel. Bij een onderontwikkelde kin of een kleine kaak kan de ontspanning van de spieren de verhouding tussen lippen, kin en kaaklijn verbeteren, waardoor het geheel meer in balans komt. Het effect is subtiel maar krachtig, en biedt een natuurlijke uitstraling zonder chirurgische ingreep.</p>
+                    <p>De behandeling zelf is snel en vrijwel pijnloos. Met een dun naaldje wordt een kleine hoeveelheid spierontspanner nauwkeurig in de kinspier geïnjecteerd. Hierdoor neemt de overmatige activiteit van de spier af en ontspant de huid zich geleidelijk. Binnen enkele dagen wordt het resultaat zichtbaar: de bobbelige textuur maakt plaats voor een egale huid, horizontale lijntjes verdwijnen en de contouren van de kin krijgen een zachtere, meer harmonieuze vorm.</p>
+                    <p>Naast het verminderen van rimpeltjes en putjes kan deze behandeling ook bijdragen aan een mooier profiel. Bij een onderontwikkelde kin of een kleine kaak kan de ontspanning van de spieren de verhouding tussen lippen, kin en kaaklijn verbeteren, waardoor het geheel meer in balans komt. Het effect is subtiel, natuurlijk en verfrissend, met een duidelijke verjonging en verfijning van de uitstraling van de kin.</p>
                 ",
                 "show_background" => true
-            ]
-        ],
-        [
-            "type" => "text-content",
-            "data" => [
-                "title" => "Wat kunt u verwachten na een kinbehandeling",
-                "content" => "
-                    <p>Na een behandeling met spierontspanners in de kin zijn lichte roodheid, zwelling of kleine blauwe plekjes rondom de injectieplaatsen normaal; deze bijwerkingen zijn mild en verdwijnen meestal binnen enkele uren tot een paar dagen. Het resultaat van de behandeling wordt zichtbaar na enkele dagen en is optimaal na ongeveer twee weken, wanneer de spier volledig ontspannen is.</p>
-                ",
-                "show_background" => false
             ]
         ],
         [
@@ -55,6 +46,18 @@ return [
             ]
         ],
         [
+            "type" => "text-content",
+            "data" => [
+                "title" => "Wat kunt u verwachten na een kinbehandeling",
+                "content" => "
+                    <p>Na een behandeling met spierontspanners in de kin zijn lichte roodheid, zwelling of kleine blauwe plekjes rondom de injectieplaatsen normaal; deze bijwerkingen zijn mild en verdwijnen meestal binnen enkele uren tot een paar dagen. Het resultaat van de behandeling wordt zichtbaar na enkele dagen en is maximaal na ongeveer twee weken, met een strakkere en gladdere kin als effect. De arts adviseert doorgaans om intensieve lichamelijke activiteiten, sauna, zonnebank en het masseren van het behandelde gebied te vermijden gedurende de eerste 24 uur, zodat de spierontspanner optimaal kan zijn werk doen. Het uiteindelijke resultaat houdt gemiddeld drie tot vier maanden aan, waarna de behandeling herhaald kan worden indien gewenst. Gedurende deze periode zal de kin een egaler en frisser uiterlijk vertonen, terwijl de natuurlijke gezichtsuitdrukking behouden blijft.</p>
+                ",
+                "show_background" => false,
+                "custom_class" => "!py-0"
+            ]
+        ],
+
+        [
             "type" => "price",
             "data" => [
                 "title" => "Kin",
@@ -66,12 +69,18 @@ return [
             ]
         ],
         [
+            "type" => "after-treatment",
+            "data" => [
+                "custom_class" => "!py-0",
+            ]
+        ],
+        [
             "type" => "treatment-summary",
             "data" => [
                 "price" => "125",
                 "duration" => "15 minuten",
                 "checkup" => "na 2 weken",
-                "effect" => "3 - 4 maanden"
+                "effect" => "3 - 4 maanden",
             ]
         ],
         [
@@ -81,14 +90,11 @@ return [
                 "label" => "Maak een afspraak"
             ]
         ],
-        [
-            "type" => "after-treatment",
-            "data" => []
-        ],
+
         [
             "type" => "reviews",
             "data" => [
-                "show_background" => false
+                "show_background" => true
             ]
         ],
         [
