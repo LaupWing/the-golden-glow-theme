@@ -50,7 +50,8 @@ return [
                 "content" => "
                     <p>Na het maken van een afspraak voor een Sculptra-behandeling vragen wij u om een half uur eerder aanwezig te zijn, zodat wij verdovende crème kunnen aanbrengen. Om blauwe plekken te voorkomen, raden wij aan om vijf dagen voor de behandeling, in overleg met uw arts, te stoppen met bloedverdunnende medicatie zoals Aspirine, Naproxen of Ibuprofen. Vermijd alcohol 48 uur voor de behandeling. Daarnaast adviseren wij om vijf dagen van tevoren te stoppen met het innemen van vitamines, visolie en voedingssupplementen. U kunt ook overwegen om vijf dagen voor de behandeling te beginnen met Arnica-druppels (in de hoogste dosering).</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0",
             ]
         ],
         [
@@ -60,7 +61,8 @@ return [
                 "content" => "
                     <p>Na een Sculptra-behandeling adviseren wij u om de eerste week blootstelling aan de zon te vermijden en geen gebruik te maken van de sauna of zonnebank. In de eerste twee weken na de behandeling wordt afgeraden om laserbehandelingen, peelings of andere gezichtsbehandelingen te ondergaan. Make-up mag de eerste uren na de behandeling niet worden aangebracht op het behandelde gebied. Het is belangrijk om het behandelde gebied dagelijks te masseren volgens de instructies van uw arts, gedurende de eerste twee weken.</p>
                 ",
-                "show_background" => true
+                "show_background" => false,
+                "custom_class" => "!pb-0",
             ]
         ],
         [
@@ -72,6 +74,23 @@ return [
                 "checkup" => "na 2 maanden",
                 "effect_duration" => "Ongeveer 2 jaar",
                 "treatment_duration" => "30 minuten"
+            ]
+        ],
+        [
+            "type" => "happy-customers",
+            "data" => [
+                "title" => "Wat is het resultaat van een Sculptra behandeling?",
+                "content" => "De resultaten van een Sculptra-behandeling ontwikkelen zich geleidelijk en blijven tweeënhalf tot drie jaar zichtbaar. Collageenaanmaak begint ongeveer vier weken na de behandeling, en na enkele maanden wordt het effect duidelijk zichtbaar. Lijntjes en rimpels worden minder diep.",
+                "images" => [
+                    ["filename" => "sculptra-happy-customer-1.jpg", "alt" => "Sculptra eerste, tweede en derde sessie progressie"]
+                ],
+                "custom_class" => "!pt-0"
+            ]
+        ],
+        [
+            "type" => "after-treatment",
+            "data" => [
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -91,33 +110,9 @@ return [
             ]
         ],
         [
-            "type" => "text-content",
-            "data" => [
-                "title" => "Wat is het resultaat van een Sculptra behandeling?",
-                "content" => "
-                    <p>De resultaten van een Sculptra-behandeling ontwikkelen zich geleidelijk en blijven tweeënhalf tot drie jaar zichtbaar. Collageenaanmaak begint ongeveer vier weken na de behandeling, en na enkele maanden wordt het effect duidelijk zichtbaar. Lijntjes en rimpels worden minder diep.</p>
-                ",
-                "show_background" => false
-            ]
-        ],
-        [
-            "type" => "happy-customers",
-            "data" => [
-                "title" => "Sculptra sessies progressie",
-                "content" => "Bekijk hieronder de progressie van Sculptra behandelingen over meerdere sessies. De resultaten tonen de geleidelijke verbetering en natuurlijke collageenopbouw.",
-                "images" => [
-                    ["filename" => "sculptra-happy-customer-1.jpg", "alt" => "Sculptra eerste, tweede en derde sessie progressie"]
-                ]
-            ]
-        ],
-        [
-            "type" => "after-treatment",
-            "data" => []
-        ],
-        [
             "type" => "reviews",
             "data" => [
-                "show_background" => false
+                "show_background" => true
             ]
         ],
         [

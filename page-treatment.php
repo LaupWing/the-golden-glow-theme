@@ -151,7 +151,8 @@ get_template_part('templates/page-banner', null, [
                 get_template_part('sections/happy-customers-section', null, [
                     'title' => $block_data['title'] ?? 'Onze tevreden klanten',
                     'content' => $block_data['content'] ?? '',
-                    'images' => $block_data['images'] ?? []
+                    'images' => $block_data['images'] ?? [],
+                    'custom_class' => $block_data['custom_class'] ?? ''
                 ]);
                 break;
 
