@@ -24,7 +24,7 @@ get_template_part('templates/page-banner', null, [
             <div class="flex flex-col md:flex-row">
 
                 <!-- Tabs Navigation -->
-                <nav class="flex md:flex-col md:flex-shrink-0 md:w-52 bg-primary border-b md:border-b-0 md:border-r border-gray-200 relative" role="tablist" aria-label="Prijzen categorieën">
+                <nav class="flex md:flex-col md:flex-shrink-0 md:w-52 bg-primary border-b md:border-b-0 md:border-r border-gray-200 relative md:overflow-y-auto min-h-0" role="tablist" aria-label="Prijzen categorieën">
                     <!-- Mobile: Wrapping categories with expandable overflow -->
                     <div class="flex flex-wrap md:flex-col md:flex-nowrap overflow-hidden md:overflow-visible w-full transition-all duration-300" id="category-container" style="max-height: 56px;">
                         <button
@@ -105,14 +105,14 @@ get_template_part('templates/page-banner', null, [
                             aria-label="Toon meer categorieën">
                             <span>Meer</span>
                             <svg class="w-4 h-4 transition-transform duration-300" id="expand-icon" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                             </svg>
                         </button>
                     </div>
                 </nav>
 
                 <!-- Tabs Content -->
-                <div class="flex-1 p-6 md:p-8">
+                <div class="flex-1 p-6 md:p-8 md:min-h-[600px]">
 
                     <!-- Botox Tab -->
                     <div id="tab-botox" class="tab-content" role="tabpanel" aria-labelledby="tab-botox">
@@ -390,87 +390,90 @@ get_template_part('templates/page-banner', null, [
 
 <!-- JavaScript for Tab Functionality -->
 <style>
-@media (max-width: 767px) {
-    .hidden-mobile {
-        display: none !important;
+    @media (max-width: 767px) {
+        .hidden-mobile {
+            display: none !important;
+        }
+
+        .hidden-mobile.expanded {
+            display: block !important;
+        }
+
+        /* Hide scrollbar but keep functionality */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     }
-    .hidden-mobile.expanded {
-        display: block !important;
-    }
-    /* Hide scrollbar but keep functionality */
-    .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-    }
-    .scrollbar-hide {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-}
 </style>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const tabLinks = document.querySelectorAll('.tab-link');
-    const tabContents = document.querySelectorAll('.tab-content');
-    const expandButton = document.getElementById('expand-button');
-    const expandIcon = document.getElementById('expand-icon');
-    const hiddenCategories = document.querySelectorAll('.hidden-mobile');
-    let isExpanded = false;
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const tabContents = document.querySelectorAll('.tab-content');
+        const expandButton = document.getElementById('expand-button');
+        const expandIcon = document.getElementById('expand-icon');
+        const hiddenCategories = document.querySelectorAll('.hidden-mobile');
+        let isExpanded = false;
 
-    // Expand button functionality (mobile only)
-    if (expandButton) {
-        expandButton.addEventListener('click', function() {
-            isExpanded = !isExpanded;
+        // Expand button functionality (mobile only)
+        if (expandButton) {
+            expandButton.addEventListener('click', function() {
+                isExpanded = !isExpanded;
 
-            hiddenCategories.forEach(category => {
-                if (isExpanded) {
-                    category.classList.add('expanded');
-                } else {
-                    category.classList.remove('expanded');
+                hiddenCategories.forEach(category => {
+                    if (isExpanded) {
+                        category.classList.add('expanded');
+                    } else {
+                        category.classList.remove('expanded');
+                    }
+                });
+
+                // Rotate icon
+                if (expandIcon) {
+                    expandIcon.style.transform = isExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
+                }
+
+                // Update button text
+                const buttonText = expandButton.querySelector('span');
+                if (buttonText) {
+                    buttonText.textContent = isExpanded ? 'Minder' : 'Meer';
                 }
             });
+        }
 
-            // Rotate icon
-            if (expandIcon) {
-                expandIcon.style.transform = isExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
-            }
+        // Tab switching functionality
+        tabLinks.forEach(button => {
+            button.addEventListener('click', function() {
+                const tabId = this.getAttribute('data-tab');
 
-            // Update button text
-            const buttonText = expandButton.querySelector('span');
-            if (buttonText) {
-                buttonText.textContent = isExpanded ? 'Minder' : 'Meer';
-            }
-        });
-    }
+                // Remove active states from all tabs and contents
+                tabLinks.forEach(btn => {
+                    btn.classList.remove('active', 'text-white');
+                    btn.classList.add('text-white/60');
+                    btn.setAttribute('aria-selected', 'false');
+                });
 
-    // Tab switching functionality
-    tabLinks.forEach(button => {
-        button.addEventListener('click', function() {
-            const tabId = this.getAttribute('data-tab');
+                tabContents.forEach(content => {
+                    content.classList.add('hidden');
+                });
 
-            // Remove active states from all tabs and contents
-            tabLinks.forEach(btn => {
-                btn.classList.remove('active', 'text-white');
-                btn.classList.add('text-white/60');
-                btn.setAttribute('aria-selected', 'false');
+                // Add active state to clicked tab and show its content
+                this.classList.remove('text-white/60');
+                this.classList.add('active', 'text-white');
+                this.setAttribute('aria-selected', 'true');
+
+                const targetContent = document.getElementById(tabId);
+                if (targetContent) {
+                    targetContent.classList.remove('hidden');
+                }
             });
-
-            tabContents.forEach(content => {
-                content.classList.add('hidden');
-            });
-
-            // Add active state to clicked tab and show its content
-            this.classList.remove('text-white/60');
-            this.classList.add('active', 'text-white');
-            this.setAttribute('aria-selected', 'true');
-
-            const targetContent = document.getElementById(tabId);
-            if (targetContent) {
-                targetContent.classList.remove('hidden');
-            }
         });
     });
-});
 </script>
 
 <?php
