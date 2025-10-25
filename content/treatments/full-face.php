@@ -18,7 +18,8 @@ return [
                 "content" => "
                     <p>Een Full Face behandeling met hyaluronzuur is dé aanpak voor cliënten die hun gehele gezicht op een natuurlijke manier willen verjongen en in balans brengen. In plaats van één gebied los te behandelen, wordt gekeken naar de totale harmonie van het gezicht. Veelvoorkomende zones zijn de wangen en kaaklijn (voor stevigheid en contour), de slapen (tegen ingevallen slapen), de lippen en rokerslijntjes (voor verfijning en zachtheid), en de neuslippenplooi en marionetlijntjes (voor verzachting van een vermoeide of strenge uitstraling). Door meerdere gebieden subtiel te behandelen, ontstaat er een zachte lift en een frisse, jeugdige uitstraling, zonder dat het gezicht zijn eigen karakter verliest.</p>
                 ",
-                "image_filename" => "lady-shot.jpg"
+                "image_filename" => "lady-shot.jpg",
+                "button_below_text" => true
             ]
         ],
         [
@@ -64,7 +65,9 @@ return [
         ],
         [
             "type" => "after-treatment",
-            "data" => []
+            "data" => [
+                "custom_class" => "!py-0",
+            ]
         ],
         [
             "type" => "treatment-summary",

@@ -18,7 +18,8 @@ return [
                 "content" => "
                     <p>Naarmate we ouder worden, verliest de huid en het onderliggende weefsel in de slapen volume door zowel vetafname als veranderingen in de botstructuur. Dit kan resulteren in een holle, vermoeide blik die het gezicht minder zacht en harmonieus doet ogen. Het subtiel herstellen van dit volumeverlies met hyaluronzuurfillers brengt de natuurlijke contouren terug en geeft het gezicht meer balans en frisheid. Bij The Golden Glow streven we hierbij altijd naar een natuurlijk resultaat dat het gezicht niet verandert, maar verfijnt. Lisa kwam bij ons met precies deze wens: haar slapen zachtjes laten opvullen, zodat haar uitstraling weer vitaler en gezonder werd. Onze arts koos voor een verfijnde behandeling met hoogwaardige fillers, volledig afgestemd op Lisa's unieke gezichtsstructuur en wensen. Lisa onderhoudt haar slapen door deze behandeling eens in de 18 maanden te herhalen.</p>
                 ",
-                "image_filename" => "lisa.jpg"
+                "image_filename" => "lisa.jpg",
+                "button_below_text" => true
             ]
         ],
         [
@@ -49,7 +50,8 @@ return [
                 "content" => "
                     <p>Een behandeling van de slapen duurt gemiddeld 20 tot 30 minuten en wordt doorgaans goed verdragen. Na afloop kan er lichte roodheid, gevoeligheid of een zwelling optreden; dit verdwijnt meestal binnen enkele dagen vanzelf. Om het herstel zo comfortabel mogelijk te laten verlopen, adviseren wij de eerste 24 uur geen make-up aan te brengen en de huid rust te gunnen. Vermijd daarnaast intensief sporten, sauna en blootstelling aan zonlicht of zonnebank gedurende twee dagen. Omdat alcohol en bloedverdunners de kans op blauwe plekjes vergroten, raden wij het gebruik hiervan vlak na de behandeling af. Het resultaat is vrijwel direct zichtbaar: de slapen zijn weer voller en geven het gezicht een frissere, harmonieuze en jeugdige uitstraling. Afhankelijk van het gebruikte product en de persoonlijke stofwisseling blijft het effect gemiddeld 12 tot 18 maanden behouden, waarna een herhaalbehandeling kan worden gepland.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -65,7 +67,9 @@ return [
         ],
         [
             "type" => "after-treatment",
-            "data" => []
+            "data" => [
+                "custom_class" => "!py-0",
+            ]
         ],
         [
             "type" => "treatment-summary",

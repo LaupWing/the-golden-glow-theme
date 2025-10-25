@@ -18,7 +18,8 @@ return [
                 "content" => "
                     <p>Het opvullen van de neus met fillers is een populaire en niet-chirurgische optie, vooral om subtiele aanpassingen te maken die de natuurlijke schoonheid versterken. Bij Aziatische gezichten, zoals dat van Saori, ligt de focus vaak op het creëren van een elegante, iets verhoogde neusrug en een verfijnde neuspunt, zonder het karakter van het gezicht te veranderen. Saori wilde haar neus subtiel liften en meer definitie geven, met behoud van een zachte, natuurlijke uitstraling die harmoniëert met haar gelaatstrekken. Onze arts koos daarom voor een precieze behandeling met een hyaluronzuurfiller die speciaal geschikt is voor de fijne contouren van de neus. Saori is heel gelukkig met de behandeling en herhaalt de behandeling elke anderhalf jaar.</p>
                 ",
-                "image_filename" => "saori.jpg"
+                "image_filename" => "saori.jpg",
+                "button_below_text" => true
             ]
         ],
         [
@@ -49,7 +50,8 @@ return [
                 "content" => "
                     <p>De behandeling duurt rond de 30 tot 45 minuten en is mild van aard. Na de behandeling kan er lichte roodheid, zwelling of gevoeligheid ontstaan, wat meestal binnen enkele dagen wegtrekt. We adviseren om de huid de eerste 24 uur rustig te houden, geen make-up te gebruiken en de neus niet onnodig aan te raken. Ook wordt aangeraden om intensieve inspanningen, sauna en zonblootstelling de eerste 2 dagen te vermijden. Alcohol en bloedverdunners kunnen het herstel vertragen en worden daarom afgeraden na de behandeling. Het resultaat is direct zichtbaar: de neus krijgt een mooiere, meer elegante contour die subtiel verhoogd is en perfect aansluit bij de Aziatische gelaatstrekken. Het effect houdt gemiddeld 12 tot 18 maanden aan, waarna een vervolgbehandeling mogelijk is om het resultaat te behouden.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -65,7 +67,9 @@ return [
         ],
         [
             "type" => "after-treatment",
-            "data" => []
+            "data" => [
+                "custom_class" => "!py-0",
+            ]
         ],
         [
             "type" => "treatment-summary",
