@@ -51,7 +51,8 @@ return [
                 'content' => '
                     <p>De eerste effecten van de spierontspanner zijn doorgaans binnen enkele dagen merkbaar, met een optimaal resultaat na ongeveer twee weken. De werking houdt gemiddeld drie tot zes maanden aan, waarna de behandeling kan worden herhaald om het effect te behouden. Naast het verminderen van schade aan tanden en kiezen, ervaren veel mensen ook verlichting van pijnklachten, minder spanning in de kaken en een betere nachtrust. Ook gerelateerde hoofdpijnklachten kunnen afnemen. Voor mensen bij wie stressreductie niet voldoende helpt, biedt deze behandeling een veilige en effectieve oplossing om het tandenknarsen onder controle te krijgen.</p>
                 ',
-                'show_background' => false
+                'show_background' => false,
+                'custom_class' => '!py-0'
             ]
         ],
         [
@@ -67,7 +68,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => []
+            'data' => [
+                'custom_class' => '!py-0',
+            ]
         ],
         [
             'type' => 'treatment-summary',
@@ -88,7 +91,7 @@ return [
         [
             'type' => 'reviews',
             'data' => [
-                'show_background' => false
+                'show_background' => true
             ]
         ],
         [
@@ -102,27 +105,27 @@ return [
                 'items' => [
                     [
                         'question' => 'Wat is tandenknarsen?',
-                        'answer' => '<p>Tandenknarsen, ook bekend als bruxisme, is het onbewust sterk op elkaar drukken of over elkaar schuiven van de tanden en kiezen. Dit kan overdag gebeuren, maar komt vooral veel voor tijdens de slaap, zonder dat je het bewust merkt.</p>'
+                        'answer' => '<p>Tandenknarsen, ook wel bruxisme genoemd, is het onbewust klemmen of knarsen van de tanden, vaak tijdens de slaap. Dit kan leiden tot kaakpijn, slijtage van tanden en hoofdpijn.</p>'
                     ],
                     [
-                        'question' => 'Hoe helpt Botox bij tandenknarsen?',
-                        'answer' => '<p>Botox werkt door de overactieve kauwspieren (masseter) te ontspannen, waardoor de kracht tijdens het knarsen of klemmen afneemt. Dit vermindert slijtage aan het gebit, pijn in de kaken, hoofdpijn en andere klachten die gepaard gaan met tandenknarsen.</p>'
+                        'question' => 'Hoe helpt Botox tegen tandenknarsen?',
+                        'answer' => '<p>Botox ontspant de kauwspier (de masseter), waardoor de overmatige spanning in de kaak afneemt. Dit vermindert tandenknarsen en de klachten die daarbij horen.</p>'
                     ],
                     [
-                        'question' => 'Wat zijn de voordelen van een behandeling met Botox voor tandenknarsen?',
-                        'answer' => '<ul><li><p>Minder schade aan tanden en kiezen</p></li><li><p>Vermindering van pijnklachten in kaak, gezicht en nek</p></li><li><p>Afname van hoofdpijn en spanningsgevoelens</p></li><li><p>Betere nachtrust en minder ochtendvermoeidheid</p></li><li><p>Bijkomend voordeel: de kaakspieren kunnen slanker worden, wat zorgt voor een verfijndere gezichtscontouren</p></li></ul>'
+                        'question' => 'Wat zijn de voordelen van een Botox behandeling bij tandenknarsen?',
+                        'answer' => '<ul><li><p>Minder kaakpijn en hoofdpijn</p></li><li><p>Bescherming van het gebit tegen slijtage</p></li><li><p>Ontspanning van de kaakspieren</p></li></ul>'
                     ],
                     [
-                        'question' => 'Wanneer is het resultaat zichtbaar?',
-                        'answer' => '<p>De eerste effecten worden meestal binnen enkele dagen merkbaar. Het optimale effect treedt op na ongeveer twee weken. Het resultaat houdt gemiddeld drie tot zes maanden aan, waarna de behandeling kan worden herhaald.</p>'
+                        'question' => 'Wanneer is het resultaat van een spierontspannende behandeling tegen tandenknarsen merkbaar?',
+                        'answer' => '<p>De klachten als gevolg van tandenknarsen verminderen vanaf 2 maanden na de behandeling.</p>'
                     ],
                     [
-                        'question' => 'Is de behandeling pijnlijk?',
-                        'answer' => '<p>De behandeling is vrijwel pijnloos. Er wordt gebruikgemaakt van zeer fijne naaldjes en verdoving is meestal niet nodig. Eventuele lichte gevoeligheid verdwijnt binnen enkele uren na de behandeling.</p>'
+                        'question' => 'Doet een spierontspannende behandeling tegen tandenknarsen pijn?',
+                        'answer' => '<p>De meeste mensen ervaren de behandeling tegen tandenknarsen met spierontspanners als niet pijnlijk.</p>'
                     ],
                     [
-                        'question' => 'Wat moet ik vermijden na de behandeling?',
-                        'answer' => '<p>Direct na de behandeling kun je gewoon je dagelijkse activiteiten hervatten. Vermijd de eerste 24 uur wel zware fysieke inspanning, sauna, zonnebank en alcohol. Wrijf niet over de behandelde plekken en leg je hoofd de eerste nacht niet langdurig op de behandelde kant.</p>'
+                        'question' => 'Wat mag niet na een spierontspannende behandeling?',
+                        'answer' => '<p>Na de behandeling:</p><p>Sporten of zware lichamelijke activiteiten: vermijden tot 24 uur na de behandeling.</p><p>Sauna: vermijden tot 2 dagen na de behandeling.</p><p>Zonnebank: vermijden tot een week na de behandeling.</p><p>Schoonheidssalon: vermijden tot 2 weken na de behandeling.</p><p>Bloedverdunnende medicatie: stopzetten volgens het advies van de arts voorafgaand aan de behandeling.</p>'
                     ]
                 ]
             ]

@@ -18,7 +18,8 @@ return [
                 'content' => '
                     <p>Saori is een cliënte die haar neus graag subtiel verjongt. Voor het liften van haar neuspunt kiest ze voor een neuspuntlift met een spierontspanner, waardoor haar neus subtiel omhoog wordt gebracht zonder operatieve ingreep. Deze behandeling zorgt ervoor dat haar neuspunt een mooie, elegante contour krijgt die haar gezicht in balans brengt. Saori is tevreden met het natuurlijke resultaat en ervaart hierdoor een boost in zelfvertrouwen, wat haar uitstraling nog mooier maakt.</p>
                 ',
-                'image_filename' => 'saori.jpg'
+                'image_filename' => 'saori.jpg',
+                'button_below_text' => true
             ]
         ],
         [
@@ -49,7 +50,8 @@ return [
                 'content' => '
                     <p>Na de behandeling kan de huid rondom de injectieplaatsen wat rood of gevoelig zijn, maar dit verdwijnt meestal binnen enkele uren. Wij adviseren om de huid de eerste 24 uur met rust te laten en geen make-up te gebruiken. Daarnaast raden we aan om de eerste twee dagen intensief sporten, sauna, zonnebank en direct zonlicht te vermijden. Alcohol en bloedverdunners kunnen het risico op blauwe plekjes vergroten en worden daarom in de eerste 24 uur afgeraden. Het effect van de neuspuntlift wordt zichtbaar na 2 tot 5 dagen en is optimaal na 10 tot 14 dagen. Gemiddeld houdt het resultaat 3 tot 6 maanden aan, waarna de spieractiviteit langzaam terugkeert. Door de behandeling regelmatig te herhalen, blijft het lifteffect behouden en ziet de neuspunt er blijvend elegant uit.</p>
                 ',
-                'show_background' => false
+                'show_background' => false,
+                'custom_class' => '!py-0'
             ]
         ],
         [
@@ -65,7 +67,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => []
+            'data' => [
+                'custom_class' => '!py-0'
+            ]
         ],
         [
             'type' => 'treatment-summary',
@@ -86,7 +90,7 @@ return [
         [
             'type' => 'reviews',
             'data' => [
-                'show_background' => false
+                'show_background' => true
             ]
         ],
         [
@@ -117,6 +121,10 @@ return [
                     [
                         'question' => 'Hoelang duurt het voordat ik weer kan werken?',
                         'answer' => '<p>U kunt onmiddellijk na de sessie weer uw normale bezigheden oppakken. Daarom wordt een behandeling met spierontspanners vaak aangeduid als een \'lunchpauze-behandeling\'. Afgezien van een tijdelijke milde roodheid die binnen een half uur vervaagt, en zelden een kleine, goed te verhullen blauwe plek, is er vrijwel geen zichtbare indicatie van de behandeling.</p>'
+                    ],
+                    [
+                        'question' => 'Hoelang werkt het middel?',
+                        'answer' => '<p>Hoewel het middel zelf na 3-6 maanden is uitgewerkt, heeft het wel een permanent verbeterend effect op de behandelde regio. Dit is vooral van toepassing wanneer spierontspanners gedurende langere tijd (enkele jaren) is toegepast.</p><p>Dit komt doordat het gebied gedurende enkele jaren beperkt is in beweging. Hierdoor blijven oppervlakkige lijntjes in de huid en herstellen ze vaak volledig. Het is alsof de tijd feitelijk stil is gezet. Bovendien raakt u gewend om de relevante spier niet meer te gebruiken. Als gevolg hiervan zal bijvoorbeeld uw neiging tot fronsen verminderd zijn in vergelijking met vroeger. Dit draagt bij aan een langdurige verbetering van dit specifieke gebied. Er zijn zelfs enkele studies die suggereren dat u, om de hierboven beschreven redenen, na enkele jaren gebruik van spierontspanners gerust een jaar kunt pauzeren om het effect te behouden.</p>'
                     ]
                 ]
             ]

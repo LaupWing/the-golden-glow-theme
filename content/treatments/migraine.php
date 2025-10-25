@@ -18,7 +18,8 @@ return [
                 'content' => '
                     <p>Naast alle bekende esthetische behandelingen met spierontspanners worden deze al sinds jaar en dag ingezet bij medische problemen. Sterker nog het gebruik van spierontspanners komt voort uit de medische wereld. Als arts weet ik dat migraine je levenskwaliteit sterkt kan afnemen. Al jong werd ikzelf met migraine aanvallen geconfronteerd. Migraine is een neurologische aandoening die word gekenmerkt door terugkerende, vaak hevige hoofdpijn aanvallen, gepaard gaande met misselijkheid, overgevoeligheid voor licht en geluid, en soms visuele verstoringen. Chronische migraine wordt gedefinieerd als minimaal 15 hoofdpijndagen per maand, waarvan ten minste acht migraineaanvallen zijn. Door met regelmaat spierontspanners te gebruiken zijn mijn migraine aanvallen tot bijna nihil teruggebracht.</p>
                 ',
-                'image_filename' => 'arwind6.png'
+                'image_filename' => 'arwind6.png',
+                'button_below_text' => true
             ]
         ],
         [
@@ -50,7 +51,8 @@ return [
                 'content' => '
                     <p>De eerste effecten zijn voelbaar na 2 tot 6 dagen, met een optimaal resultaat na ongeveer 2 weken. De werking houdt gemiddeld 3 tot 6 maanden aan, waarna de behandeling kan worden herhaald. Spierontspanners bieden geen onmiddellijke verlichting tijdens een migraineaanval, maar zijn bedoeld om toekomstige aanvallen te verminderen en de kwaliteit van leven te verbeteren.</p>
                 ',
-                'show_background' => false
+                'show_background' => false,
+                'custom_class' => '!py-0'
             ]
         ],
         [
@@ -66,7 +68,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => []
+            'data' => [
+                'custom_class' => '!py-0',
+            ]
         ],
         [
             'type' => 'treatment-summary',
@@ -87,7 +91,7 @@ return [
         [
             'type' => 'reviews',
             'data' => [
-                'show_background' => false
+                'show_background' => true
             ]
         ],
         [
@@ -100,28 +104,16 @@ return [
                 'title' => 'Veelgestelde vragen over migraine behandeling',
                 'items' => [
                     [
-                        'question' => 'Wat is migraine en hoe herken je het?',
-                        'answer' => '<p>Migraine is een neurologische aandoening met terugkerende, hevige hoofdpijnaanvallen, meestal aan één kant van het hoofd. Dit gaat vaak gepaard met misselijkheid, overgevoeligheid voor licht en geluid, en soms visuele verstoringen zoals een aura.</p>'
+                        'question' => 'Wanneer merk ik het effect van de behandeling?',
+                        'answer' => '<p>Na ongeveer 48 uur beginnen de spierontspanners hun werk te doen. De spieren ontspannen en tijdens een mogelijke migraineaanval kunnen de pijnklachten aanzienlijk verminderen. Veel patiënten melden dat ze minder frequent last hebben van aanvallen en dat de intensiteit van de migraine afneemt dankzij de spierontspanners. In sommige gevallen ervaren patiënten zelfs helemaal geen klachten meer. Het is echter belangrijk op te merken dat ongeveer 30% van de patiënten geen effect van de behandeling opmerkt.</p>'
                     ],
                     [
-                        'question' => 'Hoe werken spierontspanners bij chronische migraine?',
-                        'answer' => '<p>Spierontspanners worden op specifieke plekken in het hoofd, de nek en de schouders geïnjecteerd. Ze ontspannen bepaalde spieren en blokkeren pijnsignalen tussen zenuwen en spieren, waardoor de frequentie en intensiteit van migraineaanvallen kunnen afnemen.</p>'
+                        'question' => 'Hoe lang blijft de behandeling werken?',
+                        'answer' => '<p>Spierontspanners voorkomen migraine en verlichten de gevolgen van een aanval doordat de injecties de spieren ontspannen, waardoor een mogelijke trigger (te sterk aangespannen spieren) wordt weggenomen. Bovendien ervaart u na een aanval minder last van spanningshoofdpijn, aangezien uw spieren zich tijdens de migraineaanval minder samentrekken.</p>'
                     ],
                     [
-                        'question' => 'Voor wie is deze behandeling geschikt?',
-                        'answer' => '<p>De behandeling met spierontspanners is goedgekeurd voor mensen met chronische migraine – dat wil zeggen: minimaal 15 hoofdpijndagen per maand, waarvan ten minste 8 dagen met migrainekenmerken. Als preventieve medicatie onvoldoende helpt, kan deze behandeling een effectieve oplossing bieden.</p>'
-                    ],
-                    [
-                        'question' => 'Wat kun je verwachten na de behandeling?',
-                        'answer' => '<p>De eerste effecten zijn merkbaar na 2 tot 6 dagen. Het optimale resultaat treedt op na ongeveer 2 weken. De werking houdt 3 tot 6 maanden aan. Veel mensen ervaren minder frequente en minder intense aanvallen, wat leidt tot een betere levenskwaliteit.</p>'
-                    ],
-                    [
-                        'question' => 'Hoe vaak moet de behandeling worden herhaald?',
-                        'answer' => '<p>Voor een duurzaam effect wordt de behandeling gemiddeld elke 3 maanden herhaald. De exacte frequentie hangt af van de individuele respons en kan in overleg met de arts worden aangepast.</p>'
-                    ],
-                    [
-                        'question' => 'Zijn er bijwerkingen?',
-                        'answer' => '<p>Bijwerkingen zijn meestal mild en tijdelijk. Denk aan lichte roodheid, zwelling of blauwe plekjes op de injectieplaatsen. Zelden kan tijdelijke hoofdpijn of nekstijfheid optreden. Ernstige bijwerkingen zijn zeer zeldzaam.</p>'
+                        'question' => 'Hoe helpen spierontspanners bij het behandelen van migraine?',
+                        'answer' => '<p>Spierontspanners voorkomen migraine en verlichten de gevolgen van een aanval doordat de injecties de spieren ontspannen, waardoor een mogelijke trigger (te sterk aangespannen spieren) wordt weggenomen. Bovendien ervaart u na een aanval minder last van spanningshoofdpijn, aangezien uw spieren zich tijdens de migraineaanval minder samentrekken.</p>'
                     ]
                 ]
             ]
