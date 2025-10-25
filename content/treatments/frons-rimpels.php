@@ -65,8 +65,9 @@ return [
         ],
         [
             'type' => 'after-treatment',
-            'data' => [],
-            'custom_class' => '!py-0'
+            'data' => [
+                'custom_class' => '!py-0'
+            ],
         ],
         [
             'type' => 'appointment-button',
@@ -98,7 +99,9 @@ return [
 
         [
             'type' => 'reviews',
-            'data' => []
+            'data' => [
+                'show_background' => true
+            ]
         ],
         [
             'type' => 'clinic',
