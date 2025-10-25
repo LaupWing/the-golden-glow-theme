@@ -42,7 +42,7 @@ get_header(); ?>
 </section>
 
 <!-- Banner Section -->
-<section class="bg-background py-8 md:py-12">
+<section class="bg-background section-padding-sm">
     <div class="container mx-auto px-[5%] text-center">
         <h2 class="font-heading text-3xl md:text-5xl lg:text-6xl xl:text-[65px] font-semibold uppercase text-black mb-2 md:mb-4">
             The golden glow
@@ -86,7 +86,7 @@ get_header(); ?>
 </section>
 
 <!-- Behandelingen Section -->
-<section class="py-12 md:py-16 lg:py-20">
+<section class="section-padding">
     <div class="container mx-auto px-[5%]">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
@@ -139,7 +139,7 @@ get_header(); ?>
 </section>
 
 <!-- About Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-background from-white to-gray-50">
+<section class="section-padding bg-background from-white to-gray-50">
     <div class="container mx-auto px-[5%]">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
@@ -200,7 +200,7 @@ get_header(); ?>
 </section>
 
 <!-- Doctor Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-white">
+<section class="section-padding bg-white">
     <div class="container mx-auto px-[5%]">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
@@ -259,7 +259,7 @@ get_template_part('sections/reviews-section');
 ?>
 
 <!-- Blog Section -->
-<section class="py-12 md:py-16 lg:py-20">
+<section class="section-padding">
     <div class="container mx-auto px-[5%]">
 
         <!-- Blog Section Title -->
