@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Overzicht Afval Medicatie
  * Template for displaying the medication overview page
@@ -37,12 +38,11 @@ get_template_part('templates/page-banner', null, [
             <!-- Medication Image -->
             <div class="text-center mb-8">
                 <img
-                    src="<?php echo get_template_directory_uri(); ?>/images/wegovy-the-golden-glow.jpeg"
+                    src="<?php echo esc_url(wp_get_upload_dir()['baseurl']); ?>/wegovy.jpeg"
                     alt="Wegovy medisch afvallen the golden glow"
                     class="inline-block max-w-full h-auto rounded-lg shadow-md"
                     style="max-width: 438px;"
-                    loading="lazy"
-                />
+                    loading="lazy" />
             </div>
 
             <!-- Medication Content -->
@@ -96,15 +96,13 @@ get_template_part('templates/page-banner', null, [
                 <div class="flex flex-wrap gap-4 justify-center">
                     <a
                         href="/medisch-afvallen/"
-                        class="inline-block bg-primary text-white px-8 py-3 rounded-full font-body font-medium text-sm uppercase hover:opacity-90 transition-all duration-200"
-                    >
+                        class="inline-block bg-primary text-white px-8 py-3 rounded-full font-body font-medium text-sm uppercase hover:opacity-90 transition-all duration-200">
                         Meer informatie over de behandeling
                     </a>
                     <a
                         href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
                         class="inline-block bg-primary text-white px-8 py-3 rounded-full font-body font-medium text-sm uppercase hover:opacity-90 transition-all duration-200"
-                        rel="noopener"
-                    >
+                        rel="noopener">
                         Maak een afspraak
                     </a>
                 </div>
@@ -120,12 +118,11 @@ get_template_part('templates/page-banner', null, [
             <!-- Medication Image -->
             <div class="text-center mb-8">
                 <img
-                    src="<?php echo get_template_directory_uri(); ?>/images/saxenda-medisch-afvallen.jpg"
+                    src="<?php echo esc_url(wp_get_upload_dir()['baseurl']); ?>/saxenda.jpg"
                     alt="Saxenda medisch afvallen"
                     class="inline-block max-w-full h-auto rounded-lg shadow-md"
                     style="max-width: 645px;"
-                    loading="lazy"
-                />
+                    loading="lazy" />
             </div>
 
             <!-- Medication Content -->
@@ -179,14 +176,12 @@ get_template_part('templates/page-banner', null, [
                     <a
                         href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
                         class="inline-block bg-primary text-white px-8 py-3 rounded-full font-body font-medium text-sm uppercase hover:opacity-90 transition-all duration-200"
-                        rel="noopener"
-                    >
+                        rel="noopener">
                         Maak een afspraak
                     </a>
                     <a
                         href="/medisch-afvallen/"
-                        class="inline-block bg-primary text-white px-8 py-3 rounded-full font-body font-medium text-sm uppercase hover:opacity-90 transition-all duration-200"
-                    >
+                        class="inline-block bg-primary text-white px-8 py-3 rounded-full font-body font-medium text-sm uppercase hover:opacity-90 transition-all duration-200">
                         Meer informatie over de behandeling
                     </a>
                 </div>
@@ -202,12 +197,11 @@ get_template_part('templates/page-banner', null, [
             <!-- Medication Image -->
             <div class="text-center mb-8">
                 <img
-                    src="<?php echo get_template_directory_uri(); ?>/images/rybelsus-medisch-afvallen.png"
+                    src="<?php echo esc_url(wp_get_upload_dir()['baseurl']); ?>/rybelsus.png"
                     alt="Rybelsus medisch afvallen"
                     class="inline-block max-w-full h-auto rounded-lg shadow-md"
                     style="max-width: 225px;"
-                    loading="lazy"
-                />
+                    loading="lazy" />
             </div>
 
             <!-- Medication Content -->
@@ -261,15 +255,13 @@ get_template_part('templates/page-banner', null, [
                 <div class="flex flex-wrap gap-4 justify-center">
                     <a
                         href="/medisch-afvallen/"
-                        class="inline-block bg-primary text-white px-8 py-3 rounded-full font-body font-medium text-sm uppercase hover:opacity-90 transition-all duration-200"
-                    >
+                        class="inline-block bg-primary text-white px-8 py-3 rounded-full font-body font-medium text-sm uppercase hover:opacity-90 transition-all duration-200">
                         Meer informatie over de behandeling
                     </a>
                     <a
                         href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
                         class="inline-block bg-primary text-white px-8 py-3 rounded-full font-body font-medium text-sm uppercase hover:opacity-90 transition-all duration-200"
-                        rel="noopener"
-                    >
+                        rel="noopener">
                         Maak een afspraak
                     </a>
                 </div>
@@ -285,12 +277,11 @@ get_template_part('templates/page-banner', null, [
             <!-- Medication Image -->
             <div class="text-center mb-8">
                 <img
-                    src="<?php echo get_template_directory_uri(); ?>/images/ozempic-afvallen.jpg"
+                    src="<?php echo esc_url(wp_get_upload_dir()['baseurl']); ?>/ozempic.jpg"
                     alt="Afvallen met ozempic"
                     class="inline-block max-w-full h-auto rounded-lg shadow-md"
                     style="max-width: 762px;"
-                    loading="lazy"
-                />
+                    loading="lazy" />
             </div>
 
             <!-- Medication Content -->
@@ -345,14 +336,12 @@ get_template_part('templates/page-banner', null, [
                     <a
                         href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
                         class="inline-block bg-primary text-white px-8 py-3 rounded-full font-body font-medium text-sm uppercase hover:opacity-90 transition-all duration-200"
-                        rel="noopener"
-                    >
+                        rel="noopener">
                         Maak een afspraak
                     </a>
                     <a
                         href="/medisch-afvallen/"
-                        class="inline-block bg-primary text-white px-8 py-3 rounded-full font-body font-medium text-sm uppercase hover:opacity-90 transition-all duration-200"
-                    >
+                        class="inline-block bg-primary text-white px-8 py-3 rounded-full font-body font-medium text-sm uppercase hover:opacity-90 transition-all duration-200">
                         Meer informatie over de behandeling
                     </a>
                 </div>

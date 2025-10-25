@@ -189,7 +189,8 @@ get_template_part('sections/content-info-section', null, [
         <h2 class="font-heading text-2xl md:text-3xl text-primary mb-4 mt-6">Duur van de behandeling</h2>
         <p>De behandelingsduur wordt afgestemd op uw persoonlijke situatie, waarbij uw streefgewicht en wensen centraal staan. In overleg met de arts worden realistische doelen gesteld. Om het proces zorgvuldig te begeleiden, worden er regelmatig monitoringconsulten ingepland. Onze cosmetische kliniek in Amsterdam behoort tot de koplopers in Nederland op het gebied van medische begeleiding bij gewichtsverlies met injecties.</p>
     ',
-    'image_filename' => 'food2.jpg'
+    'image_filename' => 'food2.jpg',
+    "custom_class" => "!pb-0"
 ]);
 ?>
 
