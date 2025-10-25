@@ -18,7 +18,8 @@ return [
                 "content" => "
                     <p>Toen Morena bij ons kwam, stoorde zij zich aan de minder gedefinieerde kaaklijn die haar gezicht minder krachtig maakte dan ze zich voelde. Ze wilde graag een strakkere, meer gefocuste contour zonder een chirurgische ingreep. Onze specialisten hebben gekozen voor een gerichte aanpak met een hoogwaardige hyaluronzuurfiller om haar kaaklijn subtiel te versterken en te definiëren. Door de filler op strategische plekken langs de kaaklijn te plaatsen, ontstond er meer volume en strakheid, wat Morena's gezichtsbalans duidelijk verbeterde. Het resultaat is een natuurlijke, strakke kaaklijn die haar uitstraling krachtiger en jeugdiger maakt, passend bij haar persoonlijkheid. Morena voelt zich hierdoor zelfverzekerder en komt elk jaar terug voor de kaaklijn filler om het resultaat te onderhouden.</p>
                 ",
-                "image_filename" => "morena2.jpg"
+                "image_filename" => "morena2.jpg",
+                "button_below_text" => true
             ]
         ],
         [
@@ -49,7 +50,8 @@ return [
                 "content" => "
                     <p>De behandeling met kaaklijn filler duurt ongeveer 20 tot 30 minuten en is vrijwel pijnloos. Na afloop kan de huid rondom de kaaklijn licht rood, gevoelig en gezwollen zijn. Deze zwelling en eventuele blauwe plekjes verdwijnen meestal binnen een paar dagen. Wij adviseren om de eerste 24 uur de huid rustig te houden en geen make-up te gebruiken. Ook is het verstandig om intensief sporten, sauna, zonnebank en directe blootstelling aan zonlicht twee dagen te vermijden. Alcohol en bloedverdunners kunnen het risico op blauwe plekken vergroten en worden daarom afgeraden vlak na de behandeling. Het resultaat is direct zichtbaar: een strakkere, scherpere kaaklijn en een frissere uitstraling van het gezicht. Afhankelijk van het gebruikte product en de stofwisseling blijft het effect gemiddeld 12 tot 18 maanden behouden, daarna kan een herhaalbehandeling gewenst zijn om de gewenste contour te blijven behouden.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0"
             ]
         ],
         [
@@ -65,7 +67,9 @@ return [
         ],
         [
             "type" => "after-treatment",
-            "data" => []
+            "data" => [
+                "custom_class" => "!py-0",
+            ]
         ],
         [
             "type" => "treatment-summary",

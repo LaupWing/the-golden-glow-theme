@@ -18,7 +18,8 @@ return [
                 "content" => "
                     <p>Toen Lisa bij ons kwam, vertelde ze dat ze zich stoorde aan de contour van haar kin. Ze vond dat haar profiel niet helemaal in balans was en dat haar kin te kort leek in verhouding tot de rest van haar gezicht. Hierdoor kreeg ze soms een wat \"ronde\" uitstraling, terwijl ze zich eigenlijk juist krachtig en vrouwelijk voelt. Onze arts heeft samen met Lias gekeken naar de beste optie om de kin subtiel te verbeteren. Met een zachte hyaluronzuurfiller hebben we de kin iets verlengd en meer definitie aangebracht, waardoor er een mooiere balans ontstond tussen de kaaklijn, lippen en neus. Het resultaat is dat Lisa's gezichtsharmonie sterker naar voren komt en haar uitstraling beter aansluit bij hoe zij zichzelf ziet. Ze ervaart dat haar profiel strakker oogt en voelt zich hierdoor zelfverzekerder. Lisa is heel tevreden en komt terug wanneer ze merkt dat het effect langzaam afneemt.</p>
                 ",
-                "image_filename" => "lisa.jpg"
+                "image_filename" => "lisa.jpg",
+                "button_below_text" => true
             ]
         ],
         [
@@ -49,7 +50,8 @@ return [
                 "content" => "
                     <p>Een kinfillerbehandeling duurt meestal 20 tot 30 minuten en is vrijwel pijnloos. Direct na afloop kan het behandelde gebied wat rood, gevoelig of licht gezwollen zijn. Dit trekt meestal binnen enkele dagen vanzelf weg. Voor een voorspoedig herstel adviseren wij om de eerste 24 uur te letten op rust voor de huid: geen make-up, geen intensief sporten en geen bezoek aan sauna of zonnebank. Ook alcohol en bloedverdunnende medicatie kunnen beter tijdelijk vermeden worden om blauwe plekjes te voorkomen. Het resultaat van een kinfiller is direct zichtbaar: de kin krijgt meer projectie en het profiel oogt harmonieuzer. Afhankelijk van de stofwisseling blijft het effect gemiddeld 12 tot 18 maanden behouden. Na verloop van tijd kan een herhaalbehandeling gewenst zijn om het resultaat te onderhouden.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0",
             ]
         ],
         [
@@ -65,7 +67,9 @@ return [
         ],
         [
             "type" => "after-treatment",
-            "data" => []
+            "data" => [
+                "custom_class" => "!py-0",
+            ]
         ],
         [
             "type" => "treatment-summary",
