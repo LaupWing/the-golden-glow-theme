@@ -66,7 +66,7 @@ return [
                 ['title' => 'Bilfillers', 'url' => '/bilfillers/'],
                 ['title' => 'Hip dips', 'url' => '/hip-dip-fillers/'],
                 ['title' => 'Eikelvergroting', 'url' => '/eikelvergroting/'],
-                ['title' => 'Vagina Verjonging', 'url' => '/vagina-vulva-verjonging/'],
+                ['title' => 'Vagina Verjonging', 'url' => '/vagina-verjonging/'],
             ]
         ],
         [
