@@ -418,7 +418,12 @@ get_template_part('templates/page-banner', null, [
         const expandButton = document.getElementById('expand-button');
         const expandIcon = document.getElementById('expand-icon');
         const hiddenCategories = document.querySelectorAll('.hidden-mobile');
-        let isExpanded = false;
+        let isExpanded = true;
+
+        // Set initial state (expanded by default)
+        if (expandIcon) {
+            expandIcon.style.transform = 'rotate(180deg)';
+        }
 
         // Expand button functionality (mobile only)
         const categoryContainer = document.getElementById('category-container');
