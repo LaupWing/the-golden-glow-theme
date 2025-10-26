@@ -47,25 +47,16 @@ get_template_part('sections/text-content-section', null, [
 ?>
 
 <?php
+$menu_config = require get_template_directory() . '/config/menu-config.php';
+// Find the Lasers menu item and get its submenu
+$lasers_submenu = array_filter($menu_config['main_navigation'], function ($item) {
+    return $item['title'] === 'Lasers';
+});
+$lasers_submenu = reset($lasers_submenu);
+
 get_template_part('sections/category-links-grid', null, [
-    'card_type' => 'card-2',
-    'categories' => [
-        [
-            'title' => 'TIXEL',
-            'url' => '/tixel/',
-            'description' => 'Tixel is een innovatieve huidverjongingsbehandeling die met gecontroleerde warmte fijne lijntjes, rimpels en huidstructuur aanpakt. Deze methode stimuleert de natuurlijke collageenaanmaak',
-            'button_text' => 'Maak een afspraak',
-            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
-        ],
-        [
-            'title' => 'ENDOLIFT',
-            'url' => '/endolift/',
-            'description' => 'Bij Endolift Amsterdam zorgen voor een blijvend resultaat. Zie de voor en na resultaten van de Endolaser en laat je overtuigen door de prachtige contouren. De Endolift is het alternatief voor een facelift.',
-            'button_text' => 'Maak een afspraak',
-            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
-        ]
-    ],
-    "custom_class" => "!pb-0"
+    'categories' => $lasers_submenu['submenu'],
+    'custom_class' => '!pb-0'
 ]);
 ?>
 

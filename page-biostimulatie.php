@@ -55,63 +55,15 @@ get_template_part('sections/happy-customers-section', null, [
 ?>
 
 <?php
+$menu_config = require get_template_directory() . '/config/menu-config.php';
+// Find the Biostimulatie menu item and get its submenu
+$biostimulatie_submenu = array_filter($menu_config['main_navigation'], function ($item) {
+    return $item['title'] === 'Biostimulatie';
+});
+$biostimulatie_submenu = reset($biostimulatie_submenu);
+
 get_template_part('sections/category-links-grid', null, [
-    'categories' => [
-        [
-            'title' => 'SCULPTRA',
-            'url' => '/sculptra/',
-            'button_text' => 'Maak een afspraak',
-            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
-        ],
-        [
-            'title' => 'LANLUMA',
-            'url' => '/lanluma/',
-            'button_text' => 'Maak een afspraak',
-            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
-        ],
-        [
-            'title' => 'PDO',
-            'url' => '/pdo/',
-            'button_text' => 'Maak een afspraak',
-            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
-        ],
-        [
-            'title' => 'PDNR',
-            'url' => '/pdnr/',
-            'button_text' => 'Maak een afspraak',
-            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
-        ],
-        [
-            'title' => 'PROFHILO',
-            'url' => '/profhilo/',
-            'button_text' => 'Maak een afspraak',
-            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
-        ],
-        [
-            'title' => 'RADIESSE',
-            'url' => '/radiesse/',
-            'button_text' => 'Maak een afspraak',
-            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
-        ],
-        [
-            'title' => 'PRP/PRF',
-            'url' => '/prp-prf/',
-            'button_text' => 'Maak een afspraak',
-            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
-        ],
-        [
-            'title' => 'SKINBOOSTER',
-            'url' => '/skinbooster/',
-            'button_text' => 'Maak een afspraak',
-            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
-        ],
-        [
-            'title' => 'Ellansé',
-            'url' => '/ellanse/',
-            'button_text' => 'Maak een afspraak',
-            'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
-        ]
-    ]
+    'categories' => $biostimulatie_submenu['submenu']
 ]);
 ?>
 

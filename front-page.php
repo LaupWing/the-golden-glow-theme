@@ -88,7 +88,7 @@ get_header(); ?>
 <!-- Behandelingen Section -->
 <section class="section-padding">
     <div class="container mx-auto px-[5%]">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
 
             <!-- Text Content -->
             <div class="lg:order-1">
@@ -123,14 +123,14 @@ get_header(); ?>
             </div>
 
             <!-- Image -->
-            <div class="lg:order-2 flex items-stretch h-full">
+            <div class="lg:order-2 relative h-full flex overflow-hidden rounded-lg shadow-lg lg:shadow-none">
                 <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
                 <img
                     src="<?php echo esc_url($upload_url . '/lady-shot.jpg'); ?>"
                     alt="The Golden Glow Behandelingen"
                     width="887"
                     height="1080"
-                    class="w-auto h-full object-cover rounded-lg shadow-lg"
+                    class="sm:absolute relative h-full object-cover"
                     loading="lazy">
             </div>
 
@@ -144,19 +144,19 @@ get_header(); ?>
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
 
             <!-- Image -->
-            <div class="order-1">
+            <div class="order-3 lg:order-1 relative overflow-hidden rounded-lg shadow-lg">
                 <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
                 <img
                     src="<?php echo esc_url($upload_url . '/waiting-room.png'); ?>"
                     alt="The Golden Glow Kliniek"
                     width="1200"
                     height="800"
-                    class="w-full h-full object-cover rounded-lg shadow-lg"
+                    class="lg:absolute relative w-full h-full object-cover"
                     loading="lazy">
             </div>
 
             <!-- Text Content -->
-            <div class="order-2">
+            <div class="order-1 lg:order-2">
                 <h2 class="font-body text-base md:text-lg uppercase text-primary mb-4">
                     The Golden Glow
                 </h2>
@@ -185,7 +185,7 @@ get_header(); ?>
                 </div>
             </div>
             <!-- CTA Button -->
-            <div class="text-left md:text-center lg:text-left order-4">
+            <div class="text-left flex items-center justify-center md:text-center lg:text-left order-2 lg:order-3">
                 <a href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
                     class="inline-block bg-primary text-white font-body font-medium text-sm uppercase px-8 py-3 rounded-full hover:bg-secondary hover:text-white transition-all duration-300">
                     Maak een afspraak
@@ -198,53 +198,49 @@ get_header(); ?>
 <!-- Doctor Section -->
 <section class="section-padding bg-white">
     <div class="container mx-auto px-[5%]">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
 
             <!-- Text Content -->
             <div class="order-2 lg:order-1">
-                <div class="mb-8">
-                    <h2 class="font-body text-base md:text-lg uppercase text-primary mb-4">
-                        Arwind Chigharoe
-                    </h2>
-                    <h3 class="font-heading text-2xl md:text-3xl lg:text-4xl text-primary mb-6">
-                        Cosmetische Arts, KNMG
-                    </h3>
+                <h2 class="font-body text-base md:text-lg uppercase text-primary ">
+                    Arwind Chigharoe
+                </h2>
+                <h3 class="font-heading text-2xl md:text-3xl lg:text-4xl text-primary mb-6">
+                    Cosmetische Arts, KNMG
+                </h3>
 
-                    <div class="text-body-text leading-relaxed mb-8">
-                        <p>
-                            Afgestudeerd aan de Universiteit van Maastricht. Als BIG-geregistreerde arts heb ik gewerkt in
-                            het Maastricht UMC+ en het VieCuri Medisch Centrum binnen de discipline chirurgie. De
-                            cosmetische wereld heeft mij altijd geïnteresseerd en de keuze voor cosmetisch arts was een
-                            logische stap. Gaandeweg werd zelfs duidelijk dat dit mijn roeping was. Inmiddels werk ik al
-                            meer dan 14 jaar met veel plezier als cosmetisch arts in Amsterdam en ben ik gespecialiseerd
-                            cosmetisch arts KNMG. Door het jaarlijks bijwonen van cosmetische congressen en trainingen zorg
-                            ik ervoor dat ik deze accreditatie behoud, zodat ik mijn cliënten de beste zorg en kwaliteit kan
-                            bieden in mijn cosmetische kliniek in Amsterdam.
-                        </p>
-                    </div>
-
-                    <!-- CTA Button -->
-                    <div class="text-left md:text-center lg:text-center">
-                        <a href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
-                            class="inline-block bg-primary text-white font-body font-medium text-sm uppercase px-8 py-3 rounded-full hover:bg-secondary hover:text-white transition-all duration-300">
-                            Maak een afspraak
-                        </a>
-                    </div>
+                <div class="text-body-text leading-relaxed">
+                    <p>
+                        Afgestudeerd aan de Universiteit van Maastricht. Als BIG-geregistreerde arts heb ik gewerkt in
+                        het Maastricht UMC+ en het VieCuri Medisch Centrum binnen de discipline chirurgie. De
+                        cosmetische wereld heeft mij altijd geïnteresseerd en de keuze voor cosmetisch arts was een
+                        logische stap. Gaandeweg werd zelfs duidelijk dat dit mijn roeping was. Inmiddels werk ik al
+                        meer dan 14 jaar met veel plezier als cosmetisch arts in Amsterdam en ben ik gespecialiseerd
+                        cosmetisch arts KNMG. Door het jaarlijks bijwonen van cosmetische congressen en trainingen zorg
+                        ik ervoor dat ik deze accreditatie behoud, zodat ik mijn cliënten de beste zorg en kwaliteit kan
+                        bieden in mijn cosmetische kliniek in Amsterdam.
+                    </p>
                 </div>
             </div>
 
             <!-- Image -->
-            <div class="order-1 lg:order-2">
+            <div class="order-2 lg:order-2">
                 <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
                 <img
                     src="<?php echo esc_url($upload_url . '/arwind.jpg'); ?>"
                     alt="Arwind Chigharoe - Cosmetische Arts"
                     width="800"
                     height="1000"
-                    class="w-full h-auto rounded-lg shadow-lg"
+                    class="w-full h-full object-cover rounded-lg shadow-lg"
                     loading="lazy">
             </div>
-
+            <!-- CTA Button -->
+            <div class="text-left flex items-center justify-center order-3 md:text-center lg:text-center">
+                <a href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
+                    class="inline-block bg-primary text-white font-body font-medium text-sm uppercase px-8 py-3 rounded-full hover:bg-secondary hover:text-white transition-all duration-300">
+                    Maak een afspraak
+                </a>
+            </div>
         </div>
     </div>
 </section>
