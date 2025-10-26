@@ -18,7 +18,8 @@ return [
                 "content" => "
                     <p>Naarmate we ouder worden, treden er tal van wijzigingen op in onze lichaamsprocessen, hoe goed onze genen ook zijn.<br>Dit heeft invloed op hoe we ons voelen, maar ook op ons uiterlijk. Het verouderingsproces van ons gezicht is hier een voorbeeld van.<br>Bij The Golden Glow wordt Skinbooster door ons arts op een zo veilig mogelijke manier uitgevoerd en waar er uitsluitend gebruik wordt gemaakt van kwalitatieve producten.<br>De meest bekende merken die in onze kliniek worden gebruikt zijn Boletero Revive, Restylane Skinbooster, RRS-inject® Skinbooster en Juvederm VOLITE Skinbooster.</p>
                 ",
-                "image_filename" => "skinbooster-intro.jpg"
+                "image_filename" => "skinbooster-intro.jpg",
+                "button_below_text" => true
             ]
         ],
         [

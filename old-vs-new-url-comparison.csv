@@ -1,0 +1,52 @@
+Category,Treatment,OLD URL (HTML),NEW URL (Config),Status,Notes
+Homepage,Homepage,/,/,SAME,
+Arts,Arts,/arts,/arts/,SAME,
+Spierontspanners,Bunny lines,/bunny-lines/,/bunny-lines/,SAME,
+Spierontspanners,Fronsrimpel,/frons-rimpels/,/frons-rimpels/,SAME,
+Spierontspanners,Gummy smile,/gummy-smile/,/gummy-smile/,SAME,
+Spierontspanners,Kin,/kin-boto/,/kin,CHANGED,Old: /kin-boto/ vs New: /kin
+Spierontspanners,Kraaienpootjes,/kraaien-pootjes/,/kraaienpootjes/,CHANGED,Old: /kraaien-pootjes/ vs New: /kraaienpootjes/
+Spierontspanners,Lip flip,/lip-flip/,/lip-flip/,SAME,
+Spierontspanners,Liquid Facelift,/liquid-facelift/,/liquid-facelift/,SAME,
+Spierontspanners,Marionetlijnen,/marionetlijnen/,/marionetlijnen/,SAME,
+Spierontspanners,Migraine,/migraine/,/migraine/,SAME,
+Spierontspanners,Nefertiti lift,/nefertiti-lift/,/nefertiti-lift/,SAME,
+Spierontspanners,Neuspunt lift,/neuspunt-lift/,/neuspunt-lift/,SAME,
+Spierontspanners,Platysma,/platysma/,/platysma/,SAME,
+Spierontspanners,Voorhoofdrimpels,/voorhoofdrimpels/,/voorhoofdrimpels/,SAME,
+Spierontspanners,Rokerslijntjes,/rokerslijntjes/,/rokerslijntjes/,SAME,
+Spierontspanners,Tandenknarsen,/tandenknarsen/,/tanden-knarsen/,CHANGED,Old: /tandenknarsen/ vs New: /tanden-knarsen/
+Spierontspanners,Traptox,/trap-tox/,/trap-tox/,SAME,
+Spierontspanners,Wenkbrauwlift,/wenkbrauw-lift/,/wenkbrauwlift/,CHANGED,Old: /wenkbrauw-lift/ vs New: /wenkbrauwlift/
+Spierontspanners,Hyperhidrose,/hyper-hidrose,/hyperhidrose/,CHANGED,Old: /hyper-hidrose vs New: /hyperhidrose/
+Spierontspanners,Kaaklijn,/kaak-lijn/,/kaaklijn/,CHANGED,Old: /kaak-lijn/ vs New: /kaaklijn/
+Medisch Afvallen,Overzicht Afvalmedicatie,/overzicht-afval-medicatie/,/overzicht-afval-medicatie/,SAME,
+Fillerbehandeling,Fullface,/full-face,/full-face/,SAME,
+Fillerbehandeling,Neus,/neus/,/neus/,SAME,
+Fillerbehandeling,Slapen,/slapen/,/slapen/,SAME,
+Fillerbehandeling,Kaaklijn,/kaaklijn-filler/,/kaaklijn-filler/,SAME,
+Fillerbehandeling,Kinfiller,/kin/,/kinfiller/,CHANGED,Old: /kin/ vs New: /kinfiller/
+Fillerbehandeling,Wangen,/wangen-filler/,/wangen/,CHANGED,Old: /wangen-filler/ vs New: /wangen/
+Fillerbehandeling,Marionetlijnen,/marionet-lijnen/,/marionetlijnen/,CHANGED,Old: /marionet-lijnen/ vs New: /marionetlijnen/
+Fillerbehandeling,Neuslippenplooi,/neus-lippen-plooi/,/neuslippenplooi,CHANGED,Old: /neus-lippen-plooi/ vs New: /neuslippenplooi
+Fillerbehandeling,Traangootjes,/traan-gootjes/,/traangootjes/,CHANGED,Old: /traan-gootjes/ vs New: /traangootjes/
+Fillerbehandeling,Jukbeenderen,/juk-beenderen/,/jukbeenderen/,CHANGED,Old: /juk-beenderen/ vs New: /jukbeenderen/
+Fillerbehandeling,Lipfiller,/lip-filler-behandeling/,/lipfiller,CHANGED,Old: /lip-filler-behandeling/ vs New: /lipfiller
+Body Fillers,Bilfillers,/bilfillers/,/bilfillers/,SAME,
+Body Fillers,Hip dips,/hip-dip-fillers/,/hip-dip-fillers/,SAME,
+Body Fillers,Penisvergroting,/penisvergroting/,/penisvergroting/,SAME,
+Body Fillers,Eikelvergroting,/eikelvergroting/,/eikelvergroting/,SAME,
+Body Fillers,Vagina Verjonging,/vagina-verjonging/,/vagina-verjonging/,SAME,
+Lasers,Tixel,/tixel/,/tixel/,SAME,
+Lasers,Endolift,/endolift/,/endolift/,SAME,
+Biostimulatie,Lanluma,/lanluma/,/lanluma/,SAME,
+Biostimulatie,Sculptra,/sculptra,/sculptra/,SAME,
+Biostimulatie,PDO,/pdo/,/pdo/,SAME,
+Biostimulatie,PDNR,/pnr/,/pdnr/,CHANGED,Old: /pnr/ vs New: /pdnr/
+Biostimulatie,Profhilo,/profhilo/,/profhilo/,SAME,
+Biostimulatie,Radiesse,/radiesse/,/radiesse/,SAME,
+Biostimulatie,PRP-PRF,/prp-prf/,/prp-prf/,SAME,
+Biostimulatie,Skinboosters,/skinboosters/,/skinboosters/,SAME,
+Other,Prijzen,/prijzen/,/prijzen/,SAME,
+Other,Blog,/blog/,/blog-posts/,CHANGED,Old: /blog/ vs New: /blog-posts/
+Other,Contact,/contact/,/contact/,SAME,

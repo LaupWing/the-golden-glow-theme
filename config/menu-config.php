@@ -66,6 +66,7 @@ return [
                 ['title' => 'Bilfillers', 'url' => '/bilfillers/'],
                 ['title' => 'Hip dips', 'url' => '/hip-dip-fillers/'],
                 ['title' => 'Eikelvergroting', 'url' => '/eikelvergroting/'],
+                ['title' => 'Penisvergroting', 'url' => '/penisvergroting/'],
                 ['title' => 'Vagina Verjonging', 'url' => '/vagina-verjonging/'],
             ]
         ],
@@ -88,11 +89,15 @@ return [
             'title' => 'Biostimulatie',
             'url' => '/biostimulatie/',
             'submenu' => [
-                ['title' => 'Lanluma', 'url' => '/lanluma/'],
                 ['title' => 'Sculptra', 'url' => '/sculptra/'],
+                ['title' => 'Lanluma', 'url' => '/lanluma/'],
                 ['title' => 'PDO', 'url' => '/pdo/'],
+                ['title' => 'PDNR', 'url' => '/pdnr/'],
                 ['title' => 'Profhilo', 'url' => '/profhilo/'],
-                ['title' => 'Skinboosters', 'url' => '/skinboosters/'],
+                ['title' => 'Radiesse', 'url' => '/radiesse/'],
+                ['title' => 'PRP/PRF', 'url' => '/prp-prf/'],
+                ['title' => 'Skinbooster', 'url' => '/skinbooster/'],
+                ['title' => 'Ellanse', 'url' => '/ellanse/'],
             ]
         ],
         [
