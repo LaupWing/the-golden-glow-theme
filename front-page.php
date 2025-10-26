@@ -88,49 +88,49 @@ get_header(); ?>
 <!-- Behandelingen Section -->
 <section class="section-padding">
     <div class="container mx-auto px-[5%]">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
 
             <!-- Text Content -->
             <div class="lg:order-1">
-                <div class="mb-8">
-                    <h2 class="font-body text-base md:text-lg uppercase text-primary mb-6">
-                        Behandelingen
-                    </h2>
 
-                    <div class="space-y-4 text-body-text leading-relaxed">
-                        <p>
-                            Bij The Golden Glow draait alles om maatwerk. Wij bieden hoogwaardige, verjongende en medisch
-                            onderbouwde behandelingen, waaronder hyaluronzuur-fillers, biostimulatie en – als één van de
-                            weinige klinieken in Amsterdam – de exclusieve Endolift-laserbehandeling.
-                        </p>
-                        <p>
-                            Onze fillerbehandelingen doen meer dan fijne lijntjes verzachten: ze herstellen volume,
-                            verfijnen contouren en geven de huid een frisse, jeugdige uitstraling. Wij werken uitsluitend
-                            met kwalitatieve, natuurlijke fillers met een langdurig effect, waaronder hyaluronzuur en
-                            poly-L-melkzuur. Deze laatste zetten wij ook succesvol in als body filler.
-                        </p>
-                        <p>
-                            Ook voor medisch verantwoord afvallen bent u bij ons aan het juiste adres. Met een persoonlijk
-                            behandelplan en professionele begeleiding helpen wij u gezond gewicht te verliezen en meer
-                            energie te krijgen.
-                        </p>
-                        <p>
-                            Kies voor een tijdloze uitstraling en voel u op uw best – met The Golden Glow. Plan vandaag
-                            nog een vrijblijvend consult.
-                        </p>
-                    </div>
+                <h2 class="font-body text-base md:text-lg uppercase text-primary mb-6">
+                    Behandelingen
+                </h2>
+
+                <div class="space-y-4 text-body-text leading-relaxed">
+                    <p>
+                        Bij The Golden Glow draait alles om maatwerk. Wij bieden hoogwaardige, verjongende en medisch
+                        onderbouwde behandelingen, waaronder hyaluronzuur-fillers, biostimulatie en – als één van de
+                        weinige klinieken in Amsterdam – de exclusieve Endolift-laserbehandeling.
+                    </p>
+                    <p>
+                        Onze fillerbehandelingen doen meer dan fijne lijntjes verzachten: ze herstellen volume,
+                        verfijnen contouren en geven de huid een frisse, jeugdige uitstraling. Wij werken uitsluitend
+                        met kwalitatieve, natuurlijke fillers met een langdurig effect, waaronder hyaluronzuur en
+                        poly-L-melkzuur. Deze laatste zetten wij ook succesvol in als body filler.
+                    </p>
+                    <p>
+                        Ook voor medisch verantwoord afvallen bent u bij ons aan het juiste adres. Met een persoonlijk
+                        behandelplan en professionele begeleiding helpen wij u gezond gewicht te verliezen en meer
+                        energie te krijgen.
+                    </p>
+                    <p>
+                        Kies voor een tijdloze uitstraling en voel u op uw best – met The Golden Glow. Plan vandaag
+                        nog een vrijblijvend consult.
+                    </p>
                 </div>
+
             </div>
 
             <!-- Image -->
-            <div class="lg:order-2">
+            <div class="lg:order-2 flex items-stretch h-full">
                 <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
                 <img
                     src="<?php echo esc_url($upload_url . '/lady-shot.jpg'); ?>"
                     alt="The Golden Glow Behandelingen"
                     width="887"
                     height="1080"
-                    class="w-full h-auto rounded-lg shadow-lg"
+                    class="w-auto h-full object-cover rounded-lg shadow-lg"
                     loading="lazy">
             </div>
 
@@ -141,7 +141,7 @@ get_header(); ?>
 <!-- About Section -->
 <section class="section-padding bg-background from-white to-gray-50">
     <div class="container mx-auto px-[5%]">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
 
             <!-- Image -->
             <div class="order-1">
@@ -151,50 +151,46 @@ get_header(); ?>
                     alt="The Golden Glow Kliniek"
                     width="1200"
                     height="800"
-                    class="w-full h-auto rounded-lg shadow-lg"
+                    class="w-full h-full object-cover rounded-lg shadow-lg"
                     loading="lazy">
             </div>
 
             <!-- Text Content -->
             <div class="order-2">
-                <div class="mb-8">
-                    <h2 class="font-body text-base md:text-lg uppercase text-primary mb-4">
-                        The Golden Glow
-                    </h2>
-                    <h3 class="font-heading text-2xl md:text-3xl lg:text-4xl text-primary mb-6">
-                        Dé cosmetische kliniek in Amsterdam
-                    </h3>
+                <h2 class="font-body text-base md:text-lg uppercase text-primary mb-4">
+                    The Golden Glow
+                </h2>
+                <h3 class="font-heading text-2xl md:text-3xl lg:text-4xl text-primary mb-6">
+                    Dé cosmetische kliniek in Amsterdam
+                </h3>
 
-                    <div class="space-y-4 text-body-text leading-relaxed mb-8">
-                        <p>
-                            Bij The Golden Glow benaderen we esthetiek met een brede, holistische blik. Uiterlijke
-                            verjonging beschouwen wij niet als het reduceren van losse rimpels of het streven naar
-                            oppervlakkige perfectie, maar als het subtiel herstellen van evenwicht en expressie. Onze
-                            analyse strekt zich uit over huidkwaliteit, gezichtsverhoudingen, mimiek én de individuele
-                            uitstraling die ieder mens uniek maakt. Onze expertise omvat spierontspanners, fijne en
-                            diepere fillers, bodycontouring, specialistische & geavanceerde biostimulatie alsook
-                            begeleiding bij afvallen. Daarbij vertrouwen we uitsluitend op bewezen technieken en
-                            hoogwaardige producten en merken die bekendstaan om hun veiligheid en effectiviteit.
-                        </p>
-                        <p>
-                            Dokter Arwind Chigharoe blijft zich jaarlijks verdiepen in de nieuwste internationale
-                            inzichten- via gerenommeerde congressen als IMCAS en AMWC – zodat behandelingen niet alleen
-                            voldoen aan de hoogste veiligheidsnormen, maar tevens wetenschappelijk onderbouwd en
-                            innovatief zijn. Zijn registratie bij het BIG-register en zijn certificering via de KNMG en
-                            NVCG getuigen van onze toewijding aan zorgvuldigheid en kwaliteit.
-                        </p>
-                    </div>
-
-                    <!-- CTA Button -->
-                    <div class="text-left md:text-center lg:text-left">
-                        <a href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
-                            class="inline-block bg-primary text-white font-body font-medium text-sm uppercase px-8 py-3 rounded-full hover:bg-secondary hover:text-white transition-all duration-300">
-                            Maak een afspraak
-                        </a>
-                    </div>
+                <div class="space-y-4 text-body-text leading-relaxed">
+                    <p>
+                        Bij The Golden Glow benaderen we esthetiek met een brede, holistische blik. Uiterlijke
+                        verjonging beschouwen wij niet als het reduceren van losse rimpels of het streven naar
+                        oppervlakkige perfectie, maar als het subtiel herstellen van evenwicht en expressie. Onze
+                        analyse strekt zich uit over huidkwaliteit, gezichtsverhoudingen, mimiek én de individuele
+                        uitstraling die ieder mens uniek maakt. Onze expertise omvat spierontspanners, fijne en
+                        diepere fillers, bodycontouring, specialistische & geavanceerde biostimulatie alsook
+                        begeleiding bij afvallen. Daarbij vertrouwen we uitsluitend op bewezen technieken en
+                        hoogwaardige producten en merken die bekendstaan om hun veiligheid en effectiviteit.
+                    </p>
+                    <p>
+                        Dokter Arwind Chigharoe blijft zich jaarlijks verdiepen in de nieuwste internationale
+                        inzichten- via gerenommeerde congressen als IMCAS en AMWC – zodat behandelingen niet alleen
+                        voldoen aan de hoogste veiligheidsnormen, maar tevens wetenschappelijk onderbouwd en
+                        innovatief zijn. Zijn registratie bij het BIG-register en zijn certificering via de KNMG en
+                        NVCG getuigen van onze toewijding aan zorgvuldigheid en kwaliteit.
+                    </p>
                 </div>
             </div>
-
+            <!-- CTA Button -->
+            <div class="text-left md:text-center lg:text-left order-4">
+                <a href="https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL"
+                    class="inline-block bg-primary text-white font-body font-medium text-sm uppercase px-8 py-3 rounded-full hover:bg-secondary hover:text-white transition-all duration-300">
+                    Maak een afspraak
+                </a>
+            </div>
         </div>
     </div>
 </section>
