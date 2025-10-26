@@ -7,19 +7,20 @@
  */
 
 return [
-    "page_title" => "PRP/PRF behandeling",
+    "page_title" => "PRP/PRF",
 
     // Content blocks array - add, remove, or reorder as needed
     "content_blocks" => [
         [
             "type" => "category-intro",
             "data" => [
-                "title" => "Wat is PRP/PRF?",
+                "title" => "Wat zijn PRP en PRF behandelingen?",
                 "content" => "
-                    <p>Bij The Golden Glow in Amsterdam bieden we de meest geavanceerde regeneratieve behandelingen voor natuurlijke huidverjonging. PRP (Platelet-Rich Plasma) en PRF (Platelet-Rich Fibrin) zijn innovatieve behandelingen waarbij gebruik wordt gemaakt van je eigen bloedplaatjes om de huid van binnenuit te verjongen en te herstellen. Deze autologe behandelingen zijn 100% natuurlijk en bevatten geen vreemde stoffen, waardoor ze uiterst veilig en effectief zijn.</p>
-                    <p>Beide behandelingen maken gebruik van groeifactoren uit je eigen bloed om collageenproductie te stimuleren, huidvernieuwing te bevorderen en de algehele huidkwaliteit te verbeteren. Het verschil tussen PRP en PRF zit voornamelijk in de bereidingswijze en concentratie van groeifactoren. PRF is een nieuwere generatie waarbij de groeifactoren langzamer en over een langere periode vrijkomen, wat resulteert in een nog natuurlijker en langduriger effect. Bij The Golden Glow adviseren we welke behandeling het beste bij uw huid en doelstellingen past.</p>
+                    <p>PRP Behandeling voor het Gezicht in Amsterdam: De Natuurlijke Keuze voor Huidverjonging. Bent u op zoek naar een veilige en natuurlijke methode om uw huid te laten stralen en verjongen? In Amsterdam bieden diverse klinieken de innovatieve PRP/PRF-behandelingen aan, een procedure waarbij gebruik wordt gemaakt van uw eigen bloedplasma om het huidherstel te stimuleren. Vanuit mijn ervaring als cosmetisch arts beschouw ik PRP als een van de meest natuurlijke en effectieve huidverjongingsmethoden. Het activeert het zelfherstellend vermogen van de huid zonder kunstmatige toevoegingen, wat de behandeling bijzonder passend maakt voor wie een natuurlijke aanpak zoekt.</p>
                 ",
-                "image_filename" => "prp-prf-intro.jpg"
+                "image_filename" => "prp-prf-intro.jpg",
+                "button_below_text" => true,
+                "custom_class" => "!pb-0"
             ]
         ],
         [
@@ -29,15 +30,16 @@ return [
                 "content" => "",
                 "images" => [
                     ["filename" => "prp_vs_prf_vergelijkingstabel.png", "alt" => "PRP vs PRF vergelijkingstabel"]
-                ]
+                ],
+                "custom_class" => "!pt-0"
             ]
         ],
         [
             "type" => "text-content",
             "data" => [
-                "title" => "Het verschil tussen PRP en PRF",
+                "title" => "De behandeling met PRP of PRF",
                 "content" => "
-                    <p>PRP (Platelet-Rich Plasma) en PRF (Platelet-Rich Fibrin) zijn beide natuurlijke behandelingen op basis van eigen bloedplaatjes, maar verschillen in bereidingswijze en resultaat. PRP wordt verkregen door bloed te centrifugeren met anticoagulant, waardoor een concentraat ontstaat met voornamelijk bloedplaatjes. PRF daarentegen wordt bereid zonder anticoagulant en bij een lagere snelheid, waardoor niet alleen bloedplaatjes maar ook witte bloedcellen en stamcellen behouden blijven. Dit maakt PRF nog rijker aan groeifactoren die geleidelijk vrijkomen, wat resulteert in een langer aanhoudend effect en betere huidvernieuwing.</p>
+                    <p>De behandeling start met een intakegesprek waarin uw wensen en huidconditie worden besproken om een passend plan te maken. Daarna wordt een kleine hoeveelheid bloed afgenomen, die in een centrifuge wordt verwerkt om het plasma te scheiden. Dit geconcentreerde plasma wordt met fijne naaldjes in de huid geïnjecteerd, wat het natuurlijke herstel en verjonging stimuleert. Na afloop krijgt u nazorgadvies voor een optimaal herstel en het beste resultaat.</p>
                 ",
                 "show_background" => true
             ]
@@ -56,42 +58,49 @@ return [
         [
             "type" => "text-content",
             "data" => [
-                "title" => "De behandeling",
+                "title" => "Wat is het verschil tussen PRP en PRF?",
                 "content" => "
-                    <p>De PRP/PRF behandeling begint met het afnemen van een kleine hoeveelheid bloed, vergelijkbaar met een reguliere bloedafname. Dit bloed wordt vervolgens in een speciale centrifuge geplaatst om het plasma met bloedplaatjes te scheiden. Bij PRP duurt dit proces ongeveer 10 minuten, bij PRF iets langer door de lagere centrifugesnelheid. Het verkregen concentraat wordt vervolgens met een zeer dunne naald in de huid geïnjecteerd op de gebieden die behandeld moeten worden.</p>
-                    <p>De behandeling kan worden toegepast op het gezicht, de hals, het decolleté, de handen en zelfs de hoofdhuid bij haarverlies. Voor optimaal comfort kan vooraf een verdovende crème worden aangebracht. De totale behandeltijd bedraagt ongeveer 45 tot 60 minuten. Direct na de behandeling kunnen lichte roodheid en zwelling optreden, maar deze verdwijnen doorgaans binnen 24 tot 48 uur. De meeste cliënten kunnen hun dagelijkse activiteiten direct hervatten.</p>
+                    <p>PRP (Platelet Rich Plasma) betekent dat er uit uw bloed een geconcentreerde vloeistof wordt gewonnen, rijk aan bloedplaatjes en groeifactoren. Dit plasma wordt daarna via kleine injecties teruggebracht in de huid van het gezicht. Omdat het een behandelmethode is met volledig eigen materiaal, is het proces uiterst veilig en worden allergische reacties vrijwel uitgesloten. PRF staat voor (Platelet-Rich Fibrin). Net als PRP (Platelet-Rich Plasma) wordt PRF gemaakt van uw eigen bloed en gebruikt voor huidverjonging, maar de verwerking en samenstelling zijn anders, wat zorgt voor verschillen in effect en resultaat. Dokter Chigharoe maakt een huidanalyse om te kijken welke behandeling voor jou het beste zal zijn.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0",
             ]
         ],
         [
             "type" => "text-content",
             "data" => [
-                "title" => "Toepassingen van PRP/PRF",
+                "title" => "Wat mag u verwachten aan resultaten?",
                 "content" => "
-                    <p>PRP en PRF behandelingen zijn veelzijdig toepasbaar en effectief bij diverse huidproblemen en esthetische doeleinden. Ze worden ingezet voor algemene huidverjonging en het verminderen van fijne lijntjes en rimpels. Ook bij acnelittekens, pigmentvlekken en een oneffen huidtextuur bieden deze behandelingen uitstekende resultaten. Daarnaast zijn PRP/PRF behandelingen zeer effectief bij haarverlies en dunner wordend haar, waarbij de groeifactoren de haarfollikels stimuleren. De behandeling kan ook gecombineerd worden met microneedling of laserbehandelingen voor nog betere resultaten.</p>
+                    <p>De PRP-behandeling stimuleert uw huid om nieuw collageen en elastine aan te maken, wat zorgt voor een stevigere, soepelere en egalere huid. Fijne rimpels verminderen, de huidstructuur verbetert en de hydratatie en volheid nemen toe. Direct na de behandeling ziet uw huid er frisser uit, met een nog beter resultaat in de komende weken. Voor het beste effect worden meestal drie behandelingen geadviseerd, met een interval van enkele weken, en kan jaarlijks onderhoud nodig zijn. PRP is zeer geschikt voor het verminderen van rimpels, het herstellen van volume, het aanpakken van littekens zoals acne en het verhelderen van een doffe huid.</p>
                 ",
-                "show_background" => true
+                "show_background" => false,
+                "custom_class" => "!pb-0",
             ]
         ],
         [
             "type" => "price",
             "data" => [
-                "title" => "Wat kost een PRP/PRF behandeling?",
-                "price" => "350",
-                "anesthesia" => "verdovende crème",
-                "checkup" => "na 4-6 weken",
-                "effect_duration" => "6 - 12 maanden",
-                "treatment_duration" => "45 - 60 minuten"
+                "title" => "Wat is de prijs van een PRP of PRF behandeling?",
+                "price" => "275",
+                "anesthesia" => "met crème en/of injectie",
+                "checkup" => "na 6 weken",
+                "effect_duration" => "3 - 18 maanden",
+                "treatment_duration" => "60 minuten"
+            ]
+        ],
+        [
+            "type" => "after-treatment",
+            "data" => [
+                "custom_class" => "!py-0",
             ]
         ],
         [
             "type" => "treatment-summary",
             "data" => [
-                "price" => "Vanaf 350",
-                "duration" => "45 - 60 minuten",
-                "checkup" => "na 4-6 weken",
-                "effect" => "6 - 12 maanden"
+                "price" => "Vanaf 275",
+                "duration" => "60 minuten",
+                "checkup" => "na 6 weken",
+                "effect" => "3 - 18 maanden"
             ]
         ],
         [
@@ -101,26 +110,10 @@ return [
                 "label" => "Maak een afspraak"
             ]
         ],
-
-        [
-            "type" => "text-content",
-            "data" => [
-                "title" => "Wat is het resultaat van een PRP/PRF behandeling?",
-                "content" => "
-                    <p>De resultaten van een PRP/PRF behandeling ontwikkelen zich geleidelijk. De eerste verbetering is meestal zichtbaar na 2 tot 3 weken, wanneer de groeifactoren de collageenproductie beginnen te stimuleren. Het optimale resultaat wordt bereikt na ongeveer 2 tot 3 maanden, wanneer de volledige huidvernieuwing heeft plaatsgevonden. De huid ziet er stralender, gladder en jonger uit, met een verbetering van de huidtextuur en -kwaliteit.</p>
-                    <p>Voor optimale en langdurige resultaten adviseren wij een kuur van 2 tot 3 behandelingen met tussenpozen van 4 tot 6 weken. Het effect blijft gemiddeld 6 tot 12 maanden zichtbaar, afhankelijk van uw leeftijd, huidconditie en levensstijl. PRF geeft doorgaans een iets langer aanhoudend effect dan PRP door de geleidelijke afgifte van groeifactoren. Onderhoudsbehandelingen kunnen helpen om het resultaat te behouden en de huid in optimale conditie te houden.</p>
-                ",
-                "show_background" => false
-            ]
-        ],
-        [
-            "type" => "after-treatment",
-            "data" => []
-        ],
         [
             "type" => "reviews",
             "data" => [
-                "show_background" => false
+                "show_background" => true
             ]
         ],
         [
@@ -134,27 +127,31 @@ return [
                 "items" => [
                     [
                         "question" => "Wat is het verschil tussen PRP en PRF?",
-                        "answer" => "<p>Het belangrijkste verschil zit in de bereidingswijze. PRP wordt gecentrifugeerd met anticoagulant en bevat voornamelijk bloedplaatjes. PRF wordt bereid zonder anticoagulant en bij lagere snelheid, waardoor ook witte bloedcellen en stamcellen behouden blijven. Dit maakt PRF rijker aan groeifactoren die geleidelijk vrijkomen, wat resulteert in een natuurlijker en langer aanhoudend effect.</p>"
+                        "answer" => "<p>PRP (Platelet-Rich Plasma) en PRF (Platelet-Rich Fibrin) zijn beide injecteerbare behandelingen waarbij lichaamseigen bloedplasma wordt gebruikt om de huid te verjongen.</p><p>PRP bevat een hoge concentratie bloedplaatjes en wordt al jaren succesvol ingezet voor huidverjonging en haargroei.</p><p>PRF is de nieuwere generatie, rijker aan groeifactoren, wit bloedcellen en fibrine, en werkt langzamer maar dieper in de huid.</p>"
                     ],
                     [
-                        "question" => "Is een PRP/PRF behandeling veilig?",
-                        "answer" => "<p>Ja, PRP en PRF behandelingen zijn zeer veilig omdat gebruik wordt gemaakt van uw eigen bloed. Er is geen risico op allergische reacties of afstoting. De behandeling is wetenschappelijk onderbouwd en wordt al jaren succesvol toegepast in de esthetische geneeskunde. Bijwerkingen zijn minimaal en beperken zich meestal tot tijdelijke roodheid en lichte zwelling.</p>"
+                        "question" => "Wat doet een PRP/PRF-behandeling voor mijn huid?",
+                        "answer" => "<p>De behandelingen stimuleren het natuurlijke herstelproces van je huid. Ze helpen bij:</p><p>1) Fijnere huidstructuur<br>2) Minder fijne lijntjes en rimpels<br>3) Vermindering van donkere kringen onder de ogen<br>4) Verbetering van elasticiteit en hydratatie<br>5) Genezende werking bij acne-littekens en doffe huid</p><p>Na meerdere sessies ziet je huid er gezonder, steviger en jonger uit.</p>"
+                    ],
+                    [
+                        "question" => "Welke zones kunnen worden behandeld met PRP of PRF?",
+                        "answer" => "<p>Populaire behandellocaties zijn:</p><p>1) Onder de ogen (donkere kringen, wallen)<br>2) Volledig gezicht<br>3) Hals en decolleté<br>4) Handen<br>5) Hoofdhuid (bij haarverlies)<br>6) Littekens en acne-littekens</p><p>De behandeling is veilig voor gevoelige zones en wordt afgestemd op jouw huidbehoefte.</p>"
+                    ],
+                    [
+                        "question" => "Is een PRP of PRF inspuiting pijnlijk?",
+                        "answer" => "<p><span style=\"color: #000000;\">De&nbsp;meeste&nbsp;mensen&nbsp;ervaren&nbsp;slechts&nbsp;lichte&nbsp;prikjes&nbsp;of&nbsp;een&nbsp;branderig&nbsp;gevoel.&nbsp;Indien&nbsp;gewenst,&nbsp;wordt&nbsp;een&nbsp;verdovende&nbsp;crème&nbsp;aangebracht&nbsp;voorafgaand&nbsp;aan&nbsp;de&nbsp;behandeling. De&nbsp;hersteltijd&nbsp;is&nbsp;minimaal.</span></p>"
+                    ],
+                    [
+                        "question" => "Wanneer zie ik resultaat van PRP en PRF?",
+                        "answer" => "<p><span style=\"color: #000000;\">Bij&nbsp;een&nbsp;PRP treatment&nbsp;zie&nbsp;je&nbsp;vaak&nbsp;al&nbsp;na&nbsp;1 tot 2&nbsp;weken&nbsp;verbetering&nbsp;in glow&nbsp;en&nbsp;huidstructuur.&nbsp;Een&nbsp;PRF treatment&nbsp;werkt&nbsp;iets&nbsp;langzamer, maar&nbsp;bouwt&nbsp;langduriger&nbsp;resultaat&nbsp;op over 4 tot 6&nbsp;weken.&nbsp;Bij&nbsp;beide&nbsp;methodes&nbsp;geldt: hoe&nbsp;vaker&nbsp;je&nbsp;behandelt, hoe&nbsp;beter&nbsp;het&nbsp;eindresultaat.</span></p>"
                     ],
                     [
                         "question" => "Hoeveel behandelingen heb ik nodig?",
-                        "answer" => "<p>Voor optimale resultaten adviseren wij een kuur van 2 tot 3 behandelingen met tussenpozen van 4 tot 6 weken. Het exacte aantal behandelingen hangt af van uw huidconditie, leeftijd en gewenste resultaat. Tijdens de intake bespreken we uw verwachtingen en stellen we een persoonlijk behandelplan op.</p>"
+                        "answer" => "<p><span style=\"color: #000000;\">Gemiddeld&nbsp;zijn&nbsp;3&nbsp;behandelingen&nbsp;nodig&nbsp;met&nbsp;een&nbsp;tussenpoos&nbsp;van 4&nbsp;weken.&nbsp;Voor&nbsp;optimaal&nbsp;en&nbsp;langdurig&nbsp;resultaat&nbsp;wordt&nbsp;onderhoud&nbsp;aangeraden&nbsp;om de 6 tot 12&nbsp;maanden.</span></p>"
                     ],
                     [
-                        "question" => "Doet een PRP/PRF behandeling pijn?",
-                        "answer" => "<p>De behandeling is goed te verdragen. Voor optimaal comfort kan vooraf een verdovende crème worden aangebracht. Tijdens de behandeling voelt u een licht prikje van de injecties. De meeste cliënten ervaren de behandeling als comfortabel en kunnen direct daarna hun dagelijkse activiteiten hervatten.</p>"
-                    ],
-                    [
-                        "question" => "Wanneer zie ik resultaat van PRP/PRF?",
-                        "answer" => "<p>De eerste verbetering is meestal zichtbaar na 2 tot 3 weken. Het optimale resultaat wordt bereikt na ongeveer 2 tot 3 maanden, wanneer de volledige huidvernieuwing heeft plaatsgevonden. Het effect blijft gemiddeld 6 tot 12 maanden zichtbaar, waarbij PRF doorgaans een iets langer aanhoudend effect geeft dan PRP.</p>"
-                    ],
-                    [
-                        "question" => "Kan PRP/PRF gecombineerd worden met andere behandelingen?",
-                        "answer" => "<p>Ja, PRP/PRF kan uitstekend worden gecombineerd met andere behandelingen zoals microneedling, lasertherapie, fillers of botox. De combinatie van behandelingen kan het resultaat versterken en optimaliseren. Wij adviseren u graag over de beste combinatie voor uw persoonlijke situatie en doelstellingen.</p>"
+                        "question" => "Voor wie is een PRP/PRF-behandeling geschikt?",
+                        "answer" => "<p><span style=\"color: #000000;\">Deze&nbsp;behandelingen&nbsp;zijn&nbsp;geschikt&nbsp;voor&nbsp;iedereen&nbsp;die op&nbsp;een&nbsp;natuurlijke&nbsp;manier&nbsp;huidveroudering&nbsp;wil&nbsp;vertragen,&nbsp;zonder&nbsp;gebruik&nbsp;van fillers of Botox.&nbsp;Ook&nbsp;ideaal&nbsp;voor&nbsp;mensen&nbsp;met&nbsp;een&nbsp;doffe,&nbsp;vermoeide&nbsp;huid&nbsp;of&nbsp;vroege&nbsp;tekenen&nbsp;van&nbsp;huidverslapping.</span></p>"
                     ]
                 ]
             ]

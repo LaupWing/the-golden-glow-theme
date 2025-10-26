@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Content for: Skinbooster
+ * Content for: Skinboosters
  * To edit this page, just change the values in the content_blocks array below!
  * Each block has a "type" that determines which template to use.
  */
@@ -16,8 +16,7 @@ return [
             "data" => [
                 "title" => "Wat zijn Skinboosters?",
                 "content" => "
-                    <p>Naarmate we ouder worden, treden er tal van wijzigingen op in onze lichaamsprocessen, hoe goed onze genen ook zijn. Dit heeft invloed op hoe we ons voelen, maar ook op ons uiterlijk. Het verouderingsproces van ons gezicht is hier een voorbeeld van. Bij The Golden Glow wordt Skinbooster door ons arts op een zo veilig mogelijke manier uitgevoerd en waar er uitsluitend gebruik wordt gemaakt van kwalitatieve producten. De meest bekende merken die in onze kliniek worden gebruikt zijn Boletero Revive, Restylane Skinbooster, RRS-inject® Skinbooster en Juvederm VOLITE Skinbooster.</p>
-                    <p>Skinboosters zijn innovatieve injectables op basis van hyaluronzuur die speciaal zijn ontwikkeld om de huidkwaliteit te verbeteren. In tegenstelling tot fillers, die volume toevoegen, zijn skinboosters gericht op diepe hydratatie en het herstellen van de natuurlijke glans en elasticiteit van de huid. Ze worden in kleine hoeveelheden over de huid verspreid om optimale hydratatie en een natuurlijk fris resultaat te bereiken.</p>
+                    <p>Naarmate we ouder worden, treden er tal van wijzigingen op in onze lichaamsprocessen, hoe goed onze genen ook zijn.<br>Dit heeft invloed op hoe we ons voelen, maar ook op ons uiterlijk. Het verouderingsproces van ons gezicht is hier een voorbeeld van.<br>Bij The Golden Glow wordt Skinbooster door ons arts op een zo veilig mogelijke manier uitgevoerd en waar er uitsluitend gebruik wordt gemaakt van kwalitatieve producten.<br>De meest bekende merken die in onze kliniek worden gebruikt zijn Boletero Revive, Restylane Skinbooster, RRS-inject® Skinbooster en Juvederm VOLITE Skinbooster.</p>
                 ",
                 "image_filename" => "skinbooster-intro.jpg"
             ]
@@ -27,8 +26,7 @@ return [
             "data" => [
                 "title" => "Hoe werken skinboosters?",
                 "content" => "
-                    <p>Bij injectie van een filler op basis van hyaluronzuur wordt de rimpel opgevuld. Na injectie wordt door vernieuwde hydratatie de huidkwaliteit verbeterd en het volume verlies in het gezicht hersteld. Hyaluronzuur is een lichaamseigen stof die van nature voorkomt in onze huid en kan tot 1.000 keer zijn eigen gewicht aan vocht vasthouden. Skinboosters maken gebruik van zeer fijn hyaluronzuur dat diep in de huid wordt geïnjecteerd.</p>
-                    <p>Door de behandeling wordt de huid van binnenuit gehydrateerd en gestimuleerd om zelf meer collageen en elastine aan te maken. Dit resulteert in een strakkere, gladdere huid met een gezonde glans. De behandeling is bijzonder geschikt voor het gezicht, maar kan ook worden toegepast op de hals, het decolleté en de handen. Het resultaat is subtiel en natuurlijk, zonder dat de gezichtsuitdrukking verandert.</p>
+                    <p>Bij injectie van een filler op basis van hyaluronzuur wordt de rimpel opgevuld.<br>Na injectie wordt door vernieuwde hydratatie de huidkwaliteit verbeterd en het volume verlies in het gezicht hersteld.</p>
                 ",
                 "show_background" => true
             ]
@@ -47,22 +45,34 @@ return [
         [
             "type" => "text-content",
             "data" => [
-                "title" => "De behandeling",
+                "title" => "Voor de Behandeling",
                 "content" => "
-                    <p>De skinbooster behandeling begint met een uitgebreide intake waarbij uw huidconditie wordt beoordeeld en uw wensen worden besproken. Voor de behandeling kan een verdovende crème worden aangebracht om het comfort te maximaliseren. Het hyaluronzuur wordt vervolgens met zeer fijne naaldjes of een speciale injector in de huid gebracht. De injecties worden gelijkmatig over het behandelgebied verspreid om een optimaal resultaat te bereiken.</p>
-                    <p>De behandeling duurt gemiddeld 30 tot 45 minuten, afhankelijk van het te behandelen gebied. Direct na de behandeling kunnen kleine rode puntjes en lichte zwelling zichtbaar zijn, maar deze verdwijnen meestal binnen 24 tot 48 uur. Voor optimale resultaten adviseren wij een kuur van 2 tot 3 behandelingen met tussenpozen van 3 tot 4 weken. Het effect is geleidelijk zichtbaar en verbetert in de weken na de behandeling.</p>
+                    <p>Voor de behandeling informeert de arts u over de behandelopties, het te verwachten effect, de voordelen en de risico's. Tijdens het gesprek zal de arts u vragen om een medische vragenlijst in te vullen. Uw medische toestand kan de behandeling als ook de resultaten beïnvloeden. De arts stelt samen met u een individueel behandelplan op en laat u een toestemmingsformulier ondertekenen. Tevens wordt u ingelicht over de voor-na zorg van de behandeling.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0",
             ]
         ],
         [
             "type" => "text-content",
             "data" => [
-                "title" => "Toepassingen van Skinboosters",
+                "title" => "De behandeling",
                 "content" => "
-                    <p>Skinboosters zijn veelzijdig toepasbaar en geschikt voor verschillende huidproblemen en behandeldoelen. Ze zijn bijzonder effectief voor droge of doffe huid die extra hydratatie nodig heeft. Ook bij fijne lijntjes, een verminderde huidelasticiteit en een oneffen huidtextuur bieden skinboosters uitstekende resultaten. Daarnaast kunnen ze worden gebruikt ter preventie van huidveroudering bij jonge huid en als aanvullende behandeling bij andere esthetische procedures zoals botox of fillers.</p>
+                    <p>De injectable filler wordt in de huid geïnjecteerd d.m.v. een fijne naald om fijne lijntjes te voorkomen en de huidstructuur te verbeteren. Een behandeling met injectables kan een licht ongemak of een lichte pijn met zich meebrengen tijdens de behandeling. Daarom kan een lokale verdoving (lidocaine crème) toegepast worden om de behandeling zo comfortabel mogelijk te maken. Deze verdoving kunt u nog enige tijd voelen. Om te zorgen voor een gelijkmatig resultaat zal de arts de behandelde zone masseren, waardoor uw huid tijdelijk rood of gezwollen kan zijn.</p>
                 ",
-                "show_background" => true
+                "show_background" => false,
+                "custom_class" => "",
+            ]
+        ],
+        [
+            "type" => "text-content",
+            "data" => [
+                "title" => "Na de behandeling",
+                "content" => "
+                    <p>Na een behandeling met injectables is het belangrijk om een aantal zaken in acht te nemen. Veel patiënten kunnen hun dagelijkse bezigheden direct hervatten, maar volg hierin altijd het advies van uw behandelend arts. Het is normaal om milde tot matige branderigheid of pijn te voelen na de injectie, en de behandelde plek kan enkele dagen gevoelig blijven. Zwelling en verkleuring, zoals roodheid of blauwe plekken, zijn veelvoorkomende bijwerkingen. U kunt de omvang en duur hiervan beperken door tijdens de eerste uren na de behandeling een ijs- of koud kompres op de behandelde zone te leggen. Houdt de zwelling of roodheid langer dan vijf dagen aan, neem dan contact op met uw arts. Na 24 uur mag u de behandelde plek voorzichtig reinigen en make-up aanbrengen, tenzij uw arts anders adviseert. Stel de huid in de eerste week na de behandeling niet bloot aan intense warmte, zoals zon, solarium of sauna, en vermijd andere intensieve gezichtsbehandelingen. Houd er rekening mee dat hyaluronzuur geleidelijk door het lichaam wordt afgebroken, waardoor het resultaat van tijdelijke aard is. Voor een optimaal resultaat en uw esthetisch welbevinden raden wij aan om twee weken na de behandeling een controleafspraak met uw arts in te plannen.</p>
+                ",
+                "show_background" => false,
+                "custom_class" => "!py-0",
             ]
         ],
         [
@@ -70,17 +80,32 @@ return [
             "data" => [
                 "title" => "Wat is de prijs voor een Skinbooster behandeling?",
                 "price" => "275",
-                "anesthesia" => "crème en injectie verdoving",
+                "anesthesia" => "Crème en injectie verdoving",
                 "checkup" => "na 6 weken",
                 "effect_duration" => "3 - 6 maanden",
-                "treatment_duration" => "30 - 45 minuten"
+                "treatment_duration" => "30 minuten"
+            ]
+        ],
+        [
+            "type" => "text-content",
+            "data" => [
+                "title" => "Wat is het Resultaat van een Skinbooster behandeling",
+                "content" => "",
+                "show_background" => false,
+                "custom_class" => "!py-0",
+            ]
+        ],
+        [
+            "type" => "after-treatment",
+            "data" => [
+                "custom_class" => "!py-0",
             ]
         ],
         [
             "type" => "treatment-summary",
             "data" => [
                 "price" => "Vanaf 275",
-                "duration" => "30 - 45 minuten",
+                "duration" => "30 minuten",
                 "checkup" => "na 6 weken",
                 "effect" => "3 - 6 maanden"
             ]
@@ -93,35 +118,9 @@ return [
             ]
         ],
         [
-            "type" => "text-content",
-            "data" => [
-                "title" => "Wat is het resultaat van een Skinbooster behandeling?",
-                "content" => "
-                    <p>Het resultaat van een skinbooster behandeling ontwikkelt zich geleidelijk. De eerste verbetering is meestal zichtbaar na 1 tot 2 weken, wanneer de huid zichtbaar meer gehydrateerd en stralend oogt. Het optimale resultaat wordt bereikt na het voltooien van de kuur van 2 tot 3 behandelingen. De huid voelt zachter aan, lijntjes zijn verminderd en de huidtextuur is verfijnd. De natuurlijke glans van de huid keert terug en de algehele huidkwaliteit is duidelijk verbeterd.</p>
-                    <p>Het effect blijft gemiddeld 3 tot 6 maanden zichtbaar, afhankelijk van uw huidtype, leeftijd en levensstijl. Voor langdurige resultaten adviseren wij onderhoudsbehandelingen elke 4 tot 6 maanden. Bij The Golden Glow in Amsterdam begeleiden we u graag bij het bereiken en behouden van een optimale huidconditie met een behandelplan op maat.</p>
-                ",
-                "show_background" => false
-            ]
-        ],
-        // [
-        //     "type" => "happy-customers",
-        //     "data" => [
-        //         "title" => "Voor en na resultaten",
-        //         "content" => "Bekijk hieronder enkele voor en na foto's van tevreden klanten die de Skinbooster behandeling hebben ondergaan bij The Golden Glow. De resultaten tonen de verbeterde huidkwaliteit en natuurlijke glans.",
-        //         "images" => [
-        //             ["filename" => "skinbooster-happy-customer-1.jpg", "alt" => "Skinbooster behandeling resultaat 1"],
-        //             ["filename" => "skinbooster-happy-customer-2.jpg", "alt" => "Skinbooster behandeling resultaat 2"]
-        //         ]
-        //     ]
-        // ],
-        [
-            "type" => "after-treatment",
-            "data" => []
-        ],
-        [
             "type" => "reviews",
             "data" => [
-                "show_background" => false
+                "show_background" => true
             ]
         ],
         [
@@ -131,27 +130,31 @@ return [
         [
             "type" => "faq",
             "data" => [
-                "title" => "Veelgestelde vragen over Skinboosters",
+                "title" => "Veelgestelde vragen over skinboosters",
                 "items" => [
                     [
                         "question" => "Hoe lang houdt de werking van Skinbooster aan?",
-                        "answer" => "<p>Een behandeling met Skinbooster blijft bij de meeste patiënten tussen de 3 en 6 maanden zichtbaar. De exacte duur hangt af van verschillende factoren zoals leeftijd, huidtype, levensstijl en het type skinbooster dat gebruikt wordt. Voor langdurige resultaten adviseren wij onderhoudsbehandelingen elke 4 tot 6 maanden.</p>"
+                        "answer" => "<p>Een behandeling met Skinbooster blijft bij de meeste patiënten tussen de 6 en 12 weken zichtbaar. De duur van het effect kan per persoon verschillen, afhankelijk van leeftijd, huidtype en levensstijl.</p>"
                     ],
                     [
                         "question" => "Is Skinbooster een permanent implantaat?",
-                        "answer" => "<p>Nee, Skinbooster is niet permanent. Het hyaluronzuur in skinboosters wordt geleidelijk door het lichaam afgebroken. Dit is juist een voordeel, omdat het een natuurlijk proces is zonder risico op permanente complicaties. Het lichaam breekt het hyaluronzuur op natuurlijke wijze af, waardoor het effect geleidelijk verdwijnt.</p>"
+                        "answer" => "<p>Nee. Het product is afbreekbaar en wordt volledig door het lichaam opgenomen.</p>"
                     ],
                     [
                         "question" => "Kan Skinbooster gebruikt worden met andere producten?",
-                        "answer" => "<p>Ja, Skinbooster kan uitstekend worden gecombineerd met andere esthetische behandelingen zoals botox, fillers, lasertherapie of peelings. Sterker nog, skinboosters kunnen het resultaat van andere behandelingen versterken door de algehele huidkwaliteit te verbeteren. Tijdens de intake bespreken we de beste combinatie voor uw persoonlijke situatie.</p>"
+                        "answer" => "<p>Fillers op basis van hyaluronzuur worden in de praktijk vaak gecombineerd met andere fillers of toxine.</p>"
                     ],
                     [
                         "question" => "Is Skinbooster voelbaar onder de huid?",
-                        "answer" => "<p>Nee, Skinbooster is niet voelbaar onder de huid. In tegenstelling tot fillers die volume toevoegen, wordt skinbooster gelijkmatig in de huid verspreid en integreert het volledig met het huidweefsel. Het resultaat is een natuurlijke verbetering van de huidkwaliteit zonder voelbare of zichtbare bulten.</p>"
+                        "answer" => "<p>Het materiaal is mogelijk een korte periode, net na de behandeling, voelbaar. Na verloop van tijd voelt het behandelde gebied zacht en natuurlijk aan. In een enkel geval kunnen kleine nodules ontstaan. Meld dit aan de arts als dit het geval is.</p>"
                     ],
                     [
                         "question" => "Wat moet ik doen als er bijwerkingen optreden?",
-                        "answer" => "<p>Lichte bijwerkingen zoals roodheid, zwelling of kleine blauwe plekken zijn normaal en verdwijnen meestal binnen enkele dagen. U kunt een koel kompres gebruiken om de zwelling te verminderen. Mochten er ernstigere bijwerkingen optreden of blijven de klachten langer dan 5 dagen aanhouden, neem dan direct contact op met onze kliniek voor advies en eventuele nazorg.</p>"
+                        "answer" => "<p>Contacteer in dit geval uw behandelend arts.</p>"
+                    ],
+                    [
+                        "question" => "Wanneer mag ik een herhaalbehandeling ondergaan?",
+                        "answer" => "<p>Meestal vindt een herhaalbehandeling na 4 weken plaats. De effectiviteit is het grootst bij een herhaling van 3 behandelingen. Mocht u een aanvullende of een herhaalbehandeling wensen, volg dan het advies op van uw arts.</p>"
                     ]
                 ]
             ]
