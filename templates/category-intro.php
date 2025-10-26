@@ -76,13 +76,15 @@ $upload_url = wp_get_upload_dir()['baseurl'];
                     <?php endforeach; ?>
                 </div>
             <?php else: ?>
-                <!-- Single Image -->
-                <img
-                    src="<?php echo $image_url; ?>"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    class="max-w-full w-full max-h-full lg:w-auto h-full object-cover rounded-xl">
+                <div class="h-full flex justify-end">
+                    <!-- Single Image -->
+                    <img
+                        src="<?php echo $image_url; ?>"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        class="max-w-full w-full max-h-full lg:w-auto h-full lg:h-auto object-cover rounded-xl">
+                </div>
             <?php endif; ?>
 
         </div>

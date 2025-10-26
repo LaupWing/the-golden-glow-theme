@@ -34,7 +34,8 @@ get_template_part('sections/happy-customers-section', null, [
             'filename' => 'lasers-happy-customer-1.png',
             'alt' => 'Endolift behandeling before and after'
         ]
-    ]
+    ],
+    "custom_class" => "!pt-0"
 ]);
 ?>
 
@@ -63,7 +64,8 @@ get_template_part('sections/category-links-grid', null, [
             'button_text' => 'Maak een afspraak',
             'button_url' => 'https://schedule.clinicminds.com/services?clinic=a797764d-6a99-11ed-9e8e-0a42d89bf169&l=nl-NL'
         ]
-    ]
+    ],
+    "custom_class" => "!pb-0"
 ]);
 ?>
 

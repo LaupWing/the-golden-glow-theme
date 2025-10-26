@@ -84,7 +84,7 @@ return [
         [
             "type" => "price",
             "data" => [
-                "title" => "PNR",
+                "title" => "PDNR",
                 "price" => "275",
                 "anesthesia" => "Crème en injectie verdoving",
                 "checkup" => "na 6 weken",
@@ -139,11 +139,11 @@ return [
         [
             "type" => "faq",
             "data" => [
-                "title" => "Veelgestelde vragen over PNR",
+                "title" => "Veelgestelde vragen over PDNR",
                 "items" => [
                     [
-                        "question" => "Wat is een Polynucleotide (PNR) behandeling?",
-                        "answer" => "<p>Polynucleotiden (PNR) zijn biostimulerende stoffen die de huid helpen regenereren, hydrateren en verstevigen. Ze stimuleren de aanmaak van collageen en elastine, wat zorgt voor een verbeterde huidstructuur en vermindering van fijne lijntjes.</p>"
+                        "question" => "Wat is een Polynucleotide (PDNR) behandeling?",
+                        "answer" => "<p>Polynucleotiden (PDNR) zijn biostimulerende stoffen die de huid helpen regenereren, hydrateren en verstevigen. Ze stimuleren de aanmaak van collageen en elastine, wat zorgt voor een verbeterde huidstructuur en vermindering van fijne lijntjes.</p>"
                     ],
                     [
                         "question" => "Wat is PhilArt en hoe werkt het?",
