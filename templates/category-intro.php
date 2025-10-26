@@ -82,7 +82,7 @@ $upload_url = wp_get_upload_dir()['baseurl'];
                     alt=""
                     loading="lazy"
                     decoding="async"
-                    class="max-w-full max-h-full <?php echo $full_height_image ? 'w-auto h-full object-cover' : 'h-auto w-auto'; ?> rounded-xl">
+                    class="max-w-full w-full max-h-full lg:w-auto h-full object-cover rounded-xl">
             <?php endif; ?>
 
         </div>

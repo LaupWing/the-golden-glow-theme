@@ -48,7 +48,7 @@ return [
             'data' => [
                 'title' => 'Wat u kunt verwachten na een fronsrimpels behandeling',
                 'content' => '<p>Direct na de behandeling kan de huid in het behandelde gebied wat rood, gevoelig of licht gezwollen zijn, verschijnselen die meestal binnen enkele uren tot een dag verdwijnen. Wij adviseren om de huid de eerste 24 uur met rust te laten en geen make-up aan te brengen. Ook raden wij aan om de eerste twee dagen intensief sporten, sauna, zonnebank en direct zonlicht te vermijden. Alcohol en bloedverdunners kunnen het risico op blauwe plekjes vergroten en worden daarom afgeraden in de eerste 24 uur. Het effect van de behandeling wordt zichtbaar na 2 tot 5 dagen en is optimaal na 10 tot 14 dagen. Gemiddeld houdt het resultaat 3 tot 6 maanden aan, waarna de spieractiviteit geleidelijk terugkeert. Door de behandeling regelmatig te herhalen, blijft de frons verzacht en kan verdere verdieping van de rimpel worden voorkomen.</p>',
-                'show_background' => true,
+                'show_background' => false,
                 'custom_class' => '!py-0'
             ]
         ],
