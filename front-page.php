@@ -224,14 +224,14 @@ get_header(); ?>
             </div>
 
             <!-- Image -->
-            <div class="order-2 lg:order-2">
+            <div class="order-2 lg:order-2 relative overflow-hidden rounded-lg shadow-lg">
                 <?php $upload_url = wp_get_upload_dir()['baseurl']; ?>
                 <img
                     src="<?php echo esc_url($upload_url . '/arwind.jpg'); ?>"
                     alt="Arwind Chigharoe - Cosmetische Arts"
                     width="800"
                     height="1000"
-                    class="w-full h-full object-cover rounded-lg shadow-lg"
+                    class="lg:absolute relative w-full h-full object-cover"
                     loading="lazy">
             </div>
             <!-- CTA Button -->
