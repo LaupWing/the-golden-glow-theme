@@ -15,7 +15,7 @@ get_template_part('templates/page-banner', null, [
 ?>
 
 <!-- Page Introduction -->
-<section class="py-12 md:py-16 lg:py-20 bg-white">
+<section class="py-6 md:py-8">
     <div class="container mx-auto px-[5%]">
         <div class="max-w-4xl mx-auto">
             <h2 class="font-heading text-2xl md:text-3xl lg:text-4xl text-primary text-center mb-6">
@@ -32,7 +32,7 @@ get_template_part('templates/page-banner', null, [
 </section>
 
 <!-- Wegovy Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-background">
+<section class="py-6 md:py-8">
     <div class="container mx-auto px-[5%]">
         <div class="max-w-5xl mx-auto">
             <!-- Medication Image -->
@@ -40,13 +40,13 @@ get_template_part('templates/page-banner', null, [
                 <img
                     src="<?php echo esc_url(wp_get_upload_dir()['baseurl']); ?>/wegovy.jpeg"
                     alt="Wegovy medisch afvallen the golden glow"
-                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                    class="inline-block max-w-full h-auto rounded-lg"
                     style="max-width: 438px;"
                     loading="lazy" />
             </div>
 
             <!-- Medication Content -->
-            <div class="bg-white rounded-lg p-6 md:p-8 lg:p-10 shadow-sm">
+            <div class="rounded-lg p-6 md:p-8 lg:p-10">
                 <h3 class="font-heading text-2xl md:text-3xl text-primary mb-6">Wegovy</h3>
 
                 <p class="text-body-text leading-relaxed mb-6">
@@ -112,7 +112,7 @@ get_template_part('templates/page-banner', null, [
 </section>
 
 <!-- Saxenda Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-white">
+<section class="py-6 md:py-8">
     <div class="container mx-auto px-[5%]">
         <div class="max-w-5xl mx-auto">
             <!-- Medication Image -->
@@ -120,13 +120,13 @@ get_template_part('templates/page-banner', null, [
                 <img
                     src="<?php echo esc_url(wp_get_upload_dir()['baseurl']); ?>/saxenda.jpg"
                     alt="Saxenda medisch afvallen"
-                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                    class="inline-block max-w-full h-auto rounded-lg"
                     style="max-width: 645px;"
                     loading="lazy" />
             </div>
 
             <!-- Medication Content -->
-            <div class="bg-background rounded-lg p-6 md:p-8 lg:p-10 shadow-sm">
+            <div class="rounded-lg p-6 md:p-8 lg:p-10">
                 <h3 class="font-heading text-2xl md:text-3xl text-primary mb-6" id="Saxenda">Saxenda</h3>
 
                 <p class="text-body-text leading-relaxed mb-6">
@@ -191,7 +191,7 @@ get_template_part('templates/page-banner', null, [
 </section>
 
 <!-- Rybelsus Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-background">
+<section class="py-6 md:py-8">
     <div class="container mx-auto px-[5%]">
         <div class="max-w-5xl mx-auto">
             <!-- Medication Image -->
@@ -199,13 +199,13 @@ get_template_part('templates/page-banner', null, [
                 <img
                     src="<?php echo esc_url(wp_get_upload_dir()['baseurl']); ?>/rybelsus.png"
                     alt="Rybelsus medisch afvallen"
-                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                    class="inline-block max-w-full h-auto rounded-lg"
                     style="max-width: 225px;"
                     loading="lazy" />
             </div>
 
             <!-- Medication Content -->
-            <div class="bg-white rounded-lg p-6 md:p-8 lg:p-10 shadow-sm">
+            <div class="rounded-lg p-6 md:p-8 lg:p-10">
                 <h3 class="font-heading text-2xl md:text-3xl text-primary mb-6">Rybelsus</h3>
 
                 <p class="text-body-text leading-relaxed mb-6">
@@ -271,7 +271,7 @@ get_template_part('templates/page-banner', null, [
 </section>
 
 <!-- Semaglutide Section -->
-<section class="py-12 md:py-16 lg:py-20 bg-white">
+<section class="py-6 md:py-8">
     <div class="container mx-auto px-[5%]">
         <div class="max-w-5xl mx-auto">
             <!-- Medication Image -->
@@ -279,13 +279,13 @@ get_template_part('templates/page-banner', null, [
                 <img
                     src="<?php echo esc_url(wp_get_upload_dir()['baseurl']); ?>/ozempic.jpg"
                     alt="Afvallen met ozempic"
-                    class="inline-block max-w-full h-auto rounded-lg shadow-md"
+                    class="inline-block max-w-full h-auto rounded-lg"
                     style="max-width: 762px;"
                     loading="lazy" />
             </div>
 
             <!-- Medication Content -->
-            <div class="bg-background rounded-lg p-6 md:p-8 lg:p-10 shadow-sm">
+            <div class="rounded-lg p-6 md:p-8 lg:p-10">
                 <h3 class="font-heading text-2xl md:text-3xl text-primary mb-6">Semaglutide</h3>
 
                 <p class="text-body-text leading-relaxed mb-6">
