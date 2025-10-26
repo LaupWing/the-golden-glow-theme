@@ -26,7 +26,7 @@ return [
         [
             "type" => "text-content",
             "data" => [
-                "title" => "Lanluma vs andere behandelingen",
+                "title" => "",
                 "content" => "
                     <p>Lanluma verschilt wezenlijk van een filler zoals Radiesse. Lanluma is bedoelt voor wie geleidelijk een natuurlijk resultaat wil, terwijl Radiesse juist uitkomst biedt als je direct zichtbaar volume wilt creëren. Het werkende ingrediënt van Radiesse is calciumhydroxylapatiet, dit zorgt voor zowel direct volume alsook voor stimulatie van de eigen collageenproductie. Ook verschilt Lanluma van een biostimulator als Prophilo. Prophilo heeft als werkend ingrediënt hyaluronzuur, hualuronzuur stimuliert met name de huidhydratatie – trekt vocht aan en houdt dit vast – en produceert (in mindere mate) ook collageen- en elastine. Lamluma met als werkend ingrediënt poly-L-melkzuur richt zich puur en alleen op collageenproductie.</p>
                 ",
@@ -51,7 +51,8 @@ return [
                 "content" => "
                     <p>In het gezicht helpt Lanluma bij het herstellen van verloren volume, het verbeteren van de huidstructuur en het verminderen van fijne lijntjes. Het resultaat is een stevigere, gladdere en jeugdigere huid die van binnenuit verjongt, zonder de kunstmatige uitstraling van fillers. Lanluma is ideaal voor het verjongen van de wangen, kaaklijn en het gebied rond de ogen.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0",
             ]
         ],
         [
@@ -61,7 +62,7 @@ return [
                 "content" => "
                     <p>Lanluma is ook perfect voor het herstellen van volume en stevigheid in de billen. Naarmate we ouder worden of door factoren zoals gewichtsverlies, kan de huid van de billen verslappen en volume verliezen. Lanluma stimuleert de collageenproductie in dit gebied, wat leidt tot een strakkere, vollere en stevigere billen.</p>
                 ",
-                "show_background" => true
+                "show_background" => false
             ]
         ],
         [
@@ -71,7 +72,8 @@ return [
                 "content" => "
                     <p>De Lanluma behandeling is ideaal voor het verkrijgen van een gladde huid of als aanvulling op een brazilian butt lift. Een bijkomend voordeel van deze behandeling is dat het de aanmaak van collageen in het lichaam stimuleert, wat resulteert in een gladdere huid. Dit maakt de behandeling bij The Golden Glow in Amsterdam bijzonder geschikt voor mensen met cellulitis. Hoewel de collageenproductie enige tijd nodig heeft om op gang te komen, wordt het optimale resultaat meestal na 3-6 maanden zichtbaar. Bovendien kan de Lanluma behandeling ook na een brazilian butt lift worden toegepast. Door gerichte injecties is het mogelijk om de nieuwe vorm van de billen verder te verfijnen, wat leidt tot een nog beter eindresultaat!</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0",
             ]
         ],
         [
@@ -83,6 +85,23 @@ return [
                 "checkup" => "2 maanden",
                 "effect_duration" => "ongeveer 2 jaar",
                 "treatment_duration" => "30 minuten"
+            ]
+        ],
+        [
+            "type" => "happy-customers",
+            "data" => [
+                "title" => "Resultaat van een Lanluma behandeling",
+                "content" => "De effecten van de Lanluma-behandeling zijn langdurig en kunnen tot wel 2 jaar aanhouden, waardoor je langdurig van de resultaten kunt genieten. Het geleidelijke effect van de behandeling betekent dat de collageenstimulatie voortdurend blijft werken in je huid, wat resulteert in een natuurlijk ogende, stevige en stralende huid. Gedurende deze periode hoef je niets extra's te doen, aangezien je huid van binnenuit rustig doorgaat met het proces. Om het beste resultaat te bereiken, raden we aan om gedurende de eerste 2 weken na de behandeling dagelijks 2 keer 10 minuten je huid te masseren. Hierdoor verspreid je de filler optimaal over het behandelde gebied, wat bijdraagt aan een nog mooiere uitstraling.",
+                "images" => [
+                    ["filename" => "biostimulatie-happy-customer-1.png", "alt" => "Lanluma voor en na foto met zichtbaar volumevergroting"]
+                ],
+                "custom_class" => "!pt-0"
+            ]
+        ],
+        [
+            "type" => "after-treatment",
+            "data" => [
+                "custom_class" => "!py-0",
             ]
         ],
         [
@@ -101,34 +120,11 @@ return [
                 "label" => "Maak een afspraak"
             ]
         ],
-        [
-            "type" => "text-content",
-            "data" => [
-                "title" => "Resultaat van een Lanluma behandeling",
-                "content" => "
-                    <p>De effecten van de Lanluma-behandeling zijn langdurig en kunnen tot wel 2 jaar aanhouden, waardoor je langdurig van de resultaten kunt genieten. Het geleidelijke effect van de behandeling betekent dat de collageenstimulatie voortdurend blijft werken in je huid, wat resulteert in een natuurlijk ogende, stevige en stralende huid. Gedurende deze periode hoef je niets extra's te doen, aangezien je huid van binnenuit rustig doorgaat met het proces. Om het beste resultaat te bereiken, raden we aan om gedurende de eerste 2 weken na de behandeling dagelijks 2 keer 10 minuten je huid te masseren. Hierdoor verspreid je de filler optimaal over het behandelde gebied, wat bijdraagt aan een nog mooiere uitstraling.</p>
-                ",
-                "show_background" => true
-            ]
-        ],
-        [
-            "type" => "happy-customers",
-            "data" => [
-                "title" => "Voor en na resultaten",
-                "content" => "Bekijk hieronder enkele voor en na foto's van tevreden klanten die de Lanluma behandeling hebben ondergaan bij The Golden Glow. De resultaten tonen de natuurlijke volumetoename en collageenstimulatie.",
-                "images" => [
-                    ["filename" => "biostimulatie-happy-customer-1.png", "alt" => "Lanluma voor en na foto met zichtbaar volumevergroting"]
-                ]
-            ]
-        ],
-        [
-            "type" => "after-treatment",
-            "data" => []
-        ],
+
         [
             "type" => "reviews",
             "data" => [
-                "show_background" => false
+                "show_background" => true
             ]
         ],
         [
