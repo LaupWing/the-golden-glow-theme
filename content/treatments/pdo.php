@@ -50,7 +50,8 @@ return [
                 "content" => "
                     <p>De behandeling is uitermate geschikt voor wie op een subtiele manier milde tot matige huidverslapping wil aanpakken zonder ingrijpende operatie of langdurig herstel. De ingreep duurt doorgaans 30 tot 60 minuten en vraagt minimale hersteltijd; in de meeste gevallen kunnen dagelijkse activiteiten dezelfde dag worden hervat. In tegenstelling tot fillers, die gericht zijn op volumevergroting, werkt de PDO thread lift op een diep, structureel niveau door zowel te liften als het natuurlijke celherstel langdurig te stimuleren. Voor een langdurig resultaat adviseren wij periodieke onderhoudsbehandelingen.</p>
                 ",
-                "show_background" => false
+                "show_background" => false,
+                "custom_class" => "!py-0",
             ]
         ],
         [
@@ -62,6 +63,35 @@ return [
                 "checkup" => "na 6 weken",
                 "effect_duration" => "12 - 18 maanden",
                 "treatment_duration" => "30 minuten"
+            ]
+        ],
+        [
+            "type" => "text-content",
+            "data" => [
+                "title" => "Wat is het resultaat van een PDO behandeling",
+                "content" => "
+                    <p>De PDO draadlift gebruikt oplosbare draden die collageen stimuleren, wat resulteert in een zeer natuurlijk effect. Het fijne netwerk van kleine draadjes dat door artsen wordt gebruikt, zorgt ervoor dat de huid niet overmatig wordt opgespannen en uw natuurlijke uitstraling behouden blijft. Na verloop van tijd lossen de draadjes volledig op, terwijl de collageenstimulatie de huid verbetert in diverse gebieden, waaronder onderkin, kaaklijn, bovenlip, wang, neus-lippenplooi, kraaienpootjes, onder ooglid, voorhoofd, wenkbrauw en frons.</p>
+                    <p>Wat deze techniek onderscheidt van andere behandelingen, is haar unieke combinatie van direct resultaat en geleidelijke huidverbetering. Terwijl fillers snel volume toevoegen en skinboosters zoals Profhilo voornamelijk hydrateren, richt de PDO draadlift zich op structurele stevigheid en contourverbetering, zonder dat de gelaatsuitdrukking verandert. De huid oogt direct strakker en frisser, met een verder toenemend effect naarmate het collageennetwerk zich opbouwt – en dat alles met behoud van een natuurlijke, ontspannen uitstraling.</p>
+                ",
+                "show_background" => false,
+                "custom_class" => "!py-0",
+            ]
+        ],
+        [
+            "type" => "happy-customers",
+            "data" => [
+                "title" => "",
+                "content" => "",
+                "images" => [
+                    ["filename" => "pdo-happy-customer-1.jpg", "alt" => "PDO draadlift voor en na foto voor jeugdige uitstraling"]
+                ],
+                "custom_class" => "!pt-0",
+            ]
+        ],
+        [
+            "type" => "after-treatment",
+            "data" => [
+                "custom_class" => "!py-0",
             ]
         ],
         [
@@ -81,34 +111,9 @@ return [
             ]
         ],
         [
-            "type" => "text-content",
-            "data" => [
-                "title" => "Wat is het resultaat van een PDO behandeling",
-                "content" => "
-                    <p>De PDO draadlift gebruikt oplosbare draden die collageen stimuleren, wat resulteert in een zeer natuurlijk effect. Het fijne netwerk van kleine draadjes dat door artsen wordt gebruikt, zorgt ervoor dat de huid niet overmatig wordt opgespannen en uw natuurlijke uitstraling behouden blijft. Na verloop van tijd lossen de draadjes volledig op, terwijl de collageenstimulatie de huid verbetert in diverse gebieden, waaronder onderkin, kaaklijn, bovenlip, wang, neus-lippenplooi, kraaienpootjes, onder ooglid, voorhoofd, wenkbrauw en frons.</p>
-                    <p>Wat deze techniek onderscheidt van andere behandelingen, is haar unieke combinatie van direct resultaat en geleidelijke huidverbetering. Terwijl fillers snel volume toevoegen en skinboosters zoals Profhilo voornamelijk hydrateren, richt de PDO draadlift zich op structurele stevigheid en contourverbetering, zonder dat de gelaatsuitdrukking verandert. De huid oogt direct strakker en frisser, met een verder toenemend effect naarmate het collageennetwerk zich opbouwt – en dat alles met behoud van een natuurlijke, ontspannen uitstraling.</p>
-                ",
-                "show_background" => true
-            ]
-        ],
-        [
-            "type" => "happy-customers",
-            "data" => [
-                "title" => "Voor en na resultaten",
-                "content" => "Bekijk hieronder enkele voor en na foto's van tevreden klanten die de PDO draadlift behandeling hebben ondergaan bij The Golden Glow. De resultaten tonen de natuurlijke lifting en huidverbetering.",
-                "images" => [
-                    ["filename" => "pdo-happy-customer-1.jpg", "alt" => "PDO draadlift voor en na foto voor jeugdige uitstraling"]
-                ]
-            ]
-        ],
-        [
-            "type" => "after-treatment",
-            "data" => []
-        ],
-        [
             "type" => "reviews",
             "data" => [
-                "show_background" => false
+                "show_background" => true
             ]
         ],
         [
@@ -139,6 +144,18 @@ return [
                     [
                         "question" => "Is PDO voelbaar onder de huid?",
                         "answer" => "<p>PDO wordt onder de huid ingebracht en bij normale huid is dit niet voel- zichtbaar.</p>"
+                    ],
+                    [
+                        "question" => "Welke bijwerkingen kunnen optreden?",
+                        "answer" => "<p>Bijwerkingen, zoals lichte zwellingen of blauwe plekken kunnen optreden afhankelijk van het aantal aangebrachte draden.</p>"
+                    ],
+                    [
+                        "question" => "Wat moet ik doen als er bijwerkingen optreden?",
+                        "answer" => "<p>In geval van aanhoudende roodheid, pijn en zwelling, contacteer dan uw behandelend arts.</p>"
+                    ],
+                    [
+                        "question" => "Wanneer mag ik een herhaalbehandeling ondergaan?",
+                        "answer" => "<p>Meestal blijft het effect van de behandeling ongeveer 2 jaar zichtbaar. Mocht u een aanvullende of een herhaalbehandeling wensen, volg dan het advies op van de arts.</p>"
                     ]
                 ]
             ]
