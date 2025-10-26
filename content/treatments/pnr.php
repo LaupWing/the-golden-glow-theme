@@ -1,23 +1,22 @@
 <?php
 
 /**
- * Content for: PNR (Plasma Needle Radiofrequency)
+ * Content for: PNR (Polynucleotide)
  * To edit this page, just change the values in the content_blocks array below!
  * Each block has a "type" that determines which template to use.
  */
 
 return [
-    "page_title" => "PNR behandeling",
+    "page_title" => "PDNR",
 
     // Content blocks array - add, remove, or reorder as needed
     "content_blocks" => [
         [
             "type" => "category-intro",
             "data" => [
-                "title" => "Wat is een PNR behandeling?",
+                "title" => "Polynucleotide Amsterdam",
                 "content" => "
-                    <p>Bij onze kliniek in Amsterdam bieden we de meest geavanceerde laser- en energietechnologieën voor huidverjonging en huidverbetering. De PNR (Plasma Needle Radiofrequency) behandeling is een innovatieve techniek die plasma-energie en radiofrequentie combineert voor een krachtig huidverstevigend en verjongend effect. Deze behandeling is bijzonder effectief voor het verminderen van rimpels, huidverslapping, littekens en het verbeteren van de algehele huidstructuur.</p>
-                    <p>PNR maakt gebruik van microscopisch kleine plasma-naalden die gecontroleerde warmte afgeven in de diepere lagen van de huid. Dit stimuleert de natuurlijke collageenproductie en zorgt voor huidversteviging van binnenuit. De behandeling is geschikt voor zowel gezicht als lichaam en biedt zichtbare resultaten met minimale downtime. Het effect is langdurig en natuurlijk, zonder de huid te beschadigen of expressie te verliezen.</p>
+                    <p>Polydeoxyribonucleotide, afgekort PDRN ofwel polynucleotide zijn Injecties voor huidverjonging. Bent u ook op zoek naar de nieuwste behandeling voor effectieve huidverjonging in Amsterdam? Ontdek de revolutionaire werking van Polynucleotide (PDRN) injecties – ook bekend als zalm-sperma injecties – bij onze kliniek in Amsterdam. Polynucleotide injecties, vaak zalm-DNA of zalm sperma genoemd, zijn de nieuwste doorbraak op het gebied van anti-aging. Ze werken diep in op de huid door de aanmaak van collageen, elastine én hyaluronzuur – dé drie essentiële bouwstenen voor een jonge, stevige en gezonde huid. Dankzij krachtige antioxidanten beschermt PDRN de huid en vermindert het DNA-schade, waardoor de huid er niet alleen jonger uitziet, maar ook echt gezonder aanvoelt.</p>
                 ",
                 "image_filename" => "lasers-intro.png"
             ]
@@ -25,9 +24,16 @@ return [
         [
             "type" => "text-content",
             "data" => [
-                "title" => "Voordelen van PNR behandeling",
+                "title" => "Resultaten van de Polynucleotide",
                 "content" => "
-                    <p>De PNR behandeling onderscheidt zich door de unieke combinatie van plasma-technologie en radiofrequentie. Hierdoor kunnen we diepere lagen van de huid bereiken zonder de opperhuid te beschadigen. De behandeling is effectief voor het verkleinen van poriën, het gladstrijken van fijne lijntjes, het verminderen van acnelittekens en het verstevigen van verslappende huid. Ook bij striae (striemen) en andere littekens kan PNR uitstekende resultaten bieden.</p>
+                    <p style=\"text-align: center;\">Vermindert fijne lijntjes en rimpels.</p>
+                    <p style=\"text-align: center;\">Verbetert huidstructuur en stevigheid</p>
+                    <p style=\"text-align: center;\">Geef de huid een jeugdige glow</p>
+                    <p style=\"text-align: center;\">Vermindert pigmentatie en ouderdomsvlekken</p>
+                    <p style=\"text-align: center;\">Vermindert roodheid en donkere kringen</p>
+                    <p style=\"text-align: center;\">Herstelt een doffe huid en zonbeschadiging</p>
+                    <p style=\"text-align: center;\">Verhoogt de productie van huid-antioxidanten</p>
+                    <p style=\"text-align: center;\">Werkt op DNA-niveau voor diepgaand huidherstel</p>
                 ",
                 "show_background" => true
             ]
@@ -46,9 +52,20 @@ return [
         [
             "type" => "text-content",
             "data" => [
-                "title" => "Voor de behandeling",
+                "title" => "Consult",
                 "content" => "
-                    <p>Voor een optimale voorbereiding op uw PNR behandeling vragen wij u om enkele weken voor de behandeling zonblootstelling te vermijden en dagelijks SPF 30-50 te gebruiken. Stop, in overleg met uw arts, minimaal een week van tevoren met bloedverdunnende medicatie zoals Aspirine of Ibuprofen. Vermijd ook alcohol 48 uur voor de behandeling. Zorg dat uw huid schoon en vrij is van make-up, crèmes of lotions op de dag van de behandeling. Bij voorkeur kunt u 30 minuten voor de behandeling aanwezig zijn voor het aanbrengen van verdovende crème.</p>
+                    <p>Tijdens een consult bij onze kliniek in Amsterdam bespreekt de arts uw wensen en wordt de huid grondig geanalyseerd. Daarna injecteren we de polynucleotiden op de gewenste gebieden (zoals gezicht, hals of handen). De behandeling is snel, vrijwel pijnloos en veilig. Omdat PDRN lichaamseigen herstelmechanismen activeert, is het geschikt voor vrijwel elk huidtype.</p>
+                ",
+                "show_background" => false,
+                "custom_class" => "!py-0",
+            ]
+        ],
+        [
+            "type" => "text-content",
+            "data" => [
+                "title" => "Veiligheid & Effectiviteit",
+                "content" => "
+                    <p>PDRN injecties zijn uitgebreid klinisch getest en wereldwijd erkend als een veilige en effectieve behandeling voor huidverjonging. Omdat het product afkomstig is van gezuiverd zalm-DNA en lichaamseigen processen stimuleert, is het risico op allergische reacties minimaal.</p>
                 ",
                 "show_background" => false
             ]
@@ -56,31 +73,50 @@ return [
         [
             "type" => "text-content",
             "data" => [
-                "title" => "De behandeling",
+                "title" => "Nazorg en advies voor optimaal resultaat",
                 "content" => "
-                    <p>Tijdens de PNR behandeling wordt eerst een verdovende crème aangebracht om het comfort te maximaliseren. Vervolgens wordt het behandelgebied zorgvuldig gereinigd en gemarkeerd. Met behulp van het PNR-apparaat worden microscopisch kleine plasma-impulsen afgegeven in de huid. Deze impulsen stimuleren de collageenproductie en zorgen voor huidversteviging. De behandeling duurt gemiddeld 30 tot 60 minuten, afhankelijk van het behandelgebied. Direct na de behandeling kan de huid rood en enigszins gezwollen zijn, wat normaal is en binnen enkele dagen verdwijnt.</p>
+                    <p>In de meeste gevallen ziet u binnen enkele weken duidelijke verbetering in huidkwaliteit en -structuur. Voor een langdurig effect wordt meestal een korte kuur van enkele behandelingen geadviseerd.</p>
                 ",
-                "show_background" => true
+                "show_background" => false,
+                "custom_class" => "!py-0",
             ]
         ],
         [
             "type" => "price",
             "data" => [
-                "title" => "PNR behandeling",
-                "price" => "450",
-                "anesthesia" => "met verdovende crème",
-                "checkup" => "na 4 weken",
-                "effect_duration" => "12 - 18 maanden",
-                "treatment_duration" => "30 - 60 minuten"
+                "title" => "PNR",
+                "price" => "275",
+                "anesthesia" => "Crème en injectie verdoving",
+                "checkup" => "na 6 weken",
+                "effect_duration" => "6 - 12 maanden",
+                "treatment_duration" => "30 minuten"
+            ]
+        ],
+        [
+            "type" => "happy-customers",
+            "data" => [
+                "title" => "Resultaat van een PDNR behandeling",
+                "content" => "",
+                "images" => [
+                    ["filename" => "pnr-happy-customer-1.jpg", "alt" => "PNR behandeling voor en na foto 1"],
+                    ["filename" => "pnr-happy-customer-2.jpg", "alt" => "PNR behandeling voor en na foto 2"]
+                ],
+                "custom_class" => "!pt-0"
+            ]
+        ],
+        [
+            "type" => "after-treatment",
+            "data" => [
+                "custom_class" => "!py-0",
             ]
         ],
         [
             "type" => "treatment-summary",
             "data" => [
-                "price" => "Vanaf 450",
-                "duration" => "30 - 60 minuten",
-                "checkup" => "na 4 weken",
-                "effect" => "12 - 18 maanden"
+                "price" => "Vanaf 275",
+                "duration" => "30 minuten",
+                "checkup" => "na 6 weken",
+                "effect" => "6 - 12 maanden"
             ]
         ],
         [
@@ -91,45 +127,9 @@ return [
             ]
         ],
         [
-            "type" => "text-content",
-            "data" => [
-                "title" => "Resultaat van de PNR behandeling",
-                "content" => "
-                    <p>De resultaten van een PNR behandeling zijn geleidelijk zichtbaar en verbeteren in de weken en maanden na de behandeling. De collageenproductie wordt direct gestimuleerd, maar het duurt enkele weken voordat nieuw collageen is aangemaakt. Na 4 tot 6 weken zijn de eerste resultaten zichtbaar: een strakkere, gladdere huid met verfijnde poriën en verminderde lijntjes. Het volledige effect is meestal na 2 tot 3 maanden zichtbaar en blijft tot 12 tot 18 maanden behouden.</p>
-                    <p>De PNR behandeling is bijzonder effectief voor het verbeteren van de huidtextuur, het verkleinen van littekens, het verminderen van rimpels en het verstevigen van de huid. De resultaten zijn natuurlijk en subtiel, zonder dat de huid er kunstmatig of strak uitziet. Voor optimale resultaten adviseren wij vaak een kuur van 2 tot 3 behandelingen met tussenpozen van 4 tot 6 weken.</p>
-                ",
-                "show_background" => false
-            ]
-        ],
-        [
-            "type" => "happy-customers",
-            "data" => [
-                "title" => "Voor en na resultaten",
-                "content" => "Bekijk hieronder enkele voor en na foto's van tevreden klanten die de PNR behandeling hebben ondergaan bij The Golden Glow. De resultaten tonen de huidverbetering en natuurlijke verjonging.",
-                "images" => [
-                    ["filename" => "pnr-happy-customer-1.jpg", "alt" => "PNR behandeling voor en na foto 1"],
-                    ["filename" => "pnr-happy-customer-2.jpg", "alt" => "PNR behandeling voor en na foto 2"]
-                ]
-            ]
-        ],
-        [
-            "type" => "text-content",
-            "data" => [
-                "title" => "Na de behandeling",
-                "content" => "
-                    <p>Na de PNR behandeling is het belangrijk om de huid goed te verzorgen. Vermijd zonblootstelling gedurende minimaal 4 weken en gebruik dagelijks SPF 30-50. De eerste 48 uur na de behandeling mag u de huid niet nat maken. Vermijd intensieve inspanning, sauna, zwemmen en zonnebank gedurende 2 weken. De huid kan enkele dagen rood en gezwollen zijn, dit is normaal en verdwijnt vanzelf. Er kunnen kleine korstjes ontstaan die binnen een week afvallen. Raak deze niet aan en laat ze vanzelf loslaten. Gebruik geen agressieve producten zoals scrubs, peeling of retinol gedurende 2 weken na de behandeling.</p>
-                ",
-                "show_background" => true
-            ]
-        ],
-        [
-            "type" => "after-treatment",
-            "data" => []
-        ],
-        [
             "type" => "reviews",
             "data" => [
-                "show_background" => false
+                "show_background" => true
             ]
         ],
         [
@@ -142,24 +142,24 @@ return [
                 "title" => "Veelgestelde vragen over PNR",
                 "items" => [
                     [
-                        "question" => "Wat is PNR?",
-                        "answer" => "<p>PNR staat voor Plasma Needle Radiofrequency. Het is een geavanceerde behandeling die plasma-technologie en radiofrequentie combineert om de huid te verstevigen, rimpels te verminderen en de huidstructuur te verbeteren.</p>"
+                        "question" => "Wat is een Polynucleotide (PNR) behandeling?",
+                        "answer" => "<p>Polynucleotiden (PNR) zijn biostimulerende stoffen die de huid helpen regenereren, hydrateren en verstevigen. Ze stimuleren de aanmaak van collageen en elastine, wat zorgt voor een verbeterde huidstructuur en vermindering van fijne lijntjes.</p>"
                     ],
                     [
-                        "question" => "Voor welke huidproblemen is PNR geschikt?",
-                        "answer" => "<p>PNR is effectief voor het behandelen van fijne lijntjes en rimpels, huidverslapping, acnelittekens, vergrote poriën, striae (striemen) en algemene huidverbetering. De behandeling is geschikt voor zowel gezicht als lichaam.</p>"
+                        "question" => "Wat is PhilArt en hoe werkt het?",
+                        "answer" => "<div>PhilArt is een skinbooster op basis van polynucleotiden die de huid van binnenuit herstelt en hydrateert. De werkzame stoffen stimuleren de celvernieuwing en bevorderen de productie van collageen en elastine. Dit resulteert in een stevigere en jonger uitziende huid.</div>"
                     ],
                     [
-                        "question" => "Is een PNR behandeling pijnlijk?",
-                        "answer" => "<p>Voor de behandeling wordt een verdovende crème aangebracht om het comfort te maximaliseren. Tijdens de behandeling kunt u een licht branderig gevoel of warmte ervaren, maar dit is goed te verdragen. Na de behandeling kan de huid enkele dagen gevoelig zijn.</p>"
+                        "question" => "Voor welke gebieden is de behandeling geschikt?",
+                        "answer" => "<p>PhilArt kan worden toegepast op verschillende gebieden, waaronder:<br>1) Gezicht<br>2) Hals<br>3) Decolleté<br>3) Handen<br>Daarnaast zijn er specifieke varianten zoals PhilArt Eye voor de gevoelige huid rondom de ogen en PhilArt Hair ter bevordering van haargroei.</p>"
                     ],
                     [
-                        "question" => "Hoeveel behandelingen zijn nodig?",
-                        "answer" => "<p>Voor optimale resultaten adviseren wij meestal een kuur van 2 tot 3 behandelingen met tussenpozen van 4 tot 6 weken. Het exacte aantal behandelingen hangt af van uw huidconditie en gewenste resultaat.</p>"
+                        "question" => "Wanneer zie ik resultaat?",
+                        "answer" => "<p class=\"pf0\">De effecten ontwikkelen zich geleidelijk. Voor optimale resultaten worden meestal drie tot vijf behandelingen aanbevolen, met tussenpozen van twee tot vier weken. Na enkele weken is de huid beter gehydrateerd en elastischer.</p>"
                     ],
                     [
-                        "question" => "Hoelang duurt het herstel na een PNR behandeling?",
-                        "answer" => "<p>De hersteltijd is relatief kort. De eerste dagen kan de huid rood en enigszins gezwollen zijn. Kleine korstjes kunnen ontstaan die binnen een week afvallen. Na ongeveer een week is de huid grotendeels hersteld, maar het is belangrijk om de nazorginstructies te volgen.</p>"
+                        "question" => "Wat kan ik verwachten na de behandeling?",
+                        "answer" => "<p class=\"pf0\">Na de behandeling kunt u lichte roodheid, zwelling of kleine blauwe plekjes ervaren, maar deze verdwijnen meestal binnen enkele dagen. U kunt vrijwel direct uw dagelijkse activiteiten hervatten.</p>"
                     ]
                 ]
             ]
